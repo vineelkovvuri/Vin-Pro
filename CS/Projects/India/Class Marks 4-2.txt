@@ -1,0 +1,682 @@
+Retrieving the marks of 04131a1201
+Name : ANUSHA DOMMETI     
+HTNO :04131A1201 
+Father Name : RAMA MOHAN
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        19        50        69     P  
+PROJECT WORK #                                33        147       180    P  
+INTERNET TECHNOLOGIES                         19        55        74     P  
+                                                                 ==== =========
+                                                                 323  80.75%
+Retrieving the marks of 04131a1202
+Name : ARUN SHOWRI PAMULA 
+HTNO :04131A1202 
+Father Name : P PRASADA RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        16        35        51     P  
+PROJECT WORK #                                34        147       181    P  
+INTERNET TECHNOLOGIES                         18        38        56     P  
+                                                                 ==== =========
+                                                                 288  72.00%
+Retrieving the marks of 04131a1203
+Name : ARUNCHAND KASUKURTHI 
+HTNO :04131A1203 
+Father Name : CHINA VENKATESWARLU
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        16        44        60     P  
+PROJECT WORK #                                39        140       179    P  
+INTERNET TECHNOLOGIES                         18        36        54     P  
+                                                                 ==== =========
+                                                                 293  73.25%
+Retrieving the marks of 04131a1204
+Name : GUNA SRIKANTH      
+HTNO :04131A1204 
+Father Name : RAMACHANDRA RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        19        54        73     P  
+PROJECT WORK #                                40        151       191    P  
+INTERNET TECHNOLOGIES                         19        47        66     P  
+                                                                 ==== =========
+                                                                 330  82.50%
+Retrieving the marks of 04131a1205
+Name : HECHINA V R S PRABHAKAR 
+HTNO :04131A1205 
+Father Name : NAGESWARA RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        15        44        59     P  
+PROJECT WORK #                                28        147       175    P  
+INTERNET TECHNOLOGIES                         15        32        47     P  
+                                                                 ==== =========
+                                                                 281  70.25%
+Retrieving the marks of 04131a1206
+Name : HEMA SANDEEP N     
+HTNO :04131A1206 
+Father Name : N NAGESWARA RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        13        31        44     P  
+PROJECT WORK #                                39        148       187    P  
+INTERNET TECHNOLOGIES                         15        37        52     P  
+                                                                 ==== =========
+                                                                 283  70.75%
+Retrieving the marks of 04131a1207
+Name : J SAIKIRAN REDDY VELAGALA 
+HTNO :04131A1207 
+Father Name : VENKATA REDDY VELAGALA
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        14        40        54     P  
+PROJECT WORK #                                33        150       183    P  
+INTERNET TECHNOLOGIES                         18        37        55     P  
+                                                                 ==== =========
+                                                                 292  73.00%
+Retrieving the marks of 04131a1208
+Name : JAGADEESH KAKARLA  
+HTNO :04131A1208 
+Father Name : K SANYASI RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        17        39        56     P  
+PROJECT WORK #                                40        145       185    P  
+INTERNET TECHNOLOGIES                         18        44        62     P  
+                                                                 ==== =========
+                                                                 303  75.75%
+Retrieving the marks of 04131a1209
+Name : JAYASVI BATTU      
+HTNO :04131A1209 
+Father Name : ASHOK B
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        16        49        65     P  
+PROJECT WORK #                                34        148       182    P  
+INTERNET TECHNOLOGIES                         18        43        61     P  
+                                                                 ==== =========
+                                                                 308  77.00%
+Retrieving the marks of 04131a1210
+Name : KADIMISETTY POOJITHA 
+HTNO :04131A1210 
+Father Name : K V N R K ATCHUTA RAMAYYA
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        19        48        67     P  
+PROJECT WORK #                                40        150       190    P  
+INTERNET TECHNOLOGIES                         20        50        70     P  
+                                                                 ==== =========
+                                                                 327  81.75%
+Retrieving the marks of 04131a1211
+Name : KARTHIK PENMETSA   
+HTNO :04131A1211 
+Father Name : VENKATA KRISHNAM RAJU
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        17        59        76     P  
+PROJECT WORK #                                36        143       179    P  
+INTERNET TECHNOLOGIES                         16        51        67     P  
+                                                                 ==== =========
+                                                                 322  80.50%
+Retrieving the marks of 04131a1212
+Name : KEERTHIKA VADAPALLI 
+HTNO :04131A1212 
+Father Name : V M NEHRU
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        19        55        74     P  
+PROJECT WORK #                                40        148       188    P  
+INTERNET TECHNOLOGIES                         20        51        71     P  
+                                                                 ==== =========
+                                                                 333  83.25%
+Retrieving the marks of 04131a1213
+Name : KRISHNA TEJ VAKKALANKA 
+HTNO :04131A1213 
+Father Name : V V RAGHAVARAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        17        52        69     P  
+PROJECT WORK #                                35        151       186    P  
+INTERNET TECHNOLOGIES                         19        46        65     P  
+                                                                 ==== =========
+                                                                 320  80.00%
+Retrieving the marks of 04131a1214
+Name : LEELA MANASA SABBINENI 
+HTNO :04131A1214 
+Father Name : SIVA PRASAD
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        15        34        49     P  
+PROJECT WORK #                                30        150       180    P  
+INTERNET TECHNOLOGIES                         16        38        54     P  
+                                                                 ==== =========
+                                                                 283  70.75%
+Retrieving the marks of 04131a1215
+Name : MOKA PRANEETH      
+HTNO :04131A1215 
+Father Name : M NARSIMHA MURTHY
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        15        40        55     P  
+PROJECT WORK #                                40        145       185    P  
+INTERNET TECHNOLOGIES                         17        40        57     P  
+                                                                 ==== =========
+                                                                 297  74.25%
+Retrieving the marks of 04131a1216
+Name : N V V LAXMIDEVI VUDUMU 
+HTNO :04131A1216 
+Father Name : S V PRASADA RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        16        46        62     P  
+PROJECT WORK #                                30        146       176    P  
+INTERNET TECHNOLOGIES                         14        33        47     P  
+                                                                 ==== =========
+                                                                 285  71.25%
+Retrieving the marks of 04131a1217
+Name : NAGA SAVITHA PERI  
+HTNO :04131A1217 
+Father Name : MURTHY P S N
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        19        55        74     P  
+PROJECT WORK #                                37        145       182    P  
+INTERNET TECHNOLOGIES                         17        50        67     P  
+                                                                 ==== =========
+                                                                 323  80.75%
+Retrieving the marks of 04131a1218
+Name : NANDIRAJU MANJARI  
+HTNO :04131A1218 
+Father Name : N SEETARAM
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        18        35        53     P  
+PROJECT WORK #                                37        150       187    P  
+INTERNET TECHNOLOGIES                         18        44        62     P  
+                                                                 ==== =========
+                                                                 302  75.50%
+Retrieving the marks of 04131a1219
+Name : NAVEENA POLUMAHANTI 
+HTNO :04131A1219 
+Father Name : SIMHAGIRI RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        18        44        62     P  
+PROJECT WORK #                                40        151       191    P  
+INTERNET TECHNOLOGIES                         20        41        61     P  
+                                                                 ==== =========
+                                                                 314  78.50%
+Retrieving the marks of 04131a1220
+Name : NIKITHA            
+HTNO :04131A1220 
+Father Name : UMESH BABU
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        17        44        61     P  
+PROJECT WORK #                                38        152       190    P  
+INTERNET TECHNOLOGIES                         18        40        58     P  
+                                                                 ==== =========
+                                                                 309  77.25%
+Retrieving the marks of 04131a1221
+Name : NISCHALA NAMBALA   
+HTNO :04131A1221 
+Father Name : N VENKATA RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        18        55        73     P  
+PROJECT WORK #                                38        151       189    P  
+INTERNET TECHNOLOGIES                         19        40        59     P  
+                                                                 ==== =========
+                                                                 321  80.25%
+Retrieving the marks of 04131a1222
+Roll no 04131a1222 is not present
+
+Retrieving the marks of 04131a1223
+Name : PAVAN KUMAR SANKA  
+HTNO :04131A1223 
+Father Name : S NANA RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        18        35        53     P  
+PROJECT WORK #                                36        150       186    P  
+INTERNET TECHNOLOGIES                         19        35        54     P  
+                                                                 ==== =========
+                                                                 293  73.25%
+Retrieving the marks of 04131a1224
+Name : PEDASINGU NITIN    
+HTNO :04131A1224 
+Father Name : P KODANDA PANI
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        16        37        53     P  
+PROJECT WORK #                                38        151       189    P  
+INTERNET TECHNOLOGIES                         19        42        61     P  
+                                                                 ==== =========
+                                                                 303  75.75%
+Retrieving the marks of 04131a1225
+Name : PRAVEENKUMAR KURAPATI 
+HTNO :04131A1225 
+Father Name : V RAJASEKHARA RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        17        49        66     P  
+PROJECT WORK #                                35        150       185    P  
+INTERNET TECHNOLOGIES                         20        46        66     P  
+                                                                 ==== =========
+                                                                 317  79.25%
+Retrieving the marks of 04131a1226
+Name : RADHIKA MALLAREDDY 
+HTNO :04131A1226 
+Father Name : VENKATA RAMAKRISHNA RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        19        58        77     P  
+PROJECT WORK #                                36        150       186    P  
+INTERNET TECHNOLOGIES                         18        52        70     P  
+                                                                 ==== =========
+                                                                 333  83.25%
+Retrieving the marks of 04131a1227
+Roll no 04131a1227 is not present
+
+Retrieving the marks of 04131a1228
+Roll no 04131a1228 is not present
+
+Retrieving the marks of 04131a1229
+Name : RAMYADEEPTHI DUVAKULA 
+HTNO :04131A1229 
+Father Name : NARASIMHA MURTHY
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        19        33        52     P  
+PROJECT WORK #                                30        149       179    P  
+INTERNET TECHNOLOGIES                         18        41        59     P  
+                                                                 ==== =========
+                                                                 290  72.50%
+Retrieving the marks of 04131a1230
+Name : ROHITH PANABAKAM   
+HTNO :04131A1230 
+Father Name : VIJAY KUMAR P
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        17        41        58     P  
+PROJECT WORK #                                36        144       180    P  
+INTERNET TECHNOLOGIES                         18        37        55     P  
+                                                                 ==== =========
+                                                                 293  73.25%
+Retrieving the marks of 04131a1231
+Name : S G NARASIMHA NAIDU P 
+HTNO :04131A1231 
+Father Name : VENKATA RAMANA POHINI
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        16        54        70     P  
+PROJECT WORK #                                31        148       179    P  
+INTERNET TECHNOLOGIES                         17        36        53     P  
+                                                                 ==== =========
+                                                                 302  75.50%
+Retrieving the marks of 04131a1232
+Name : S RAJENDRAN BHARAT 
+HTNO :04131A1232 
+Father Name : M RAJENDRAN
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        17        46        63     P  
+PROJECT WORK #                                39        151       190    P  
+INTERNET TECHNOLOGIES                         19        36        55     P  
+                                                                 ==== =========
+                                                                 308  77.00%
+Retrieving the marks of 04131a1233
+Name : SANAT KUMAR KORADA 
+HTNO :04131A1233 
+Father Name : NAGESWARA RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        9         31        40     P  
+PROJECT WORK #                                36        142       178    P  
+INTERNET TECHNOLOGIES                         18        42        60     P  
+                                                                 ==== =========
+                                                                 278  69.50%
+Retrieving the marks of 04131a1234
+Roll no 04131a1234 is not present
+
+Retrieving the marks of 04131a1235
+Name : SIDDI RAMA SURENDRA 
+HTNO :04131A1235 
+Father Name : NAGA SUBRAHMANYAM
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        10        37        47     P  
+PROJECT WORK #                                29        145       174    P  
+INTERNET TECHNOLOGIES                         16        35        51     P  
+                                                                 ==== =========
+                                                                 272  68.00%
+Retrieving the marks of 04131a1236
+Name : SOUJANYA VAKKALANKA 
+HTNO :04131A1236 
+Father Name : RAMA MURTHY V
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        19        57        76     P  
+PROJECT WORK #                                40        150       190    P  
+INTERNET TECHNOLOGIES                         19        47        66     P  
+                                                                 ==== =========
+                                                                 332  83.00%
+Retrieving the marks of 04131a1237
+Name : SRAVANKUMAR SANAPALA 
+HTNO :04131A1237 
+Father Name : JAGANNADHA RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        19        50        69     P  
+PROJECT WORK #                                39        143       182    P  
+INTERNET TECHNOLOGIES                         18        49        67     P  
+                                                                 ==== =========
+                                                                 318  79.50%
+Retrieving the marks of 04131a1238
+Name : SRI HARSHA M P S S 
+HTNO :04131A1238 
+Father Name : M S S PRASAD
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        16        34        50     P  
+PROJECT WORK #                                37        150       187    P  
+INTERNET TECHNOLOGIES                         18        45        63     P  
+                                                                 ==== =========
+                                                                 300  75.00%
+Retrieving the marks of 04131a1239
+Roll no 04131a1239 is not present
+
+Retrieving the marks of 04131a1240
+Name : SRIKANTH VAINDAM   
+HTNO :04131A1240 
+Father Name : V BABURAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        13        40        53     P  
+PROJECT WORK #                                39        145       184    P  
+INTERNET TECHNOLOGIES                         19        30        49     P  
+                                                                 ==== =========
+                                                                 286  71.50%
+Retrieving the marks of 04131a1241
+Name : SRIVATSA GORTY     
+HTNO :04131A1241 
+Father Name : S R MURTHY
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        19        59        78     P  
+PROJECT WORK #                                39        150       189    P  
+INTERNET TECHNOLOGIES                         19        54        73     P  
+                                                                 ==== =========
+                                                                 340  85.00%
+Retrieving the marks of 04131a1242
+Name : SRUJANA MOSA       
+HTNO :04131A1242 
+Father Name : SIVA PRASADA RAO MOSA
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        15        50        65     P  
+PROJECT WORK #                                31        148       179    P  
+INTERNET TECHNOLOGIES                         16        32        48     P  
+                                                                 ==== =========
+                                                                 292  73.00%
+Retrieving the marks of 04131a1243
+Name : SUCHITRA REYYA     
+HTNO :04131A1243 
+Father Name : DALA RAO REYYA
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        17        34        51     P  
+PROJECT WORK #                                35        148       183    P  
+INTERNET TECHNOLOGIES                         19        45        64     P  
+                                                                 ==== =========
+                                                                 298  74.50%
+Retrieving the marks of 04131a1244
+Name : SUNIL BABU CHINTA  
+HTNO :04131A1244 
+Father Name : JAYA RAJU
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        15        33        48     P  
+PROJECT WORK #                                33        150       183    P  
+INTERNET TECHNOLOGIES                         17        36        53     P  
+                                                                 ==== =========
+                                                                 284  71.00%
+Retrieving the marks of 04131a1245
+Name : SWATHI KADAMBALA   
+HTNO :04131A1245 
+Father Name : K BHASKARA RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        19        55        74     P  
+PROJECT WORK #                                35        150       185    P  
+INTERNET TECHNOLOGIES                         20        46        66     P  
+                                                                 ==== =========
+                                                                 325  81.25%
+Retrieving the marks of 04131a1246
+Name : SWETHA GANAPATHIRAJU 
+HTNO :04131A1246 
+Father Name : G SATYANARAYANA RAJU
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        19        50        69     P  
+PROJECT WORK #                                37        151       188    P  
+INTERNET TECHNOLOGIES                         19        57        76     P  
+                                                                 ==== =========
+                                                                 333  83.25%
+Retrieving the marks of 04131a1247
+Name : T LAKSHMI SOUJANYA 
+HTNO :04131A1247 
+Father Name : T K KISHORE
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        18        43        61     P  
+PROJECT WORK #                                37        148       185    P  
+INTERNET TECHNOLOGIES                         18        43        61     P  
+                                                                 ==== =========
+                                                                 307  76.75%
+Retrieving the marks of 04131a1248
+Name : UJVALA BYPA        
+HTNO :04131A1248 
+Father Name : RAMJEE BYPA
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        18        51        69     P  
+PROJECT WORK #                                34        148       182    P  
+INTERNET TECHNOLOGIES                         13        33        46     P  
+                                                                 ==== =========
+                                                                 297  74.25%
+Retrieving the marks of 04131a1249
+Name : V R V VAMSI KRISHNA N 
+HTNO :04131A1249 
+Father Name : DR N L NARASIMHA RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        17        51        68     P  
+PROJECT WORK #                                36        150       186    P  
+INTERNET TECHNOLOGIES                         16        43        59     P  
+                                                                 ==== =========
+                                                                 313  78.25%
+Retrieving the marks of 04131a1250
+Name : V S GIRIDHAR NAGAVARAPU 
+HTNO :04131A1250 
+Father Name : N V RAMANA MURTHY
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        17        53        70     P  
+PROJECT WORK #                                32        142       174    P  
+INTERNET TECHNOLOGIES                         18        45        63     P  
+                                                                 ==== =========
+                                                                 307  76.75%
+Retrieving the marks of 04131a1251
+Name : V S S GOUTHAM      
+HTNO :04131A1251 
+Father Name : V VENKATA CHENULU
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        19        37        56     P  
+PROJECT WORK #                                40        147       187    P  
+INTERNET TECHNOLOGIES                         19        45        64     P  
+                                                                 ==== =========
+                                                                 307  76.75%
+Retrieving the marks of 04131a1252
+Name : VEDULA VISHAL      
+HTNO :04131A1252 
+Father Name : V S N SARMA
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        18        58        76     P  
+PROJECT WORK #                                35        150       185    P  
+INTERNET TECHNOLOGIES                         18        53        71     P  
+                                                                 ==== =========
+                                                                 332  83.00%
+Retrieving the marks of 04131a1253
+Name : VEERENDRA SIVARAM CH 
+HTNO :04131A1253 
+Father Name : CH V B SWAMY ALIAS VEERABABU
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        17        42        59     P  
+PROJECT WORK #                                36        148       184    P  
+INTERNET TECHNOLOGIES                         18        35        53     P  
+                                                                 ==== =========
+                                                                 296  74.00%
+Retrieving the marks of 04131a1254
+Roll no 04131a1254 is not present
+
+Retrieving the marks of 04131a1255
+Name : VIDYA SAGAR PEDDADA 
+HTNO :04131A1255 
+Father Name : APPARAO P
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        14        40        54     P  
+PROJECT WORK #                                35        130       165    P  
+INTERNET TECHNOLOGIES                         13        32        45     P  
+                                                                 ==== =========
+                                                                 264  66.00%
+Retrieving the marks of 04131a1256
+Name : VINEEL KUMAR REDDY K 
+HTNO :04131A1256 
+Father Name : RAM MOHAN REDDY K
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        16        32        48     P  
+PROJECT WORK #                                40        152       192    P  
+INTERNET TECHNOLOGIES                         13        38        51     P  
+                                                                 ==== =========
+                                                                 291  72.75%
+Retrieving the marks of 04131a1257
+Name : VISWANATH GANGAVARAM 
+HTNO :04131A1257 
+Father Name : NARAYANA G
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        14        51        65     P  
+PROJECT WORK #                                36        145       181    P  
+INTERNET TECHNOLOGIES                         14        44        58     P  
+                                                                 ==== =========
+                                                                 304  76.00%
+Retrieving the marks of 04131a1258
+Name : YELURI SRIRAMA SANTHIKIRAN 
+HTNO :04131A1258 
+Father Name : MADHUSUDHANA RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        19        60        79     P  
+PROJECT WORK #                                40        150       190    P  
+INTERNET TECHNOLOGIES                         18        51        69     P  
+                                                                 ==== =========
+                                                                 338  84.50%
+Retrieving the marks of 04131a1259
+Name : VIVEK GORLE        
+HTNO :04131A1259 
+Father Name : VENKATA RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        19        52        71     P  
+PROJECT WORK #                                37        145       182    P  
+INTERNET TECHNOLOGIES                         18        43        61     P  
+                                                                 ==== =========
+                                                                 314  78.50%
+Retrieving the marks of 04131a1260
+Name : KAKI NAVEEN TEJA   
+HTNO :04131A1260 
+Father Name : CHIRANJEEVI RAO
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        16        32        48     P  
+PROJECT WORK #                                39        150       189    P  
+INTERNET TECHNOLOGIES                         17        44        61     P  
+                                                                 ==== =========
+                                                                 298  74.50%
+Retrieving the marks of 04131a1261
+Name : KARRI VASUDHA      
+HTNO :04131A1261 
+Father Name : SATHI REDDY
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+SOFTWARE PROJECT MAGT.                        17        48        65     P  
+PROJECT WORK #                                32        148       180    P  
+INTERNET TECHNOLOGIES                         18        33        51     P  
+                                                                 ==== =========
+                                                                 296  74.00%
+
+
+Program Written by - K.Vineel Kumar Reddy. In C# 
+

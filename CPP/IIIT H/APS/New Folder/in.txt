@@ -1,0 +1,16 @@
+base
+Pointer to the first element of the array to be sorted.
+num
+Number of elements in the arr     y pointed by base.
+size
+Size in bytes of each           element in the array.
+comparator
+Function that compares two eleme			nts. The function shall follow this prototype:
+
+int comparator ( const void * elem1, const void * elem2 );
+
+The function must accept two parameters that are pointers to elements, 
+type-casted as void*. These parameters should be cast back to some data type and be compared.
+
+The return value of this function should represent whether elem1 is considered 
+less than, equal to, or greater than elem2 by returning, respectively, a negative value, zero or a positive value.

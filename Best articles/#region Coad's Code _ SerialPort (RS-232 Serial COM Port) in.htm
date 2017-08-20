@@ -1,0 +1,1545 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    
+    
+<head>
+<title>#region Coad's Code : SerialPort (RS-232 Serial COM Port) in C# .NET</title>
+<meta name="description" content="Way in the Past...  Back in my early (pre C# MVP) days, I had written an article on DevHood titled Serial COM Simply in C#. It became quite popular and is (currently) the top Google search for &quot;serial c#&quot;. Now every week I get several e-mails with people" />
+<meta name="keywords" content="MVP MVPS MSMVPS Support Professionals Awardees" />
+<meta name="GENERATOR" content="CommunityServer 2.0 (Build: 60526.2668)" />
+<link rel="pingback" href="http://msmvps.com/blogs/pingback.aspx" />
+<link rel="stylesheet" href="/Themes/Blogs/default/style/print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="/Themes/default/Style/Common.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/Themes/default/Style/Blog.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/Themes/default/Style/common_print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="/Themes/default/Style/blog_print.css" type="text/css" media="print" />
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+<link rel="alternate" type="application/rss+xml" title="#region Coad's Code (RSS 2.0)" href="http://msmvps.com/blogs/coad/rss.aspx"  />
+<link rel="alternate" type="application/atom+xml" title="#region Coad's Code (Atom 1.0)" href="http://msmvps.com/blogs/coad/atom.aspx"  />
+<link rel="alternate" type="application/rss+xml" title="SerialPort (RS-232 Serial COM Port) in C# .NET Comment RSS (RSS 2.0)" href="http://msmvps.com/blogs/coad/commentrss.aspx?PostID=39466"  />
+
+            <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+            <script src="/Utility/global.js?Version=2.0.60526.2668" type="text/javascript"></script>
+            <style type="text/css"> body { font-size: 84%; } </style>
+            
+			
+			
+			
+       <SCRIPT src="http://www.google-analytics.com/urchin.js" type=text/javascript>
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+_uacct = "UA-371763-1";
+urchinTracker();
+</SCRIPT>
+</head>
+
+	<body>
+		<form name="__aspnetForm" method="post" action="/blogs/coad/archive/2005/03/23/39466.aspx" id="__aspnetForm">
+<input type="hidden" name="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" value="dDwxOTEyODEyMTQ3OztsPF9jdGwwOl86X2N0bDA6XzpfY3RsMDpfY3RsMDpiaGNyOnQ6XzpUaXRsZUJhclNlYXJjaFRleHQ7X2N0bDA6XzpfY3RsMDpfOl9jdGwwOl9jdGwwOmJjcjpfY3RsMDpfOmZvcm06XzpjaGtSZW1lbWJlcjs+PhpbyKH0JwEVzzT09Z3y5l0ph+ah" />
+
+<script language="javascript" type="text/javascript">
+<!--
+	function __doPostBack(eventTarget, eventArgument) {
+		var theform;
+		if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+			theform = document.__aspnetForm;
+		}
+		else {
+			theform = document.forms["__aspnetForm"];
+		}
+		theform.__EVENTTARGET.value = eventTarget.split("$").join(":");
+		theform.__EVENTARGUMENT.value = eventArgument;
+		theform.submit();
+	}
+// -->
+</script>
+
+<script language="javascript" type="text/javascript">
+var RatingControlAJAX = {
+
+"SaveRating": function(id, rating, clientCallBack) {
+	return Ajax_CallBack('CommunityServer.Blogs.Controls.BlogRatePost', id, 'SaveRating', [rating], clientCallBack, false, false, false, true,'/blogs/coad/archive/2005/03/23/39466.aspx?Ajax_CallBack=true');
+}
+
+};
+</script>
+
+	<script type="text/javascript" src="/utility/ratingcontrol.js"></script>
+
+
+			
+				<div id="Common">
+					<div id="CommonHeader">
+						
+<div class="CommonTitleBar">
+	<div class="CommonTitleBarImage">
+	<table cellpadding=0 cellspacing=0 border=0>
+		<tr>
+			<td class="CommonTitleBarImage">
+				<a href="/"><img src="/Themes/default/images/common/title.gif"  border=0 /></a>
+			</td>
+			<td class="CommonTitleBarTitleArea" nowrap="true" width="100%">
+				<h1 class="CommonTitleBarTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bhcr_t___TitleBarSiteName" title="The Ultimate Destination for Blogs by Current and Former Microsoft Most Valuable Professionals." href="/">MSMVPS.COM</a></h1>
+				<div class="CommonTitleBarDescription">The Ultimate Destination for Blogs by Current and Former Microsoft Most Valuable Professionals.</div>
+			</td>
+			<td class="CommonTitleBarSearchArea" nowrap="true">
+				<div class="CommonUserArea">
+					
+<div id="welcome">
+	
+			Welcome to MSMVPS.COM
+<a id="_ctl0____ctl0____ctl0__ctl0_bhcr_t___Displayuserwelcome1____ctl4___Login" href="/login.aspx?ReturnUrl=/blogs/coad/archive/2005/03/23/39466.aspx">Sign in</a> | <a id="_ctl0____ctl0____ctl0__ctl0_bhcr_t___Displayuserwelcome1____ctl4___Register" href="/user/CreateUser.aspx?ReturnUrl=/blogs/coad/archive/2005/03/23/39466.aspx">Join</a>
+
+
+
+		
+
+	 |  <a href="/languages/en-US/docs/faq.aspx">Help</a>
+</div>
+  
+				</div>
+				<div class="CommonSearch">
+					<table cellpadding="0" cellspacing="0" border="0" align="right"><tr valign="middle"><td nowrap="true">
+					<input name="_ctl0:_:_ctl0:_:_ctl0:_ctl0:bhcr:t:_:TitleBarSearchText" type="text" maxlength="64" size="15" id="_ctl0____ctl0____ctl0__ctl0_bhcr_t___TitleBarSearchText" onkeydown="KeyDownHandler_ctl0____ctl0____ctl0__ctl0_bhcr_t___TitleBarSearchButton(event);" />
+					 in <select name="_ctl0:_:_ctl0:_:_ctl0:_ctl0:bhcr:t:_:TitleBarSearchDropDownList" id="_ctl0____ctl0____ctl0__ctl0_bhcr_t___TitleBarSearchDropDownList">
+	<option value="S:161">#region Coad's Code</option>
+	<option value=":">(Entire Site)</option>
+
+</select>
+					</td><td>
+					<span class="CommonSearchButtonOuter"><a id="_ctl0____ctl0____ctl0__ctl0_bhcr_t___TitleBarSearchButton" class="CommonSearchButton" href="javascript:__doPostBack('_ctl0$_$_ctl0$_$_ctl0$_ctl0$bhcr$t$_$TitleBarSearchButton','')">Search</a></span>
+					</td></tr></table>
+				</div>
+			</td>
+		</tr>
+	</table>
+	</div>
+</div>
+<div class="CommonTabBar">
+	
+	
+
+<script language="javascript">
+function tabOver(e)
+{
+	if (e.className!='CommonSimpleTabStripSelectedTab')
+		e.className='CommonSimpleTabStripTabHover';
+}
+function tabOut(e)
+{
+	if (e.className!='CommonSimpleTabStripSelectedTab')
+		e.className='CommonSimpleTabStripTab';
+}
+</script>
+
+
+		<div class="CommonTabBarInner">
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr valign="middle">
+	
+		<td class="CommonSimpleTabStripTab" onmouseover="tabOver(this);" onmouseout="tabOut(this);"><a href="/">Home</a></td>
+	
+		<td class="CommonSimpleTabStripSelectedTab" onmouseover="tabOver(this);" onmouseout="tabOut(this);"><a href="/blogs/default.aspx">Blogs</a></td>
+	
+		<td class="CommonSimpleTabStripTab" onmouseover="tabOver(this);" onmouseout="tabOut(this);"><a href="/forums/default.aspx">Forums</a></td>
+	
+		<td class="CommonSimpleTabStripTab" onmouseover="tabOver(this);" onmouseout="tabOut(this);"><a href="/photos/default.aspx">Photos</a></td>
+	
+		<td class="CommonSimpleTabStripTab" onmouseover="tabOver(this);" onmouseout="tabOut(this);"><a href="/files/default.aspx">Files</a></td>
+	
+		<td class="CommonSimpleTabStripTab" onmouseover="tabOver(this);" onmouseout="tabOut(this);"><a href="/roller/default.aspx">Roller</a></td>
+	
+		</tr>
+		</table>
+		</div>
+	
+
+</div>
+					</div>
+
+					<div id="CommonBody">
+						<table cellspacing="0" cellpadding="0" border="0" width="100%" id="CommonBodyTable">
+							<tr>
+								<td valign="top" id="CommonLeftColumn">
+									
+								</td>
+								
+								<td valign="top" width="100%" id="CommonBodyColumn">
+									
+	    <div class="CommonContentArea">
+	        
+<h2 class="CommonTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr_bth___BlogTitle" class="headermaintitle" href="/blogs/coad/default.aspx">#region Coad's Code</a></h2>
+
+	        <div class="CommonContent">
+                
+			
+<style>
+.DoNotDisplay { display: none; }
+</style>
+	
+<div class="BlogPostArea">
+	<h4 class="BlogPostHeader">SerialPort (RS-232 Serial COM Port) in C# .NET <span id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Entry___Ratings" title="Rated Excellent [5 out of 5 / rated 1 time(s)]."></span><input type="hidden" value="5" id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Entry___Ratings_Value" /></h4>
+	<div class="BlogPostContent">
+		<b class="head">Way in the Past...</b>  <p>Back in my early (pre C# MVP) days, I had written an article on <a href="http://devhood.com/">DevHood</a> titled <a href="http://www.devhood.com/tutorials/tutorial_details.aspx?tutorial_id=320">Serial COM Simply in C#</a>. It became quite popular and is (currently) the top Google search for "<a href="http://www.google.com/search?hl=en&amp;q=serial+c%23">serial c#</a>". Now every week I get several e-mails with people asking questions and it is high time for some serious updating.</p> <p>The article was (originally) written soon after .NET was introduced to the world, and other .NET serial port controls had not yet been written. So at the time, this was an easy solution. Just use the MSComm.ocx control from VS6 which most Devs had at the time. Now however, there are many easier and preferred methods than dealing with the complexities of interoping with an old legacy (non-.NET) ActiveX OCX control.</p><b class="head">A Bright Future is Here!</b>  <p>Today, the primary solution is to use the new <a href="http://www.google.com/search?hl=en&amp;lr=&amp;q=SerialPort+site%3Amsdn.microsoft.com">SerialPort</a> control that is part of .NET 2.0 (currently in Beta) and is <i>freely</i> available in <a href="http://msdn.microsoft.com/express">C# Express on MSDN</a>. It is <i>considerably</i> easier to use and is a true .NET component.</p> <p>For loyal fans of the tutorial, I've written a sample application, <a href="http://coad.net/Blog/Resources/SerialPortTerminal.zip">SerialPort Terminal</a>, which you can try out to see how the new SerialPort control is used. Since Visual Studio 2005 / .NET 2.0 is still under development, you will need to compile the app on your system before running it.</p><b class="head">Continued Support</b>  <p>Due to the high volume of e-mail I've been receiving on serial port communication in general, I've created a <a href="http://coad.net/blog/resources/SerialComFAQ.zip">SerialCom FAQ</a>. Which for the most part says "use SerialPort in .NET 2.0". <img style="position: relative; top: 2px" src="http://coad.net/blog/images/SmileDot.gif"></p> <p>For those of you who I've directed to this blog post, please understand that I'm just another guy working away at a full time job (helping manage the release of <a href="http://msdn.microsoft.com/teamsystem">Team System</a>) who has worked with serial RS-232 ports in the past (moving on to USB now). I like to help people, hence I wrote the original article, this sample code, and the FAQ, but do not have the resources to answer additional serial port communication questions. Please check out the <a href="http://coad.net/blog/resources/SerialComFAQ.zip">SerialCom FAQ</a> for other .NET COM Port solutions and technical support options.</p> <p><b class="head"><b class="head">Get Connected Up</b></b></p> <p>You can obtain <a href="http://store.yahoo.com/buyextras/setousbco.html">USB to Serial</a> adapters (from <a href="http://www.newegg.com/app/ViewProductDesc.asp?description=12-156-003&amp;depa=0">NewEgg</a>, search using <a href="http://froogle.google.com/froogle?num=10&amp;price=between&amp;price1=&amp;price2=&amp;cat=0&amp;tiled=0&amp;safe=active&amp;q=usb+serial+db9&amp;scoring=p">Froogle</a>) and have just about as many ports on your PC as you like. I carry around two adapters with a <a href="http://www.buyextras.com/numoaddb9fef.html">null modem</a> (<a href="http://www.google.com/search?hl=en&amp;q=null+modem">what is it?</a>, search <a href="http://froogle.google.com/froogle?hl=en&amp;lr=&amp;tab=wf&amp;scoring=p&amp;q=null+modem+db9">Froogle</a>) between them so I can create a loopback to send &amp; receive through to separate ports on most any computer. I'd recommend doing the same for when writing code for the serial port.</p> <p>If you'd like to quickly and easily create your own external devices to communicate with the PC, I recommend starting with the <a href="http://www.basicstamp.com">Parallax BASIC Stamp</a> modules. Specifically the <a href="http://www.parallax.com/detail.asp?product_id=BS2-IC">BASIC Stamp 2 Module</a> (~$50) in a <a href="http://www.parallax.com/detail.asp?product_id=27207">Starter Kit</a> (~$170) is a good springboard. Parallax has lots of easy <a href="http://www.parallax.com/html_pages/products/accessories/accessories.asp">accessories</a> (such as LCDs, RF, Sounds, AD &amp; DA, etc) for their modules. After that you could migrate to an <a href="http://www.atmel.com">Atmel Microcontroller</a> (recommended) or <a href="http://www.microchip.com">Microchip PIC</a>.</p> <p>See <a>project photos</a> of the Basic Stamp microcontroller and USB to Serial w/ null modem loopback.</p><b class="head">Time for the Code</b>  <p>Here is an example of how easy it is to use the new SerialPort control.</p> <p>Very simply, here is how you can send a bit of data out the port.</p> <p><code> <table style="border-right: black 1px solid; border-top: black 1px solid; background: white; border-left: black 1px solid; border-bottom: black 1px solid" cellpadding="6">  <tr> <td><pre style="display: inline"><div><span style="color: #008000">//</span><span style="color: #008000"> This is a new namespace in .NET 2.0 that contains the SerialPort class</span><span style="color: #008000">
+</span><span style="color: #0000ff">using</span><span style="color: #000000"> System.IO.Ports;
+
+</span><span style="color: #0000ff">private</span><span style="color: #000000"> </span><span style="color: #0000ff">static</span><span style="color: #000000"> </span><span style="color: #0000ff">void</span><span style="color: #000000"> SendSampleData()
+{
+  </span><span style="color: #008000">//</span><span style="color: #008000"> Instantiate the communications port with some basic settings</span><span style="color: #008000">
+</span><span style="color: #000000">  SerialPort port </span><span style="color: #000000">=</span><span style="color: #000000"> </span><span style="color: #0000ff">new</span><span style="color: #000000"> SerialPort(</span><span style="color: #000000">"</span><span style="color: #000000">COM1</span><span style="color: #000000">"</span><span style="color: #000000">, </span><span style="color: #000000">9600</span><span style="color: #000000">, Parity.None, </span><span style="color: #000000">8</span><span style="color: #000000">, StopBits.One);
+  
+  </span><span style="color: #008000">//</span><span style="color: #008000"> Open the port for communications</span><span style="color: #008000">
+</span><span style="color: #000000">  port.Open();
+  
+  </span><span style="color: #008000">//</span><span style="color: #008000"> Write a string</span><span style="color: #008000">
+</span><span style="color: #000000">  port.Write(</span><span style="color: #000000">"</span><span style="color: #000000">Hello World</span><span style="color: #000000">"</span><span style="color: #000000">);
+  
+  </span><span style="color: #008000">//</span><span style="color: #008000"> Write a set of bytes</span><span style="color: #008000">
+</span><span style="color: #000000">  port.Write(</span><span style="color: #0000ff">new</span><span style="color: #000000"> </span><span style="color: #0000ff">byte</span><span style="color: #000000">[] {</span><span style="color: #000000">0x0A</span><span style="color: #000000">, </span><span style="color: #000000">0xE2</span><span style="color: #000000">, </span><span style="color: #000000">0xFF</span><span style="color: #000000">}, </span><span style="color: #000000">0</span><span style="color: #000000">, </span><span style="color: #000000">3</span><span style="color: #000000">);
+  
+  </span><span style="color: #008000">//</span><span style="color: #008000"> Close the port</span><span style="color: #008000">
+</span><span style="color: #000000">  port.Close();
+}</span></div></pre></td></tr></table></code></p><br>
+<p>Now let's take a look at what it takes to read data in from the communications port. This demonstrates reading text; for an example of reading binary data, see my <a href="http://coad.net/Blog/Resources/SerialPortTerminal.zip">SerialPort Terminal</a> sample app. 
+<ol style="margin-top: 0px">
+<li>Create a new "Console Application" and replace all the default class code with this code 
+<li>Add a reference to "System.Windows.Forms" to the project 
+<li>Run w/ F5, to exit the app, press Ctrl-Break. 
+<li><a>Get Connected Up</a> with two USB to Serial adapters and a null modem 
+<li>Use another app, the code above, or the <a href="http://coad.net/Blog/Resources/SerialPortTerminal.zip">SerialPort Terminal</a> example to send data and watch it come in with this code</li></ol>
+<p></p>
+<p><code>
+<table style="border-right: black 1px solid; border-top: black 1px solid; background: white; border-left: black 1px solid; border-bottom: black 1px solid" cellpadding="6">
+
+<tr>
+<td><pre style="display: inline"><div><span style="color: #0000ff">#region</span><span style="color: #000000"> Namespace Inclusions</span><span style="color: #000000">
+</span><span style="color: #0000ff">using</span><span style="color: #000000"> System;
+</span><span style="color: #0000ff">using</span><span style="color: #000000"> System.IO.Ports;
+</span><span style="color: #0000ff">using</span><span style="color: #000000"> System.Windows.Forms;
+</span><span style="color: #0000ff">#endregion</span><span style="color: #000000">
+
+</span><span style="color: #0000ff">namespace</span><span style="color: #000000"> SerialPortExample
+{
+  </span><span style="color: #0000ff">class</span><span style="color: #000000"> SerialPortProgram
+  {
+    </span><span style="color: #008000">//</span><span style="color: #008000"> Create the serial port with basic settings</span><span style="color: #008000">
+</span><span style="color: #000000">    </span><span style="color: #0000ff">private</span><span style="color: #000000"> SerialPort port </span><span style="color: #000000">=</span><span style="color: #000000"> </span><span style="color: #0000ff">new</span><span style="color: #000000"> SerialPort(</span><span style="color: #000000">"</span><span style="color: #000000">COM1</span><span style="color: #000000">"</span><span style="color: #000000">, </span><span style="color: #000000">9600</span><span style="color: #000000">, Parity.None, </span><span style="color: #000000">8</span><span style="color: #000000">, StopBits.One);
+
+    [STAThread]
+    </span><span style="color: #0000ff">static</span><span style="color: #000000"> </span><span style="color: #0000ff">void</span><span style="color: #000000"> Main(</span><span style="color: #0000ff">string</span><span style="color: #000000">[] args)
+    { 
+      </span><span style="color: #008000">//</span><span style="color: #008000"> Instatiate this class</span><span style="color: #008000">
+</span><span style="color: #000000">      </span><span style="color: #0000ff">new</span><span style="color: #000000"> SerialPortProgram();
+    }
+
+    </span><span style="color: #0000ff">private</span><span style="color: #000000"> SerialPortProgram()
+    {
+      Console.WriteLine(</span><span style="color: #000000">"</span><span style="color: #000000">Incoming Data:</span><span style="color: #000000">"</span><span style="color: #000000">);
+
+      </span><span style="color: #008000">//</span><span style="color: #008000"> Attach a method to be called when there is data waiting in the port's buffer</span><span style="color: #008000">
+</span><span style="color: #000000">      port.DataReceived </span><span style="color: #000000">+=</span><span style="color: #000000"> </span><span style="color: #0000ff">new</span><span style="color: #000000"> SerialDataReceivedEventHandler(port_DataReceived);
+
+      </span><span style="color: #008000">//</span><span style="color: #008000"> Begin communications</span><span style="color: #008000">
+</span><span style="color: #000000">      port.Open();
+      
+      </span><span style="color: #008000">//</span><span style="color: #008000"> Enter an application loop which keeps this thread alive</span><span style="color: #008000">
+</span><span style="color: #000000">      Application.Run();
+    }
+
+    </span><span style="color: #0000ff">private</span><span style="color: #000000"> </span><span style="color: #0000ff">void</span><span style="color: #000000"> port_DataReceived(</span><span style="color: #0000ff">object</span><span style="color: #000000"> sender, SerialDataReceivedEventArgs e)
+    {
+      </span><span style="color: #008000">//</span><span style="color: #008000"> Show all the incoming data in the port's buffer</span><span style="color: #008000">
+</span><span style="color: #000000">      Console.WriteLine(port.ReadExisting());
+    }
+  }
+}</span></div></pre></td></tr></table></code></p><br>
+<p>One of the (several) new methods that is supported, and one I'm very glad is finally here, is the ability to obtain a list of the COM ports installed on the computer (ex: COM1, COM2, COM4). This is definately helpful when you want to present the list of ports avalible for the user to select from (as in the <a href="http://coad.net/Blog/Resources/SerialPortTerminal.zip">SerialPort Terminal</a> Win App example).</p>
+<p><code>
+<table style="border-right: black 1px solid; border-top: black 1px solid; background: white; border-left: black 1px solid; border-bottom: black 1px solid" cellpadding="6">
+
+<tr>
+<td><pre style="display: inline"><div><span style="color: #0000ff">foreach</span><span style="color: #000000"> (</span><span style="color: #0000ff">string</span><span style="color: #000000"> s </span><span style="color: #0000ff">in</span><span style="color: #000000"> SerialPort.GetPortNames())
+  System.Diagnostics.Trace.WriteLine(s);</span></div></pre></td></tr></table></code></p><br>
+<p>Here are two helpful little methods for sending files through the serial port. Of course, these are the bare essentials and as always, you should check to make sure the port is open first (port.IsOpen) and use try/catch around trying to open a file, but you get the gist with this code. The binary sending routine is limited to about 2GB (the size of an int), but this should be okay for most uses. <img style="position: relative; top: 2px" src="http://coad.net/blog/images/SmileDot.gif"></p>
+<p><code>
+<table style="border-right: black 1px solid; border-top: black 1px solid; background: white; border-left: black 1px solid; border-bottom: black 1px solid" cellpadding="6">
+
+<tr>
+<td><pre style="display: inline"><div><span style="color: #0000ff">using</span><span style="color: #000000"> System.IO;
+
+</span><span style="color: #0000ff">private</span><span style="color: #000000"> </span><span style="color: #0000ff">static</span><span style="color: #000000"> </span><span style="color: #0000ff">void</span><span style="color: #000000"> SendTextFile(SerialPort port, </span><span style="color: #0000ff">string</span><span style="color: #000000"> FileName)
+{ port.Write(File.OpenText(FileName).ReadToEnd()); }
+
+</span><span style="color: #0000ff">private</span><span style="color: #000000"> </span><span style="color: #0000ff">static</span><span style="color: #000000"> </span><span style="color: #0000ff">void</span><span style="color: #000000"> SendBinaryFile(SerialPort port, </span><span style="color: #0000ff">string</span><span style="color: #000000"> FileName)
+{
+  </span><span style="color: #0000ff">using</span><span style="color: #000000"> (FileStream fs </span><span style="color: #000000">=</span><span style="color: #000000"> File.OpenRead(FileName))
+    port.Write((</span><span style="color: #0000ff">new</span><span style="color: #000000"> BinaryReader(fs)).ReadBytes((</span><span style="color: #0000ff">int</span><span style="color: #000000">)fs.Length), </span><span style="color: #000000">0</span><span style="color: #000000">, (</span><span style="color: #0000ff">int</span><span style="color: #000000">)fs.Length);
+}</span></div></pre></td></tr></table></code></p><br><a id="ProjectPhotos"><b class="head">RS-232 Project Photos</b> 
+<p><a>Get connected up</a> with the parts for fun projects like these.<br>Each of these involve RS-232 serial port communications.</p>
+<table class="Photo" style="border-right: black 1px solid; padding-right: 4px; border-top: black 1px solid; padding-left: 4px; padding-bottom: 4px; font: 10pt verdana; border-left: black 1px solid; padding-top: 4px; border-bottom: black 1px solid">
+
+<tr>
+<td align="middle"><img height="351" src="http://coad.net/blog/images/SerialPortRS232SerialCOMPortinC.NET_EE09/SerialComBASICStamp4.jpg" width="436"> </td></tr>
+<tr>
+<td align="middle">Just what's needed to get started with microcontrollers,<br>a Basic Stamp, mini LCD display, power, and RS-232 port.</td></tr></table><br>
+<table class="Photo" style="border-right: black 1px solid; padding-right: 4px; border-top: black 1px solid; padding-left: 4px; padding-bottom: 4px; font: 10pt verdana; border-left: black 1px solid; padding-top: 4px; border-bottom: black 1px solid">
+
+<tr>
+<td align="middle"><img height="263" src="http://coad.net/blog/images/SerialPortRS232SerialCOMPortinC.NET_EE09/SerialComNullModem4.jpg" width="415"> </td></tr>
+<tr>
+<td align="middle">Two USB to Serial adapters with a null modem<br>to loopback and test your serial software.</td></tr></table><br>
+<table class="Photo" style="border-right: black 1px solid; padding-right: 4px; border-top: black 1px solid; padding-left: 4px; padding-bottom: 4px; font: 10pt verdana; border-left: black 1px solid; padding-top: 4px; border-bottom: black 1px solid">
+
+<tr>
+<td align="middle"><img height="274" src="http://coad.net/blog/images/SerialPortRS232SerialCOMPortinC.NET_EE09/SerialComSerialProject4.jpg" width="470"> </td></tr>
+<tr>
+<td align="middle">The brains to a mini automated radio station that let me<br>control my PC &amp; home using my HAM radio from around town.</td></tr></table><br>
+<p><br><b class="head">Port Wiring Notes</b><pre>DB9 Male (Pin Side)                   DB9 Female (Pin Side)
+DB9 Female (Solder Side)              DB9 Male (Solder Side)
+    -------------                          -------------
+    \ 1 2 3 4 5 /                          \ 5 4 3 2 1 /
+     \ 6 7 8 9 /                            \ 9 8 7 6 /
+      ---------                              ---------
+
+DB9 Female to DB9 Female Null-Modem Wiring
+ 2 |  3 |  7 |  8 | 6&amp;1|  5 |  4
+---- ---- ---- ---- ---- ---- ---- 
+ 3 |  2 |  8 |  7 |  4 |  5 | 6&amp;1
+
+9-pin   25-pin  Assignment                 From PC
+------  ------  -------------------------  ------------
+Sheild  1       Case Ground                Gnd
+1       8       DCD (Data Carrier Detect)  Input
+2       3       RX  (Receive Data)         Input
+3       2       TX  (Transmit Data)        Output
+4       20      DTR (Data Terminal Ready)  Output
+5       7       GND (Signal Ground)        Gnd
+6       6       DSR (Data Set Ready)       Input
+7       4       RTS (Request To Send)      Output
+8       5       CTS (Clear To Send)        Input
+9       22      RI  (Ring Indicator)       Input
+
+- RTS &amp; DTR are binary outputs that can be manually set and held
+- DCD, DSR, CTS, and RI are binary inputs that can be read
+- RX &amp; TX can not be set manually and are controlled by the UART
+- maximum voltages are between -15 volts and +15 volts
+- binary outputs are between +5 to +15 volts and -5 to -15 volts
+- binary inputs are between +3 to +15 volts and -3 to -15 volts
+- input voltages between -3 to +3 are undefined while output voltages
+  between -5 and +5 are undefined
+- positive voltages indicate ON or SPACE, negative voltages indicate
+  OFF or MARK
+</pre>
+<p></p><b class="head">Other Resources</b> 
+<p>Here are some additional sites, libraries, tutorials, etc. These are links that I just found around the net and am providing for convenience (they are not endorsed).</p>
+<ul style="margin-top: 0px">
+<li><a href="http://msdn2.microsoft.com/library/30swa673(en-us,vs.80).aspx">SerialPort on MSDN</a> 
+<li>Search on Google <a href="http://www.google.com/search?hl=en&amp;lr=&amp;q=SerialPort+C%23">#1</a>, <a href="http://www.google.com/search?hl=en&amp;lr=&amp;q=serialport+.net">#2</a>, <a href="http://www.google.com/search?hl=en&amp;lr=&amp;q=.net+serial+port">#3</a> 
+<li><a href="http://ourworld.compuserve.com/homepages/richard_grier/CFSerial.htm">CFSerialIO</a> 
+<li><a href="http://www.opennetcf.org/SourceBrowse/browse.aspx?f=d:/sites/OpenNETCF/InetPub/wwwroot/Source/OpenNETCF/IO/Serial">OpenNETCF Port</a></li></ul>
+<p>Where CF = Compact Framework</p><b class="head">The Final Say (aka Conclusion)</b> 
+<p>The new SerialPort class in .NET 2.0 rocks! It is much easier to use than getting the old MSComm.ocx control going in a .NET app, contains new functionality, is a 'native' .NET control, has docs built into the MSDN Library, and is easy to use.</p>
+<h3><b class="head"><a name="FAQ"><font color="#800000">Frequently Asked Questions (FAQ)</font></a></b></h3>
+<p>I'm adding this section (as of 8/10/06) to address the common questions I get on this post and through e-mail.&nbsp; Chances are, if you ask a good question in the comments here, I'll post it here for others to see easily.&nbsp;</p>
+<ul>
+<li><strong>Q: When updating a control (like a text box) while in the DataRecieved event, I get an error.<br></strong>A: The SerialPort class raises events on a seperate thread than the main form was create on.&nbsp; Windows Forms controls must be modified only on&nbsp;their&nbsp;original thread.&nbsp; Thankfully there is an&nbsp;easy way to do this.&nbsp; Each Windows control has a "Invoke" method which will run code on the control's original thread.&nbsp; So to put the recently recieved data&nbsp;into a text box (txtLog), this would do it:&nbsp;&nbsp;&nbsp;txtLog.Invoke(new EventHandler(delegate { txtLog.Text += comport.ReadExisting(); });&nbsp;&nbsp; You can see this more in action in the "Log" event of "Terminal.cs" my sample code project, <a href="http://coad.net/Blog/Resources/SerialPortTerminal.zip">SerialPortTerminal.zip</a>.
+<li><strong>Q: I can't find the System.IO.Ports namespace.<br></strong>A: Using Visual Studio 2003?&nbsp; The new namespace, and SerialPort class, is part of .NET 2.0 and Visual Studio 2005.&nbsp; It is not included in .NET 1.x (and Visual Studio 2003).&nbsp; Even if you have .NET 2.0 or Visual Studio 2005 installed, you can not access the class from within Visual Studio 2003.</li></ul>
+	</div>
+	<div class="BlogPostFooter">
+		Published Wednesday, March 23, 2005 7:28 PM
+		by
+		<a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Entry___AuthorLink" href="/user/Profile.aspx?UserID=2250">coad</a> 
+		
+								
+	</div>                            
+</div>
+           
+	
+
+
+<div id="postToolbar">
+<h2 class="CommonSubTitle">Comment Notification</h2>
+<p>
+	If you would like to receive an email when updates are made to this post, please register <a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___DetailedSubBar___RegisterLink" href="/user/CreateUser.aspx?ReturnUrl=/blogs/coad/archive/2005/03/23/39466.aspx">here</a>
+	
+</p>
+<p>
+	Subscribe to this post's comments using
+	<a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___DetailedSubBar___CommentRssLink" href="/blogs/coad/commentrss.aspx?PostID=39466">RSS</a>
+</p>
+</div>
+
+
+
+	<div id="comments">
+		<h3>
+	Comments
+</h3>
+		<table cellpadding="0" cellspacing="0" border="0" width="100%">
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl1_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fwww.danielmoth.com%2fBlog%2f2004%2f09%2fserial-rs232-communications-in-net.html">coad</a> said:</h4>
+		<div class="CommentText">Nice!<br>And for devs searching for rs232 for the Compact Framework feel free to come here:<br><a target="_new" href="http://www.danielmoth.com/Blog/2004/09/serial-rs232-communications-in-net.html">http://www.danielmoth.com/Blog/2004/09/serial-rs232-communications-in-net.html</a></div>
+		<div class="CommentFooter">March 27, 2005 5:28 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl2_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fcommunity.sgdotnet.org%2fblogs%2fchuawenching%2fdefault.aspx">coad</a> said:</h4>
+		<div class="CommentText">Cool stuff. </div>
+		<div class="CommentFooter">April 24, 2005 10:29 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl3_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">hey<br><br>i cant find the name space<br>using System.IO.Ports<br>there is nothing like Ports.<br>i'm using Visual Studio.net 2003<br>Please help me urgently<br>my email ID is arun5_appu@yahoo.com</div>
+		<div class="CommentFooter">May 4, 2005 1:30 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl4_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">&gt;I cant find the name space <br><br>Check this phrase near the start of this posting:<br><br>&quot;the new SerialPort control that is part of .NET 2.0 (currently in Beta)&quot;</div>
+		<div class="CommentFooter">May 5, 2005 8:54 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl5_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">Hi,<br><br>I really thank you for being the only mangaed .Net source of seial comm.:)<br>I have .Net 2.0 Beta installed. And can compile your hello world! example. But when it tries to Open the port. Exception says there is no COM1 port.<br><br>Any Comments !</div>
+		<div class="CommentFooter">June 6, 2005 12:45 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl6_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fcoadblog.com">coad</a> said:</h4>
+		<div class="CommentText">You may not have a COM1 installed on your system, or it may already be in use.</div>
+		<div class="CommentFooter">June 6, 2005 12:57 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl7_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">Nice Article..quite informative</div>
+		<div class="CommentFooter">June 8, 2005 3:07 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl8_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">if I set the port.ReceivedBytesThreshold to 5 would the following event <br>port.DataReceived += new SerialDataReceivedEventHandler(port_DataReceived);<br>be called after there is 5 bytes in the buffer...<br><br>Also can you show how to use port.Read(buff,0,5) where buff is defined as<br><br>byte buff = new byte[5];<br><br>I am calling the port.Read function after the event is called 5 times to make sure there are 5 bytes in the buffer but still it doesn't work.</div>
+		<div class="CommentFooter">June 8, 2005 3:13 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl9_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fcoadblog.com">coad</a> said:</h4>
+		<div class="CommentText">The method's parameters are port.Read(byte[], int, int), so the first parameter is a byte array (byte[]).  Try: byte[] buf = new byte[5];<br><br>But I don't recommend reading a fixed # of bytes if possible since it is very easy to get one or two bytes off in the incoming buffer and hence not receive the data when expected or get unexpected results.<br><br>This is much preferred since it handles any amount of incoming data.  Just process what ends up in the PortBuffer and remember to clean it out from time to time to prevent memory creep.<br><br>private List&lt;byte&gt; PortBuffer = new List&lt;byte&gt;();<br><br>private void port_DataReceived(object sender, SerialDataReceivedEventArgs e)<br>{<br>  SerialPort port = (SerialPort)sender;<br><br>  byte[] data = new byte[port.BytesToRead];<br><br>  port.Read(data, 0, data.Length);<br><br>  PortBuffer.AddRange(data);<br><br>  ProcessIncomingData(PortBuffer);<br>}<br><br>private void ProcessIncomingData(List&lt;byte&gt; PortBuffer)<br>{<br>  // Search through the bytes to find the data you want<br>  // then remove the data from the list.  It is good to<br>  // clean up unused bytes (usually everything before<br>  // what you're looking for)<br>}</div>
+		<div class="CommentFooter">June 8, 2005 11:09 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl10_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">Thanks for your help man....<br><br>One question.... I have data coming through bus in sets of 5 bytes at a time at very high speeds...about 1.5ms delay.  Is there anyway I can force the program to call SerialDataReceivedEventHandler after it gets 5 bytes of data.... by setting port.ReceivedBytesThreshold to 5 do it????<br></div>
+		<div class="CommentFooter">June 9, 2005 9:55 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl11_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fcoadblog.com">coad</a> said:</h4>
+		<div class="CommentText">I'd suppose so, have you tried it?  I use the technique above so I've never tried triggering the event on x # of bytes.  The purpose of changing the ReceivedBytesThreshold is not to capture little 'packets' like that, but to reduce the # of times the method is called if large amounts of data are streaming in.</div>
+		<div class="CommentFooter">June 9, 2005 1:51 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl12_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">i cant find the name space <br>&quot;System.IO.Ports&quot; <br>i'm using Visual Studio.net 2003 <br>Please help me, its urgent <br>my email ID is kapildvyas@yahoo.co.in </div>
+		<div class="CommentFooter">June 10, 2005 4:53 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl13_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fe84f23">coad</a> said:</h4>
+		<div class="CommentText">thanks Noah... I'll try it if doesn't work i'll try the othe way ...<br><br>Kapil system.io.ports comes with visual studio 2005 beta version.</div>
+		<div class="CommentFooter">June 10, 2005 11:51 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl14_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">I guess any client applications will need to upgrade to .net2.0 ? I am skeptical about this as .net is still in .net. <br><br>Can any one share any experience about this. <br><br>Seshagiri</div>
+		<div class="CommentFooter">June 11, 2005 6:24 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl15_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">What I was thinking was would client applications need to install .net 2.0 if I used the new feature in my application. If it is so, in that case is it recommendable as .net 2.0 is still in beta stage and there could be compatibility issues with the final release. <br><br>Seshagiri</div>
+		<div class="CommentFooter">June 14, 2005 2:55 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl16_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fcoadblog.com">coad</a> said:</h4>
+		<div class="CommentText">Seshagiri: Yes, clients must be running .NET 2.0.  The deployment version from Beta2 will be different than that for RTM.  VS05 Beta2 is not for public release yet, that's for when the product is finalized and released to market the second week of November.  In the mean time, it is for testing and deployment to select targets (w/ a Go Live licence, see MSDN).</div>
+		<div class="CommentFooter">June 14, 2005 5:50 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl17_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">Hi Noah!<br><br>I'm trying to send a simple &quot;ati4&quot; command to a modem and receive its response, but all I get back is whatever ati command I send.<br><br>If I Send: ati4<br><br>I Expect To Get Back:  <br>USRobotics Sportster 28800 V.34 Fax Settings...<br><br>   B0  E1  F1  M1  Q0  V1  X4  Y0<br>   BAUD=38400  PARITY=N  WORDLEN=8<br>   DIAL=PULSE  ON HOOK, etc..<br><br>But Instead I Get Back: ati4<br><br>I've tried both my own test application as well as the one you created. Any ideas? Thanks so much!</div>
+		<div class="CommentFooter">June 21, 2005 10:31 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl18_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">Update<br>------<br>Hi Noah!<br><br>After further debugging, I observe that the port_DataReceived function in your SerialPort Terminal example is never being called.  I see the function being added as an EventHandler earlier:<br><br>comport.DataReceived += new SerialDataReceivedEventHandler(port_DataReceived);<br><br>I can't figure for the life of me why it's never reaching the function though.  All I know is this is why, for example, I only receive an echo of my &quot;at&quot; command and not the actual &quot;ok&quot; response I'm expecting.  I didnt change any of the code, so why would this be happening? <br><br>Cheers!</div>
+		<div class="CommentFooter">June 22, 2005 9:34 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl19_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fcome.to%2fmacchiato">coad</a> said:</h4>
+		<div class="CommentText">This is a reply to 'Nathan Ie' question about the ATI4 question.<br><br>I had the same problem and found out, that if you use WriteLine() method to write the &quot;ATI4&quot; string it will echo the sting back.<br><br>You have to use the Write() method and specify the file feed &quot;\r&quot;. If you call method Write(&quot;ATI4\r&quot;) you will get the expected result. You can also change the SerialPort.NewLine Property from &quot;\r\n&quot; to &quot;\r&quot; to make it work.<br><br>Hope that helped</div>
+		<div class="CommentFooter">July 7, 2005 11:30 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl20_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">when i do &quot;port.Open()&quot;, it says <br><br>UnauthorizedAccessException was unhandled.<br>Access to the port &quot;COM1&quot; is denied.<br>Make sure you have sufficient privileges to access this resource<br><br>I just put your code segment into a button1_Click handler. What should I do to make it work?</div>
+		<div class="CommentFooter">July 8, 2005 5:23 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl21_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">Actually nevermind my previous post, i solved the problem. But i have a new question :)<br><br>How can I manually send bit signals to RTS &amp; DTR?<br><br>I need to send something like &quot;0110000011010000&quot; to RTS and at the same time (synchronized) send its logic inverses to DTR.<br><br>I am a student from university of toronto and very new to serial programming. please help me!!</div>
+		<div class="CommentFooter">July 8, 2005 5:44 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl22_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">I run your program on my desktop (Windows XP Professional with SP2 and Visual Studio.NET 2005 Beta 2), the port can't be opened. The IDE said that &quot;Access to the port 'COM1' is denied.&quot; It is UnauthorizedAccessException. Please tell me how to solve the problem? Thank you very much!</div>
+		<div class="CommentFooter">July 12, 2005 2:05 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl23_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fcoadblog.com">coad</a> said:</h4>
+		<div class="CommentText">The port may not exist on your computer or may be in use by another application (like for a modem).  Change &quot;COM1&quot; in the code to another port, like &quot;COM2&quot; and try that.  You can also check to see what ports are avalible on your machine through the Device Manager (press Windows-Break, &quot;Hardware&quot; tab, &quot;Device Manager&quot; button, &quot;Ports (COM &amp; LPT)&quot; node).</div>
+		<div class="CommentFooter">July 12, 2005 2:49 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl24_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">You are right. I install ActiveSyn 4.0 which uses COM1. After I delete it, the program works very well. I have another question. I modify you program in DataReceive event handler:<br><br> <br><br>  void serialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)<br>  {<br>   int intBytes = serialPort.BytesToRead;<br>   byte[] bytes = new byte[intBytes];<br>   serialPort.Read(bytes, 0, intBytes);<br><br>   tbReceive.Text += intBytes.ToString() + &quot;;&quot;;<br>  }<br>The tbReceive is a TextBox control. When the program excutes at the last line, <br><br>    tbReceive.Text += intBytes.ToString() + &quot;;&quot;;<br><br>there is an exception, System.InvalidOperationException was unhandled. The error message is &quot;Cross-thread operation not valid: Control 'tbReceive' accessed from a thread other than the thread it was created on.&quot; Please tell me what's reason and how to solve it. Thanks!<br><br></div>
+		<div class="CommentFooter">July 14, 2005 11:34 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl25_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2froberta.obuda.kando.hu%2fiar%2f2004_2005%2fpalcom%2f">coad</a> said:</h4>
+		<div class="CommentText">Hi Charlie!<br><br>        int intBytes;<br>        void serialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)<br>        {<br>            intBytes = serialPort.BytesToRead;<br>            byte[] bytes = new byte[intBytes];<br>            serialPort.Read(bytes, 0, intBytes);<br><br>            this.Invoke(new EventHandler(SetText));<br><br><br>        }<br>        void SetText()<br>        {<br>            tbReceive.Text += intBytes.ToString() + &quot;;&quot;;<br>        }<br></div>
+		<div class="CommentFooter">July 16, 2005 9:40 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl26_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">Hi Noah,<br><br> I read your article on System.IO.Ports.SerialPort class of new<br>C# Express. I tried to achieve a basic communication between my pc and the lab instrument with the following code:<br> <br> After the usual port initialization,<br> <br>if (com.IsOpen) com.Close();<br>com.Open();<br> <br>// send char 34,14,192,51,0,0<br>com.Write(new string(new char[] { (char)34, (char)14, (char)192, (char)51, (char)0, (char)0 }, 0, 6));<br> <br>// for testing purposes I connected TX and RX pins of the port...<br> <br>// receive routine:<br>private void com_DataReceived(object sender, SerialDataReceivedEventArgs e)<br>{<br><br>// This method will be called when there is data waiting in the port's buffer<br> <br>// Obtain the number of bytes waiting in the port's buffer <br>bytes = com.BytesToRead;<br> <br> // Create a byte array buffer to hold the incoming data <br>buffer = new char[bytes];<br> <br> // Read the data from the port and store it in our buffer <br>com.Read(buffer, 0, bytes);<br> <br>}<br> <br>After I activate the send routine, 6 bytes of data is received by pc but with some difference to the originally sent data.<br> <br>I receive : 34,14,63,51,0,0 everytime instead of 34,14,192,51,0,0<br> <br>I tried to transmit 34,14,127,51,0,0 and received the same data sequence...<br> <br>As I try to tranmit anything bigger than 127 I receive 63 instead of the original data...<br> <br>Do you have any idea why this is happening consistently?<br> <br>Regards,<br>Haluk Gokmen</div>
+		<div class="CommentFooter">July 25, 2005 5:40 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl27_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fcoadblog.com">coad</a> said:</h4>
+		<div class="CommentText">Haluk:  Have you tried using a byte array instead of a character array?<br>byte[] buffer = new byte[com.BytesToRead];</div>
+		<div class="CommentFooter">July 25, 2005 10:47 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl28_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fcoadblog.com">coad</a> said:</h4>
+		<div class="CommentText">Green,<br>Thanks for the update to charlie's post.  The reason for this is that WinForms controls' properties must be modified on the same thread that they were created on.  By using this.Invoke (where &quot;this&quot; is the form the control is on), it asks the form to run another method on the same thread the form is on.  serialPort_DataReceived could be triggered at anytime (not just when the form is avalible) since the SerialPort control runs outside of the form's thread.  This is a big advantage in that it will always be responsive to incoming serial data even if the form is busy with an intensive redraw or update.</div>
+		<div class="CommentFooter">July 25, 2005 10:53 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl29_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">Dear Noah,<br>I tried byte array on the receiving side without a difference on the result.<br> <br>I was succeding on a similar operation in VS.NET by utilizing MSComm OCX as suggested in your article at www.devhood.com/tutorials/ tutorial_details.aspx?tutorial_id=320<br>The following is the code:<br><br>private byte[] recdata = new byte[40];		//received data array<br><br><br>public void InitComPort()<br>		{<br>			<br>			// Set the com port to be 1<br>			com.CommPort = 1;<br>    <br>			// This port is already open, close it to reset it.<br>			if (com.PortOpen) com.PortOpen = false;<br>    <br>			// Trigger the OnComm event whenever data is received<br>			// Loop based receieve activated...<br>			com.RThreshold = 0;  <br>    <br>			// Set the port to 9600 baud, no parity bit, 8 data bits, 1 stop bit (all standard)<br>			com.Settings = &quot;9600,n,8,1&quot;;<br><br>			// Force the DTR line high, used sometimes to hang up modems<br>			com.DTREnable = true;<br>    <br>			// No handshaking is used<br>			com.Handshaking = MSCommLib.HandshakeConstants.comNone;<br><br>			// Don't mess with byte arrays, only works with simple data (characters A-Z and numbers)<br>			com.InputMode = MSCommLib.InputModeConstants.comInputModeBinary;<br>    <br>			// Use this line instead for byte array input, best for most communications<br>			//com.InputMode = MSCommLib.InputModeConstants.comInputModeText;<br>    <br>			// Read the entire waiting data when com.Input is used<br>			com.InputLen = 0;<br><br>			// Don't discard nulls, 0x00 is a useful byte<br>			com.NullDiscard = false;<br>        <br>			// Open the com port<br>			com.PortOpen = true;<br>		}<br><br>private void cmdRead_Start_Click(object sender, System.EventArgs e)<br>	{<br>	long TimeStamp = DateTime.Now.Ticks;  // Time Stamp for Time-out<br>	bool ElapsedTime;<br>			<br>	com.Output = new string(new char[]{(char) 34, (char) 14, (char) 192, (char) 51, (char) 0, (char) 0});<br>	<br>	// collect data during the first one second period...<br>		do<br>		{<br>		// Dont lock up the entire application<br>		// release control to process other messages.<br>		System.Windows.Forms.Application.DoEvents();<br>				<br>		// If there is data waiting, buffer it in our own byte array...<br>		if (com.InBufferCount &gt;= 34) recdata = (byte[])com.Input;<br><br>		// Look for the Elapsed Time<br>		ElapsedTime = DateTime.Now.Ticks - TimeStamp &gt; TimeSpan.TicksPerSecond * 1;<br>				<br>		// Keep waiting for 1 second before processing incoming data stream...<br>		}<br>		while (!ElapsedTime);<br><br>		Global.samplescounter = recdata[27] * 100 + recdata[26];<br>		lblRead_RecordNo.Text = Global.samplescounter.ToString();<br>		.<br>		.<br>		.<br>		}<br><br>My instrumentation which is target to this communication action is responding to data sent in char format. It doesnt respond to byte arrays.<br>This previous code is still working but I cant get the new one working.<br>Regards..</div>
+		<div class="CommentFooter">July 26, 2005 2:44 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl30_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">Briefly, I would like to transmit Unicode 192 (u\192) from the serial port and read it back again. How can I do this in C# 2005 Express?</div>
+		<div class="CommentFooter">July 27, 2005 7:50 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl31_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">You're right.. it's much easier!<br><br>but i have a little problem<br><br>I get this from the serial port:<br><br>U001W1   N      1,852 kg<br>U001W1   N      1,852 kg<br>U001W1   N      1,852 kg<br>U001W1   N      1,852 kg<br>U001W1   N      1,852 kg<br><br>How can i fix it, that i just geht the &quot;1,852&quot; from it?<br><br>thanxx</div>
+		<div class="CommentFooter">July 28, 2005 9:52 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl32_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fmsnetbox.usc.edu%2framin">coad</a> said:</h4>
+		<div class="CommentText">Hello Noah and every visitor. Thanks for the great introduction to the SerialPort.<br>I have written a simple code, and to test i have used a cross over cable from COM1 to COM2. If I run 2 instances of the code on the 2 ports it works (send and receive) perfectly. But if I use Hyper Terminal on one end (say for example Hyper terminal on COM2 and my code on COM1) my code can send and hyper terminal receives it but if hyper terminal sends my code do not see anything. The same thing happended when i used your sample code. But of course when i test two instances of hyper terminal can eailty talk to each other.<br>What am I missing here?</div>
+		<div class="CommentFooter">July 29, 2005 4:59 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl33_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">How do you set serial port encoding?</div>
+		<div class="CommentFooter">August 1, 2005 2:59 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl34_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fcoadblog.com">coad</a> said:</h4>
+		<div class="CommentText">Haluk,<br>Try using the SerialPort.Encoding property.  For example: port.Encoding = System.Text.Encoding.UTF8;</div>
+		<div class="CommentFooter">August 1, 2005 9:46 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl35_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fskudumala%40yahoo.com">coad</a> said:</h4>
+		<div class="CommentText">Great intro maan. <br><br>I tried reading from COM1 using VB.NET (2005 beta 2). I am not able to get the DataReceived event to get triggered. The data from a connected scale transmits whenever its weight is stable. <br><br>I coded this in a form. Does it have to be a console application instead ? <br>I am using ReadExisting(). Do you need to use ReadByte() ? If yes, does that code need to be in a thread to avoid sync/no-timeout ? <br><br>Thanks for any advice. </div>
+		<div class="CommentFooter">August 4, 2005 6:52 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl36_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">I have written a program that sends commands to and receives the responses from a serial device. This work normaly. However the device is also outputing data every .x seconds. I am having a very difficult time receiving this data and getting it onto my form. Your suggestions and advice are greatly appreciated.<br><br><br>Private Sub Write_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Write.Click<br><br>Dim gxTXDBuffer As String<br>Dim sInput As String<br><br>Dim lTimeout As Long<br>Dim Time As Long<br><br>'clear input buffer counter<br>AxMSComm1.InBufferCount = 0<br><br>'setup command to send<br>gxTXDBuffer = sendtext.Text &amp; Chr(10)<br><br>'send command<br>AxMSComm1.Output = gxTXDBuffer<br><br>'-----------------------------------------------------------------------<br>'not sure how to get data when counting<br>'<br>'While sendtext.Text = &quot;C&quot;<br>' Microsoft.VisualBasic.Timer &gt; lTimeout<br>'<br>'read in response<br>'sInput = AxMSComm1.Input<br>' receivetext.Text = sInput<br>' End While<br>'-----------------------------------------------------------<br><br>'wait for response or timeout<br>lTimeout = Microsoft.VisualBasic.Timer + 5<br><br>Do<br>Application.DoEvents()<br><br>Loop Until AxMSComm1.InBufferCount &gt;= 8 Or Microsoft.VisualBasic.Timer &gt; lTimeout<br>'<br>'read in response<br>sInput = AxMSComm1.Input<br>receivetext.Text = sInput<br><br>End Sub<br>'another attempt at reading counts when com event<br>'<br>' Private Sub AxMSComm1_OnComm()<br>' Dim sInput As String<br>' commevent 2 = Received RThreshold number of characters. This event is generated continuously <br>' until you use the Input property to remove the data from the receive buffer.<br>' If AxMSComm1.CommEvent() = 2 And AxMSComm1.InBufferCount &gt; 0 Then<br>' sInput = AxMSComm1.Input<br>' ' receivetext.Text = sInput<br>' End If<br>'' End Sub<br></div>
+		<div class="CommentFooter">September 1, 2005 7:42 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl37_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">How do you program the Basic Stamp to output a string that you sent from your PC?<br><br>Anyone can help?<br><br>Thanks!!!</div>
+		<div class="CommentFooter">September 1, 2005 10:23 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl38_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">I am using VS.Net 2003, Actually i ve to do hardware interface in which i need to recieve data and plot it as graph and save it in database. Can anyone help me out...<br>Thanks</div>
+		<div class="CommentFooter">September 5, 2005 10:59 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl39_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">Hi All,<br><br>I have the following problem:<br><br>After sending a Write command to a device, directly followed by a Read command it seems that the data on the device is not yet available.<br><br>It seems that the write/read part is too fast for the device to 'generate' the data.<br><br>The baudrate is 9600 and cannot be higher. Also i would not like to add a pause.<br><br>Does anyone have a solution here ?<br><br>Thanx,<br><br>Jan<br></div>
+		<div class="CommentFooter">September 8, 2005 3:55 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl40_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2felwolv%40comcast.net">coad</a> said:</h4>
+		<div class="CommentText">What about the Timer in windows forms, for data arriving at any time and various durations?<br>does firing an event during reading current event would cause problems?<br><br>thanks for your efforts<br><br>thanks,<br><br>elwolv</div>
+		<div class="CommentFooter">September 14, 2005 12:59 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl41_NameLink" title="TrackBack" href="/utility/Redirect.aspx?U=http%3a%2f%2fwww.geekswithblogs.com%2fomaralzabir%2farchive%2f2005%2f09%2f24%2f54909.aspx">coad</a> said:</h4>
+		<div class="CommentText"></div>
+		<div class="CommentFooter">September 25, 2005 1:55 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl42_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">Hi All,<br><br>Noha - a great article!<br><br>For some reason I'm not reaching the 'port_DataReceived' function. Any ideas why?<br>I'm running the 'SerialPortTerminal' application on my computer with the 'Portmon' application monitoring all data at the serial port so nothing is physically connected to the COM. May this be the reason?<br><br>Thanks for your help.<br><br><br>Elad<br></div>
+		<div class="CommentFooter">September 26, 2005 6:26 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl43_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">Hi there,<br><br>Your article is awesome and the information is so great and very useful. <br><br>However, I have a problem when I tried to write a software to communicate to bluetooth ports(COM4 and COM7) in PDA. The .NET 2.0 does not provide a platform for mobile device. <br><br>Suggestions please.<br><br>Thanks a lot,<br>Ikkyusan ;)</div>
+		<div class="CommentFooter">October 12, 2005 3:27 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl44_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fcoadblog.com">coad</a> said:</h4>
+		<div class="CommentText">Ikkyusan:<br>The .NET Compact Framework does not have built in support for serial communications.  There are many third-party controls available.   Try a Google search like:<br><a target="_new" href="http://www.google.com/search?hl=en&amp;q=serial+com+compact+framework">http://www.google.com/search?hl=en&amp;q=serial+com+compact+framework</a><br></div>
+		<div class="CommentFooter">October 17, 2005 8:53 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl45_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fwww.vicdamone.net">coad</a> said:</h4>
+		<div class="CommentText">This is an awesome and extremely useful article! My one suggestion is that you add some minor clarifications on the DtrEnable property. I'm connecting to an Ultra 5 Sun box and was having a lot of troubles with my commands just getting echoed back to me. Setting the DtrEnable = true solved that problem. My understanding is that it tells the serial port that you're talking from one data transmitter to another data transmitter. </div>
+		<div class="CommentFooter">October 28, 2005 3:07 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl46_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fwww.flaskposten.se">coad</a> said:</h4>
+		<div class="CommentText">Im trying to contact my sony wavehawk scanner with.<br>            port = new SerialPort(&quot;COM1&quot;, 9600, Parity.None, 8, StopBits.One);<br>            port.Encoding = System.Text.Encoding.Default;<br>            port.NewLine = &quot;\r&quot;;<br>            port.ReceivedBytesThreshold = 1;<br><br>            port.DtrEnable = true;<br><br><br>It reacts, but I dont get the &quot;ok.&quot; that I'm expecting... Any ideas?<br><br>I use Serial monitor so that I see what goes in and out.<br><br>//J</div>
+		<div class="CommentFooter">November 12, 2005 10:21 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl47_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fwww.portal.hocsinh-ngochoi.com">coad</a> said:</h4>
+		<div class="CommentText">I am try to get exactly Method that line the Hexa Method using for sending data throught RS232, that I want is the function fo sendding binary. How can I slove this problem, thank for helping!</div>
+		<div class="CommentFooter">November 13, 2005 8:29 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl48_NameLink" title="TrackBack" href="/utility/Redirect.aspx?U=http%3a%2f%2fweblog.protosystem.net%2fmlinnen%2fposts%2f224.aspx">coad</a> said:</h4>
+		<div class="CommentText"></div>
+		<div class="CommentFooter">November 19, 2005 4:53 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl49_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fcoadblog.com">coad</a> said:</h4>
+		<div class="CommentText">Jimmy:<br>Don't forget to attach a delegate to the DataReceived event, open the port (.Open), and send data (.Write).  Beyond that, it may be something specific to your scanner device.</div>
+		<div class="CommentFooter">November 25, 2005 2:14 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl50_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">The .NET 2.0 class library does not seem to support devices powered by the serial port.<br><br>I have a couple different magstripe readers here at work which will work correctly after making a connection with HyperTerminal or opening the port in  a similar .NET 1.1 library, but the device will not function after SerialPort.Open() on .NET 2.0, whether I write a driver program from scratch or try something like Noah's Serial Terminal.  No exception is thrown and SerialPort.PortOpen return True so I know at least, the class library thinks it is funnctional.  The light on the device, however, is off, so I know it's not getting power.<br><br>Does anyone have a serial port powered device working?</div>
+		<div class="CommentFooter">November 28, 2005 10:42 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl51_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">Great tutorial. I really want to read data from the com port using managed c++ rather than C#. Can't find a sample anywhere, Heeellllp!!!</div>
+		<div class="CommentFooter">November 28, 2005 11:19 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl52_NameLink" title="coad">coad</a> said:</h4>
+		<div class="CommentText">I am trying to open a connection to COM3 on my machine. I have a USB device attached to the computer and its drivers emulate a serial port on COM3.<br><br>SerialPort.GetPortNames() returns &quot;COM1&quot; and &quot;COM3&quot; and if i connect to the port using TeraTerm its fully functional and i can see the data.<br><br>When i invoke open on the port after having set the port name to &quot;COM3&quot; i get an argument exception that the name doesn't start with COM or that there is no such port. The name DOES start with COM and as i said, GetPortNames() includes COM3.<br><br>Anyone experienced this? Solutions?<br><br>I am using VS 2005 Final on Win XP SP2.<br><br>    /// Isak</div>
+		<div class="CommentFooter">December 8, 2005 7:15 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl53_NameLink" title="TJ" rel="nofollow" href="/utility/Redirect.aspx?U=http%3a%2f%2fwww.vicdamone.net">TJ</a> said:</h4>
+		<div class="CommentText">Does anyone know how to send a special character over the serial connection? Specifically I'm trying to send a ctrl+c.<br><br>Thanks!</div>
+		<div class="CommentFooter">December 13, 2005 5:10 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl54_NameLink" title="TJ" rel="nofollow" href="/utility/Redirect.aspx?U=http%3a%2f%2fwww.vicdamone.net">TJ</a> said:</h4>
+		<div class="CommentText">How would I send a ctrl+c (break) via serial?<br><br>Thanks!</div>
+		<div class="CommentFooter">December 23, 2005 11:09 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl55_NameLink" title="Daniel" href="/user/Profile.aspx?UserID=2101">Daniel</a> said:</h4>
+		<div class="CommentText">Ive written a Serial Port monitoring app that reads data from the COM port real time and displays it to a Rich Text Box (along with any special characters such as Carridge Returns, Line Feeds etc). This program works perfectly on Windows XP however when I transfer it to my Server running Windows Server 2003 Standard Edition, it doesnt work. I have installed the NET.Framework 2 on the Server.<br><br>Further troubleshooting I redesigned the program to write a line of text to a text file when the method is called for Data waiting at the Serial Port Buffer. That line of code is :-<br><br>port.DataReceived += new SerialDataReceivedEventHandler(port_DataReceived);<br><br>So it appears to me that the method is never being called. The text file also logs when the Serial port is opened and close and when any exceptions are thrown.<br><br>I know the device attached to the serial port is working as I fire up a 3rd Party Serial Port Monitor &amp;/or Hyperterminal and I see the data continuously coming through.<br><br>Can anyone offer any assistance with this problem?<br><br>Thanks,<br>Daniel. <br></div>
+		<div class="CommentFooter">January 5, 2006 6:43 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl56_NameLink" title="Kintesh Patel" rel="nofollow" href="/utility/Redirect.aspx?U=http%3a%2f%2fwww.elektor-electronics.co.uk%2fDefault.aspx%3ftabid%3d27%26year%3d2005%26month%3d9%26art%3d52896%26PN%3dOn">Kintesh Patel</a> said:</h4>
+		<div class="CommentText">Those who are using Serial to USB convertor, Please check article &quot;USB-to-RS232 Hurdle Race&quot; published in elektor electronics Sept. 2005.<br><br>It describe behind the scene effect and it's reason.</div>
+		<div class="CommentFooter">January 13, 2006 4:30 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl57_NameLink" title="Ashley" href="/user/Profile.aspx?UserID=2101">Ashley</a> said:</h4>
+		<div class="CommentText">Hi guys,<br><br>Many terminal programs that are available (Hyperterminal being one of them) do not implement handshaking correctly.  <br><br>A normal 232 connection will most likely require DTR enabled as well as RTS as well.<br><br>For you apps try setting your serialport with<br> <br>port.Handshake = System.IO.Ports.Handshake.RequestToSend;<br><br>This is what most terminal programs call hardware flow control.  It will enable RTS/CTS flow control which most devices rely on for transmission timing.<br><br>You may have played with the handshaking in HyperTerminal but if you use a 232 hardware analyser you will notice that it does not change any lines on your port.  Changing these setting with a .net v2 app certainly will<br><br>Setting DTR to enabled and handshaking to hardware should power the pin that manufacturers use for power robbing as well.  <br><br>Hope that made sense and is of some use<br><br>Ashley<br><br><br><br>   </div>
+		<div class="CommentFooter">January 17, 2006 6:16 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl58_NameLink" title="Gan esh" href="/user/Profile.aspx?UserID=2101">Gan esh</a> said:</h4>
+		<div class="CommentText">Hi, I am using Visual Studio .NET 2005 which has serial port class built with it.<br>I am developing a Web Application in which i require to do serial communication. and i just wanted to know how exactly to include the SerialDataReceivedEventHandler Event in my web application, please help me out.<br><br>Thanks in advance<br>gan esh</div>
+		<div class="CommentFooter">January 18, 2006 3:41 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl59_NameLink" title="Mark" href="/user/Profile.aspx?UserID=2101">Mark</a> said:</h4>
+		<div class="CommentText">Thanks for the article Noah! I've run the sample as it is and have been unable to get a response from the Wavecom GSM Modem that I am trying to talk to - the port_DataReceived() event is never fired.<br><br>This is driving me nuts! Any ideas? I'm running this on a Windows 2003 Server using VC# Express 2005.<br><br>Regards,<br>  Mark.</div>
+		<div class="CommentFooter">February 1, 2006 2:31 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl60_NameLink" title="Tim Nguyen" rel="nofollow" href="/utility/Redirect.aspx?U=http%3a%2f%2ftimn_1%40yahoo.com">Tim Nguyen</a> said:</h4>
+		<div class="CommentText">If you are having trouble with this, remember to send a &quot;\r\n&quot; command. It works perfectly if you do this.</div>
+		<div class="CommentFooter">February 3, 2006 7:46 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl61_NameLink" title="LarsPetter" href="/user/Profile.aspx?UserID=2101">LarsPetter</a> said:</h4>
+		<div class="CommentText">I have connected my PC to a BS2 sitting on a Board of Education(using an USB to Serial adapter). When i write something to the BS2, it gets there, but it also ends up in the input buffer. Why does this happen, and how can i prevent it from happening?</div>
+		<div class="CommentFooter">February 4, 2006 11:21 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl62_NameLink" title="Glenn" href="/user/Profile.aspx?UserID=2101">Glenn</a> said:</h4>
+		<div class="CommentText">Using your code:<br>-----------------------------------------------<br>private List&lt;byte&gt; PortBuffer = new List&lt;byte&gt;();<br><br>private void port_DataReceived(object sender, SerialDataReceivedEventArgs e)<br>{<br>SerialPort port = (SerialPort)sender;<br><br>byte[] data = new byte[port.BytesToRead];<br><br>port.Read(data, 0, data.Length);<br><br>PortBuffer.AddRange(data);<br><br>ProcessIncomingData(PortBuffer);<br>}<br><br>private void ProcessIncomingData(List&lt;byte&gt; PortBuffer)<br>{<br>// Search through the bytes to find the data you want<br>// then remove the data from the list. It is good to<br>// clean up unused bytes (usually everything before<br>// what you're looking for)<br>}<br>-------------------------------------------------<br>I need to find a two byte sequence (E0 80) in the data.  I can find one byte or the other with something like this:<br>----------------------------------------------<br>        int found = PortBuffer.FindIndex(delegate(byte i)<br>        {return i==0xE0;}<br>        );<br><br>        Console.WriteLine(found);<br>----------------------------------------------<br>But how can I find the index of a exact sequence?  Thanks.</div>
+		<div class="CommentFooter">February 13, 2006 5:18 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl63_NameLink" title="Mark Holt" href="/user/Profile.aspx?UserID=2101">Mark Holt</a> said:</h4>
+		<div class="CommentText">The SerialPort Terminal worked fine for me...that is if I was communicating with another SerialPort Terminal app.<br>When I tried to communicate with HyperTerminal I had to change the handshaking.<br><br>After:<br>        comport.PortName = cmbPortName.Text;<br><br>Add:<br>        comport.Handshake = Handshake.RequestToSend;<br><br>Or:<br>        comport.Handshake = Handshake.RequestToSendXOnXOff;<br><br>I used SysInternals' Portmon to compare how HyperTerminal connects to the COM port vs. the .Net 2.0 SerialPort class and noticed quite a few differences that I cannot control via the SerialPort class such as:<br><br>IOCTL_SERIAL_SET_HANDFLOW has a different XonLimit and XoffLimit (1024 instead of 80 and 1024 instead of 200, respectively)<br><br>IOCTL_SERIAL_SET_TIMEOUTS has a different RI, RM, RC and WC (-1 instead of 10, -1 instead of 0, -2 instead of 0 and 0 instead of 5000, respectively)<br><br>IOCTL_SERIAL_SET_WAIT_MASK checks for RLSD and ERR (like HyperT) but also checks for RXCHAR, RXFLAG, CTS, DSR, BRK, and RING.<br><br>IOCTL_SERIAL_SET_QUEUE_SIZE has an InSize of 4096 (instead of 8192) and OutSize of 2048 (instead of 8192).</div>
+		<div class="CommentFooter">February 14, 2006 11:36 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl64_NameLink" title="Leslie Viljoen" href="/user/Profile.aspx?UserID=2101">Leslie Viljoen</a> said:</h4>
+		<div class="CommentText">You probably have something else using that com port and it's locked. Make sure your terminal program is closed.</div>
+		<div class="CommentFooter">March 16, 2006 8:54 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl65_NameLink" title="Vincent Collin" rel="nofollow" href="/utility/Redirect.aspx?U=http%3a%2f%2fwww.justfuckinggoogleit.com">Vincent Collin</a> said:</h4>
+		<div class="CommentText">Thanks alot Noah, <br><br>Great tutorial, was very very useful in my project.<br><br>Framework 2.0 is pretty useful when you need to use those good old serial port.</div>
+		<div class="CommentFooter">March 30, 2006 2:35 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl66_NameLink" title="Carlos" href="/user/Profile.aspx?UserID=2101">Carlos</a> said:</h4>
+		<div class="CommentText">Hi, I am trying to read the data on COM7 (USB) on my machine. <br>When add the event handler to the progam i get an JIT debugging error: Class not registered.<br><br>Anyone expirienced this?<br><br>I'm using Visual C# Express ed. on Win XP SP2</div>
+		<div class="CommentFooter">April 11, 2006 12:33 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl67_NameLink" title="rachel" href="/user/Profile.aspx?UserID=2101">rachel</a> said:</h4>
+		<div class="CommentText">port = new SerialPort(&quot;COM5&quot;, 9600, Parity.None, 8, StopBits.One);<br>                port.Open();<br><br><br>USB Cable Off - &gt; CPU 100%<br><br>Help me</div>
+		<div class="CommentFooter">May 11, 2006 1:15 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl68_NameLink" title="EP" href="/user/Profile.aspx?UserID=2101">EP</a> said:</h4>
+		<div class="CommentText">what is the source codes for RS232 connection in framework 1.0 ? please help me!!!!!</div>
+		<div class="CommentFooter">May 29, 2006 10:50 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl69_NameLink" title="Srikanta" rel="nofollow" href="/utility/Redirect.aspx?U=http%3a%2f%2fskp.patra%40gmail.com">Srikanta</a> said:</h4>
+		<div class="CommentText">Thanks for this article.i am new to .net development.i am fresher in development.<br>i want to learn more deep in serial programming.<br>i have connected to com1.<br>i am able to check whether bonus card is present or not,but i want to raed data from card from a particular byte to n byte. <br>so which method i have to use and how to use.plz reply me with syntax and code</div>
+		<div class="CommentFooter">June 9, 2006 6:56 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl70_NameLink" title="hassan" rel="nofollow" href="/utility/Redirect.aspx?U=http%3a%2f%2fhassan_hamidi1%40yahoo.fr">hassan</a> said:</h4>
+		<div class="CommentText">thinks for these information ,i want do this ,but in Visual Studio2003 . I mean open Port COM3 &nbsp;and &nbsp;have a communication with a modem and call from My Pocket PC</div>
+		<div class="CommentFooter">June 19, 2006 10:35 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl71_NameLink" title="hitesh" href="/user/Profile.aspx?UserID=2101">hitesh</a> said:</h4>
+		<div class="CommentText">hello,i want to require vb.net code for reading stream of data asynchronously &nbsp;from serial port using multithreading as a background thread,so that is required,if more than one RFID tag read by serial port at a time.so how i can store all the tag read by serial port.</div>
+		<div class="CommentFooter">June 20, 2006 1:24 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl72_NameLink" title="Ahmet Vehbi" href="/user/Profile.aspx?UserID=2101">Ahmet Vehbi</a> said:</h4>
+		<div class="CommentText">Dear All ;<br>Would you please send me the tha samples data's to compile in my own pc.<br>Because i couldn't achive to make the form in the appropriate shape,size or position.<br>Thanks to whom it may concern..</div>
+		<div class="CommentFooter">June 26, 2006 3:23 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl73_NameLink" title="Punx" href="/user/Profile.aspx?UserID=2101">Punx</a> said:</h4>
+		<div class="CommentText">Why does my timer dont start when I use timer1.Enable=true inside the DataReceived event handler?</div>
+		<div class="CommentFooter">June 29, 2006 1:35 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl74_NameLink" title="TheRunningBoard" href="/user/Profile.aspx?UserID=2101">TheRunningBoard</a> said:</h4>
+		<div class="CommentText">Great work!</div>
+		<div class="CommentFooter">June 29, 2006 8:14 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl75_NameLink" title="Zak" href="/user/Profile.aspx?UserID=2101">Zak</a> said:</h4>
+		<div class="CommentText">hi <br>I'm using Visual Studio.net 2003<br>I have installed the .NET 2.0 (not the beta version)<br>and I cant find the name space<br>System.IO.Ports<br>any idea why<br>please help me<br></div>
+		<div class="CommentFooter">July 3, 2006 6:07 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl76_NameLink" title="coad" href="/utility/Redirect.aspx?U=http%3a%2f%2fcoadblog.com">coad</a> said:</h4>
+		<div class="CommentText">Zak:<br><br>Visual Studio 2003 is only for writing code against the .NET 1.1 framework. &nbsp;Even if you have .NET 2.0 installed, you won't see it in VS 2003. &nbsp;You need VS 2005. &nbsp;You can write the code with a plain text editor and compile it through the .NET 2.0 command line compiler.</div>
+		<div class="CommentFooter">July 7, 2006 7:40 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl77_NameLink" title="David Briggs" href="/user/Profile.aspx?UserID=2101">David Briggs</a> said:</h4>
+		<div class="CommentText">I am doing some serial communication to a divice using .NET 2.0. &nbsp;The device has a set of simple commands, each command and responce is a fix size. Each command will generate a responce and a new command can not be sent until the responce from the previous command has been recived. &nbsp;I have set the DataReceived event handler to a method that will read the responce data. That part works OK. &nbsp;There is a flag in the event handler that I set when I read the response. I poll for that flag to see when I can sent the next command. My question is is there any way I can know when it is OK to send the next command without polling? The DataReceived event is raised on a secondary thread. If there was some way to get the thread Id of the event handler I could do a thread Join to tell when the data reading is done. </div>
+		<div class="CommentFooter">July 9, 2006 8:41 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl78_NameLink" rel="nofollow" title="TrackBack" href="/utility/Redirect.aspx?U=http%3a%2f%2fcesarolea.com%2findex.php%2farchives%2f157">De IT y cosas peores    &raquo; Java vs .NET: Puerto Serie (Parte II)</a> said:</h4>
+		<div class="CommentText">PingBack from <a rel="nofollow" target="_new" href="http://cesarolea.com/index.php/archives/157">http://cesarolea.com/index.php/archives/157</a></div>
+		<div class="CommentFooter">July 10, 2006 2:14 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl79_NameLink" title="shinoy" href="/user/Profile.aspx?UserID=2101">shinoy</a> said:</h4>
+		<div class="CommentText">it is good. But if some one could explain about if someone need to get data from an epbx, wat method can be used.</div>
+		<div class="CommentFooter">July 20, 2006 11:49 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl80_NameLink" title="silibug" href="/user/Profile.aspx?UserID=2101">silibug</a> said:</h4>
+		<div class="CommentText">Hi... nice article :) <br><br>btw..<br><br>How can &nbsp;we &nbsp;communicate with our serials port on LAN environment.?.<br>any idea how to convert rs232 output for tcp/ip input?<br><br>PC &lt;-&gt; LAN/switch &lt;-&gt; Microcontroller &lt;-&gt; Rs232 &lt;-&gt; devices<br><br>thanks:)</div>
+		<div class="CommentFooter">July 23, 2006 1:43 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl81_NameLink" title="Noah Coad [MS]" rel="nofollow" href="/utility/Redirect.aspx?U=http%3a%2f%2fcoadblog.com">Noah Coad [MS]</a> said:</h4>
+		<div class="CommentText">silibug,<br>There are devices that let you control RS232 ports remotely over an ethernet network. &nbsp;For example, the $99 LS100 by Aaxeon at <a rel="nofollow" target="_new" href="http://www.aaxeon.com/products/Productdetail.aspx?cate=2&amp;modelno=LS100">http://www.aaxeon.com/products/Productdetail.aspx?cate=2&amp;modelno=LS100</a> &nbsp; &nbsp;A Google search on &quot;ethernet rs232&quot; (without quotes) shows some more such devices. &nbsp;</div>
+		<div class="CommentFooter">July 24, 2006 11:33 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl82_NameLink" title="SR" href="/user/Profile.aspx?UserID=2101">SR</a> said:</h4>
+		<div class="CommentText">Thanks for creating this, it has helped me greatly. &nbsp;This is my first day using visual C# express and tutorials like this are making progress possible. &nbsp;Hopefully I can contribute in the future.<br><br>One note: &nbsp;In order to build, I had to comment the line //File.WriteAll(TempFile, html); out as I got an error &quot;'System.IO.File' does not contain a definition for 'WriteAll'. &nbsp;Not sure if I am an isolated case, but it doesn't seem to affect the program. </div>
+		<div class="CommentFooter">July 27, 2006 12:48 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl83_NameLink" title="Allan " rel="nofollow" href="/utility/Redirect.aspx?U=http%3a%2f%2flanrv%40zipmail.com.br">Allan </a> said:</h4>
+		<div class="CommentText">I'm sending commands ATs for modem port, and the modem do not receive the commands. I use (SerialPort Terminal) .... HELP me <br><br><br>thanks</div>
+		<div class="CommentFooter">August 9, 2006 8:53 AM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl84_NameLink" title="Noah Coad [MS]" rel="nofollow" href="/utility/Redirect.aspx?U=http%3a%2f%2fcoadblog.com">Noah Coad [MS]</a> said:</h4>
+		<div class="CommentText">Allan,<br>There isn't enough info in your comment to figure out what's going on. &nbsp;Try [ENTER] [ENTER] [ENTER] ATE1 [ENTER] &nbsp; &nbsp; &nbsp;The first set of [ENTER] commands is for the modem to detect the baud rate. &nbsp;ATE1 turns on echoing back commands so you can see if the modem is responding. &nbsp;Good luck.</div>
+		<div class="CommentFooter">August 10, 2006 12:22 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl85_NameLink" title="Noah Coad [MS]" rel="nofollow" href="/utility/Redirect.aspx?U=http%3a%2f%2fcoadblog.com">Noah Coad [MS]</a> said:</h4>
+		<div class="CommentText">SR,<br>Thanks for the pointer! :)</div>
+		<div class="CommentFooter">August 10, 2006 12:22 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl86_NameLink" title="Julio Silva" href="/user/Profile.aspx?UserID=2101">Julio Silva</a> said:</h4>
+		<div class="CommentText">Hello,<br><br>I'm a begginer, and I'm tring to do a simple terminal (receive only) for my<br>pocket pc, built in C#, with CF.Net 2.0.<br><br>I have 2 bottons, one for serialport.open, other serialport.close.<br>And works fine, since it's for a GPS connection, and I see it<br>connecting/disconnecting.<br><br>I have a label, that if I do a label1.text=serialport.readexisting(); it<br>displays all.<br>but if I do it in serialport.datareceived event, it get's an runtime<br>error...<br>If I do anything like label1.text=serialport.readchar(); it get's the same<br>error.<br>What I'm doing wrong?<br>I only have some programming experience in Delphi and C++...<br><br>Thanks for your help,<br><br>jS<br></div>
+		<div class="CommentFooter">August 10, 2006 3:15 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl87_NameLink" title="Noah Coad [MS]" rel="nofollow" href="/utility/Redirect.aspx?U=http%3a%2f%2fcoadblog.com">Noah Coad [MS]</a> said:</h4>
+		<div class="CommentText">jS,<br>I've answered your question in the (new) FAQ section:<br><a rel="nofollow" target="_new" href="http://msmvps.com/blogs/coad/archive/2005/03/23/39466.aspx#FAQ">http://msmvps.com/blogs/coad/archive/2005/03/23/39466.aspx#FAQ</a></div>
+		<div class="CommentFooter">August 10, 2006 7:24 PM </div>
+	</td>
+	</tr>
+
+	<tr valign="top">
+	<td class="Comment CommentAvatar">
+		&nbsp;
+	</td>
+	<td class="Comment CommentContent" width="100%">
+		<h4 class="CommentTitle"><a id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Comments___Comments__ctl88_NameLink" title="Julio Silva" href="/user/Profile.aspx?UserID=2101">Julio Silva</a> said:</h4>
+		<div class="CommentText">Sorry I missed it.<br>The problem it's now solved, thanks.<br><br>BTW there is an link error in SerialPort Terminal, the filename has a space, SerialPort Terminal.zip, and the link doesnt, so it say's it's not found...<br><br>Thanks again for the help,<br><br>jS</div>
+		<div class="CommentFooter">August 11, 2006 6:41 AM </div>
+	</td>
+	</tr>
+
+	</table>
+	</div>
+
+
+
+
+
+<div id="CommonCommentForm">
+<h3>What do you think?</h3>
+<dl>
+	<dt id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___form___NameTitle"><label for="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___form___tbName">Name</label> <em>(required)</em>&nbsp;</dt><dd id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___form___NameDesc"><input name="_ctl0:_:_ctl0:_:_ctl0:_ctl0:bcr:_ctl0:_:form:_:tbName" type="text" id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___form___tbName" class="smallbox" /></dd>
+	<dt><label for="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___form___tbUrl">Your URL</label> <em>(optional</em>)</dt>
+	<dd><input name="_ctl0:_:_ctl0:_:_ctl0:_ctl0:bcr:_ctl0:_:form:_:tbUrl" type="text" id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___form___tbUrl" class="smallbox" /></dd>
+	<dt><label for="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___form___tbComment">Comments</label> <em>(required)</em>&nbsp;</dt>
+	<dd><textarea name="_ctl0:_:_ctl0:_:_ctl0:_ctl0:bcr:_ctl0:_:form:_:tbComment" rows="5" cols="25" id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___form___tbComment"></textarea></dd>
+	<dt><input id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___form___chkRemember" type="checkbox" name="_ctl0:_:_ctl0:_:_ctl0:_ctl0:bcr:_ctl0:_:form:_:chkRemember" /><label for="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___form___chkRemember">Remember Me?</label></dt>
+	<dt><input type="submit" name="_ctl0:_:_ctl0:_:_ctl0:_ctl0:bcr:_ctl0:_:form:_:btnSubmit" value="Submit" onclick="if (typeof(Page_ClientValidate) == 'function') Page_ClientValidate(); " language="javascript" id="_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___form___btnSubmit" /></dt>
+</dl>
+</div>
+
+
+
+
+	
+   
+    
+	        </div>
+	    </div>
+    
+								</td>
+								
+								<td valign="top" id="CommonRightColumn">
+									
+		<div class="CommonSidebar">
+			
+<div class="CommonSidebarArea">
+	<h4 class="CommonSidebarHeader">This Blog</h4>
+	<div class="CommonSidebarContent">
+		<ul class="CommonSidebarList">
+			<li><a href="/blogs/coad/default.aspx">Home</a></li>
+			
+			<li><a href="/blogs/coad/about.aspx">About</a></li>
+			<li><a href="/blogs/coad/contact.aspx">Email</a></li>
+			<li><a href="/blogs/coad/linklist.aspx">Links</a></li>
+		</ul>
+	</div>
+</div>
+
+
+<div class="CommonSidebarArea">
+	<h4 class="CommonSidebarHeader">Post Calendar</h4>
+	<div class="CommonSidebarContent" style="font-size: 110%;" align="center">
+		<table id="PostCalendar" class="BlogCalendar" cellspacing="0" cellpadding="1" border="0">
+	<tr><td valign="Middle" colspan="7"><table class="BlogCalendarTitle" cellspacing="0" border="0">
+		<tr><td class="BlogCalendarNextPrev"><a href="javascript:__doPostBack('_ctl0$_$_ctl0$_$_ctl0$_ctl0$rcr$bsb$_$c$_$PostCalendar','V1858')" style="color:Black">&lt;</a></td><td nowrap="nowrap" align="Center">March 2005</td><td class="BlogCalendarNextPrev" align="Right"><a href="javascript:__doPostBack('_ctl0$_$_ctl0$_$_ctl0$_ctl0$rcr$bsb$_$c$_$PostCalendar','V1917')" style="color:Black">&gt;</a></td></tr>
+	</table></td></tr><tr><td class="BlogCalendarDays" align="Center">Su</td><td class="BlogCalendarDays" align="Center">Mo</td><td class="BlogCalendarDays" align="Center">Tu</td><td class="BlogCalendarDays" align="Center">We</td><td class="BlogCalendarDays" align="Center">Th</td><td class="BlogCalendarDays" align="Center">Fr</td><td class="BlogCalendarDays" align="Center">Sa</td></tr><tr><td class="BlogCalendarDay" align="Center">27</td><td class="BlogCalendarDay" align="Center">28</td><td class="BlogCalendarDay" align="Center">1</td><td class="BlogCalendarDay" align="Center">2</td><td class="BlogCalendarDay" align="Center">3</td><td class="BlogCalendarDay" align="Center">4</td><td class="BlogCalendarDay" align="Center">5</td></tr><tr><td class="BlogCalendarDay" align="Center">6</td><td class="BlogCalendarDay" align="Center">7</td><td class="BlogCalendarDay" align="Center">8</td><td class="BlogCalendarDay" align="Center">9</td><td class="BlogCalendarDay" align="Center">10</td><td class="BlogCalendarDay" align="Center">11</td><td class="BlogCalendarDay" align="Center">12</td></tr><tr><td class="BlogCalendarDay" align="Center">13</td><td class="BlogCalendarDay" align="Center">14</td><td class="BlogCalendarDay" align="Center">15</td><td class="BlogCalendarDay" align="Center">16</td><td class="BlogCalendarDay" align="Center">17</td><td class="BlogCalendarDay" align="Center">18</td><td class="BlogCalendarDay" align="Center"><a title="2 Posts" href="/blogs/coad/archive/2005/3/19.aspx">19</a></td></tr><tr><td class="BlogCalendarDay" align="Center">20</td><td class="BlogCalendarDay" align="Center"><a title="1 Post" href="/blogs/coad/archive/2005/3/21.aspx">21</a></td><td class="BlogCalendarDay" align="Center">22</td><td class="BlogCalendarDay" align="Center"><a title="1 Post" href="/blogs/coad/archive/2005/3/23.aspx">23</a></td><td class="BlogCalendarDay" align="Center">24</td><td class="BlogCalendarDay" align="Center">25</td><td class="BlogCalendarDay" align="Center">26</td></tr><tr><td class="BlogCalendarDay" align="Center">27</td><td class="BlogCalendarDay" align="Center">28</td><td class="BlogCalendarDay" align="Center">29</td><td class="BlogCalendarDay" align="Center">30</td><td class="BlogCalendarDay" align="Center">31</td><td class="BlogCalendarDay" align="Center">1</td><td class="BlogCalendarDay" align="Center">2</td></tr><tr><td class="BlogCalendarDay" align="Center">3</td><td class="BlogCalendarDay" align="Center">4</td><td class="BlogCalendarDay" align="Center">5</td><td class="BlogCalendarDay" align="Center">6</td><td class="BlogCalendarDay" align="Center">7</td><td class="BlogCalendarDay" align="Center">8</td><td class="BlogCalendarDay" align="Center">9</td></tr>
+</table>
+	</div>
+</div>
+
+
+<div class="CommonSidebarArea">
+	<h4 class="CommonSidebarHeader">Post Categories</h4>
+	<div class="CommonSidebarContent">
+		<ul class="CommonSidebarList">
+		
+			<li>
+				<a href="/blogs/coad/archive/category/304.aspx">C# (13)</a>
+				
+			</li>
+		
+			<li>
+				<a href="/blogs/coad/archive/category/313.aspx">General (31)</a>
+				
+			</li>
+		
+			<li>
+				<a href="/blogs/coad/archive/category/826.aspx">Personal (10)</a>
+				
+			</li>
+		
+			<li>
+				<a href="/blogs/coad/archive/category/307.aspx">Scripting (2)</a>
+				
+			</li>
+		
+			<li>
+				<a href="/blogs/coad/archive/category/322.aspx">Tools (5)</a>
+				
+			</li>
+		
+			<li>
+				<a href="/blogs/coad/archive/category/1709.aspx">VS Team System (1)</a>
+				
+			</li>
+		
+			<li>
+				<a href="/blogs/coad/archive/category/1019.aspx">VSTS (6)</a>
+				
+			</li>
+		
+			<li>
+				<a href="/blogs/coad/archive/category/306.aspx">XML (9)</a>
+				
+			</li>
+		
+		</ul>
+	</div>
+</div>
+	  
+
+<div class="CommonSidebarArea">
+	<h4 class="CommonSidebarHeader">News</h4>
+	<div class="CommonSidebarContent">
+		<table cellpadding=0 cellspacing=0>
+	<tr>
+		<td align="center">
+			<a class="PlainLink" href="http://coad.net/noah/"><img src="http://msmvps.com/images/msmvps_com/coad/NoahFace03Blog.gif" width="80%" border="0" /></a>
+		</td>
+		<td align="center">
+			<a class="PlainLink" href="http://mvp.support.microsoft.com"><img src="http://msmvps.com/images/msmvps_com/coad/mvplogo.gif" width=100% border="0" /></a>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">-=[ Know-a-Code ]=-</td>
+	</tr>
+</table>
+	</div>
+</div>
+
+<div class="CommonSidebarArea">
+	<h4 class="CommonSidebarHeader">Syndication</h4>
+	<div class="CommonSidebarContent">
+		<ul class="CommonSidebarList">
+			<li><a href="/blogs/coad/rss.aspx">RSS 2.0</a></li>
+			<li><a href="/blogs/coad/atom.aspx">Atom 1.0</a></li>
+		</ul>
+	</div>
+ </div>
+		</div>
+	
+								</td>
+							</tr>
+						</table>
+					</div>
+				
+					<div id="CommonFooter">
+						<div class="Copyright">Copyright © is the original authors.  Blog site is an independent site not sponsored by Microsoft.</div>
+<a target="_blank" href="http://communityserver.org/r.ashx?1"><img alt="Powered by Community Server, by Telligent Systems " border="0" src="/utility/EULA.GIF"></a>
+					</div>
+				</div>
+			</CS:MPRegion>
+		<script language="javascript" type="text/javascript">
+<!--
+function KeyDownHandler_ctl0____ctl0____ctl0__ctl0_bhcr_t___TitleBarSearchButton(event)
+{
+	if (event.keyCode == 13)
+	{
+		event.returnValue = false;
+		event.cancel = true;
+     __doPostBack('_ctl0:_:_ctl0:_:_ctl0:_ctl0:bhcr:t:_:TitleBarSearchButton','')	}
+}
+
+//-->
+</script>
+
+
+	<script language="javascript">var _ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Entry___Ratings=new RateControl('_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Entry___Ratings','_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Entry___Ratings','_ctl0____ctl0____ctl0__ctl0_bcr__ctl0___Entry___Ratings_Value', 5, '/Themes/default/images/common/', false, 'CommonRateControl','CommonRateControlActive','CommonRateControlReadOnly',['Terrible','Poor','Fair','Average','Good','Excellent'],true,true);</script>
+
+	
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+rdf:about="http://msmvps.com/blogs/coad/archive/2005/03/23/39466.aspx"
+dc:identifier="http://msmvps.com/blogs/coad/archive/2005/03/23/39466.aspx"
+dc:title="SerialPort (RS-232 Serial COM Port) in C# .NET"
+trackback:ping="http://msmvps.com/blogs/trackback.aspx?PostID=39466" />
+</rdf:RDF>
+-->
+
+
+</form>
+	</body>
+</html>
+
+
+	
+
+
+

@@ -1,0 +1,103 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BDCF1507-C999-4775-90C3-4D9CB4C9F951}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Net</RootNamespace>
+    <AssemblyName>Net</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mail\ConnectCommand.cs" />
+    <Compile Include="Mail\ConnectResponse.cs" />
+    <Compile Include="Mail\DeleCommand.cs" />
+    <Compile Include="Mail\ListCommand.cs" />
+    <Compile Include="Mail\ListResponse.cs" />
+    <Compile Include="Mail\MailHeaders.cs" />
+    <Compile Include="Mail\MailMessageEx.cs" />
+    <Compile Include="Mail\NoopCommand.cs" />
+    <Compile Include="Mail\PassCommand.cs" />
+    <Compile Include="Mail\Pop3Client.cs" />
+    <Compile Include="Mail\Pop3Command.cs" />
+    <Compile Include="Mail\Pop3Commands.cs" />
+    <Compile Include="Mail\Pop3Exception.cs" />
+    <Compile Include="Mail\Pop3ListItem.cs" />
+    <Compile Include="Mail\Pop3Response.cs" />
+    <Compile Include="Mail\Pop3Responses.cs" />
+    <Compile Include="Mail\Pop3State.cs" />
+    <Compile Include="Mail\QuitCommand.cs" />
+    <Compile Include="Mail\RetrCommand.cs" />
+    <Compile Include="Mail\RetrResponse.cs" />
+    <Compile Include="Mail\RsetCommand.cs" />
+    <Compile Include="Mail\Stat.cs" />
+    <Compile Include="Mail\StatCommand.cs" />
+    <Compile Include="Mail\StatResponse.cs" />
+    <Compile Include="Mail\TopCommand.cs" />
+    <Compile Include="Mail\UserCommand.cs" />
+    <Compile Include="Mime\MediaTypes.cs" />
+    <Compile Include="Mime\MimeEntity.cs" />
+    <Compile Include="Mime\MimeHeaders.cs" />
+    <Compile Include="Mime\MimeReader.cs" />
+    <Compile Include="Mime\QuotedPrintableEncoding.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

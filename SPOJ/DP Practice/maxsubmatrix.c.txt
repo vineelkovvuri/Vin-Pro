@@ -1,0 +1,79 @@
+//Find the maximum null square matrix in the given matrix 
+//11th problem in DP of levitin
+
+#include<stdio.h>
+#define min2(a,b) ((a) < (b) ? (a) : (b))
+#define min3(a,b,c) (min2(a, min2(b,c)))
+
+//test1
+int a[100][100] = {{1,2,3,4,0,0,1}, {1,2,0,0,0,0,0}, {0,1,0,0,0,1,0}, {1,0,0,0,0,1,1}, {1,0,0,0,0,0,0},{1,0,0,0,0,0,0},{1,0,0,0,0,1,0}};
+int m = 7, n = 7;
+
+//test2
+//int a[100][100] = {{0,0,0,0,0,0,0}, {0,0,0,0,0,0,0}, {0,0,0,0,0,0,0}, {0,0,0,0,0,0,0}, {0,0,0,0,0,0,0},{0,0,0,0,0,0,0},{0,0,0,0,0,0,0}};
+//int m = 7, n = 7;
+
+
+int s[100][100] = {0};
+
+void printS()
+{
+	int i , j;
+	
+	for (i = 0; i < m; i++) {
+		for (j = 0; j < n; j++) {
+			printf("%3d", s[i][j]);
+		}
+		printf("\n");
+	}
+	printf("\n");
+}
+void printA()
+{
+	int i , j;
+	
+	for (i = 0; i < m; i++) {
+		for (j = 0; j < n; j++) {
+			printf("%3d", a[i][j]);
+		}
+		printf("\n");
+	}
+	printf("\n");
+}
+
+int main()
+{
+	int i = 0, j = 0, k = 0;
+	int max = -1;
+	
+	for (i = 0; i < m; i++) {
+		for (j = 0; j < n; j++) {
+			if (a[i][j] != 0) s[i][j] = 0;
+			else {
+				s[i][j] = 1;
+				if (i - 1 >= 0 && j - 1 >= 0 && s[i-1][j-1] > 0) {
+					int l = s[i -1][j - 1];
+					int iMax = 0;
+					int jMax = 0;
+					for (k = 0; k < l; k++)
+						if (a[i-k-1][j] == 0)iMax++;
+						else break;
+					for (k = 0; k < l; k++)
+						if (a[i][j-k-1] == 0)jMax++;
+						else break;
+					s[i][j] = min3(iMax, jMax, l) + 1;
+				}
+			}	
+		}
+	}
+	
+	for (i = 0; i < m; i++)
+		for (j = 0; j < n; j++)
+			if (s[i][j] > max)
+				max = s[i][j];
+				
+	printf("Max submatrix with zeros is of size : %d\n",  max);
+	printA();
+	printS();		
+	return 0;
+}

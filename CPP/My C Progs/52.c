@@ -1,0 +1,21 @@
+/*program to toverify weather the given matrix is skew symmetric or not*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+ int a[10][10],i,j,m,n,f=0,g=0;
+ printf("\nEnter the order of the matrix");
+ scanf("%d%d",&m,&n);
+ printf("Enter the elements of the matrix");
+ for(i=0;i<m;i++)
+ for(j=0;j<n;j++)
+ scanf("%d",&a[i][j]);
+for(i=1;i<m&&f==0;i++)
+ for(j=0;j<i;j++)
+ if(a[i][j]!=-a[j][i]){f=1;break;}
+for(i=0;i<m&&g==0;i++)
+{j=i;if(a[i][j]!=0)g=1;}
+if(f==0&&g==0)printf("THE MATRIX IS  SKEW SYMMETRIC");
+else printf(" THE MATRIX IS NOT SKEW SYMMETRIC");
+getch();
+}

@@ -1,0 +1,49 @@
+//GetSystemPowerStatus  in win32 msdn ms-help://MS.MSDNQTR.v90.en/power/base/getsystempowerstatus.htm
+
+using System;
+using System.Runtime.InteropServices; // Necessary!
+
+namespace MyNamespace
+{
+   
+    public class BatteryChecker
+    {
+   
+        [DllImport("Kernel32")]
+        private static extern Boolean GetSystemPowerStatus( SystemPowerStatus sps );
+
+        public static SystemPowerStatus GetSystemPowerStatus()
+        {
+            SystemPowerStatus sps = new SystemPowerStatus();
+            GetSystemPowerStatus( sps );
+            return sps;
+        }
+    }
+
+    public enum ACLineStatus : byte
+    {
+        Offline = 0, Online = 1, Unknown = 255
+    }
+
+    public enum BatteryFlag : byte
+    {
+        High = 1,
+        Low = 2,
+        Critical = 4,
+        Charging = 8,
+        NoSystemBattery = 128,
+        Unknown = 255
+    }
+
+    // Fields must mirror their unmanaged counterparts, in order
+    [StructLayout( LayoutKind.Sequential )]
+    public class SystemPowerStatus
+    {
+        public ACLineStatus _ACLineStatus;
+        public BatteryFlag  _BatteryFlag;
+        public Byte     _BatteryLifePercent;
+        public Byte     _Reserved1;
+        public Int32    _BatteryLifeTime;
+        public Int32    _BatteryFullLifeTime;
+    }
+}

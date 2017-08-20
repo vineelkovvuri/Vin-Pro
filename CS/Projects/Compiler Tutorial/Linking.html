@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Compiler - Linking | Vineel Kumar Reddy</title>
+<link href="CSS/Global.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="syntaxhighlighter/scripts/shCore.js"></script>
+<script type="text/javascript" src="syntaxhighlighter/scripts/shBrushCpp.js"></script>
+<link rel="stylesheet" type="text/css" href="syntaxhighlighter/styles/shCore.css" />
+<link rel="stylesheet" type="text/css" href="syntaxhighlighter/styles/shThemeDefault.css" />
+<script type="text/javascript">
+SyntaxHighlighter.config.clipboardSwf = 'syntaxhighlighter/scripts/clipboard.swf';
+SyntaxHighlighter.all();
+
+</script>
+
+
+</head>
+<body>
+
+<div id="container">
+<div id="header">Linking</div>
+<hr class="linebreak"/>
+
+<div id="navigation">
+<p>
+	<ol>
+        <li><a href="Main.html">Main</a></li>
+        <li><a href="Preprocessing.html">Preprocessing</a></li>
+        <li><a href="Compilation.html">Compilation</a></li>
+        <li><a href="Assembling.html">Assembling</a></li>
+        <li class="selected">Linking</li>
+        <li><a href="Ethical Cracking.html">Ethical Cracking</a></li>       
+    </ol>
+    </p>
+</div>
+
+<div id="content">
+
+
+<p>
+
+<a href="http://en.wikipedia.org/wiki/Linker_%28computing%29" target="_blank" class="externallink">Linking</a><br /><br /> Linking is the process of rearranging(relocating)  the functions from various object files(*.obj or *.o) and library files(*.lib) in to a single exe or a dll file. But the real crux of linking lies in the word rearranging  or more precisely <strong>relocating</strong>
+ </p>
+<p>
+To understand it first shout the word relocate as "re  locate" !
+</p>
+<p>
+Consider two programs test1.c test2.c whose contents are shown below.
+</p>
+<pre class="brush: c" name="code" id="code">
+ //test1.c                                              //test2.c
+ main()                                                  test2()
+ {                                                       {
+     printf("main() of test1.c");                    	     printf("test2() of test2.c");
+     test2();                               
+ }                                                       }
+
+</pre>
+Assemble these two files using the command 
+<pre class="brush: c" name="code" id="code">
+gcc -c test1.c test2.c  
+</pre>
+to produce <strong>test1.o</strong> and <strong>test2.o</strong>. Now disassemble these two files using <strong>objdump.exe</strong> using the command 
+<pre class="brush: c" name="code" id="code">
+objdump -d test1.o test2.o > outfile 
+</pre>
+ and open outfile in Vim(any editor you like  but Vim is colorful :) ).
+
+
+<div class="image" >
+<img src="Pics/2007-07-31_233937.png"/> <br />
+<span class="imagetag">Output from objdump.exe after Disassembling <strong>test1.o</strong>  and <strong>test2.o</strong> (viewed in Vim)</span>
+</div>
+
+<p>
+From the above picture it is clear that instructions in every object file starts with memory location <em><strong>Zero</strong></em> no matter how many functions it may contain.
+And from the code of <strong>test1.c</strong> and <strong>test2.c</strong> it is clear that the function <em>test2()</em> of test2.c(which is actually present in test2.o) is being called by <em>main()</em> function in test1.c( which is actually located in test1.o) 
+</p>
+<p>
+So when the final exe is created by the linker, it actually copies the code of <strong>main(), test2()</strong> from <strong>test1.o</strong> and <strong>test2.o</strong> respectively. These functions are re arranged in different locations according to the convenience of the linker and this process is called <strong>relocating</strong>.
+</p>
+<p>
+To understand what linking does, issue the following command on the files test1.o and test2.o
+</p>
+<pre class="brush: c" name="code" id="code">
+gcc  test1.o test2.o
+</pre>
+<p>
+The above command creates the final exe with name <strong>a.exe</strong>. Now disassemble it using the command <strong>objdump -d a.exe</strong> to see its contents. </p>
+
+<p>
+But this time to our surprise the output is around 800 lines ! The reason for this burst in the a.exe size is due to the presence of some Startup  and Finalizing routines beside main() and test2(). Of all the Startup and Finalizing functions we are concern only with  
+<pre class="brush: c" name="code" id="code">
+___mingw_CRTStartup() 
+</pre>
+</p>
+<p>
+In the figure below we can observe that <strong>___mingw_CRTStartup()</strong> is responsible for calling the function <strong>main()</strong> in Line 149  priorer calling main() it also does some startup routines like allocating the <strong>Heap Memory</strong> for the program using <a href="http://msdn.microsoft.com/en-us/library/aa366597(VS.85).aspx" target="_blank" class="externallink">HeapAlloc</a> Win32 API function and retrieving the command line arguments e.t.c ( stripped off). Once the main() function is returned there is call to <a href="http://msdn.microsoft.com/en-us/library/ms682658(VS.85).aspx" target="_blank" class="externallink">ExitProcess</a> Win32 API function(_ExitProcess@4 is the <a href="http://en.wikipedia.org/wiki/Name_mangling" target="_blank" class="externallink">mangled</a> form of ExitProcess) with return value of main() as argument. This function causes the current process to terminate. </p>
+
+<p>
+From the disassembly of a.exe we can understand that linker also include other functions which are necessary for running the program beside <em>test(),main()</em>
+</p>
+
+ <div class="image" >
+<img src="Pics/Untitled-2.gif"/> <br />
+<span class="imagetag">Output from objdump.exe after Disassembling <strong>a.exe</strong>(stripped unnecessary code)</span>
+</div>
+<p>
+Besides relocating the functions, Linking also does various other tasks to create an exe file, Like incorporating the symbol table, debug information, exported functions, imported functions e.t.c.(explaining these concepts is beyond the scope of this tutorial and requires a firm understanding of the structure of a PE(EXE) file)
+</p>
+
+ Linking is of mainly two types 
+ <ol>
+ <li><a href="http://en.wikipedia.org/wiki/Static_library" target="_blank" class="externallink">Static Linking</a><br /><br />
+ In static linking the code for library functions(printf) is binded to the final exe.  To understand this senario consider the following code snippet.
+ <pre class="brush: c" name="code" id="code">
+#include&lt;stdio.h&gt;
+main()
+{
+    printf("Hello World...- Vineel!!!");
+}
+</pre>
+<p>
+compile the above code with the command 
+ <pre class="brush: c" name="code" id="code">
+ gcc -static test.c 
+ </pre>
+and you can observe the size of a.out is around 4MB ! This is because the functions(printf) present in test.c are linked statically, What i mean by statically linked is the entire code for printf function is duplicated from C Runtime libraries(<em>glibc</em>) in to a.out. As a result the size of statically linked files will be large.
+</p>
+<p>
+The advantage of static linking is, a.out requires no external libraries for running.
+But the biggest disadvantage is
+<ol>
+<li>
+Increase in the size of final executable</li>
+<li>
+Duplication of common library routines in each and very executable.</li>
+</ol>
+</p>	
+The following picture shows the disassembled output of a.out
+ <div class="image" >
+<img src="Pics/2007-08-21_17-02-37.png"/> <br />
+<span class="imagetag">Disassembly of statically linked a.out (<strong>objdump -d a.out > static.s</strong>) </span>
+</div>
+<br /><br />
+ </li>
+ <li>
+   <a href="http://en.wikipedia.org/wiki/Dynamic_library#Dynamic_linking" target="_blank" class="externallink">Dynamic Linking</a><br /><br />
+   <p>
+   Dynamic linking overcomes the disadvantages of static linking. It does not duplicate the code from C Runtime libraries in final executable, As a result the file size is very less compared to statically linked onces.
+   </p>
+   <p>
+   It simply refers to the location where that function(<em>printf</em>) is present in Runtime Libraries(<em>glibc</em> or <em>msvcr71.dll</em>). So when the executable is run the loader of the operating system resolves the functions that are external to this executable. If the loader fails to do so, the program is terminated by the Operating System.
+   </p>
+   <p>
+    By default when ever you compile a program using the command 
+     <pre class="brush: c" name="code" id="code">
+    gcc test.c 
+    </pre>
+     gcc creates dynamically linked executables.</p>
+   </li>
+ </ol> 
+ 
+</div>
+
+<div id="footer"><hr class="linebreak"/><a href="mailto:vineel.kovvuri[at]gmail.com" class="email">vineel.kovvuri[at]gmail.com</a>
+</div>
+</div>
+
+</body>
+</html>

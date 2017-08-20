@@ -1,0 +1,132 @@
+#container #navigation ol {
+	list-style-type: none;
+	margin-top: 15px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+#container #navigation ol li a {
+	text-decoration: none;
+}
+#container #navigation ol li a:hover {
+	text-decoration: underline;
+}
+#header{
+	text-align: center;
+	text-transform: capitalize;
+	font-family: Trebuchet, Tahoma, Arial, sans-serif;
+	font-size: 24px;
+}
+#navigation{
+	width:15%;
+	float:left;
+	margin: 0px;
+	background-color: #FFF;
+	font-size: 90%;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#content{
+	width:80%;
+	font-family: Baskerville, Palatino, "‘Palatino Linotype’", Georgia, Serif;
+	font-size: 0.8em;
+	float: left;
+	text-align: justify;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 3px;
+	border-top-color: #d3e1f9;
+	border-right-color: #d3e1f9;
+	border-bottom-color: #d3e1f9;
+	border-left-color: #d3e1f9;
+	border-left-style: solid;
+	padding-left: 10px;
+		
+}
+#footer{
+	width:100%;
+	clear:both;
+	text-align: center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+body{
+	margin: 0 15px 5px 0;
+}#container {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+}
+#container #content #collapsable {
+	background-color: #e5ecf9;
+	height: 1000px;
+	width: 3px;
+	position: relative;
+	left: -5px;
+	top: 0px;
+	overflow: hidden;
+}
+#container #collapsable {
+	background-color: #e5ecf9;
+	height: 1000px;
+	width: 3px;
+	left: -5px;
+	top: 0px;
+	float: left;
+}
+#container #navigation ol li {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	padding: 5px;
+}
+.linebreak {
+	
+	background-color: #000;
+	margin-bottom: 0px;
+}
+#container #navigation ol .selected {
+	background-color: #E5ECF9;
+	color: #000;
+}
+.externallink {
+	background-attachment: scroll;
+	background-image: url(../Pics/external-link-ltr-icon.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 15px;
+	text-decoration: none;
+}
+.externallink:hover {
+	text-decoration: underline;
+}
+.command {
+	font-weight: bold;
+}
+.image {
+	border: 1px solid #aaaaaa;
+	padding-bottom: 10px;
+}
+.image .imagetag {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	padding: 5px;
+}
+#container #content ol {
+
+}
+.conlusionnote {
+	border: 1px solid #abcdf3;
+}
+.email {
+	text-decoration: none;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.email:hover {
+	text-decoration: underline;
+}

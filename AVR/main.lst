@@ -1,0 +1,77 @@
+   1               		.file	"main.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	main
+  18               	main:
+  19               	.LFB6:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 81E0      		ldi r24,lo8(1)
+  25 0002 87BB      		out 55-32,r24
+  26               	.LM3:
+  27 0004 18BA      		out 56-32,__zero_reg__
+  28               	.LM4:
+  29 0006 41E0      		ldi r20,lo8(1)
+  30               	.LBB12:
+  31               	.LBB13:
+  32               	.LBB14:
+  33               	.LBB15:
+  34               	.LM5:
+  35 0008 28EC      		ldi r18,lo8(200)
+  36 000a 30E0      		ldi r19,hi8(200)
+  37               	.LVL0:
+  38               	.L3:
+  39               	.LBE15:
+  40               	.LBE14:
+  41               	.LBE13:
+  42               	.LBE12:
+  43               	.LM6:
+  44 000c 88B3      		in r24,56-32
+  45               	.LVL1:
+  46 000e 8427      		eor r24,r20
+  47 0010 88BB      		out 56-32,r24
+  48 0012 88EE      		ldi r24,lo8(1000)
+  49 0014 93E0      		ldi r25,hi8(1000)
+  50               	.LVL2:
+  51               	.L2:
+  52               	.LBB19:
+  53               	.LBB18:
+  54               	.LBB17:
+  55               	.LBB16:
+  56               	.LM7:
+  57 0016 F901      		movw r30,r18
+  58               	/* #APP */
+  59               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+  60 0018 3197      		1: sbiw r30,1
+  61 001a 01F4      		brne 1b
+  62               	 ;  0 "" 2
+  63               	/* #NOAPP */
+  64               	.LBE16:
+  65               	.LBE17:
+  66               	.LM8:
+  67 001c 0197      		sbiw r24,1
+  68               	.LM9:
+  69 001e 01F4      		brne .L2
+  70 0020 00C0      		rjmp .L3
+  71               	.LBE18:
+  72               	.LBE19:
+  73               	.LFE6:
+  99               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\VINEEL~1\AppData\Local\Temp/ccN3Ckjq.s:2      *ABS*:0000003f __SREG__
+C:\Users\VINEEL~1\AppData\Local\Temp/ccN3Ckjq.s:3      *ABS*:0000003e __SP_H__
+C:\Users\VINEEL~1\AppData\Local\Temp/ccN3Ckjq.s:4      *ABS*:0000003d __SP_L__
+C:\Users\VINEEL~1\AppData\Local\Temp/ccN3Ckjq.s:5      *ABS*:00000034 __CCP__
+C:\Users\VINEEL~1\AppData\Local\Temp/ccN3Ckjq.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\VINEEL~1\AppData\Local\Temp/ccN3Ckjq.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\VINEEL~1\AppData\Local\Temp/ccN3Ckjq.s:18     .text:00000000 main
+
+NO UNDEFINED SYMBOLS

@@ -1,0 +1,30 @@
+Manually Uninstalling Previous Versions of Visual Studio 2005 Express Editions
+
+Go to the Control Panel and launch Add/Remove Programs
+
+
+Remove "MSDN Library for Visual Studio 2005 Beta" 
+
+
+Remove "Microsoft SQL Server 2005 Express Edition" 
+
+Remove "Microsoft SQL Server 2005 Tools (Management Studio)"
+
+
+Remove "Microsoft SQL Native Client" 
+
+
+Remove "Microsoft MSDN Express Library 2005 " 
+
+
+Remove all Microsoft Visual Studio Express Editions C#,
+
+
+Remove "Microsoft Visual J# .NET Redistributable Package 2.0 "
+
+
+Ensure all Visual Studio 2005 products have been removed from your system
+
+Remove "Microsoft .NET Framework 2.0 " 
+
+

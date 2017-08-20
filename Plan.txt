@@ -1,0 +1,48 @@
+
+
+
+
+                                      +-Intel Assembly    
+                                      +-C
+                +-System Programming->+-C++
+                |                     +-VC++
+                |
+                |                     +-C#
+                +-Desktop appz------->+-VB.NET
+                |                     +-VC++(Win32,MFC,Qt,GTK+)
+                |                     +-Java(J2SE)(Swings)
+                |                    
+     +-windows->|                     +-HTML,JavaScript,CSS,    
+     |          |                     +-ASP.NET
+     |          +-Web applications--->+-PHP
+     |          |                     +-J2EE(Servlets,JSP,struts,EJB,Hibernate,spring)
+     |          |                     +-MultiMedia stuff->+-Photoshop
+     |          |                                             +-Flash
+     |          |                     
+     |          +-Databases---------->+- Oracle,SqlServer 2005,MySQL,SQLite
+     |          |
+     |          |                     +-Perl
+     |          +-Scripting Lang----->+-Python
+     |                                +-Ruby
+     |                                +-VBScript 
+IT-->|
+     |             
+     |                                  +-C            
+     |            +-System Programming->+-C++
+     |            |                     +-AT & T Assembly
+     |            | 
+     |            |                     +-Java(J2SE)            
+     |            +-Desktop appz------->+-GTK,Qt
+     |            |                     +-QT
+     |            |
+     |            |                     +-J2EE                
+     +-linux--->+ +-Web appz----------->+-PHP
+                  |                     +-HTML and JavaScript
+                  |
+                  +-Databases---------->+-Oracle
+                  |                     +-MySQL
+                  |  
+                  |                     +-Ruby    
+                  +-Scripting Lang----->+-Python    
+                                        +-Perl
+     

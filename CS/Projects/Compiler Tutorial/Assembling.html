@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Compiler - Assembling | Vineel Kumar Reddy</title>
+<link href="CSS/Global.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="syntaxhighlighter/scripts/shCore.js"></script>
+<script type="text/javascript" src="syntaxhighlighter/scripts/shBrushCpp.js"></script>
+<link rel="stylesheet" type="text/css" href="syntaxhighlighter/styles/shCore.css" />
+<link rel="stylesheet" type="text/css" href="syntaxhighlighter/styles/shThemeDefault.css" />
+<script type="text/javascript">
+SyntaxHighlighter.config.clipboardSwf = 'syntaxhighlighter/scripts/clipboard.swf';
+SyntaxHighlighter.all();
+
+</script>
+
+
+</head>
+<body>
+
+<div id="container">
+<div id="header">Assembling</div>
+<hr class="linebreak"/>
+
+<div id="navigation">
+<p>
+	<ol>
+        <li><a href="Main.html">Main</a></li>
+        <li  ><a href="Preprocessing.html">Preprocessing</a></li>
+        <li><a href="Compilation.html">Compilation</a></li>
+        <li class="selected">Assembling</li>
+        <li><a href="Linking.html">Linking</a></li>
+        <li><a href="Ethical Cracking.html">Ethical Cracking</a></li>        
+    </ol>
+    </p>
+</div>
+
+<div id="content">
+
+<ol>
+<li>
+<p>
+
+<a href="http://en.wikipedia.org/wiki/Assembly_language" target="_blank" class="externallink">Assembling</a><br /><br /> It is the process of converting a given assembly language program in to its equivalent machine language code </p>
+
+Consider the following code
+<pre class="brush: c" name="code" id="code">
+main()
+{
+    printf("Vineel");
+}</pre>
+Assume this file is saved as test.c issue the command
+<pre class="brush: c" name="code" id="code">
+gcc -S -masm=intel test.c
+</pre>
+This command as usually creates the plain assembly language representation(program) of the above code with a file name test.s 
+<pre class="brush: c" name="code" id="code">
+    .file  "test.c"
+    .intel_syntax
+    .def   ___main;  .scl    2;  .type   32; .endef
+    .section .rdata,"dr"
+LC0:
+    .ascii "Vineel\0"
+    .text
+.globl _main
+    .def   _main;    .scl    2;  .type   32; .endef
+_main:
+    push    ebp
+    mov    ebp, esp
+    sub    esp, 8
+    and    esp, -16
+    mov    eax, 0
+    add    eax, 15
+    add    eax, 15
+    shr      eax, 4
+    sal      eax, 4
+    mov    DWORD PTR [ebp-4], eax
+    mov    eax, DWORD PTR [ebp-4]
+    call   __alloca
+    call   ___main
+    mov    DWORD PTR [esp], OFFSET FLAT:LC0
+    call   _printf
+    leave
+    ret
+    .def   _printf;  .scl    3;  .type   32; .endef
+</pre>
+
+<p>
+Now when this test.s is given to the <strong>assembler</strong>  it creates a binary file(object file) containing the machine code representation of above instructions.</p>
+<p>
+So effectively <strong>push ebp</strong> is represented as <strong>55(0101 0101)</strong>  and <strong>mov ebp,esp</strong> is represented as <strong>89 e5(1000 1001 1110 0101)</strong> similarly the entire file(test.s) is converted to machine code. Each and every instruction has its own opcode, the number 55 is the opcode for the instruction push ebp. You can get the complete instruction formats and their opcode information from <a href="http://www.intel.com/products/processor/manuals/index.htm" target="_blank" class="externallink">Intel</a>.
+</p>
+<p>
+By using 
+<pre class="brush: c" name="code" id="code">
+ gcc -c test.s 
+ </pre> or 
+ <pre class="brush: c" name="code" id="code">
+ gcc -c test.c
+ </pre>  we get an object file <strong>test.o</strong>(In TC it is test.obj)<br />
+<em><strong>-c</strong></em> Instructs the compiler to stop after the completion of assembling process.i.e.. After the generation of object file (.obj file or .o file)
+</p>
+<p>
+Though object file also contains some extra information(headers,symbols) along with the machine code, for the time being assume it contains only machine code for the source program.
+</p>
+<p>
+ ** As test.o is a binary file you cannot see its contents by using notepad. 
+ </p>
+ <br />
+ </li>
+ <li>
+   <a href="http://en.wikipedia.org/wiki/Disassembler" target="_blank" class="externallink">Disassembling</a><br /><br />
+    It is exactly the reverse process of assembling. Given a binary file, The tool(disassembler) will decode the bits in to human readable assembly instructions.
+    <p>
+    We use a program called <a href="http://en.wikipedia.org/wiki/Objdump" target="_blank" class="externallink">objdump.exe</a>(object dumper)  to know the ingredients of test.o. It disassembles the given test.o. But the beauty of objdump.exe is, it also displays the opcode information(binary information) of each instruction. </p>
+    <pre class="brush: c" name="code" id="code">
+      objdump -d  test.o  
+     </pre>
+     <strong>-d</strong>  Informs the object dumper to perform disassembling on the file test.o 
+     <p>once this is executed we get the following information.</p>
+     <div class="image" >
+<img src="Pics/2007-07-31_212839.png"/> <br />
+<span class="imagetag">Output produced by <strong>objdump.exe</strong> after Disassembling</span>
+</div>
+<p>     In the above picture the column shown by "<em>addresses arrow</em>" represent the addresses of instructions sequentially. The picture also confirms that <em>Intel instruction format is not of fixed length</em> because you will find that some instructions take <strong>1 byte</strong> and other take <strong>more than 1 byte</strong>.</p>
+<p>
+The most important feature of these object files is they are <strong>relocatable</strong>. 
+</p>
+    </li>
+ </ol>
+ 
+</div>
+
+<div id="footer"><hr class="linebreak"/><a href="mailto:vineel.kovvuri[at]gmail.com" class="email">vineel.kovvuri[at]gmail.com</a>
+</div>
+</div>
+
+</body>
+</html>

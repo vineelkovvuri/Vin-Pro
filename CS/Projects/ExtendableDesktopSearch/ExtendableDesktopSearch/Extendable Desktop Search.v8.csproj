@@ -1,0 +1,303 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81DE23BB-72CE-45E3-B05C-9AF12C596B05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExtendableDesktopSearch</RootNamespace>
+    <AssemblyName>ExtendableDesktopSearch</AssemblyName>
+    <StartupObject>ExtendableDesktopSearch.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationIcon>2 %2818%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.1.271, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="taglib-sharp, Version=2.0.3.0, Culture=neutral, PublicKeyToken=db62eba44689b5b0, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EDS Builtin Parsers\ArchiveParser.cs" />
+    <Compile Include="EDS Builtin Parsers\AudioFileParser.cs" />
+    <Compile Include="EDS Builtin Parsers\DocParser.cs" />
+    <Compile Include="EDS Builtin Parsers\ImageParser.cs" />
+    <Compile Include="EDS Builtin Parsers\PDFParser.cs" />
+    <Compile Include="EDS Builtin Parsers\TextFileParser.cs" />
+    <Compile Include="EDS Main Interface GUI\AllFilesUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EDS Main Interface GUI\AllFilesUserControl.Designer.cs">
+      <DependentUpon>AllFilesUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDS Main Interface GUI\AudioUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EDS Main Interface GUI\AudioUserControl.Designer.cs">
+      <DependentUpon>AudioUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDS Custom GUI Controls\BannerTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EDS Modules\EDSEmailIndexer.cs" />
+    <Compile Include="Mp3TagEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp3TagEditor.Designer.cs">
+      <DependentUpon>Mp3TagEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDS Custom GUI Controls\ResultsPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EDS Main Interface GUI\DocumentsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EDS Main Interface GUI\DocumentsUserControl.Designer.cs">
+      <DependentUpon>DocumentsUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDS Modules\EDSIndexer.cs" />
+    <Compile Include="EDS Modules\EDSQueryEngine.cs" />
+    <Compile Include="EDSTester.cs" />
+    <Compile Include="EDS Main Interface GUI\EmailUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EDS Main Interface GUI\EmailUserControl.Designer.cs">
+      <DependentUpon>EmailUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDS Modules\FileDispatcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EDS Modules\FileSystemCrawler.cs" />
+    <Compile Include="EDS Modules\FileSystemMonitor.cs" />
+    <Compile Include="EDS Builtin Parsers\GeneralFileParser.cs" />
+    <Compile Include="EDS Builtin Parsers\GenericFile.cs" />
+    <Compile Include="EDS Custom GUI Controls\GlassButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="EDS Builtin Parsers\IEDSParser.cs" />
+    <Compile Include="EDS Custom GUI Controls\ListViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDS Custom GUI Controls\NumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EDS Builtin Parsers\PEParser.cs" />
+    <Compile Include="EDS Main Interface GUI\PicturesUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EDS Main Interface GUI\PicturesUserControl.Designer.cs">
+      <DependentUpon>PicturesUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDS Custom GUI Controls\PopupButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="EDS Custom GUI Controls\PropertiesPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EDS Main Interface GUI\AllFilesUserControl.resx">
+      <DependentUpon>AllFilesUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDS Main Interface GUI\AudioUserControl.resx">
+      <DependentUpon>AudioUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDS Main Interface GUI\DocumentsUserControl.resx">
+      <DependentUpon>DocumentsUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDS Main Interface GUI\EmailUserControl.resx">
+      <DependentUpon>EmailUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp3TagEditor.resx">
+      <DependentUpon>Mp3TagEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDS Main Interface GUI\PicturesUserControl.resx">
+      <DependentUpon>PicturesUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDS Main Interface GUI\SettingsUserControl.resx">
+      <DependentUpon>SettingsUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDS Main Interface GUI\VideoUserControl.resx">
+      <DependentUpon>VideoUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\antiword\Default" />
+    <None Include="Resources\antiword\fontnames" />
+    <None Include="Resources\antiword\fontnames.rus" />
+    <None Include="Resources\antiword\Unicode01" />
+    <None Include="Resources\antiword\Unicode15" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="EDS Main Interface GUI\SettingsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EDS Main Interface GUI\SettingsUserControl.Designer.cs">
+      <DependentUpon>SettingsUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDS Builtin Parsers\VideoParser.cs" />
+    <Compile Include="EDS Main Interface GUI\VideoUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EDS Main Interface GUI\VideoUserControl.Designer.cs">
+      <DependentUpon>VideoUserControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2 %2818%29.ico" />
+    <Content Include="Project Work.txt" />
+    <Content Include="Resources\antiword\8859-1.txt" />
+    <Content Include="Resources\antiword\8859-10.txt" />
+    <Content Include="Resources\antiword\8859-13.txt" />
+    <Content Include="Resources\antiword\8859-14.txt" />
+    <Content Include="Resources\antiword\8859-15.txt" />
+    <Content Include="Resources\antiword\8859-16.txt" />
+    <Content Include="Resources\antiword\8859-2.txt" />
+    <Content Include="Resources\antiword\8859-3.txt" />
+    <Content Include="Resources\antiword\8859-4.txt" />
+    <Content Include="Resources\antiword\8859-5.txt" />
+    <Content Include="Resources\antiword\8859-6.txt" />
+    <Content Include="Resources\antiword\8859-7.txt" />
+    <Content Include="Resources\antiword\8859-8.txt" />
+    <Content Include="Resources\antiword\8859-9.txt" />
+    <Content Include="Resources\antiword\antiword.exe" />
+    <Content Include="Resources\antiword\cp1250.txt" />
+    <Content Include="Resources\antiword\cp1251.txt" />
+    <Content Include="Resources\antiword\cp1252.txt" />
+    <Content Include="Resources\antiword\cp437.txt" />
+    <Content Include="Resources\antiword\cp850.txt" />
+    <Content Include="Resources\antiword\cp852.txt" />
+    <Content Include="Resources\antiword\cp862.txt" />
+    <Content Include="Resources\antiword\cp864.txt" />
+    <Content Include="Resources\antiword\cp866.txt" />
+    <Content Include="Resources\antiword\koi8-r.txt" />
+    <Content Include="Resources\antiword\koi8-u.txt" />
+    <Content Include="Resources\antiword\MacCyrillic.txt" />
+    <Content Include="Resources\antiword\MacRoman.txt" />
+    <Content Include="Resources\antiword\roman.txt" />
+    <Content Include="Resources\antiword\UTF-8.txt" />
+    <Content Include="Resources\AudioCD.png" />
+    <Content Include="Resources\AudioResults.png" />
+    <Content Include="Resources\BackGround.jpg" />
+    <Content Include="Resources\Clear Fields.png" />
+    <Content Include="Resources\DocumentResults.png" />
+    <Content Include="Resources\EmailResults.png" />
+    <Content Include="Resources\Empty.png" />
+    <Content Include="Resources\GeneralSettings.png" />
+    <Content Include="Resources\loading.gif" />
+    <Content Include="Resources\MouseOut.jpg" />
+    <Content Include="Resources\MouseOver.jpg" />
+    <Content Include="Resources\pdfinfo.exe" />
+    <Content Include="Resources\pdftotext.exe" />
+    <Content Include="Resources\PictureResults.png" />
+    <Content Include="Resources\SearchButton_24x24.png" />
+    <Content Include="Resources\SortDown.png" />
+    <Content Include="Resources\SortUp.png" />
+    <Content Include="Resources\VideoResults.png" />
+    <Content Include="ToDo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Lucene.Net\Lucene.Net-2.0.0.csproj">
+      <Project>{F04CA2F4-E182-46A8-B914-F46AF5319E83}</Project>
+      <Name>Lucene.Net-2.0.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="Net\Net.csproj">
+      <Project>{BDCF1507-C999-4775-90C3-4D9CB4C9F951}</Project>
+      <Name>Net</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Parsers\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

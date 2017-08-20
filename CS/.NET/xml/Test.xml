@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+  <item id="1" name="Flaming Sword of Doom"
+        description=
+"This sword will vanquish all of your foes with a single swipe">
+    <attribute name="attack" value="10"/>
+    <attribute name="weight" value="21" />
+  </item>
+  <item id="2" name="Bag of Really Big Stuff"
+        description="This bag can hold a lot of stuff.">
+    <attribute name="weight" value="1" />
+    <attribute name="capacity" value="80" />
+  </item>
+  <item id="3" name="Broach of Bug Smashing"
+        description="This broach will kill any bug. Instantly.">
+    <attribute name="weight" value="1" />
+    <attribute name="attack" value="11" />
+    <specials>
+      <special name="killbug" description="This thing kills any bug instantly."/>
+    </specials>
+  </item>
+  <item id="4" name="Wand of Traffic Vanquish"
+        description=
+"A single wave of this wand will part the highway before you.">
+    <attribute name="weight" value="5" />
+    <attribute name="attack" value="20" />
+    <specials>
+      <special name="parttraffic"
+description="All nearby vehicles move out of your way." />
+    </specials>
+  </item>
+</items>
+
+

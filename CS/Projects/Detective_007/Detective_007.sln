@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective_007", "Detective_007.csproj", "{A15A0070-B770-4107-8FF1-B0102629E379}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A15A0070-B770-4107-8FF1-B0102629E379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15A0070-B770-4107-8FF1-B0102629E379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15A0070-B770-4107-8FF1-B0102629E379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15A0070-B770-4107-8FF1-B0102629E379}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

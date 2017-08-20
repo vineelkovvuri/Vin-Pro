@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IRE", "IRE\IRE.vcxproj", "{A1ECC35C-5BD2-4EDF-9FF2-1DEBDF952976}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9F60776E-8E86-43F1-B2A8-CFC23CCBB32B} = {9F60776E-8E86-43F1-B2A8-CFC23CCBB32B}
+		{FA78F4B2-8FE5-436A-8A84-61506E844FC7} = {FA78F4B2-8FE5-436A-8A84-61506E844FC7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PHLib", "PHLib\PHLib.vcxproj", "{9F60776E-8E86-43F1-B2A8-CFC23CCBB32B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08324A3D-3C5B-466D-B74B-31BC51B21478}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GDSL", "GDSL\GDSL.vcxproj", "{FA78F4B2-8FE5-436A-8A84-61506E844FC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1ECC35C-5BD2-4EDF-9FF2-1DEBDF952976}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A1ECC35C-5BD2-4EDF-9FF2-1DEBDF952976}.Debug|Win32.Build.0 = Debug|Win32
+		{A1ECC35C-5BD2-4EDF-9FF2-1DEBDF952976}.Release|Win32.ActiveCfg = Release|Win32
+		{A1ECC35C-5BD2-4EDF-9FF2-1DEBDF952976}.Release|Win32.Build.0 = Release|Win32
+		{9F60776E-8E86-43F1-B2A8-CFC23CCBB32B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9F60776E-8E86-43F1-B2A8-CFC23CCBB32B}.Debug|Win32.Build.0 = Debug|Win32
+		{9F60776E-8E86-43F1-B2A8-CFC23CCBB32B}.Release|Win32.ActiveCfg = Release|Win32
+		{9F60776E-8E86-43F1-B2A8-CFC23CCBB32B}.Release|Win32.Build.0 = Release|Win32
+		{FA78F4B2-8FE5-436A-8A84-61506E844FC7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FA78F4B2-8FE5-436A-8A84-61506E844FC7}.Debug|Win32.Build.0 = Debug|Win32
+		{FA78F4B2-8FE5-436A-8A84-61506E844FC7}.Release|Win32.ActiveCfg = Release|Win32
+		{FA78F4B2-8FE5-436A-8A84-61506E844FC7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

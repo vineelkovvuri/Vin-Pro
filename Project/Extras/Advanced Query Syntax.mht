@@ -1,0 +1,1635 @@
+Content-Type: multipart/related; start=<op.mhtml.1195673010924.a376923b0a333a3c@172.16.29.2>; boundary=----------MyTsy8HMahE2FRosBMfY4o
+Content-Location: http://msdn2.microsoft.com/en-us/library/aa965711(d=printer).aspx
+Subject: =?utf-8?Q?=20Advanced=20Query=20Syntax=20?=
+MIME-Version: 1.0
+
+------------MyTsy8HMahE2FRosBMfY4o
+Content-Disposition: inline; filename="aa965711(d=printer).htm"
+Content-Type: text/html; name="aa965711(d=printer).htm"
+Content-Id: <op.mhtml.1195673010924.a376923b0a333a3c@172.16.29.2>
+Content-Location: http://msdn2.microsoft.com/en-us/library/aa965711(d=printer).aspx
+Content-Transfer-Encoding: Quoted-Printable
+
+<?xml version=3D"1.0" encoding=3D"UTF-8" ?>
+<!-- MTPS 0606 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://w=
+ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id=3D"ctl00_Html1" xmlns=3D"http://www.w3.org/1999/xhtml" dir=3D"l=
+tr" lang=3D"en-us">
+<head><meta name=3D"robots" content=3D"NOINDEX,NOFOLLOW" /><meta http-eq=
+uiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />
+<meta name=3D"ms.locale" content=3D"en-us" />
+<meta name=3D"robots" content=3D"NOINDEX,NOFOLLOW" />
+<meta name=3D"MN" content=3D"958-11:21:45 AM" /><meta name=3D"MSHKeyword=
+A" content=3D"_search_2x_WDS_AqsReference" />
+<meta name=3D"Search.MSHKeywordA" content=3D"_search_2x_WDS_AqsReference=
+" />
+<meta name=3D"MSHKeywordA" content=3D"_search_2x_WDS_AqsReference_cpp" /=
+>
+<meta name=3D"Search.MSHKeywordA" content=3D"_search_2x_WDS_AqsReference=
+_cpp" />
+<meta name=3D"MSHKeywordF" content=3D"Advanced Query Syntax" />
+<meta name=3D"Search.MSHKeywordF" content=3D"Advanced Query Syntax" />
+<meta name=3D"MSHKeywordK" content=3D"Advanced Query Syntax" />
+<meta name=3D"Search.MSHKeywordK" content=3D"Advanced Query Syntax" />
+<meta name=3D"MSHAttr" content=3D"DocSetTitle:Windows Desktop Search" />=
+
+<meta name=3D"Search.DocSetTitle" content=3D"Windows Desktop Search" />
+<meta name=3D"MSHAttr" content=3D"DocSetRoot:Aa965711" />
+<meta name=3D"Search.DocSetRoot" content=3D"Aa965711" />
+<meta name=3D"MSHAttr" content=3D"TopicType:kbRef" />
+<meta name=3D"Search.TopicType" content=3D"kbRef" />
+<meta name=3D"MSHAttr" content=3D"Locale:kbEnglish" />
+<meta name=3D"Search.Locale" content=3D"kbEnglish" />
+<meta name=3D"MSHAttr" content=3D"DevLang:C++" />
+<meta name=3D"Search.DevLang" content=3D"C++" />
+<meta name=3D"MSHAttr" content=3D"Technology:kbsearch" />
+<meta name=3D"Search.Technology" content=3D"kbsearch" />
+<meta name=3D"MSHAttr" content=3D"TechnologyVers:kbsearch" />
+<meta name=3D"Search.TechnologyVers" content=3D"kbsearch" />
+<meta name=3D"MSHAttr" content=3D"DocSet:WCSDK" />
+<meta name=3D"Search.DocSet" content=3D"WCSDK" />
+<meta name=3D"MSHAttr" content=3D"DocSet:LHSDK" />
+<meta name=3D"Search.DocSet" content=3D"LHSDK" />
+<meta name=3D"MSHAttr" content=3D"DocSet:PSDK" />
+<meta name=3D"Search.DocSet" content=3D"PSDK" />
+<meta name=3D"MSHAttr" content=3D"CommunityContent:1" />
+<meta name=3D"Search.CommunityContent" content=3D"1" />
+<meta name=3D"MSHAttr" content=3D"TargetOS:Windows" />
+<meta name=3D"Search.TargetOS" content=3D"Windows" />
+<meta name=3D"MSHAttr" content=3D"TopicType:kbOrient" />
+<meta name=3D"Search.TopicType" content=3D"kbOrient" />
+<meta name=3D"Search.TagsTopic" content=3D"" />
+<meta name=3D"Search.MScategory" content=3D"ms123401" />
+<meta name=3D"MSHAttr" content=3D"MScategory:ms310249" />
+<meta name=3D"Search.MScategory" content=3D"ms310249" />
+<meta name=3D"MSHAttr" content=3D"MScategory:ms310241" />
+<meta name=3D"Search.MScategory" content=3D"ms310241" />
+<meta name=3D"MSHAttr" content=3D"MScategory:aa139672" />
+<meta name=3D"Search.MScategory" content=3D"aa139672" />
+<meta name=3D"MSHAttr" content=3D"MScategory:aa163301" />
+<meta name=3D"Search.MScategory" content=3D"aa163301" />
+<meta name=3D"MSHAttr" content=3D"MScategory:aa803697" />
+<meta name=3D"Search.MScategory" content=3D"aa803697" />
+<meta name=3D"MSHAttr" content=3D"MScategory:aa965726" />
+<meta name=3D"Search.MScategory" content=3D"aa965726" />
+<meta name=3D"MSHAttr" content=3D"MScategory:aa965711" />
+<meta name=3D"Search.MScategory" content=3D"aa965711" />
+<meta name=3D"MSHAttr" content=3D"ShippedIn:VS.85" />
+<meta name=3D"Search.ShippedIn" content=3D"VS85" />
+<meta name=3D"MSHAttr" content=3D"OnlineHelp:VS2005" />
+<meta name=3D"Search.OnlineHelp" content=3D"VS2005" />
+<meta name=3D"Search.ShortId" content=3D"aa965711" />
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"/msdn/MasterPages/Pri=
+nterFriendlyType/PrinterFriendlyType_master.css" />
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"/css.aspx?l=3Den-us&a=
+mp;i=3D/library&amp;ct=3Dmsdn&amp;cl=3Dmtps_pagemetadata;mtps_printerfri=
+endlybannerctrl;instrumentedlink;codesnippet;blockviewer_readonly;collap=
+siblearea;mtpscontentplaceholder;memberlink;ktablecontrol;bpglobal;bpdow=
+nloads;bphome;downloads;contentinclude;mtpsmsnadscontrol;altpage;multivi=
+ewtable;bumperpage;popupwindow;bpproductcompare;languagespecifictext" />=
+
+<script src=3D"/js.aspx?l=3Den-us&amp;i=3D/library&amp;ct=3Dmsdn&amp;cl=3D=
+mtps_pagemetadata;mtps_printerfriendlybannerctrl;instrumentedlink;codesn=
+ippet;blockviewer_readonly;collapsiblearea;mtpscontentplaceholder;member=
+link;ktablecontrol;bpglobal;bpdownloads;bphome;downloads;contentinclude;=
+mtpsmsnadscontrol;altpage;multiviewtable;bumperpage;popupwindow;bpproduc=
+tcompare;languagespecifictext" type=3D"text/javascript"></script>
+
+    <!--[if IE]><style>pre { white-space: normal; }</style><![endif]-->
+	<link href=3D"/css/global.css" rel=3D"stylesheet" type=3D"text/css" />
+    <script defer=3D"defer" type=3D"text/javascript">window.print();</sc=
+ript>
+<title>
+	Advanced Query Syntax
+</title></head>
+<body>
+    <form name=3D"aspnetForm" method=3D"post" action=3D"aa965711(d=3Dpri=
+nter).aspx" id=3D"aspnetForm">
+<div>
+<input type=3D"hidden" name=3D"__EVENTTARGET" id=3D"__EVENTTARGET" value=
+=3D"" />
+<input type=3D"hidden" name=3D"__EVENTARGUMENT" id=3D"__EVENTARGUMENT" v=
+alue=3D"" />
+<input type=3D"hidden" name=3D"__VIEWSTATE" id=3D"__VIEWSTATE" value=3D"=
+/wEPDwUBMGRkvA/XMQeuzWYGCMIzKqr4FlIkUNQ=3D" />
+</div>
+
+<script type=3D"text/javascript">
+<!--
+var theForm =3D document.forms['aspnetForm'];
+if (!theForm) {
+    theForm =3D document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() !=3D false)) {
+        theForm.__EVENTTARGET.value =3D eventTarget;
+        theForm.__EVENTARGUMENT.value =3D eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+
+<script src=3D"/WebResource.axd?d=3Dy48MEe_dRk_v_rnD4dSyAA2&amp;t=3D6332=
+10402069126768" type=3D"text/javascript"></script>
+
+
+<script src=3D"/ScriptResource.axd?d=3DbKqWKghDJk86bV9YK0AySZbLNTvaQreL8=
+tqz9tLYHnURFJ819qaLkCC9TQJWm1mk0&amp;t=3D633234647725860020" type=3D"tex=
+t/javascript"></script>
+    =
+
+        <div id=3D"ctl00_BannerControl1_MTPS_PrinterFriendlyBanner" clas=
+s=3D"MTPS_PrinterFriendlyBanner_msdn">
+	=
+
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tr>
+	<td class=3D"PFB_Left"><img id=3D"ctl00_BannerControl1_LogoImage" src=3D=
+"/msdn/Controls/MTPS_PrinterFriendlyBannerCtrl/en-us/msdn.gif" style=3D"=
+border-width:0px;" /></td>
+	<td class=3D"PFB_Right"><span id=3D"ctl00_BannerControl1_CopyrightLabel=
+" title=3D"=C2=A92007 Microsoft Corporation. All rights reserved." class=
+=3D"MTPS_PrinterFriendlyCopyrightText">=C2=A92007 Microsoft Corporation.=
+ All rights reserved.</span></td>
+</tr>
+</table>
+
+</div>
+        <div class=3D"ContentArea">
+            <div id=3D"ctl00_MainContent">
+	<div class=3D"topic"  ><div class=3D"majorTitle" xmlns:msxsl=3D"urn:sch=
+emas-microsoft-com:xslt"><!----></div><div class=3D"title" xmlns:msxsl=3D=
+"urn:schemas-microsoft-com:xslt">
+Advanced Query Syntax </div><!--Content type: SDKML. Transform: wc2mtps.=
+xslt.--><div class=3D"clsDocBody"><p>The Advanced Query Syntax (AQS) is =
+used by Microsoft Windows Desktop Search (WDS) to help users and program=
+mers better define and narrow their searches. Using AQS is an easy way t=
+o narrow searches and deliver better result sets. Searches can be narrow=
+ed by the following parameters:</p><ul><li>File kinds: folders, document=
+s, presentations, pictures and so on.</li><li>File stores: specific data=
+bases and locations.</li><li>File properties: size, date, title and so o=
+n.</li><li>File contents: keywords like "project deliverables," "AQS," "=
+blue suede shoes," and so on.</li></ul><p>Furthermore, search parameters=
+ can be combined using search operators. The remainder of this section e=
+xplains the query syntax, the parameters and operators, and how they can=
+ be combined to offer targeted search results. The tables describe the s=
+yntax to use with WDS, as well as the properties that can be queried for=
+ each file kind displayed in the <b>Windows Desktop Search</b> results w=
+indow.</p><h2><a name=3D"syntax"><!----></a>Desktop Search Syntax</h2><p=
+>A search query can include one or more keywords, with Boolean operators=
+ and optional criteria. These optional criteria can narrow a search base=
+d on the following:</p><ul><li>Scope or data store in which files reside=
+</li><li>Kinds of files</li><li>Managed properties of files</li></ul><p>=
+The optional criteria, described in greater detail following, use the fo=
+llowing syntax:</p><p><code xmlns:msxsl=3D"urn:schemas-microsoft-com:xsl=
+t">&lt;scope name&gt;:&lt;value&gt;</code></p><p><code xmlns:msxsl=3D"ur=
+n:schemas-microsoft-com:xslt">&lt;file kind&gt;:&lt;value&gt;</code></p>=
+<p><code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">&lt;property nam=
+e&gt;:&lt;value&gt;</code></p><p>Suppose a user wants to search for a do=
+cument containing the phase "last quarter," created by John or Joanne, a=
+nd that the user saved to the folder mydocuments. The query may look lik=
+e this:</p><p><code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">"last=
+ quarter" author:(john OR joanne) foldername:mydocuments</code></p><h3><=
+a name=3D"scope"><!----></a>Scope: Locations and Data Stores</h3><p>User=
+s can limit the scope of their searches to specific folder locations or =
+data stores. For example, if you use several e-mail accounts and you wan=
+t to limit a query to either Microsoft Outlook  or Outlook Express, you =
+can use <code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">store:outlo=
+ok</code> or <code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">store:=
+oe</code> respectively.</p><table class=3D"clsStd"><tr><th>Restrict Sear=
+ch by Data Store</th><th>Use</th><th>Example</th></tr><tr><td>Desktop</t=
+d><td>desktop</td><td>store:desktop</td></tr><tr><td>Files</td><td>files=
+</td><td>store:files</td></tr><tr><td>Outlook</td><td>outlook</td><td>st=
+ore:outlook</td></tr><tr><td>Outlook Express</td><td>oe</td><td>store:oe=
+</td></tr><tr><td>Specific Folder</td><td>foldername or in</td><td>folde=
+rname:MyDocuments or =
+
+                        in:MyDocuments</td></tr></table><p>If you have a=
+ protocol handler in place to crawl custom stores, like Lotus Notes, you=
+ can use the name of the store or protocol handler for the store. For ex=
+ample, if you implemented a protocol handler to include a Lotus Notes da=
+ta store as "notes," the query syntax would be <code xmlns:msxsl=3D"urn:=
+schemas-microsoft-com:xslt">store:notes</code>.</p><h3><a name=3D"file_k=
+inds"><!----></a>Common File Kinds</h3><p>Users can also limit their sea=
+rches to specific types of files, called file kinds. The following table=
+ lists the file kinds and offers examples of the syntax used to search f=
+or these kinds of files.</p><table class=3D"clsStd"><tr><th>To Restrict =
+by File Type:</th><th>Use</th><th>Example</th></tr><tr><td>All file type=
+s</td><td>everything</td><td>kind:everything</td></tr><tr><td>Communicat=
+ions</td><td>communications</td><td>kind:communications</td></tr><tr><td=
+>Contacts</td><td>contacts</td><td>kind:contacts</td></tr><tr><td>E-mail=
+</td><td>email</td><td>kind:email</td></tr><tr><td>Instant Messenger con=
+versations</td><td>im</td><td>kind:im</td></tr><tr><td>Meetings</td><td>=
+meetings</td><td>kind:meetings</td></tr><tr><td>Tasks</td><td>tasks</td>=
+<td>kind:tasks</td></tr><tr><td>Notes</td><td>notes</td><td>kind:notes</=
+td></tr><tr><td>Documents</td><td>docs</td><td>kind:docs</td></tr><tr><t=
+d>Text documents</td><td>text</td><td>kind:text</td></tr><tr><td>Spreads=
+heets</td><td>spreadsheets</td><td>kind:spreadsheets</td></tr><tr><td>Pr=
+esentations</td><td>presentations</td><td>kind:presentations</td></tr><t=
+r><td>Music</td><td>music</td><td>kind:music</td></tr><tr><td>Pictures</=
+td><td>pics</td><td>kind:pics</td></tr><tr><td>Videos</td><td>videos</td=
+><td>kind:videos</td></tr><tr><td>Folders</td><td>folders</td><td>kind:f=
+olders</td></tr><tr><td>Folder name</td><td>foldername or in</td><td>fol=
+dername:mydocs or in:mydocs</td></tr><tr><td>Favorites</td><td>favorites=
+</td><td>kind:favorites</td></tr><tr><td>Programs</td><td>programs</td><=
+td>kind:programs</td></tr></table><h3><a name=3D"boolean_ops"><!----></a=
+>Boolean Operators</h3><p>Search keywords and file properties can be com=
+bined to broaden or narrow a search with operators. The following table =
+explains common operators used in a search query.</p><table class=3D"cls=
+Std"><tr><th>Keyword/Symbol</th><th>Examples</th><th>Function</th></tr><=
+tr><td>NOT</td><td>social NOT security</td><td>Finds items that contain =
+<i>social</i>, but not <i>security</i>.</td></tr><tr><td>=E2=80=93</td><=
+td>social =E2=80=93security</td><td>Finds items that contain <i>social</=
+i>, but not <i>security</i>.</td></tr><tr><td>OR</td><td>social OR secur=
+ity</td><td>Finds items that contain <i>social</i> or <i>security</i>.</=
+td></tr><tr><td>Quotation marks</td><td>"social security"</td><td>Finds =
+items that contain the exact phrase <i>social security</i>.</td></tr><tr=
+><td>Parentheses</td><td>(social security)</td><td>Finds items that cont=
+ain <i>social</i> and <i>security</i> in any order.</td></tr><tr><td>&gt=
+;</td><td>date:&gt;11/05/04<br />size:&gt;500</td><td>Finds items with a=
+ date after 11/05/04 <br />Finds items with a size greater than 500 byte=
+s.</td></tr><tr><td>&lt;</td><td>date:&lt;11/05/04 <br />size:&lt;500</t=
+d><td>Finds items with a date before 11/05/04 <br />Finds items with a s=
+ize less than 500 bytes.</td></tr><tr><td>..</td><td>date:11/05/04..11/1=
+0/04</td><td>Finds items with a date beginning on 11/05/04 and ending on=
+ 11/10/04.</td></tr></table><div class=3D"clsNote"><b>
+Note</b>=C2=A0=C2=A0<p>The operators <b>NOT</b> and <b>OR</b> must be in=
+ uppercase and cannot be combined in one query (e.g., <code xmlns:msxsl=3D=
+"urn:schemas-microsoft-com:xslt">social OR security NOT retirement</code=
+>).</p></div><h3><a name=3D"boolean_props"><!----></a>Boolean Properties=
+</h3><p>Some file types let users search for files using Boolean propert=
+ies, as described in the following table.</p><table class=3D"clsStd"><tr=
+><th>Property</th><th>Example</th><th>Function</th></tr><tr><td>is:attac=
+hment</td><td>report is:attachment</td><td>Finds items that have attachm=
+ents that contain <i>report</i>. Same as <code xmlns:msxsl=3D"urn:schema=
+s-microsoft-com:xslt">isattachment:true</code>.</td></tr><tr><td>isonlin=
+e:</td><td>report isonline:true</td><td>Finds items that are online and =
+which contain <i>report</i>.</td></tr><tr><td>isrecurring:</td><td>repor=
+t isrecurring:true</td><td>Finds items that are recurring and which cont=
+ain<i>report</i>.</td></tr><tr><td>isflagged:</td><td>report isflagged:t=
+rue</td><td>Finds items that are flagged (Review, Follow up, for example=
+) and which contain <i>report</i>.</td></tr><tr><td>isdeleted:</td><td>r=
+eport isdeleted:true</td><td>Finds items that are flagged as deleted (Re=
+cycle Bin or Deleted Items, for example) and which contain <i>report</i>=
+.</td></tr><tr><td>iscompleted:</td><td>report iscompleted:false</td><td=
+>Finds items that are not flagged as complete and which contain <i>repor=
+t</i>.</td></tr><tr><td>hasattachment:</td><td>report hasattachment:true=
+</td><td>Finds items containing <i>report</i> and having attachments</td=
+></tr><tr><td>hasflag:</td><td>report hasflag:true</td><td>inds items co=
+ntaining <i>report</i> and having flags.</td></tr></table><h3><a name=3D=
+"dates"><!----></a>Dates</h3><p>In addition to searching on specific dat=
+es and date ranges using the operators described earlier, AQS allows rel=
+ative date values (like <code xmlns:msxsl=3D"urn:schemas-microsoft-com:x=
+slt">today</code>, <code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">=
+tomorrow</code>, or <code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt"=
+>next week</code>) and day (like <code xmlns:msxsl=3D"urn:schemas-micros=
+oft-com:xslt">Tuesday</code> or <code xmlns:msxsl=3D"urn:schemas-microso=
+ft-com:xslt">Monday..Wednesday</code>) and month (<code xmlns:msxsl=3D"u=
+rn:schemas-microsoft-com:xslt">February</code>) values.</p><table class=3D=
+"clsStd"><tr><th>Relative to:</th><th>Syntax Example</th><th>Result</th>=
+</tr><tr><td>Day</td><td>date:today<br />
+                date:tomorrow<br />
+                date:yesterday
+                </td><td>Finds items with today's date.<br />
+                Finds items with tomorrow's date.<br />
+                Finds items with yesterday's date.
+            </td></tr><tr><td>Week/Month/year</td><td>date:this week<br =
+/>
+                date:last week<br />
+                date:next month<br />
+                date:past month<br />
+                date:coming year =
+
+            </td><td>Finds items with a date falling within the current =
+week.<br />
+                Finds items with a date falling within the previous week=
+.<br />
+                Finds items with a date falling within the upcoming week=
+.<br />
+                Finds items with a date falling within the previous mont=
+h.<br />
+                Finds items with a date falling within the upcoming year=
+.
+            </td></tr></table><h2><a name=3D"file_type_props"><!----></a=
+>Properties by File Kind</h2><p>Users can search on specific properties =
+of different file kinds. Some properties (like file size) are common to =
+all files, while others are limited to a specific kind. Slide count, for=
+ example, is specific to presentations. The following tables list these =
+properties by file kind.</p><h3><a name=3D"file_type_everything"><!---->=
+</a>File Kind: Everything</h3><p>These are properties common to all file=
+ kinds. To include all types of files in a query, the syntax is:</p><p><=
+code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">kind:everything &lt;=
+property&gt;:&lt;value&gt;</code></p><p>where <code xmlns:msxsl=3D"urn:s=
+chemas-microsoft-com:xslt">&lt;property&gt;</code> is a property listed =
+below and <code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">&lt;value=
+&gt;</code> is the user-specified search term.</p><table class=3D"clsStd=
+"><tr><th>Property</th><th>Use</th><th>Example</th></tr><tr><td>Title</t=
+d><td>title, subject or about</td><td>title:"Quarterly Financial"</td></=
+tr><tr><td>Status</td><td>status</td><td>status:complete</td></tr><tr><t=
+d>Date</td><td>date</td><td>date:last week</td></tr><tr><td>Date modifie=
+d</td><td>datemodified or modified</td><td>modified:last week</td></tr><=
+tr><td>Importance</td><td>importance or priority</td><td>importance:high=
+</td></tr><tr><td>Size</td><td>size</td><td>size:&gt; 50 </td></tr><tr><=
+td>Deleted</td><td>deleted or isdeleted</td><td>isdeleted:true</td></tr>=
+<tr><td>Is attachment</td><td>isattachment</td><td>isattachment:true</td=
+></tr><tr><td>To</td><td>to or toname</td><td>to:bob</td></tr><tr><td>Cc=
+</td><td>cc or ccname</td><td>cc:john</td></tr><tr><td>Company</td><td>c=
+ompany</td><td>company:Microsoft</td></tr><tr><td>Location</td><td>locat=
+ion</td><td>location:"Conference Room 102"</td></tr><tr><td>Category</td=
+><td>category</td><td>category:Business</td></tr><tr><td>Keywords</td><t=
+d>keywords</td><td>keywords:"sales projections"</td></tr><tr><td>Album</=
+td><td>album</td><td>album:"Fly by Night"</td></tr><tr><td>File name</td=
+><td>filename or file</td><td>filename:MyResume</td></tr><tr><td>Genre</=
+td><td>genre</td><td>genre:rock</td></tr><tr><td>Author</td><td>author o=
+r by</td><td>author:"Stephen King"</td></tr><tr><td>People</td><td>peopl=
+e or with</td><td>with:(sonja or david)</td></tr><tr><td>Folder</td><td>=
+folder, under or path</td><td>folder:downloads</td></tr><tr><td>File ext=
+ension</td><td>ext or fileext</td><td>ext:.txt</td></tr></table><h3><a n=
+ame=3D"syntax_attachment"><!----></a>Attachment</h3><p>These are propert=
+ies common to attachments. To limit the search to attachments only, the =
+syntax is:</p><p><code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">ki=
+nd:attachment &lt;property&gt;:&lt;value&gt;</code></p><p>where <code xm=
+lns:msxsl=3D"urn:schemas-microsoft-com:xslt">&lt;property&gt;</code> is =
+a property listed below and <code xmlns:msxsl=3D"urn:schemas-microsoft-c=
+om:xslt">&lt;value&gt;</code> is the user-specified search term.</p><tab=
+le class=3D"clsStd"><tr><th>Property</th><th>Use</th><th>Example</th></t=
+r><tr><td>People</td><td>people or with</td><td>people:john or with:john=
+</td></tr></table><h3><a name=3D"syntax_contact"><!----></a>Contacts</h3=
+><p>These are properties common to contacts. To limit the search to cont=
+acts only, the syntax is:</p><p><code xmlns:msxsl=3D"urn:schemas-microso=
+ft-com:xslt">kind:contacts &lt;property&gt;:&lt;value&gt;</code></p><p>w=
+here <code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">&lt;property&g=
+t;</code> is a property listed below and <code xmlns:msxsl=3D"urn:schema=
+s-microsoft-com:xslt">&lt;value&gt;</code> is the user-specified search =
+term.</p><table class=3D"clsStd"><tr><th>Property</th><th>Use</th><th>Ex=
+ample</th></tr><tr><td>Job title</td><td>jobtitle</td><td>jobtitle:CFO</=
+td></tr><tr><td>IM address</td><td>imaddress</td><td>imaddress:john_doe@=
+msn.com</td></tr><tr><td>Assistant's phone</td><td>assistantsphone</td><=
+td>assistantsphone:555-3323</td></tr><tr><td>Assistant name</td><td>assi=
+stantname</td><td>assistantname:Paul </td></tr><tr><td>Profession</td><t=
+d>profession</td><td>profession:plumber</td></tr><tr><td>Nickname</td><t=
+d>nickname</td><td>nickname:Tex</td></tr><tr><td>Spouse</td><td>spouse</=
+td><td>spouse:Debbie</td></tr><tr><td>Business city</td><td>businesscity=
+</td><td>businesscity:Seattle</td></tr><tr><td>Business postal code</td>=
+<td>businesspostalcode</td><td>businesspostalcode:98006</td></tr><tr><td=
+>Business home page</td><td>businesshomepage</td><td>businesshomepage:ww=
+w.microsoft.com</td></tr><tr><td>Callback phone number</td><td>callbackp=
+honenumber</td><td>callbackphonenumber:555-555-2121</td></tr><tr><td>Car=
+ phone</td><td>carphone</td><td>carphone:555-555-2121</td></tr><tr><td>C=
+hildren</td><td>children</td><td>children:Timmy</td></tr><tr><td>First n=
+ame</td><td>firstname</td><td>firstname:John</td></tr><tr><td>Last name<=
+/td><td>lastname</td><td>lastname:Doe</td></tr><tr><td>Home fax</td><td>=
+homefax</td><td>homefax:555-555-2121</td></tr><tr><td>Manager's name</td=
+><td>managersname</td><td>managersname:John</td></tr><tr><td>Pager</td><=
+td>pager</td><td>pager:555-555-2121</td></tr><tr><td>Business phone</td>=
+<td>businessphone</td><td>businessphone:555-555-2121</td></tr><tr><td>Ho=
+me phone</td><td>homephone</td><td>homephone:555-555-2121</td></tr><tr><=
+td>Mobile phone</td><td>mobilephone</td><td>mobilephone:555-555-2121</td=
+></tr><tr><td>Office</td><td>office</td><td>office:sample </td></tr><tr>=
+<td>Anniversary</td><td>anniversary</td><td>anniversary:1/1/06</td></tr>=
+<tr><td>Birthday</td><td>birthday</td><td>birthday:1/1/06</td></tr><tr><=
+td>Web page</td><td>webpage</td><td>webpage:www.microsoft.com</td></tr><=
+/table><div class=3D"clsNote"><b>
+Note</b>=C2=A0=C2=A0<p>Phone numbers are indexed as entered. For example=
+, if a user did not include a country or area code when entering the pho=
+ne number, users will not be able to locate a contact if searching with =
+country or area code in the phone number.</p></div><h3><a name=3D"syntax=
+_communications"><!----></a>Communications</h3><p>These are properties c=
+ommon to communications. To limit the search to communications only, the=
+ syntax is: </p><p><code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">=
+kind:communications &lt;property&gt;:&lt;value&gt;</code></p><p>where <c=
+ode xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">&lt;property&gt;</cod=
+e> is a property listed below and <code xmlns:msxsl=3D"urn:schemas-micro=
+soft-com:xslt">&lt;value&gt;</code> is the user-specified search term.</=
+p><table class=3D"clsStd"><tr><th>Property</th><th>Use</th><th>Example</=
+th></tr><tr><td>From</td><td>from or organizer</td><td>from:john</td></t=
+r><tr><td>Received</td><td>received or sent</td><td>sent:yesterday</td><=
+/tr><tr><td>Subject</td><td>subject or title</td><td>subject:"Quarterly =
+Financial"</td></tr><tr><td>Has attachment</td><td>hasattachments, hasat=
+tachment</td><td>hasattachment:true</td></tr><tr><td>Attachments</td><td=
+>attachments or attachment</td><td>attachment:presentation.ppt</td></tr>=
+<tr><td>Bcc</td><td>bcc, bccname or bccaddress</td><td>bcc:dave</td></tr=
+><tr><td>Cc address</td><td>ccaddress or cc</td><td>ccaddress:john_doe@h=
+otmail.com</td></tr><tr><td>Follow-up flag</td><td>followupflag</td><td>=
+followupflag:2</td></tr><tr><td>Due date</td><td>duedate or due</td><td>=
+due:last week</td></tr><tr><td>Read</td><td>read or isread</td><td>is:re=
+ad</td></tr><tr><td>Is completed</td><td>iscompleted</td><td>is:complete=
+d</td></tr><tr><td>Incomplete</td><td>incomplete or isincomplete</td><td=
+>is:incomplete</td></tr><tr><td>Has flag</td><td>hasflag or isflagged</t=
+d><td>has:flag</td></tr><tr><td>Duration</td><td>duration</td><td>durati=
+on:&gt; 50</td></tr></table><h3><a name=3D"syntax_calendar"><!----></a>C=
+alendar</h3><p>These are properties common to calendars. To limit the se=
+arch to calendars only, the syntax is: </p><p><code xmlns:msxsl=3D"urn:s=
+chemas-microsoft-com:xslt">kind:calendar &lt;property&gt;:&lt;value&gt;<=
+/code></p><p>where <code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">=
+&lt;property&gt;</code> is a property listed below and <code xmlns:msxsl=
+=3D"urn:schemas-microsoft-com:xslt">&lt;value&gt;</code> is the user-spe=
+cified search term.</p><table class=3D"clsStd"><tr><th>Property</th><th>=
+Use</th><th>Example</th></tr><tr><td>Recurring</td><td>recurring or isre=
+curring</td><td>is:recurring </td></tr><tr><td>Organizer</td><td>organiz=
+er, by or from</td><td>organizer:debbie</td></tr></table><h3><a name=3D"=
+syntax_documents"><!----></a>Documents</h3><p>These are properties commo=
+n to documents. To limit the search to documents only, the syntax is: </=
+p><p><code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">kind:documents=
+ &lt;property&gt;:&lt;value&gt;</code></p><p>where <code xmlns:msxsl=3D"=
+urn:schemas-microsoft-com:xslt">&lt;property&gt;</code> is a property li=
+sted below and <code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">&lt;=
+value&gt;</code> is the user-specified search term.</p><table class=3D"c=
+lsStd"><tr><th>Property</th><th>Use</th><th>Example</th></tr><tr><td>Com=
+ments</td><td>comments</td><td>comments:"needs final review"</td></tr><t=
+r><td>Last saved by</td><td>lastsavedby</td><td>lastsavedby:john</td></t=
+r><tr><td>Document manager</td><td>documentmanager</td><td>documentmanag=
+er:john</td></tr><tr><td>Revision number</td><td>revisionnumber</td><td>=
+revisionnumber:1.0.3</td></tr><tr><td>Document format</td><td>documentfo=
+rmat</td><td>documentformat:MIMETYPE</td></tr><tr><td>Date last printed<=
+/td><td>datelastprinted</td><td>datelastprinted:last week</td></tr></tab=
+le><h3><a name=3D"syntax_presentation"><!----></a>Presentation</h3><p>Th=
+ese are properties common to presentations. To limit the search to prese=
+ntations only, the syntax is: </p><p><code xmlns:msxsl=3D"urn:schemas-mi=
+crosoft-com:xslt">kind:presentation &lt;property&gt;:&lt;value&gt;</code=
+></p><p>where <code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">&lt;p=
+roperty&gt;</code> is a property listed below and <code xmlns:msxsl=3D"u=
+rn:schemas-microsoft-com:xslt">&lt;value&gt;</code> is the user-specifie=
+d search term.</p><table class=3D"clsStd"><tr><th>Property</th><th>Use</=
+th><th>Example</th></tr><tr><td>Slide count</td><td>slidecount</td><td>s=
+lidecount:&gt;20</td></tr></table><h3><a name=3D"syntax_music"><!----></=
+a>Music</h3><p>These are properties common to music files. To limit the =
+search to music only, the syntax is: </p><p><code xmlns:msxsl=3D"urn:sch=
+emas-microsoft-com:xslt">kind:music &lt;property&gt;:&lt;value&gt;</code=
+></p><p>where <code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">&lt;p=
+roperty&gt;</code> is a property listed below and <code xmlns:msxsl=3D"u=
+rn:schemas-microsoft-com:xslt">&lt;value&gt;</code> is the user-specifie=
+d search term.</p><table class=3D"clsStd"><tr><th>Property</th><th>Use</=
+th><th>Example</th></tr><tr><td>Bit rate</td><td>bitrate, rate</td><td>b=
+itrate:192</td></tr><tr><td>Artist</td><td>artist, by or from</td><td>ar=
+tist:John Singer</td></tr><tr><td>Duration</td><td>duration</td><td>dura=
+tion:3</td></tr><tr><td>Album</td><td>album</td><td>album:"greatest hits=
+"</td></tr><tr><td>Genre</td><td>genre</td><td>genre:rock</td></tr><tr><=
+td>Track</td><td>track</td><td>track:12</td></tr><tr><td>Year</td><td>ye=
+ar</td><td>year:&gt; 1980 &lt; 1990</td></tr></table><h3><a name=3D"synt=
+ax_picture"><!----></a>Picture</h3><p>These are properties common to pic=
+tures. To limit the search to pictures only, the syntax is:</p><p><code =
+xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">kind:picture &lt;property=
+&gt;:&lt;value&gt;</code></p><p>where <code xmlns:msxsl=3D"urn:schemas-m=
+icrosoft-com:xslt">&lt;property&gt;</code> is a property listed below an=
+d <code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">&lt;value&gt;</co=
+de> is the user-specified search term.</p><table class=3D"clsStd"><tr><t=
+h>Property</th><th>Use</th><th>Example</th></tr><tr><td>Camera make</td>=
+<td>cameramake</td><td>cameramake:sample</td></tr><tr><td>Camera model</=
+td><td>cameramodel</td><td>cameramodel:sample</td></tr><tr><td>Dimension=
+s</td><td>dimensions</td><td>dimensions:8X10</td></tr><tr><td>Orientatio=
+n</td><td>orientation</td><td>orientation:landscape</td></tr><tr><td>Dat=
+e taken</td><td>datetaken</td><td>datetaken:yesterday</td></tr><tr><td>W=
+idth</td><td>width</td><td>width:1600</td></tr><tr><td>Height</td><td>he=
+ight</td><td>height:1200</td></tr></table><h3><a name=3D"syntax_video"><=
+!----></a>Video</h3><p>These are properties common to videos. To limit t=
+he search to videos only, the syntax is: </p><p><code xmlns:msxsl=3D"urn=
+:schemas-microsoft-com:xslt">kind:video &lt;property&gt;:&lt;value&gt;</=
+code></p><p>where <code xmlns:msxsl=3D"urn:schemas-microsoft-com:xslt">&=
+lt;property&gt;</code> is a property listed below and <code xmlns:msxsl=3D=
+"urn:schemas-microsoft-com:xslt">&lt;value&gt;</code> is the user-specif=
+ied search term.</p><table class=3D"clsStd"><tr><th>Property</th><th>Use=
+</th><th>Example</th></tr><tr><td>Name</td><td>name, subject</td><td>nam=
+e:"Family Vacation to the Beach 05"</td></tr><tr><td>Ext</td><td>ext, fi=
+leext</td><td>ext:.avi</td></tr></table><h2><a name=3D"related_topics">R=
+elated Topics</a></h2><p /><ul><li><a onclick=3D"javascript:Track('ctl00=
+_ctl03|ctl00_ctl04',this);" href=3D"aa965719.aspx">Perceived Types</a> [=
+ http://msdn2.microsoft.com/en-us/library/aa965719.aspx ] </li><li><a on=
+click=3D"javascript:Track('ctl00_ctl03|ctl00_ctl05',this);" href=3D"aa96=
+5725.aspx">WDS Schema</a> [ http://msdn2.microsoft.com/en-us/library/aa9=
+65725.aspx ] </li><li><a onclick=3D"javascript:Track('ctl00_ctl03|ctl00_=
+ctl06',this);" href=3D"aa965713.aspx">Calling WDS from the Command Line<=
+/a> [ http://msdn2.microsoft.com/en-us/library/aa965713.aspx ] </li><li>=
+<a onclick=3D"javascript:Track('ctl00_ctl03|ctl00_ctl07',this);" href=3D=
+"aa965712.aspx">Calling WDS from Web Pages</a> [ http://msdn2.microsoft.=
+com/en-us/library/aa965712.aspx ] </li></ul></div></div>
+</div>
+        </div>
+        <div id=3D"ctl00_WikiViewer1_cc" class=3D"cc">
+	=
+
+    <div id=3D"ctl00_WikiViewer1_ccContainer" class=3D"ccContainer">
+		=
+
+        &nbsp;
+        <div class=3D"ccHeader">
+            <span class=3D"cch_left">
+                <div class=3D"cch_title">Community Content</div>
+            </span><span class=3D"cch_middle">
+                <br />
+            </span><span class=3D"cch_right">&nbsp;</span>
+        </div>
+    =
+
+	</div>
+
+</div>
+<div id=3D"ctl00_WikiViewer1_wikiItems">
+
+</div>
+    =
+
+
+<script type=3D"text/javascript">
+<!--
+Sys.Application.initialize();
+// -->
+</script>
+</form>
+</body>
+</html>
+
+------------MyTsy8HMahE2FRosBMfY4o
+Content-Disposition: inline; filename=PrinterFriendlyType_master.css
+Content-Type: text/css; name=PrinterFriendlyType_master.css
+Content-Location: http://msdn2.microsoft.com/msdn/MasterPages/PrinterFriendlyType/PrinterFriendlyType_master.css
+Content-Transfer-Encoding: 8bit
+
+BODY
+{
+    padding:0px;
+    margin:0px;
+    overflow:auto;
+    font-family: Verdana;
+    font-size: 70%;
+}
+
+.DeepTreeLibraryPage
+{
+    width:100%;
+    height:100%;
+}
+
+
+DIV.topic
+{
+	margin: 20px;
+}
+
+.ContentArea
+{
+	padding-top:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-bottom:0px;
+	margin-left:10px;
+	margin-top:0px;
+	margin-right:10px;
+	margin-bottom:0px;
+}
+
+
+
+/*
+Start PagePlanner Style - moved from global.css
+*/
+DIV.navpage
+{
+    margin: 5px;
+}
+
+div.navpage table
+{
+    border-collapse:collapse;
+    margin: 10px 0 10px 0;
+}
+
+div.navpage table p
+{
+    margin:0px;
+    padding: 0px;
+}
+
+div.navpage table th, div.navpage table td
+{
+    padding: 5px;
+    text-align: left;
+    font-size: 70%;
+}
+
+div.navpage table th
+{
+    background: #cccccc;
+    vertical-align: bottom;
+}
+
+div.navpage table th p
+{
+    font-weight: bold;
+}
+
+div.navpage table td
+{
+    vertical-align: top;
+    border: solid 0px #cccccc;
+}
+
+.innercol
+{
+    border-right: 1px solid #aaaaaa;
+}
+/* End PagePlan Style */
+
+
+/* START: titles */
+/*
+.title
+{	
+	font:normal 190% Arial, Helvetica, sans-serif;
+	margin: 0px 0px 10px 0px;
+	color: #000000;
+}
+
+.majorLabel
+{
+	font-family: Verdana;
+	font-weight:bold;
+	font-size: 120%;
+	margin: 5px 0px 3px 0px;
+}
+
+.minorLabel
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 100%;
+	white-space:normal;
+	margin: 0px 0px 0px 0px;
+}
+
+.sectionTitle
+{
+	font-weight:bold;
+	font-size: 120%;
+	padding: 0px 0px 4px 0px;
+	margin: 0px 0px 0px 0px;
+}
+*/
+/* END: titles */
+
+
+
+/* START: standard paragraph style */
+/*
+p, DIV.summary, DIV.requirements, DIV.typeRelationHierarchy, DIV.seeAlso, DIV.content DIV.content
+{
+	padding: 0px 0px 10px 0px;
+	margin: 0 0 0 0;
+	line-height: 140%;
+}
+*/
+/* END: standard paragraph style */
+
+
+/* START: tables */
+/*
+.tablediv
+{
+	width: 100%;
+       	margin: 0 0 0 0;
+}
+
+table.dttable
+{
+	border-collapse:collapse;
+  	margin: 10px 0 10px 0;
+}
+
+table.dttable p
+{
+	margin:0px;
+	padding: 0;
+}
+
+table.dttable th, table.dttable td
+{
+	padding: 5px;
+	text-align: left;
+	font-size: 70%;
+}
+
+table.dttable th
+{
+	background: #cccccc;
+	vertical-align: bottom;
+}
+
+table.dttable th p
+{
+	font-weight: bold;
+}
+
+
+table.dttable td
+{
+	vertical-align: top;
+	border: solid 1px #cccccc;
+}
+*/
+/* END: tables */
+
+/* START: code blocks */
+/*
+.codeInline, .languageKeyword
+{
+	font-family: Lucida Console, Courier New;
+}
+
+.code
+{
+	padding: 5px 0 5px 0;
+	margin: 0 0 0 0;
+}
+
+pre
+{
+	background: #dddddd;
+	font-family: Lucida Console, Courier New;
+	padding: 10px 15px 10px 15px;
+	margin: 0 0 1em 0;
+	word-wrap: break-word;
+}
+*/
+
+/* .lang is the language bar along the top of the code block */
+/*
+.lang
+{	
+    background-color:#dddddd;
+    border-bottom: 1px solid #aaaaaa;
+    margin: 0;
+    width: 100%;
+}
+/* END: code blocks */
+
+/* START: lists */
+/*
+ul
+{
+	margin: 0px 0px 0px 20px;
+	padding: 0;
+}
+
+ul ul
+{
+	padding:0;
+	margin-top:4px
+}
+
+ul ul li
+{
+	background: url( '/msdn/MasterPages/DeepTreePageType/b.gif' ) no-repeat left top;
+	line-height:1.2em;
+}
+
+ul li
+{
+	margin: 0 0 5px 0;
+	background: url( '/msdn/MasterPages/DeepTreePageType/b.gif' ) no-repeat left top;
+	list-style-position: outside;
+	list-style-type: none;
+	padding: 0 0 0 10px;
+	line-height:140%;
+}
+
+li p {
+	margin:0px; 
+	padding:0px;
+}
+
+ol
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+ol li
+{
+	margin: 0px 0px 5px 40px;
+	line-height: 140%;
+}
+*/
+/* END: lists */
+
+/* START: definitions */
+/*
+dt
+{
+	font-style:normal;
+	margin: 0px 0px 5px 20px;
+
+}
+
+dd
+{
+	padding: 0;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+*/
+/* END: definitions */
+
+/* === everything below is whidbey specific === */
+/*
+.alert
+{
+	font-weight:bold;
+}
+
+.legacyBold, .ui
+{
+	font-weight: bold;
+}
+
+.legacyItalic
+{
+	font-style: italic;
+}
+*/
+
+/* START: syntax section for managed ref */
+/*
+DIV.declarationSyntaxes SPAN.VisualBasicDeclaration, DIV.declarationSyntaxes SPAN.VisualBasicUsage, DIV.declarationSyntaxes SPAN.CSharp, DIV.declarationSyntaxes SPAN.ManagedCPlusPlus, DIV.declarationSyntaxes SPAN.JSharp, DIV.declarationSyntaxes SPAN.JScript
+{
+	background: #DDDDDD;
+}
+
+DIV.declarationSyntaxes PRE
+{
+	background: #dddddd;
+	font-family: Lucida Console, Courier New;
+	line-height: 140%;
+	border-top: 1px solid #aaaaaa;
+	padding: 5px 10px 10px 25px;
+	margin: 0 0 20px 0;
+}
+*/
+/* END: syntax section for managed ref */
+
+/* Page Planner CSS */
+/*
+DIV.navpage
+{
+    margin: 5px;
+}
+
+div.navpage table
+{
+    border-collapse:collapse;
+    margin: 10px 0 10px 0;
+}
+
+div.navpage table p
+{
+    margin:0px;
+    padding: 0px;
+}
+
+div.navpage table th, div.navpage table td
+{
+    padding: 5px;
+    text-align: left;
+    font-size: 70%;
+}
+
+div.navpage table th
+{
+    background: #cccccc;
+    vertical-align: bottom;
+}
+
+div.navpage table th p
+{
+    font-weight: bold;
+}
+
+div.navpage table td
+{
+    vertical-align: top;
+}
+
+.innercol
+{
+    border-right: 1px solid #aaaaaa;
+}
+
+*/
+------------MyTsy8HMahE2FRosBMfY4o
+Content-Disposition: inline; filename=b.gif
+Content-Type: image/gif; name=b.gif
+Content-Location: http://msdn2.microsoft.com/images/b.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhBAANAIABAKampv///yH5BAEAAAEALAAAAAAEAA0AAAIKjI+pGwDtooMs
+FAA7
+------------MyTsy8HMahE2FRosBMfY4o
+Content-Disposition: inline; filename=global.css
+Content-Type: text/css; name=global.css
+Content-Location: http://msdn2.microsoft.com/css/global.css
+Content-Transfer-Encoding: 8bit
+
+/* Global Content CSS 
+used by all master pages 
+*/
+
+/* GLOBAL STYLES */
+/* START: titles */
+.title
+{	
+	font:normal 190% Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right:0px;
+	margin-bottom: 10px;
+	color: #000000;
+}
+
+.majorLabel, .sectionTitle
+{
+	/* with +- hence negative left margin */
+	font-family: Verdana;
+	font-weight:bold;
+	font-size: 120%;
+	margin: 10px 0px 3px 0px;
+}
+
+.minorLabel
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 100%;
+	white-space:normal;
+	margin: 0px 0px 0px 0px;
+}
+
+.subHeading
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 100%;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+dl
+{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding-top:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-bottom:0px;
+}
+
+.parameter
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 100%;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+/* END: titles */
+
+/* START: standard paragraph style */
+p
+{
+	padding-top:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-bottom:0px;
+	margin-top: 0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom: 10px;
+}
+
+a img {
+	border :none;
+}
+div.section
+{
+	padding-left: 20px;
+}
+/* END: standard paragraph style */
+
+/* START: tables */
+div.ContentArea table
+{
+	width: auto; /* 94%; */
+	border-collapse:collapse;
+  margin: 10px 0 10px 0;
+}
+
+div.ContentArea table p
+{
+	margin:0px;
+	padding: 0;
+}
+
+div.ContentArea table th, div.ContentArea table td
+{
+	padding: 5px;
+	text-align: left;
+  font-size: 3mm;
+}
+
+div.ContentArea table th
+{
+	background: #cccccc;
+	vertical-align: bottom;
+}
+
+div.ContentArea table th p
+{
+	font-weight: bold;
+}
+
+div.ContentArea table td
+{
+	background: #ffffff;
+	vertical-align: top;
+	border: solid 0px #cccccc;
+}
+/*  BEGIN # 33893 */
+
+.ContentArea .topic table
+{
+    width:auto;
+}
+
+.ContentArea .topic table td
+{
+    padding:5px;
+    margin:0px;
+}
+
+/*
+.ContentArea .topic table td h1
+{
+    font-size:150%;
+    padding:3px;
+    margin:0px;
+}
+.ContentArea .topic table td h2
+{
+    font-size:125%;
+    padding:3px;
+    margin:0px;
+}
+.ContentArea .topic table td h3
+{
+    padding:5px;
+    margin:0px;
+}
+*/
+
+.ContentArea .topic table td p
+{
+    padding:5px;
+    margin:0px;
+}
+
+.ContentArea .topic table td UL
+{
+    margin-top:5px;
+    margin-left:20px;
+    margin-bottom:5px;
+    margin-right:10px;
+}
+
+.ContentArea .section table td ul li, .ContentArea .subSection ul li, .ContentArea .topic ul li
+{
+	list-style-image: url("/images/b.gif");
+}
+
+/* END # 33893 */
+
+/* BEGIN #7559 */
+
+div.ContentArea table.memberListTable td
+{
+	text-align: left;
+	vertical-align: middle;
+}
+
+/* END #7559 */
+
+/* END: tables */
+
+
+/* START: code blocks */
+
+tt
+{
+	font-family: Lucida Console, Courier New;
+}
+
+span.code
+{
+	font-family: Lucida Console, Courier New;
+}
+
+div.code, pre.code
+{
+	display:block;
+	padding-top: 5px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:5px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	/* Start Bug 8103
+  width:100%;	*/
+	max-width:100%; 
+	/* End of Bug 8103 */ 
+}
+
+div.lang
+{
+	background-color: #dddddd;
+	border-bottom: #eeeeee 1px solid;
+	white-space:pre;
+	clear:both;	
+	padding-left:5px;
+}
+
+pre
+{
+	background: #dddddd;
+	font-family: Lucida Console, Courier New;
+	margin-top: 0px;
+	margin-left: 1em;
+	margin-right:0px;
+	margin-bottom:0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	/*
+	word-wrap: break-word;
+	*/
+}
+/* END: code blocks */
+
+/* START: lists */
+ul	{
+	margin-bottom: 15px;
+  line-height: 140%;
+}
+
+ul ul	{
+	margin-top: 15px; 
+	margin-bottom: 15px;
+	line-height: 140%;
+}
+
+ol	{
+	margin-bottom: 15px; 
+	line-height: 140%;
+}
+
+ol ol	{
+	margin-top: 15px; 
+	margin-bottom: 15px;
+	line-height: 140%;
+}
+
+ol ul	{
+	margin-top: 15px; 
+	margin-bottom: 15px;
+	line-height: 140%;
+}
+
+ul ol	{
+	margin-top: 15px; 
+	margin-bottom: 15px;
+	line-height: 140%;
+}
+	
+li	{
+	margin-left: 0px;
+	margin-bottom: 10px;
+}
+
+/* END: lists */
+
+/* START: definitions */
+dt
+{
+    font-style:normal;
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom: 0px;
+	margin-left:0px;
+    
+}
+/*  #33172 */
+dd
+{
+    /*
+	padding: 0;
+	margin-left: 0px;
+	margin-bottom: 0px;
+    */
+}
+/*
+dd p
+{
+	PS # 33265 
+	margin-left:-40px;
+	margin-top:0px;
+	margin-right:auto;
+	margin-bottom:-10px;
+}
+*/
+/* END: definitions */
+
+/* === everything below is whidbey specific === */
+div.alert table th
+{
+	font-weight: bold;
+	font-size: 11px;
+	background-color: #CCCCCC;
+}
+
+.legacyBold, .ui
+{
+	font-weight: bold;
+}
+
+.legacyItalic
+{
+	font-style: italic;
+}
+
+
+/* START: syntax section for managed ref */
+DIV.declarationSyntaxes SPAN.VisualBasicDeclaration, DIV.declarationSyntaxes SPAN.VisualBasicUsage, DIV.declarationSyntaxes SPAN.CSharp, DIV.declarationSyntaxes SPAN.ManagedCPlusPlus, DIV.declarationSyntaxes SPAN.JSharp, DIV.declarationSyntaxes SPAN.JScript
+{
+	background: #DDDDDD;
+}
+
+DIV.declarationSyntaxes PRE
+{
+	background: #dddddd;
+	font-family: Lucida Console, Courier New;
+	line-height: 140%;
+	border-top: 1px solid #aaaaaa;
+	padding: 5px 10px 10px 25px;
+	margin: 0 0 20px 0;
+}
+/* END: syntax section for managed ref */
+
+/* START: nested lists (registry trees) */
+DIV.clsRegTree UL { margin-left:2.5em; }
+DIV.clsRegTree UL UL { margin-top:0px; margin-bottom:0px; }
+DIV.clsRegTree LI { list-style-type:none; text-indent:-2.5em; line-height:normal; margin:0px; }
+/* END: nested lists (registry trees) */
+
+
+/*Added for Migrated Pages*/
+.MNPPart
+{
+	width:155px;
+	color:#000000;
+	background-color: #f1f1f1;
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	border-bottom:3px solid #6699cc;
+	border-top:3px solid #6699cc;
+	padding:8px;
+	margin-right:15px;
+}
+
+.MNPPart UL 
+{ 
+	margin-bottom:5px; 
+	margin-left:18px;
+}
+
+.MNPPart SPAN 
+{ 
+	color:#000000;	
+}
+
+.MNPPart	UL LI
+{
+	margin-bottom:0.5em;
+	list-style-type: disc;
+	color:#cccccc;
+}
+
+
+DIV#links table td
+{
+	border:0px;
+}
+
+
+/* 33879 */
+.TableHeading
+{
+	font-weight:700;
+}
+
+/* 
+<li class="kadov-p-CBulleted"><p class="Bulleted">Use CTRL+N, or</p></li><li class="kadov-p-CBulleted"><p class="Bulleted">Click <span style="font-weight: bold;">Create</span>.</p></li>
+*/
+
+ul ul li.kadov-p-CBulleted 
+{
+	margin-left:100px;
+}
+
+.p.Bulleted
+{
+
+}
+
+div.clsNote
+{
+	background-color:#EEEEEE;
+	margin-bottom:4px;
+	padding-top:2px;
+	padding-left:2px;
+	padding-right:2px;
+	padding-bottom:2px;
+}
+
+
+
+/* begin # 35695 */
+table.clsStd tbody tr td
+{
+	background-color:#F7F7FF;
+	border-top:solid 1px #E0DFE3;
+	border-left:solid 1px #E0DFE3;
+	border-right:solid 1px #E0DFE3;
+	border-bottom:solid 1px #D5D5D3;
+}
+
+table.psdkRequirements tbody tr th
+{
+	background-color:#EFEFF7;
+	border-top:solid 1px #E0DFE3;
+	border-left:solid 1px #E0DFE3;
+	border-right:solid 1px #E0DFE3;
+	border-bottom:solid 1px #C8CDDE;
+	color:#000066;
+	vertical-align:top;
+}
+
+table.psdkRequirements tbody tr td
+{
+	background-color:#F7F7FF;
+	border-top:solid 1px #E0DFE3;
+	border-left:solid 1px #E0DFE3;
+	border-right:solid 1px #E0DFE3;
+	border-bottom:solid 1px #C8CDDE;
+}
+/* end # 35695 */
+
+
+/* begin # 5586 */
+.tablediv table.dtTABLE
+{
+	width:95%;
+	border:1px solid #cccccc;
+}
+.tablediv table.dtTABLE tbody tr th
+{
+	width:50%;
+}
+.tablediv table.dtTABLE tbody tr td
+{
+	width:50%;
+	border:1px solid #cccccc;
+}
+
+/* end # 5586 */
+
+/* #8129 - removed #5130
+.tableSection table tbody tr th
+{
+	font-size:xx-small;
+}
+
+.tableSection table tbody tr td
+{
+	font-size:xx-small;
+}
+*/
+
+/* begin #5178 */
+div.clsServerSDKContent td.sdkformat_portal
+{
+	border-right:solid 1px #CCCCCC;
+	font-size:xx-small;	
+}
+/* end #5178 */
+
+/* BEGIN # 5951 */
+.section OL LI OL LI, .subSection OL LI OL LI
+{
+	list-style-type:lower-alpha;
+}
+/* END # 5951 */
+
+/* begin 6109 */
+#mainSection table, #mainSection td, #mainSection th
+{
+	border-top:solid 1px #DDDDDD;
+	border-left:solid 1px #DDDDDD;
+	border-right:solid 1px #DDDDDD;
+	border-bottom:solid 1px #DDDDDD;
+}
+
+.MtpsHideBorders, .MtpsHideBorders th, .MtpsHideBorders td
+{
+	border-top:solid 0px #DDDDDD;
+	border-left:solid 0px #DDDDDD;
+	border-right:solid 0px #DDDDDD;
+	border-bottom:solid 0px #DDDDDD;
+}
+/* end 6109 */
+
+.topic pre
+{
+	padding-top:5px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:5px;
+}
+
+/* 6111 */
+H1
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 130%;
+  font-weight: normal;
+}
+
+H1.heading {
+	FONT-SIZE: 110%
+}
+
+H2 {
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 115%; 
+	FONT-FAMILY: Verdana,  Arial, Helvetica, sans-serif;
+}
+
+H2.subtitle {
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 115%; 
+	MARGIN-BOTTOM: 0.6em; 
+	FONT-FAMILY: Verdana,  Arial, Helvetica, sans-serif;
+}
+
+H3 {
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 110%; 
+	FONT-FAMILY: Verdana,  Arial, Helvetica, sans-serif; 
+}
+
+H4 {
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 100%; 
+	FONT-FAMILY: Verdana,  Arial, Helvetica, sans-serif;
+}
+
+H5 {
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 100%; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+H6 {
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 100%; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* 8220 */
+SPAN.devlangLabel
+{
+  color: blue;
+  font-size: 7pt;
+  font-weight: normal;
+}
+
+/* */
+.clsBeta
+{
+	color:#FF0000;	
+}
+
+/* 7147 */
+H1.heading
+{
+	font-size: 110%;
+}
+
+/* begin #6375 */
+.contentPanel .RightPanel .ContentArea IMG
+{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+/* end #6375 */
+
+/* 5534 */
+/* .ContentArea .topic table td */
+.topic UL
+{
+	margin-right:10px;
+}
+
+.topic UL LI, .topic UL LI P
+{
+	margin-bottom:5px;
+}
+
+.topic UL LI PRE
+{
+	margin-bottom:5px;
+	margin-top:5px;
+}
+.keyword
+{
+	font-weight:bold;
+}
+
+
+------------MyTsy8HMahE2FRosBMfY4o
+Content-Disposition: inline; filename=msdn.gif
+Content-Type: image/gif; name=msdn.gif
+Content-Location: http://msdn2.microsoft.com/msdn/Controls/MTPS_PrinterFriendlyBannerCtrl/en-us/msdn.gif
+Content-Transfer-Encoding: Base64
+
+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
+sYr/FRAAOw==
+
+------------MyTsy8HMahE2FRosBMfY4o--

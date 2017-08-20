@@ -1,0 +1,1377 @@
+
+
+Terminals which are not used:
+
+   ALPHA
+   DIGIT
+   KEYWORD
+   PUNCUTATION
+   THIS
+   COLON
+   DOT
+
+
+
+Grammar
+rule 1    program -> classdecl_list
+rule 2    classdecl_list -> classdecl
+rule 3    classdecl_list -> classdecl_list classdecl
+rule 4    classdecl -> CLASS IDENTIFIER extenddecl OPENBRACE body CLOSEBRACE
+rule 5    body -> empty
+rule 6    body -> vardecl_list methoddecl_list
+rule 7    extenddecl -> empty
+rule 8    extenddecl -> EXTENDS IDENTIFIER
+rule 9    vardecl_list -> vardecl
+rule 10   vardecl_list -> vardecl_list vardecl
+rule 11   vardecl -> typedecl initializer_list varparamdecl_sufix
+rule 12   varparamdecl_sufix -> empty
+rule 13   varparamdecl_sufix -> SEMICOLON
+rule 14   returntypedecl -> SPACES typedecl
+rule 15   returntypedecl -> VOID
+rule 16   initializer_list -> initializer
+rule 17   initializer_list -> initializer_list COMMA initializer
+rule 18   typedecl -> INT
+rule 19   typedecl -> BOOLEAN
+rule 20   typedecl -> IDENTIFIER
+rule 21   initializer -> IDENTIFIER initializer_end
+rule 22   initializer_end -> empty
+rule 23   initializer_end -> OPENBRACKET optional_int_size CLOSEBRACKET
+rule 24   methoddecl_list -> methoddecl
+rule 25   methoddecl_list -> methoddecl_list methoddecl
+rule 26   methoddecl -> returntypedecl IDENTIFIER OPENPARENTHESES paramdecl_list CLOSEPARENTHESES block
+rule 27   paramdecl_list -> vardecl
+rule 28   paramdecl_list -> paramdecl_list vardecl
+rule 29   block -> OPENBRACE vardecl_list statement_list CLOSEBRACE
+rule 30   statement_list -> IDENTIFIER EQUAL expr SEMICOLON
+rule 31   statement_list -> method_call SEMICOLON
+rule 32   statement_list -> IF OPENPARENTHESES expr CLOSEPARENTHESES block else_block
+rule 33   statement_list -> WHILE OPENPARENTHESES expr CLOSEPARENTHESES block
+rule 34   statement_list -> RETURN expr_opt SEMICOLON
+rule 35   statement_list -> block
+rule 36   else_block -> empty
+rule 37   else_block -> ELSE block
+rule 38   expr_opt -> empty
+rule 39   expr_opt -> expr
+rule 40   method_call -> CALLOUT OPENPARENTHESES STRING call_args_list_or_empty CLOSEPARENTHESES
+rule 41   call_args_list_or_empty -> empty
+rule 42   call_args_list_or_empty -> call_args_list
+rule 43   call_args_list -> call_arg
+rule 44   call_args_list -> call_args_list COMMA call_arg
+rule 45   call_arg -> expr
+rule 46   call_arg -> STRING
+rule 47   expr -> NEW IDENTIFIER OPENPARENTHESES CLOSEPARENTHESES
+rule 48   expr -> literal
+rule 49   expr -> expr binopt term
+rule 50   expr -> OPENPARENTHESES expr CLOSEPARENTHESES
+rule 51   term ->		/* empty */
+rule 52   term -> IDENTIFIER
+rule 53   term -> literal
+rule 54   binopt -> ARTHOPT
+rule 55   binopt -> RELOPT
+rule 56   binopt -> EQOPT
+rule 57   binopt -> CONDOPT
+rule 58   literal -> intliteral
+rule 59   literal -> CHAR
+rule 60   literal -> BOOLLITERAL
+rule 61   literal -> NUL
+rule 62   optional_int_size -> empty
+rule 63   optional_int_size -> intliteral
+rule 64   intliteral -> DECIMALLITERAL
+rule 65   intliteral -> HEXLITERAL
+rule 66   empty ->		/* empty */
+
+Terminals, with rules where they appear
+
+$ (-1)
+error (256)
+ALPHA (258)
+ARTHOPT (259) 54
+BOOLEAN (260) 19
+BOOLLITERAL (261) 60
+CALLOUT (262) 40
+CHAR (263) 59
+CLASS (264) 4
+CLOSEBRACE (265) 4 29
+CLOSEBRACKET (266) 23
+CLOSEPARENTHESES (267) 26 32 33 40 47 50
+CONDOPT (268) 57
+DECIMALLITERAL (269) 64
+DIGIT (270)
+ELSE (271) 37
+EQOPT (272) 56
+EXTENDS (273) 8
+HEXLITERAL (274) 65
+IDENTIFIER (275) 4 8 20 21 26 30 47 52
+IF (276) 32
+INT (277) 18
+KEYWORD (278)
+NEW (279) 47
+NUL (280) 61
+OPENBRACE (281) 4 29
+OPENBRACKET (282) 23
+OPENPARENTHESES (283) 26 32 33 40 47 50
+PUNCUTATION (284)
+RELOPT (285) 55
+RETURN (286) 34
+SPACES (287) 14
+STRING (288) 40 46
+THIS (289)
+VOID (290) 15
+WHILE (291) 33
+SEMICOLON (292) 13 30 31 34
+COLON (293)
+EQUAL (294) 30
+DOT (295)
+COMMA (296) 17 44
+
+Nonterminals, with rules where they appear
+
+program (42)
+    on left: 1
+classdecl_list (43)
+    on left: 2 3, on right: 1 3
+classdecl (44)
+    on left: 4, on right: 2 3
+body (45)
+    on left: 5 6, on right: 4
+extenddecl (46)
+    on left: 7 8, on right: 4
+vardecl_list (47)
+    on left: 9 10, on right: 6 10 29
+vardecl (48)
+    on left: 11, on right: 9 10 27 28
+varparamdecl_sufix (49)
+    on left: 12 13, on right: 11
+returntypedecl (50)
+    on left: 14 15, on right: 26
+initializer_list (51)
+    on left: 16 17, on right: 11 17
+typedecl (52)
+    on left: 18 19 20, on right: 11 14
+initializer (53)
+    on left: 21, on right: 16 17
+initializer_end (54)
+    on left: 22 23, on right: 21
+methoddecl_list (55)
+    on left: 24 25, on right: 6 25
+methoddecl (56)
+    on left: 26, on right: 24 25
+paramdecl_list (57)
+    on left: 27 28, on right: 26 28
+block (58)
+    on left: 29, on right: 26 32 33 35 37
+statement_list (59)
+    on left: 30 31 32 33 34 35, on right: 29
+else_block (60)
+    on left: 36 37, on right: 32
+expr_opt (61)
+    on left: 38 39, on right: 34
+method_call (62)
+    on left: 40, on right: 31
+call_args_list_or_empty (63)
+    on left: 41 42, on right: 40
+call_args_list (64)
+    on left: 43 44, on right: 42 44
+call_arg (65)
+    on left: 45 46, on right: 43 44
+expr (66)
+    on left: 47 48 49 50, on right: 30 32 33 39 45 49 50
+term (67)
+    on left: 51 52 53, on right: 49
+binopt (68)
+    on left: 54 55 56 57, on right: 49
+literal (69)
+    on left: 58 59 60 61, on right: 48 53
+optional_int_size (70)
+    on left: 62 63, on right: 23
+intliteral (71)
+    on left: 64 65, on right: 58 63
+empty (72)
+    on left: 66, on right: 5 7 12 22 36 38 41 62
+
+
+state 0
+
+    CLASS	shift, and go to state 1
+
+    program	go to state 114
+    classdecl_list	go to state 2
+    classdecl	go to state 3
+
+
+
+state 1
+
+    classdecl  ->  CLASS . IDENTIFIER extenddecl OPENBRACE body CLOSEBRACE   (rule 4)
+
+    IDENTIFIER	shift, and go to state 4
+
+
+
+state 2
+
+    program  ->  classdecl_list .   (rule 1)
+    classdecl_list  ->  classdecl_list . classdecl   (rule 3)
+
+    CLASS	shift, and go to state 1
+
+    $default	reduce using rule 1 (program)
+
+    classdecl	go to state 5
+
+
+
+state 3
+
+    classdecl_list  ->  classdecl .   (rule 2)
+
+    $default	reduce using rule 2 (classdecl_list)
+
+
+
+state 4
+
+    classdecl  ->  CLASS IDENTIFIER . extenddecl OPENBRACE body CLOSEBRACE   (rule 4)
+
+    EXTENDS	shift, and go to state 6
+
+    $default	reduce using rule 66 (empty)
+
+    extenddecl	go to state 7
+    empty	go to state 8
+
+
+
+state 5
+
+    classdecl_list  ->  classdecl_list classdecl .   (rule 3)
+
+    $default	reduce using rule 3 (classdecl_list)
+
+
+
+state 6
+
+    extenddecl  ->  EXTENDS . IDENTIFIER   (rule 8)
+
+    IDENTIFIER	shift, and go to state 9
+
+
+
+state 7
+
+    classdecl  ->  CLASS IDENTIFIER extenddecl . OPENBRACE body CLOSEBRACE   (rule 4)
+
+    OPENBRACE	shift, and go to state 10
+
+
+
+state 8
+
+    extenddecl  ->  empty .   (rule 7)
+
+    $default	reduce using rule 7 (extenddecl)
+
+
+
+state 9
+
+    extenddecl  ->  EXTENDS IDENTIFIER .   (rule 8)
+
+    $default	reduce using rule 8 (extenddecl)
+
+
+
+state 10
+
+    classdecl  ->  CLASS IDENTIFIER extenddecl OPENBRACE . body CLOSEBRACE   (rule 4)
+
+    BOOLEAN	shift, and go to state 11
+    IDENTIFIER	shift, and go to state 12
+    INT 	shift, and go to state 13
+
+    $default	reduce using rule 66 (empty)
+
+    body	go to state 14
+    vardecl_list	go to state 15
+    vardecl	go to state 16
+    typedecl	go to state 17
+    empty	go to state 18
+
+
+
+state 11
+
+    typedecl  ->  BOOLEAN .   (rule 19)
+
+    $default	reduce using rule 19 (typedecl)
+
+
+
+state 12
+
+    typedecl  ->  IDENTIFIER .   (rule 20)
+
+    $default	reduce using rule 20 (typedecl)
+
+
+
+state 13
+
+    typedecl  ->  INT .   (rule 18)
+
+    $default	reduce using rule 18 (typedecl)
+
+
+
+state 14
+
+    classdecl  ->  CLASS IDENTIFIER extenddecl OPENBRACE body . CLOSEBRACE   (rule 4)
+
+    CLOSEBRACE	shift, and go to state 19
+
+
+
+state 15
+
+    body  ->  vardecl_list . methoddecl_list   (rule 6)
+    vardecl_list  ->  vardecl_list . vardecl   (rule 10)
+
+    BOOLEAN	shift, and go to state 11
+    IDENTIFIER	shift, and go to state 12
+    INT 	shift, and go to state 13
+    SPACES	shift, and go to state 20
+    VOID	shift, and go to state 21
+
+    vardecl	go to state 22
+    returntypedecl	go to state 23
+    typedecl	go to state 17
+    methoddecl_list	go to state 24
+    methoddecl	go to state 25
+
+
+
+state 16
+
+    vardecl_list  ->  vardecl .   (rule 9)
+
+    $default	reduce using rule 9 (vardecl_list)
+
+
+
+state 17
+
+    vardecl  ->  typedecl . initializer_list varparamdecl_sufix   (rule 11)
+
+    IDENTIFIER	shift, and go to state 26
+
+    initializer_list	go to state 27
+    initializer	go to state 28
+
+
+
+state 18
+
+    body  ->  empty .   (rule 5)
+
+    $default	reduce using rule 5 (body)
+
+
+
+state 19
+
+    classdecl  ->  CLASS IDENTIFIER extenddecl OPENBRACE body CLOSEBRACE .   (rule 4)
+
+    $default	reduce using rule 4 (classdecl)
+
+
+
+state 20
+
+    returntypedecl  ->  SPACES . typedecl   (rule 14)
+
+    BOOLEAN	shift, and go to state 11
+    IDENTIFIER	shift, and go to state 12
+    INT 	shift, and go to state 13
+
+    typedecl	go to state 29
+
+
+
+state 21
+
+    returntypedecl  ->  VOID .   (rule 15)
+
+    $default	reduce using rule 15 (returntypedecl)
+
+
+
+state 22
+
+    vardecl_list  ->  vardecl_list vardecl .   (rule 10)
+
+    $default	reduce using rule 10 (vardecl_list)
+
+
+
+state 23
+
+    methoddecl  ->  returntypedecl . IDENTIFIER OPENPARENTHESES paramdecl_list CLOSEPARENTHESES block   (rule 26)
+
+    IDENTIFIER	shift, and go to state 30
+
+
+
+state 24
+
+    body  ->  vardecl_list methoddecl_list .   (rule 6)
+    methoddecl_list  ->  methoddecl_list . methoddecl   (rule 25)
+
+    SPACES	shift, and go to state 20
+    VOID	shift, and go to state 21
+
+    $default	reduce using rule 6 (body)
+
+    returntypedecl	go to state 23
+    methoddecl	go to state 31
+
+
+
+state 25
+
+    methoddecl_list  ->  methoddecl .   (rule 24)
+
+    $default	reduce using rule 24 (methoddecl_list)
+
+
+
+state 26
+
+    initializer  ->  IDENTIFIER . initializer_end   (rule 21)
+
+    OPENBRACKET	shift, and go to state 32
+
+    $default	reduce using rule 66 (empty)
+
+    initializer_end	go to state 33
+    empty	go to state 34
+
+
+
+state 27
+
+    vardecl  ->  typedecl initializer_list . varparamdecl_sufix   (rule 11)
+    initializer_list  ->  initializer_list . COMMA initializer   (rule 17)
+
+    SEMICOLON	shift, and go to state 35
+    COMMA	shift, and go to state 36
+
+    $default	reduce using rule 66 (empty)
+
+    varparamdecl_sufix	go to state 37
+    empty	go to state 38
+
+
+
+state 28
+
+    initializer_list  ->  initializer .   (rule 16)
+
+    $default	reduce using rule 16 (initializer_list)
+
+
+
+state 29
+
+    returntypedecl  ->  SPACES typedecl .   (rule 14)
+
+    $default	reduce using rule 14 (returntypedecl)
+
+
+
+state 30
+
+    methoddecl  ->  returntypedecl IDENTIFIER . OPENPARENTHESES paramdecl_list CLOSEPARENTHESES block   (rule 26)
+
+    OPENPARENTHESES	shift, and go to state 39
+
+
+
+state 31
+
+    methoddecl_list  ->  methoddecl_list methoddecl .   (rule 25)
+
+    $default	reduce using rule 25 (methoddecl_list)
+
+
+
+state 32
+
+    initializer_end  ->  OPENBRACKET . optional_int_size CLOSEBRACKET   (rule 23)
+
+    DECIMALLITERAL	shift, and go to state 40
+    HEXLITERAL	shift, and go to state 41
+
+    $default	reduce using rule 66 (empty)
+
+    optional_int_size	go to state 42
+    intliteral	go to state 43
+    empty	go to state 44
+
+
+
+state 33
+
+    initializer  ->  IDENTIFIER initializer_end .   (rule 21)
+
+    $default	reduce using rule 21 (initializer)
+
+
+
+state 34
+
+    initializer_end  ->  empty .   (rule 22)
+
+    $default	reduce using rule 22 (initializer_end)
+
+
+
+state 35
+
+    varparamdecl_sufix  ->  SEMICOLON .   (rule 13)
+
+    $default	reduce using rule 13 (varparamdecl_sufix)
+
+
+
+state 36
+
+    initializer_list  ->  initializer_list COMMA . initializer   (rule 17)
+
+    IDENTIFIER	shift, and go to state 26
+
+    initializer	go to state 45
+
+
+
+state 37
+
+    vardecl  ->  typedecl initializer_list varparamdecl_sufix .   (rule 11)
+
+    $default	reduce using rule 11 (vardecl)
+
+
+
+state 38
+
+    varparamdecl_sufix  ->  empty .   (rule 12)
+
+    $default	reduce using rule 12 (varparamdecl_sufix)
+
+
+
+state 39
+
+    methoddecl  ->  returntypedecl IDENTIFIER OPENPARENTHESES . paramdecl_list CLOSEPARENTHESES block   (rule 26)
+
+    BOOLEAN	shift, and go to state 11
+    IDENTIFIER	shift, and go to state 12
+    INT 	shift, and go to state 13
+
+    vardecl	go to state 46
+    typedecl	go to state 17
+    paramdecl_list	go to state 47
+
+
+
+state 40
+
+    intliteral  ->  DECIMALLITERAL .   (rule 64)
+
+    $default	reduce using rule 64 (intliteral)
+
+
+
+state 41
+
+    intliteral  ->  HEXLITERAL .   (rule 65)
+
+    $default	reduce using rule 65 (intliteral)
+
+
+
+state 42
+
+    initializer_end  ->  OPENBRACKET optional_int_size . CLOSEBRACKET   (rule 23)
+
+    CLOSEBRACKET	shift, and go to state 48
+
+
+
+state 43
+
+    optional_int_size  ->  intliteral .   (rule 63)
+
+    $default	reduce using rule 63 (optional_int_size)
+
+
+
+state 44
+
+    optional_int_size  ->  empty .   (rule 62)
+
+    $default	reduce using rule 62 (optional_int_size)
+
+
+
+state 45
+
+    initializer_list  ->  initializer_list COMMA initializer .   (rule 17)
+
+    $default	reduce using rule 17 (initializer_list)
+
+
+
+state 46
+
+    paramdecl_list  ->  vardecl .   (rule 27)
+
+    $default	reduce using rule 27 (paramdecl_list)
+
+
+
+state 47
+
+    methoddecl  ->  returntypedecl IDENTIFIER OPENPARENTHESES paramdecl_list . CLOSEPARENTHESES block   (rule 26)
+    paramdecl_list  ->  paramdecl_list . vardecl   (rule 28)
+
+    BOOLEAN	shift, and go to state 11
+    CLOSEPARENTHESES	shift, and go to state 49
+    IDENTIFIER	shift, and go to state 12
+    INT 	shift, and go to state 13
+
+    vardecl	go to state 50
+    typedecl	go to state 17
+
+
+
+state 48
+
+    initializer_end  ->  OPENBRACKET optional_int_size CLOSEBRACKET .   (rule 23)
+
+    $default	reduce using rule 23 (initializer_end)
+
+
+
+state 49
+
+    methoddecl  ->  returntypedecl IDENTIFIER OPENPARENTHESES paramdecl_list CLOSEPARENTHESES . block   (rule 26)
+
+    OPENBRACE	shift, and go to state 51
+
+    block	go to state 52
+
+
+
+state 50
+
+    paramdecl_list  ->  paramdecl_list vardecl .   (rule 28)
+
+    $default	reduce using rule 28 (paramdecl_list)
+
+
+
+state 51
+
+    block  ->  OPENBRACE . vardecl_list statement_list CLOSEBRACE   (rule 29)
+
+    BOOLEAN	shift, and go to state 11
+    IDENTIFIER	shift, and go to state 12
+    INT 	shift, and go to state 13
+
+    vardecl_list	go to state 53
+    vardecl	go to state 16
+    typedecl	go to state 17
+
+
+
+state 52
+
+    methoddecl  ->  returntypedecl IDENTIFIER OPENPARENTHESES paramdecl_list CLOSEPARENTHESES block .   (rule 26)
+
+    $default	reduce using rule 26 (methoddecl)
+
+
+
+state 53
+
+    vardecl_list  ->  vardecl_list . vardecl   (rule 10)
+    block  ->  OPENBRACE vardecl_list . statement_list CLOSEBRACE   (rule 29)
+
+    BOOLEAN	shift, and go to state 11
+    CALLOUT	shift, and go to state 54
+    IDENTIFIER	shift, and go to state 55
+    IF  	shift, and go to state 56
+    INT 	shift, and go to state 13
+    OPENBRACE	shift, and go to state 51
+    RETURN	shift, and go to state 57
+    WHILE	shift, and go to state 58
+
+    vardecl	go to state 22
+    typedecl	go to state 17
+    block	go to state 59
+    statement_list	go to state 60
+    method_call	go to state 61
+
+
+
+state 54
+
+    method_call  ->  CALLOUT . OPENPARENTHESES STRING call_args_list_or_empty CLOSEPARENTHESES   (rule 40)
+
+    OPENPARENTHESES	shift, and go to state 62
+
+
+
+state 55
+
+    typedecl  ->  IDENTIFIER .   (rule 20)
+    statement_list  ->  IDENTIFIER . EQUAL expr SEMICOLON   (rule 30)
+
+    EQUAL	shift, and go to state 63
+
+    $default	reduce using rule 20 (typedecl)
+
+
+
+state 56
+
+    statement_list  ->  IF . OPENPARENTHESES expr CLOSEPARENTHESES block else_block   (rule 32)
+
+    OPENPARENTHESES	shift, and go to state 64
+
+
+
+state 57
+
+    statement_list  ->  RETURN . expr_opt SEMICOLON   (rule 34)
+
+    BOOLLITERAL	shift, and go to state 65
+    CHAR	shift, and go to state 66
+    DECIMALLITERAL	shift, and go to state 40
+    HEXLITERAL	shift, and go to state 41
+    NEW 	shift, and go to state 67
+    NUL 	shift, and go to state 68
+    OPENPARENTHESES	shift, and go to state 69
+
+    $default	reduce using rule 66 (empty)
+
+    expr_opt	go to state 70
+    expr	go to state 71
+    literal	go to state 72
+    intliteral	go to state 73
+    empty	go to state 74
+
+
+
+state 58
+
+    statement_list  ->  WHILE . OPENPARENTHESES expr CLOSEPARENTHESES block   (rule 33)
+
+    OPENPARENTHESES	shift, and go to state 75
+
+
+
+state 59
+
+    statement_list  ->  block .   (rule 35)
+
+    $default	reduce using rule 35 (statement_list)
+
+
+
+state 60
+
+    block  ->  OPENBRACE vardecl_list statement_list . CLOSEBRACE   (rule 29)
+
+    CLOSEBRACE	shift, and go to state 76
+
+
+
+state 61
+
+    statement_list  ->  method_call . SEMICOLON   (rule 31)
+
+    SEMICOLON	shift, and go to state 77
+
+
+
+state 62
+
+    method_call  ->  CALLOUT OPENPARENTHESES . STRING call_args_list_or_empty CLOSEPARENTHESES   (rule 40)
+
+    STRING	shift, and go to state 78
+
+
+
+state 63
+
+    statement_list  ->  IDENTIFIER EQUAL . expr SEMICOLON   (rule 30)
+
+    BOOLLITERAL	shift, and go to state 65
+    CHAR	shift, and go to state 66
+    DECIMALLITERAL	shift, and go to state 40
+    HEXLITERAL	shift, and go to state 41
+    NEW 	shift, and go to state 67
+    NUL 	shift, and go to state 68
+    OPENPARENTHESES	shift, and go to state 69
+
+    expr	go to state 79
+    literal	go to state 72
+    intliteral	go to state 73
+
+
+
+state 64
+
+    statement_list  ->  IF OPENPARENTHESES . expr CLOSEPARENTHESES block else_block   (rule 32)
+
+    BOOLLITERAL	shift, and go to state 65
+    CHAR	shift, and go to state 66
+    DECIMALLITERAL	shift, and go to state 40
+    HEXLITERAL	shift, and go to state 41
+    NEW 	shift, and go to state 67
+    NUL 	shift, and go to state 68
+    OPENPARENTHESES	shift, and go to state 69
+
+    expr	go to state 80
+    literal	go to state 72
+    intliteral	go to state 73
+
+
+
+state 65
+
+    literal  ->  BOOLLITERAL .   (rule 60)
+
+    $default	reduce using rule 60 (literal)
+
+
+
+state 66
+
+    literal  ->  CHAR .   (rule 59)
+
+    $default	reduce using rule 59 (literal)
+
+
+
+state 67
+
+    expr  ->  NEW . IDENTIFIER OPENPARENTHESES CLOSEPARENTHESES   (rule 47)
+
+    IDENTIFIER	shift, and go to state 81
+
+
+
+state 68
+
+    literal  ->  NUL .   (rule 61)
+
+    $default	reduce using rule 61 (literal)
+
+
+
+state 69
+
+    expr  ->  OPENPARENTHESES . expr CLOSEPARENTHESES   (rule 50)
+
+    BOOLLITERAL	shift, and go to state 65
+    CHAR	shift, and go to state 66
+    DECIMALLITERAL	shift, and go to state 40
+    HEXLITERAL	shift, and go to state 41
+    NEW 	shift, and go to state 67
+    NUL 	shift, and go to state 68
+    OPENPARENTHESES	shift, and go to state 69
+
+    expr	go to state 82
+    literal	go to state 72
+    intliteral	go to state 73
+
+
+
+state 70
+
+    statement_list  ->  RETURN expr_opt . SEMICOLON   (rule 34)
+
+    SEMICOLON	shift, and go to state 83
+
+
+
+state 71
+
+    expr_opt  ->  expr .   (rule 39)
+    expr  ->  expr . binopt term   (rule 49)
+
+    ARTHOPT	shift, and go to state 84
+    CONDOPT	shift, and go to state 85
+    EQOPT	shift, and go to state 86
+    RELOPT	shift, and go to state 87
+
+    $default	reduce using rule 39 (expr_opt)
+
+    binopt	go to state 88
+
+
+
+state 72
+
+    expr  ->  literal .   (rule 48)
+
+    $default	reduce using rule 48 (expr)
+
+
+
+state 73
+
+    literal  ->  intliteral .   (rule 58)
+
+    $default	reduce using rule 58 (literal)
+
+
+
+state 74
+
+    expr_opt  ->  empty .   (rule 38)
+
+    $default	reduce using rule 38 (expr_opt)
+
+
+
+state 75
+
+    statement_list  ->  WHILE OPENPARENTHESES . expr CLOSEPARENTHESES block   (rule 33)
+
+    BOOLLITERAL	shift, and go to state 65
+    CHAR	shift, and go to state 66
+    DECIMALLITERAL	shift, and go to state 40
+    HEXLITERAL	shift, and go to state 41
+    NEW 	shift, and go to state 67
+    NUL 	shift, and go to state 68
+    OPENPARENTHESES	shift, and go to state 69
+
+    expr	go to state 89
+    literal	go to state 72
+    intliteral	go to state 73
+
+
+
+state 76
+
+    block  ->  OPENBRACE vardecl_list statement_list CLOSEBRACE .   (rule 29)
+
+    $default	reduce using rule 29 (block)
+
+
+
+state 77
+
+    statement_list  ->  method_call SEMICOLON .   (rule 31)
+
+    $default	reduce using rule 31 (statement_list)
+
+
+
+state 78
+
+    method_call  ->  CALLOUT OPENPARENTHESES STRING . call_args_list_or_empty CLOSEPARENTHESES   (rule 40)
+
+    BOOLLITERAL	shift, and go to state 65
+    CHAR	shift, and go to state 66
+    DECIMALLITERAL	shift, and go to state 40
+    HEXLITERAL	shift, and go to state 41
+    NEW 	shift, and go to state 67
+    NUL 	shift, and go to state 68
+    OPENPARENTHESES	shift, and go to state 69
+    STRING	shift, and go to state 90
+
+    $default	reduce using rule 66 (empty)
+
+    call_args_list_or_empty	go to state 91
+    call_args_list	go to state 92
+    call_arg	go to state 93
+    expr	go to state 94
+    literal	go to state 72
+    intliteral	go to state 73
+    empty	go to state 95
+
+
+
+state 79
+
+    statement_list  ->  IDENTIFIER EQUAL expr . SEMICOLON   (rule 30)
+    expr  ->  expr . binopt term   (rule 49)
+
+    ARTHOPT	shift, and go to state 84
+    CONDOPT	shift, and go to state 85
+    EQOPT	shift, and go to state 86
+    RELOPT	shift, and go to state 87
+    SEMICOLON	shift, and go to state 96
+
+    binopt	go to state 88
+
+
+
+state 80
+
+    statement_list  ->  IF OPENPARENTHESES expr . CLOSEPARENTHESES block else_block   (rule 32)
+    expr  ->  expr . binopt term   (rule 49)
+
+    ARTHOPT	shift, and go to state 84
+    CLOSEPARENTHESES	shift, and go to state 97
+    CONDOPT	shift, and go to state 85
+    EQOPT	shift, and go to state 86
+    RELOPT	shift, and go to state 87
+
+    binopt	go to state 88
+
+
+
+state 81
+
+    expr  ->  NEW IDENTIFIER . OPENPARENTHESES CLOSEPARENTHESES   (rule 47)
+
+    OPENPARENTHESES	shift, and go to state 98
+
+
+
+state 82
+
+    expr  ->  expr . binopt term   (rule 49)
+    expr  ->  OPENPARENTHESES expr . CLOSEPARENTHESES   (rule 50)
+
+    ARTHOPT	shift, and go to state 84
+    CLOSEPARENTHESES	shift, and go to state 99
+    CONDOPT	shift, and go to state 85
+    EQOPT	shift, and go to state 86
+    RELOPT	shift, and go to state 87
+
+    binopt	go to state 88
+
+
+
+state 83
+
+    statement_list  ->  RETURN expr_opt SEMICOLON .   (rule 34)
+
+    $default	reduce using rule 34 (statement_list)
+
+
+
+state 84
+
+    binopt  ->  ARTHOPT .   (rule 54)
+
+    $default	reduce using rule 54 (binopt)
+
+
+
+state 85
+
+    binopt  ->  CONDOPT .   (rule 57)
+
+    $default	reduce using rule 57 (binopt)
+
+
+
+state 86
+
+    binopt  ->  EQOPT .   (rule 56)
+
+    $default	reduce using rule 56 (binopt)
+
+
+
+state 87
+
+    binopt  ->  RELOPT .   (rule 55)
+
+    $default	reduce using rule 55 (binopt)
+
+
+
+state 88
+
+    expr  ->  expr binopt . term   (rule 49)
+
+    BOOLLITERAL	shift, and go to state 65
+    CHAR	shift, and go to state 66
+    DECIMALLITERAL	shift, and go to state 40
+    HEXLITERAL	shift, and go to state 41
+    IDENTIFIER	shift, and go to state 100
+    NUL 	shift, and go to state 68
+
+    $default	reduce using rule 51 (term)
+
+    term	go to state 101
+    literal	go to state 102
+    intliteral	go to state 73
+
+
+
+state 89
+
+    statement_list  ->  WHILE OPENPARENTHESES expr . CLOSEPARENTHESES block   (rule 33)
+    expr  ->  expr . binopt term   (rule 49)
+
+    ARTHOPT	shift, and go to state 84
+    CLOSEPARENTHESES	shift, and go to state 103
+    CONDOPT	shift, and go to state 85
+    EQOPT	shift, and go to state 86
+    RELOPT	shift, and go to state 87
+
+    binopt	go to state 88
+
+
+
+state 90
+
+    call_arg  ->  STRING .   (rule 46)
+
+    $default	reduce using rule 46 (call_arg)
+
+
+
+state 91
+
+    method_call  ->  CALLOUT OPENPARENTHESES STRING call_args_list_or_empty . CLOSEPARENTHESES   (rule 40)
+
+    CLOSEPARENTHESES	shift, and go to state 104
+
+
+
+state 92
+
+    call_args_list_or_empty  ->  call_args_list .   (rule 42)
+    call_args_list  ->  call_args_list . COMMA call_arg   (rule 44)
+
+    COMMA	shift, and go to state 105
+
+    $default	reduce using rule 42 (call_args_list_or_empty)
+
+
+
+state 93
+
+    call_args_list  ->  call_arg .   (rule 43)
+
+    $default	reduce using rule 43 (call_args_list)
+
+
+
+state 94
+
+    call_arg  ->  expr .   (rule 45)
+    expr  ->  expr . binopt term   (rule 49)
+
+    ARTHOPT	shift, and go to state 84
+    CONDOPT	shift, and go to state 85
+    EQOPT	shift, and go to state 86
+    RELOPT	shift, and go to state 87
+
+    $default	reduce using rule 45 (call_arg)
+
+    binopt	go to state 88
+
+
+
+state 95
+
+    call_args_list_or_empty  ->  empty .   (rule 41)
+
+    $default	reduce using rule 41 (call_args_list_or_empty)
+
+
+
+state 96
+
+    statement_list  ->  IDENTIFIER EQUAL expr SEMICOLON .   (rule 30)
+
+    $default	reduce using rule 30 (statement_list)
+
+
+
+state 97
+
+    statement_list  ->  IF OPENPARENTHESES expr CLOSEPARENTHESES . block else_block   (rule 32)
+
+    OPENBRACE	shift, and go to state 51
+
+    block	go to state 106
+
+
+
+state 98
+
+    expr  ->  NEW IDENTIFIER OPENPARENTHESES . CLOSEPARENTHESES   (rule 47)
+
+    CLOSEPARENTHESES	shift, and go to state 107
+
+
+
+state 99
+
+    expr  ->  OPENPARENTHESES expr CLOSEPARENTHESES .   (rule 50)
+
+    $default	reduce using rule 50 (expr)
+
+
+
+state 100
+
+    term  ->  IDENTIFIER .   (rule 52)
+
+    $default	reduce using rule 52 (term)
+
+
+
+state 101
+
+    expr  ->  expr binopt term .   (rule 49)
+
+    $default	reduce using rule 49 (expr)
+
+
+
+state 102
+
+    term  ->  literal .   (rule 53)
+
+    $default	reduce using rule 53 (term)
+
+
+
+state 103
+
+    statement_list  ->  WHILE OPENPARENTHESES expr CLOSEPARENTHESES . block   (rule 33)
+
+    OPENBRACE	shift, and go to state 51
+
+    block	go to state 108
+
+
+
+state 104
+
+    method_call  ->  CALLOUT OPENPARENTHESES STRING call_args_list_or_empty CLOSEPARENTHESES .   (rule 40)
+
+    $default	reduce using rule 40 (method_call)
+
+
+
+state 105
+
+    call_args_list  ->  call_args_list COMMA . call_arg   (rule 44)
+
+    BOOLLITERAL	shift, and go to state 65
+    CHAR	shift, and go to state 66
+    DECIMALLITERAL	shift, and go to state 40
+    HEXLITERAL	shift, and go to state 41
+    NEW 	shift, and go to state 67
+    NUL 	shift, and go to state 68
+    OPENPARENTHESES	shift, and go to state 69
+    STRING	shift, and go to state 90
+
+    call_arg	go to state 109
+    expr	go to state 94
+    literal	go to state 72
+    intliteral	go to state 73
+
+
+
+state 106
+
+    statement_list  ->  IF OPENPARENTHESES expr CLOSEPARENTHESES block . else_block   (rule 32)
+
+    ELSE	shift, and go to state 110
+
+    $default	reduce using rule 66 (empty)
+
+    else_block	go to state 111
+    empty	go to state 112
+
+
+
+state 107
+
+    expr  ->  NEW IDENTIFIER OPENPARENTHESES CLOSEPARENTHESES .   (rule 47)
+
+    $default	reduce using rule 47 (expr)
+
+
+
+state 108
+
+    statement_list  ->  WHILE OPENPARENTHESES expr CLOSEPARENTHESES block .   (rule 33)
+
+    $default	reduce using rule 33 (statement_list)
+
+
+
+state 109
+
+    call_args_list  ->  call_args_list COMMA call_arg .   (rule 44)
+
+    $default	reduce using rule 44 (call_args_list)
+
+
+
+state 110
+
+    else_block  ->  ELSE . block   (rule 37)
+
+    OPENBRACE	shift, and go to state 51
+
+    block	go to state 113
+
+
+
+state 111
+
+    statement_list  ->  IF OPENPARENTHESES expr CLOSEPARENTHESES block else_block .   (rule 32)
+
+    $default	reduce using rule 32 (statement_list)
+
+
+
+state 112
+
+    else_block  ->  empty .   (rule 36)
+
+    $default	reduce using rule 36 (else_block)
+
+
+
+state 113
+
+    else_block  ->  ELSE block .   (rule 37)
+
+    $default	reduce using rule 37 (else_block)
+
+
+
+state 114
+
+    $   	go to state 115
+
+
+
+state 115
+
+    $   	go to state 116
+
+
+
+state 116
+
+    $default	accept

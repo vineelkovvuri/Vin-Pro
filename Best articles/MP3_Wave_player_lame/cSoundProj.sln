@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cSoundProj", "cSoundProj.csproj", "{C57A40D8-56D2-4F71-9D16-563562BEDA6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{C57A40D8-56D2-4F71-9D16-563562BEDA6F}.Debug.ActiveCfg = Debug|.NET
+		{C57A40D8-56D2-4F71-9D16-563562BEDA6F}.Debug.Build.0 = Debug|.NET
+		{C57A40D8-56D2-4F71-9D16-563562BEDA6F}.Release.ActiveCfg = Release|.NET
+		{C57A40D8-56D2-4F71-9D16-563562BEDA6F}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
