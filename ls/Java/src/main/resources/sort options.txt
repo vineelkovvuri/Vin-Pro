@@ -1,0 +1,33 @@
+
+
+// -r, --reverse // Sorting
+
+TIME
+//
+// -c with -lt display ctime and sort by ctime //Sorting && Formatting
+// http://www.linux-faqs.info/general/difference-between-mtime-ctime-and-atime
+
+// -t //Sorting
+
+
+TYPE
+// --group-directories-first //Sorting
+
+
+// --sort=WORD //Sorting
+
+SIZE
+// -S //Sorting
+
+
+
+
+NULL SORTER
+// -U  //Dont sort
+
+
+
+NAME
+// -X   by extension
+// -v  by natural sort of numbers within text
+

@@ -1,0 +1,113 @@
+// -a, --all //Filtering
+
+// -A, --almost-all //Filtering
+
+// --author //Formatting
+
+// -b, --escape //Formatting
+
+//
+// --block-size=SIZE //Formatting
+
+// -B, --ignore-backups //Filtering
+
+//
+// -c with -lt display ctime and sort by ctime //Sorting && Formatting
+//    with -l display ctime //Formatting
+// http://www.linux-faqs.info/general/difference-between-mtime-ctime-and-atime
+
+// -C //Formatting
+
+// --color=WHEN //Formatting
+
+// -d, --directory //TODO: list directories themselves, not their contents //Filtering
+
+// -D, --dired //INVESTIGATE:
+//
+// -f //INVESTIGATE:
+// -F, --classify //Formatting
+
+// --file-type //Formatting
+
+// --format=WORD //Formatting
+
+// --full-time //Formatting
+
+// -g //Formatting
+
+// --group-directories-first //Sorting
+
+// -G, --no-group //Formatting
+
+// -h, --human-readable //Formatting
+
+// --si likewise, //Formatting
+
+// -H, --dereference-command-line //Formatting
+
+// --dereference-command-line-symlink-to-dir //INVESTIGATE:
+//
+// --hide=PATTERN //Filtering
+
+// --indicator-style=WORD //Formatting
+
+// -i, --inode //Formatting
+
+// -k, --kibibytes //Formatting
+
+// -l //Formatting
+
+// -L, --dereference //Formatting
+
+// -m //Formatting
+
+// -n, --numeric-uid-gid //Formatting
+
+// -N, --literal //Formatting
+
+// -o //Formatting
+
+// -p, --indicator-style=slash //Formatting //FIX: =slash cannot be parsed by jopt
+
+// -q, --hide-control-chars //Formatting
+
+// --show-control-chars //Formatting
+
+// -Q, --quote-name //Formatting
+
+// --quoting-style=WORD //Formatting
+
+// -r, --reverse // Sorting
+
+// -R, --recursive //Traversal
+
+// -s, --size //Formatting
+
+// -S //Sorting
+
+// --sort=WORD //Sorting
+
+// --time=WORD //Formatting
+
+// --time-style=STYLE //Formatting
+
+// -t //Sorting
+
+// -T, --tabsize=COLS //Formatting
+
+// -u //Sorting && Formatting
+
+// -U //Sorting
+
+// -v //Sorting
+
+// -w, --width=COLS //Formatting
+
+// -x //Formatting
+
+// -X //Sorting
+
+// -Z, --context  //Formatting
+
+// -1 //Formatting
+

@@ -1,0 +1,94 @@
+//-l
+---------------------------------------------
+// --full-time //Formatting
+---------------------------------------------
+// -g //Formatting
+---------------------------------------------
+// -n, --numeric-uid-gid //Formatting
+---------------------------------------------
+// -o //Formatting
+---------------------------------------------
+// -m //Formatting
+---------------------------------------------
+// -C //Formatting  //default based on number of files
+---------------------------------------------
+// -1 //Formatting
+---------------------------------------------
+//-l specific Options
+// --author //Formatting
+// --block-size=SIZE //Formatting
+//    with -l display ctime //Formatting
+// -F, --classify //Formatting
+// --file-type //Formatting
+
+
+// -G, --no-group //Formatting
+// -h, --human-readable //Formatting
+// --si likewise, //Formatting
+// -H, --dereference-command-line //Formatting
+// --dereference-command-line-symlink-to-dir //INVESTIGATE:
+// --indicator-style=WORD //Formatting
+// -i, --inode //Formatting
+// -k, --kibibytes //Formatting default
+// -L, --dereference //Formatting // follow till the end of the actual file and display info of that file
+
+
+// -p, --indicator-style=slash
+// -Q, --quote-name //Formatting
+// -s, --size //Formatting
+// --time=WORD //Formatting
+// --time-style=STYLE //Formatting //INvESTIGATE
+// -u //Sorting
+// -Z, --context  //Formatting
+
+// Comma separated listing specific options
+// -m //Formatting
+// -F, --classify //Formatting
+// --file-type //Formatting
+// -p, --indicator-style=slash
+// -Q, --quote-name //Formatting
+// -s, --size //Formatting
+// -Z, --context  //Formatting
+
+
+// COlumns listing specific options
+// -C //Formatting  //default based on number of files
+// -F, --classify //Formatting
+// --file-type //Formatting
+// --indicator-style=WORD //Formatting
+// -p, --indicator-style=slash
+// -Q, --quote-name //Formatting
+// -s, --size //Formatting
+// -x //Formatting //lines not by columns
+// -Z, --context  //Formatting
+
+
+
+One per line format
+// -1 //Formatting
+// -F, --classify //Formatting
+// --file-type //Formatting
+// -p, --indicator-style=slash
+// -Q, --quote-name //Formatting
+// -s, --size //Formatting
+// -Z, --context  //Formatting
+
+
+
+// -b, --escape //Formatting
+// --color=WHEN //Formatting
+
+// -D, --dired //INVESTIGATE:
+//
+// -f //INVESTIGATE:
+// -F, --classify //Formatting
+// -N, --literal //Formatting
+// -q, --hide-control-chars //Formatting
+// --show-control-chars //Formatting
+// --quoting-style=WORD //Formatting
+// -T, --tabsize=COLS //Formatting
+
+// --format=WORD //Formatting
+
+
+// -w, --width=COLS //Formatting
