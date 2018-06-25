@@ -1,0 +1,8 @@
+public string ProcessHTML(string filename)
+{
+	string s = File.ReadAllText(filename);     //filename
+	s = Regex.Replace(s, "<(.|\n|\r)*?>", " "); //repalce all tags with single whitespace
+	s = Regex.Replace(s, @"&.*?;", " "); //replace &gt; e.t.c
+	s = Regex.Replace(s, @"\s+", " ");  //replace multiple whitespaces by single whitespace
+	return s;
+}

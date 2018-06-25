@@ -1,0 +1,111 @@
+//WM_DEVICECHANGE Message
+
+ protected override void WndProc(ref Message m)
+        {
+            if (m.Msg == 0x0219)
+            {
+                if (m.WParam.ToInt32() == 0x8000)
+                {
+                    this.Text = "added";
+                }
+                else if(m.WParam.ToInt32() == 0x8004)
+                {
+                    this.Text = "removed";
+                }
+            }
+            
+            base.WndProc(ref m);
+        }
+
+
+
+
+ms-help://MS.MSDNQTR.v90.en/devio/base/detecting_media_insertion_or_removal.htm
+#include <windows.h>
+#include <dbt.h>
+#include <strsafe.h>
+
+void Main_OnDeviceChange (HWND hwnd, WPARAM wParam, LPARAM lParam);
+char FirstDriveFromMask (ULONG unitmask);  //prototype
+
+/*------------------------------------------------------------------
+   Main_OnDeviceChange (hwnd, wParam, lParam)
+
+   Description
+      Handles WM_DEVICECHANGE messages sent to the application's
+      top-level window.
+--------------------------------------------------------------------*/
+
+void Main_OnDeviceChange (HWND hwnd, WPARAM wParam, LPARAM lParam)
+{
+   PDEV_BROADCAST_HDR lpdb = (PDEV_BROADCAST_HDR)lParam;
+   char szMsg[80];
+
+   switch(wParam)
+   {
+      case DBT_DEVICEARRIVAL:
+         // Check whether a CD or DVD was inserted into a drive.
+         if (lpdb -> dbch_devicetype == DBT_DEVTYP_VOLUME)
+         {
+            PDEV_BROADCAST_VOLUME lpdbv = (PDEV_BROADCAST_VOLUME)lpdb;
+
+            if (lpdbv -> dbcv_flags & DBTF_MEDIA)
+            {
+               StringCchPrintf (szMsg, 80, "Drive %c: Media has arrived.\n",
+                         FirstDriveFromMask(lpdbv ->dbcv_unitmask));
+
+               MessageBox (hwnd, szMsg, "WM_DEVICECHANGE", MB_OK);
+            }
+         }
+         break;
+
+      case DBT_DEVICEREMOVECOMPLETE:
+         // Check whether a CD or DVD was removed from a drive.
+         if (lpdb -> dbch_devicetype == DBT_DEVTYP_VOLUME)
+         {
+            PDEV_BROADCAST_VOLUME lpdbv = (PDEV_BROADCAST_VOLUME)lpdb;
+
+            if (lpdbv -> dbcv_flags & DBTF_MEDIA)
+            {
+               StringCchPrintf (szMsg, 80, "Drive %c: Media was removed.\n",
+                         FirstDriveFromMask(lpdbv ->dbcv_unitmask));
+
+               MessageBox (hwnd, szMsg, "WM_DEVICECHANGE", MB_OK);
+            }
+         }
+         break;
+
+      default:
+           /*
+              Process other WM_DEVICECHANGE notifications for other 
+              devices or reasons.
+           */ 
+            ;
+   }
+}
+
+/*------------------------------------------------------------------
+   FirstDriveFromMask (unitmask)
+
+   Description
+     Finds the first valid drive letter from a mask of drive letters.
+     The mask must be in the format bit 0 = A, bit 1 = B, bit 3 = C, 
+     etc. A valid drive letter is defined when the corresponding bit 
+     is set to 1.
+
+   Returns the first drive letter that was found.
+--------------------------------------------------------------------*/
+
+char FirstDriveFromMask (ULONG unitmask)
+{
+   char i;
+
+   for (i = 0; i < 26; ++i)
+   {
+      if (unitmask & 0x1)
+         break;
+      unitmask = unitmask >> 1;
+   }
+
+   return (i + 'A');
+}
