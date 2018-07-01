@@ -1,0 +1,20 @@
+googlechrome
+git
+7zip
+BeyondCompare
+classic-shell
+DjVuShellExtensionPack - https://www.cuminas.jp/wp-content/themes/cuminas/dlfile.php?pid=5&cid=94&lng=en&rev=33333
+everything
+FreeFileSync
+Highlight - http://www.andre-simon.de/zip/download.php
+meld
+mingw
+notepadplusplus
+pdfxchange viewer
+potplayer
+processhacker
+qbittorrent
+sublime text
+sysinternals
+teamviewer
+windirstat

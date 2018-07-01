@@ -1,0 +1,29 @@
+[user]
+    name = Vineel Kumar Reddy Kovvuri
+    email = vineel.kovvuri@gmail.com
+[alias]
+    st = status
+    br = branch -vv
+    co = checkout
+    lg = log --oneline -20
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    path = C:/Program Files (x86)/meld/meld/meld.exe
+[merge]
+    tool = meld
+[mergetool]
+    prompt = false
+[mergetool "meld"]
+    path = /C/Program Files (x86)/Meld/meld/meld.exe
+    keepBackup = false
+[color]
+    ui = auto
+[credential]
+    helper = wincred
+[difftool "bc4"]
+	cmd = \"c:/Program Files/Beyond Compare 4/BCompare.exe\" \"$LOCAL\" \"$REMOTE\"
+[mergetool "bc4"]
+	cmd = \"c:/Program Files/Beyond Compare 4/BCompare.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"

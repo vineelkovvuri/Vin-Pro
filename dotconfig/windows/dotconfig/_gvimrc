@@ -1,0 +1,129 @@
+
+"Maximize window
+au GUIEnter * simalt ~x
+"Disable wrapping of text
+set nowrap
+"set nohlsearch
+"Enable horizontal scrollbar
+set guioptions+=b
+
+"remove Toolbar
+set guioptions-=T
+
+" tab navigation like firefox
+:nmap <C-S-tab> :tabprevious<cr>
+:nmap <C-tab> :tabnext<cr>
+:nmap <C-t> :tabnew<cr>
+
+:imap <C-S-tab> <ESC>:tabprevious<cr>i
+:imap <C-tab> <ESC>:tabnext<cr>i
+:imap <C-t> <ESC>:tabnew<cr>i
+
+:map <C-S-tab> :tabprevious<cr>
+:map <C-tab> :tabnext<cr>
+
+set guifont=Consolas:h10:cDEFAULT
+
+"Map Ctrl+o to open file
+":nmap <C-o> :browse edit<cr>
+":imap <C-o> <ESC>:browse edit<cr>
+
+"map find and replace in insert mode
+":imap <C-f> <ESC>:promptfind<cr>i
+":imap <C-h> <ESC>:promptrepl<cr>i
+"map find and replace in esc mode
+":nmap <C-f> :promptfind<cr>
+":nmap <C-h> :promptrepl<cr>
+
+"map printing
+":imap <C-S-p> <ESC>:ha<cr>i
+":nmap <C-S-p> :ha<cr>
+
+
+"Remove some unwanted Menus
+"File Menu
+aunmenu File.Split-Open\.\.\.
+aunmenu File.Split\ Diff\ with\.\.\.
+aunmenu File.Split\ Patched\ By\.\.\.
+aunmenu File.-SEP2-
+"Edit Menu
+aunmenu Edit.Cut
+aunmenu Edit.Copy
+aunmenu Edit.Paste
+aunmenu Edit.Put\ Before
+aunmenu Edit.Put\ After
+aunmenu Edit.Delete
+aunmenu Edit.Select\ All
+aunmenu Edit.-SEP2-
+aunmenu Edit.Startup\ Settings
+aunmenu Edit.Keymap
+"Tools Menu
+aunmenu Tools.Jump\ to\ this\ tag
+aunmenu Tools.Jump\ back
+aunmenu Tools.Build\ Tags\ File
+aunmenu Tools.-SEP1-
+aunmenu Tools.Spelling
+aunmenu Tools.Make
+aunmenu Tools.List\ Errors
+aunmenu Tools.List\ Messages
+aunmenu Tools.Next\ Error
+aunmenu Tools.Previous\ Error
+aunmenu Tools.Older\ List
+aunmenu Tools.Newer\ List
+aunmenu Tools.Error\ Window
+aunmenu Tools.SeT\ Compiler
+"aunmenu Tools.-SEP2-
+"Window
+aunmenu Window
+
+"Create menu item
+"Toggle Hidden chars
+amenu Tools.Toogle\ Hidden\ Chars<Tab><F2> :set list!<CR>
+"map toggle hidden chars in insert and esc mode
+:imap <F2> <ESC>:set list!<cr>a
+:nmap <F2> :set list!<cr>
+
+amenu Tools.Toggle\ Spell\ Check<Tab><F6> :set spell!<CR>
+"map Spell Check in insert and esc mode
+:imap <F6> <ESC>:set spell!<cr>a
+:nmap <F6> :set spell!<cr>
+
+
+
+" have error messages red on white (rather than t'tother way round, which isn't
+" readable in the above font):
+highlight ErrorMsg guibg=White guifg=Red
+
+
+"Setting Balloon tips for folded content
+
+function! FoldSpellBalloon()
+	let foldStart = foldclosed(v:beval_lnum )
+	let foldEnd = foldclosedend(v:beval_lnum)
+	let lines = []
+	" Detect if we are in a fold
+	if foldStart < 0
+		" Detect if we are on a misspelled word
+		let lines = spellsuggest( spellbadword(v:beval_text)[ 0 ], 5, 0 )
+	else
+		" we are in a fold
+		let numLines = foldEnd - foldStart + 1
+		" if we have too many lines in fold, show only the first 14
+		" and the last 14 lines
+		if ( numLines > 31 )
+			let lines = getline( foldStart, foldStart + 14 )
+			let lines += [ '-- Snipped ' . ( numLines - 30 ) . ' lines --' ]
+			let lines += getline( foldEnd - 14, foldEnd )
+		else
+			"less than 30 lines, lets show all of them
+			let lines = getline( foldStart, foldEnd )
+		endif
+	endif
+	" return result
+	return join( lines, has( "balloon_multiline" ) ? "\n" : " " )
+endfunction
+set balloonexpr=FoldSpellBalloon()
+set ballooneval
+
+
+

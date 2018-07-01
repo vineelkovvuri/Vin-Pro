@@ -1,0 +1,10 @@
+{
+	"extensions":
+	[
+		"targets",
+		"vcxproj",
+		"csproj",
+		"proj",
+        "props"
+	]
+}

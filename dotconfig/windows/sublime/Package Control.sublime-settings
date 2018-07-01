@@ -1,0 +1,29 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"BracketHighlighter",
+		"Case Conversion",
+		"DeleteBlankLines",
+		"Git Config",
+		"HexViewer",
+		"Indent XML",
+		"INI",
+		"MasmAssembly",
+		"Package Control",
+		"PowerShell",
+		"REG",
+		"SideBarEnhancements",
+		"TabsExtra",
+		"Terminal",
+		"Text Pastry",
+		"Theme - Soda",
+		"TrailingSpaces",
+		"VBScript",
+		"XAML"
+	]
+}

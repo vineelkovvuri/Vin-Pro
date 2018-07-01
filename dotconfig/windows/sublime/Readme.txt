@@ -1,0 +1,1 @@
+These files go to %APPDATA%\Sublime Text 3\Packages\User
