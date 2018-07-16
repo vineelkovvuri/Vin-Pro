@@ -1,0 +1,540 @@
+1: My 6.5-hour "Architecting Distributed Cloud Applications" video series is now on the main Azure website: https://azure.microsoft.com/training/distributed-cloud-apps/
+2: Learn about four classic solutions for hooking https://goo.gl/8QUS1H<a href="https://t.co/T558xz9qSX" data-pre-embedded="true">pic.twitter.com/T558xz9qSX</a>
+3: https://blogs.technet.microsoft.com/srd/2018/06/12/draft-of-microsoft-security-servicing-commitments-for-windows/ - I'm pleased to announce we've been working on a document to clarify how we define security boundaries, features and mitigations in Windows. We are sharing the draft copy with the community and welcome your feedback!
+4: In summary of the last ~1.5 years of my work, I wrote a comprehensive whitepaper on the limitations of C language, kernel infoleaks, Bochspwn Reloaded and many related topics. It's out now! Thanks to all involved. Feels good <img src="https://abs.twimg.com/emoji/v2/72x72/1f60e.png" draggable="false" alt="😎" title="Smiling face with sunglasses" aria-label="Emoji: Smiling face with sunglasses">https://twitter.com/benhawkes/status/1009835610931060736
+5: If you work on embedded systems you should follow https://buff.ly/2JlTxuV<a href="https://t.co/qJPBF71Mz1" data-pre-embedded="true">pic.twitter.com/qJPBF71Mz1</a>
+6: http://devalias.net/devalias/2018/05/13/usb-reverse-engineering-down-the-rabbit-hole/
+7: I'll bite. This is an awesome article, both on a technical level as well as a presentation level. Did/do you work at Microsoft? This seems very NTFS specific and your ASM and C is very... familiar ;-)https://twitter.com/trentnelson/status/992493120171409410
+8: A PDF to help you find the documentation resources and other technical information that you need to learn about the command shell, and to automate command-line tasks using scripts or scripting tools. https://www.microsoft.com/en-us/download/details.aspx?id=56846
+9: Page Walking Cheat Sheet: Architecting a page walker on FPGA. Tired off looking up this info over and over. Placing it here hoping that it helps others and "future me" <a href="/hashtag/wininternals?src=hash" data-query-source="hashtag_click"><s>#</s><b>wininternals</b></a> <a href="/hashtag/fpga?src=hash" data-query-source="hashtag_click"><s>#</s><b>fpga</b></a><a href="https://t.co/2L1jEUhZhk" data-pre-embedded="true">pic.twitter.com/2L1jEUhZhk</a>
+10: New vlog on weird behaviors on my last livestream (and well, minor QEMU/Unicorn engine bugs)http://youtu.be/BHVUV-7y6Vk?a
+11: Announcing GraalVM: Run Programs Faster Anywhere https://blogs.oracle.com/developers/announcing-graalvm <a href="/hashtag/Java?src=hash" data-query-source="hashtag_click"><s>#</s><b>Java</b></a> <a href="/hashtag/JavaScript?src=hash" data-query-source="hashtag_click"><s>#</s><b>JavaScript</b></a> <a href="/hashtag/Ruby?src=hash" data-query-source="hashtag_click"><s>#</s><b>Ruby</b></a> <a href="/hashtag/R?src=hash" data-query-source="hashtag_click"><s>#</s><b>R</b></a> <a href="/hashtag/Python?src=hash" data-query-source="hashtag_click"><s>#</s><b>Python</b></a> <a href="/hashtag/GraalVM?src=hash" data-query-source="hashtag_click"><s>#</s><b>GraalVM</b></a><a href="https://t.co/wvguQUveWD" data-pre-embedded="true">pic.twitter.com/wvguQUveWD</a>
+12: This is one of the most exciting Windows features in ages: https://www.visualstudio.com/learn/gvfs-architecture/https://twitter.com/bionicbeagle/status/985572896142708737
+13: https://software.intel.com/sites/landingpage/IntrinsicsGuide/
+14: now for phase II: figure out how to get Skywing on twitter
+15: YAY! The documentation for the bottom-to-top redesign of the IDL authoring experience for WinRT types I've been working on for the past 6 months is now live:&nbsp;https://docs.microsoft.com/en-us/uwp/midl-3/index Thanks @kennykerr for pointing the URL out.
+16: Deep dive technical blog post on KVA Shadow which is the mitigation for Meltdown on Windows, this one authored by Ken Johnson (Skywing) from https://blogs.technet.microsoft.com/srd/2018/03/23/kva-shadow-mitigating-meltdown-on-windows/
+17: https://goo.gl/8eX4Eb This article from <a href="/epakskape" data-mentioned-user-id="100739264"><s>@</s><b>epakskape</b></a> is amazing! Well done! :-)
+18: Btw somebody asked for a playlist of all the writing system software episodes, so here it is:https://www.youtube.com/playlist?list=PLrEMgOSrS_3fghr8ez63xKFNF-BA6Pz13
+19: How Windows Maps 64-Bit Ntdll to WoW64 Process http://bit.ly/2oO73z4 <a href="/hashtag/infosec?src=hash" data-query-source="hashtag_click"><s>#</s><b>infosec</b></a> <a href="/hashtag/security?src=hash" data-query-source="hashtag_click"><s>#</s><b>security</b></a><a href="https://t.co/kD2zCdHHqI" data-pre-embedded="true">pic.twitter.com/kD2zCdHHqI</a>
+20: "If you are having trouble describing your API’s functionality in simple terms, you may have designed the wrong API." – A hot take from the Swift API design guidelines.
+21: If you cannot explain something in simple terms, you don't understand it.<a href="https://t.co/jV0HA92Jrp" data-pre-embedded="true">pic.twitter.com/jV0HA92Jrp</a>
+22: Port Forwarding in Windowshttp://woshub.com/port-forwarding-in-windows/
+23: And now in live motion picturehttps://www.youtube.com/watch?v=8V0wcqS22vc
+24: New blogpost by https://doar-e.github.io/blog/2017/12/01/debugger-data-model/
+25: Spectre mitigations in MSVC https://blogs.msdn.microsoft.com/vcblog/2018/01/15/spectre-mitigations-in-msvc/
+26: A new blog, “Chip Flaws http://ow.ly/ZEtf30hJcqh
+27: <a href="/vineelkovvuri" data-mentioned-user-id="47519278"><s>@</s><b>vineelkovvuri</b></a>  Hi Vineel, HAPPY  New Year :) . Your Github contribution. Thanks  :) Wish you should be more active on Twitter /Github/ your Hobby project. Cheers!
+28: Ah! IBRS == "indirect branch restricted speculation". Thank you Linux.
+29: Tons of respect to the researchers who probed the depths of speculative execution side channel attacks (<a href="/tehjh" data-mentioned-user-id="355089809"><s>@</s><b>tehjh</b></a>, <a href="/anders_fogh" data-mentioned-user-id="3088370015"><s>@</s><b>anders_fogh</b></a>, <a href="/lavados" data-mentioned-user-id="78837869"><s>@</s><b>lavados</b></a>, and more) as well as the many defenders across the industry who have been working tirelessly to mitigate these issues
+30: Oh go fuck yourself https://meltdownattack.com
+31: Archive of Saturday’s stream— in which we took a break from glitching to implement a proto-TAS tool for the Switch using https://youtu.be/kOXi955EmiE
+32: Very interesting talk on Amazon's Nitro hypervisor architecture that uses hardware I/O virtualization and KVM by Anthony Liguori!https://youtu.be/LabltEXk0VQ
+33: You know WinDirStat, utility that displays nice treemap view of folders/files on Windows? Just found altWinDirStat that does exactly the same, except like a zillion times faster. https://github.com/ariccio/altWinDirStat<a href="https://t.co/Ce6Puf7Vsb" data-pre-embedded="true">pic.twitter.com/Ce6Puf7Vsb</a>
+34: Yay, the Operating Systems course at  https://github.com/RWTH-OS/eduOS-rs
+35: What every systems programmer should know about lockless concurrency https://assets.bitbashing.io/papers/lockless.pdf
+36: Debugging Malware with WinDbg https://www.ixiacom.com/company/blog/debugging-malware-windbg <a href="/hashtag/Ixia?src=hash" data-query-source="hashtag_click"><s>#</s><b>Ixia</b></a> blog
+37: C++ is terrible.
+38: If you're using COM for IPC, you might this useful: http://blogs.microsoft.co.il/pavely/2017/10/06/integrating-com-ipc-into-existing-executables/<a href="https://t.co/X2xJdVyYCn" data-pre-embedded="true">pic.twitter.com/X2xJdVyYCn</a>
+39: Sept/Oct 2017 issue of The NT Insider is here: http://insider.osr.com/2017/ntinsider_2017_02.pdf -- It's been a while... Was it worth the wait? <img src="https://abs.twimg.com/emoji/v2/72x72/1f600.png" draggable="false" alt="😀" title="Grinning face" aria-label="Emoji: Grinning face">
+40: Amazing WP and very throughly well done.https://twitter.com/SpecterOps/status/911227333733842945
+41: The whitepaper https://specterops.io/resources/research-and-development  <a href="/hashtag/derbycon?src=hash" data-query-source="hashtag_click"><s>#</s><b>derbycon</b></a>
+42: mappings of C/C++11 atomic operations to CPU instructions: https://www.cl.cam.ac.uk/~pes20/cpp/cpp0xmappings.html
+43: Apparently we now have two detailed and verifiable security comparisons of Chrome, Edge, and IE in the enterprise.https://www.blog.google/topics/connected-workspaces/2-new-white-papers-examine-enterprise-web-browser-security/
+44: RWEverything from UEFIhttp://www.basicinputoutput.com/2017/09/ru.html
+45: Nice presentation by https://channel9.msdn.com/Events/WebPlatformSummit/Microsoft-Edge-Web-Summit-2017/ES03
+46: Reading a https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/koppe<a href="https://t.co/Sxuwvlp3LY" data-pre-embedded="true">pic.twitter.com/Sxuwvlp3LY</a>
+47: Aaron Swartz - Computer programmer and Internet activist.<a href="https://t.co/HlLl1vOhts" data-pre-embedded="true">pic.twitter.com/HlLl1vOhts</a>
+48: I've published a few over the years: http://www.msreverseengineering.com/research see the subheading "The Art of Disassembly"
+49: Turned this into a blog post! https://nicoleorchard.com/blog/compilers
+50: Sysmon Shell – Release&nbsp;1.1 http://nosecurecode.blog/2017/08/12/sysmon-shell-release-1-1/<a href="https://t.co/rSl5lZkpBh" data-pre-embedded="true">pic.twitter.com/rSl5lZkpBh</a>
+51: Updated my old Mini Memory Editor gist (various fixes/tweak, highlight, R/W handlers, better spacing/resizing, etc.) https://gist.github.com/ocornut/0673e37e54aff644298b<a href="https://t.co/p6Nl1pgGtV" data-pre-embedded="true">pic.twitter.com/p6Nl1pgGtV</a>
+52: And now the PE spec has been converted to a friendlier format (HTML), let me know if you see anything out of place  https://msdn.microsoft.com/en-us/library/windows/desktop/ms680547(v=vs.85).aspx
+53: WMIMon - Tool to monitor WMI activity on Windows - https://github.com/luctalpe/WMIMon seems interesting but need to test it with some framework/malware
+54: IRPMon: An improved version of IrpTracker - http://www.kernelmode.info/forum/viewtopic.php?f=11&amp;t=4785 -https://github.com/MartinDrab/IRPMon
+55: updated Linux tools diagram (PNG &amp; SVG) with recent bcc additions http://www.brendangregg.com/linuxperf.html<a href="https://t.co/ek5CMy3oUU" data-pre-embedded="true">pic.twitter.com/ek5CMy3oUU</a>
+56: What computer science papers should everyone read?http://bit.ly/cgNvOI
+57: REcon Montreal 2017 slides https://recon.cx/2017/montreal/slides/
+58: So proud of my intern! Here is his blog: Ten Process Injection Techniques by https://www.endgame.com/blog/technical-blog/ten-process-injection-techniques-technical-survey-common-and-trending-process<a href="https://t.co/BRNAinCGtQ" data-pre-embedded="true">pic.twitter.com/BRNAinCGtQ</a>
+59: There's open training materials we were teaching at https://github.com/advanced-threat-research/firmware-security-training
+60: Living off the land and fileless attack techniques - Interesting paper on dual-use tools used in attacks - https://www.symantec.com/content/dam/symantec/docs/security-center/white-papers/istr-living-off-the-land-and-fileless-attack-techniques-en.pdf
+61: We've created a GitHub repo to host security research from https://github.com/Microsoft/MSRC-Security-Research/tree/master/presentations
+62: This is cool! Write-up of how you can create WinDBG extensions that use CLRMD to automate debugging http://labs.criteo.com/2017/06/clrmd-part-5-how-to-use-clrmd-to-extend-sos-in-windbg/ via <a href="/CriteoEng" data-mentioned-user-id="1288320194"><s>@</s><b>CriteoEng</b></a><a href="https://t.co/1Ge93SK74z" data-pre-embedded="true">pic.twitter.com/1Ge93SK74z</a>
+63: How to develop WinDbg extension DLLhttps://lnkd.in/e9iiTS5
+64: Mutexes, part two: Using WinDbg to Begin Reverse Engineering Unknown Malware from Memoryhttps://goo.gl/fb/LJmXzE
+65: The best part of this https://eprint.iacr.org/2017/627.pdf is where the libgcrypt maintainers refused a patch for this exact timing attack. <img src="https://abs.twimg.com/emoji/v2/72x72/1f921.png" draggable="false" alt="🤡" title="Clown face" aria-label="Emoji: Clown face"><img src="https://abs.twimg.com/emoji/v2/72x72/1f45e.png" draggable="false" alt="👞" title="Man’s shoe" aria-label="Emoji: Man’s shoe"><img src="https://abs.twimg.com/emoji/v2/72x72/1f45e.png" draggable="false" alt="👞" title="Man’s shoe" aria-label="Emoji: Man’s shoe">
+66: "Analysis of a Master Boot Record – EternalPetya" https://countuponsecurity.com/2017/07/02/analysis-of-a-master-boot-record-eternalpetya/amp/
+67: LIEF 0.7 is out! https://github.com/lief-project/LIEF/releases/tag/0.7.0  New features: PE Hooking, resources modification...  See changelog: https://lief.quarkslab.com/doc/changelog.html#july-3-2017<a href="https://t.co/60a9ag6hA1" data-pre-embedded="true">pic.twitter.com/60a9ag6hA1</a>
+68: The Ultimate Oldschool PC Font Pack: FON/TTF pixel-perfect reproductions of 81 DOS-era PC fonts  http://int10h.org/oldschool-pc-fonts/<a href="https://t.co/7kMJVnhBvP" data-pre-embedded="true">pic.twitter.com/7kMJVnhBvP</a>
+69: Great post summarizing the security goodness in Visual C++. The compiler is in one of the best positions to make the code you write safer.https://twitter.com/visualc/status/880068160736460800
+70: Mathematics for Computer Science http://ow.ly/q128L [339 page pdf]
+71: "Before software can be reusable, it first has to be usable." - Ralph Johnson
+72: System programming in Rust: beyond safety -https://blog.acolyer.org/2017/06/14/system-programming-in-rust-beyond-safety/
+73: Great works in programming languages, collected by Benjamin C. Pierce http://ow.ly/F8oZC
+74: "Computer science is no more about computers than astronomy is about telescopes." –Edsger Dijkstra
+75: A unikernel in https://rajiv256.github.io/projects/ouros/ <a href="/Idit_Levine" data-mentioned-user-id="626148108"><s>@</s><b>Idit_Levine</b></a> <a href="/mindypreston" data-mentioned-user-id="284535677"><s>@</s><b>mindypreston</b></a> <a href="/amirmc" data-mentioned-user-id="15073537"><s>@</s><b>amirmc</b></a>
+76: The dissertation behind rsync https://www.samba.org/~tridge/phd_thesis.pdf [pdf]
+77: The NT Insider:Analyst's Perspective: Analyzing User Mode State from a Kernel Connection http://www.osronline.com/article.cfm?id=576 <a href="/hashtag/WinDBG?src=hash" data-query-source="hashtag_click"><s>#</s><b>WinDBG</b></a>
+78: Finally wrote up https://samdb.xyz/windows-kernel-exploitation-part-4/
+79: Noble Gases of Windows 10 Containers (SyScan 360 Seattle Talk) Slides posted at http://www.alex-ionescu.com/publications/syscan/syscan2017.pdf. Enjoy!<a href="https://t.co/4JcANKV7Yd" data-pre-embedded="true">pic.twitter.com/4JcANKV7Yd</a>
+80: A Dissection of the “EsteemAudit” Windows Remote Desktop Exploit - http://researchcenter.paloaltonetworks.com/2017/05/unit42-dissection-esteemaudit-windows-remote-desktop-exploit/
+81: Cairo is a great open source library. I couldn't find an up-to-date, self-contained DLL for Windows, so I made one:http://preshing.com/20170529/heres-a-standalone-cairo-dll-for-windows/
+82: Computer Science: It's the stuff you have to know so you can pass the interview and start building software. <a href="/hashtag/DevDiscuss?src=hash" data-query-source="hashtag_click"><s>#</s><b>DevDiscuss</b></a> <img src="https://abs.twimg.com/emoji/v2/72x72/1f643.png" draggable="false" alt="🙃" title="Upside-down face" aria-label="Emoji: Upside-down face">
+83: Learn CMake's Scripting Language in 15 Minuteshttp://preshing.com/20170522/learn-cmakes-scripting-language-in-15-minutes/
+84: My CPU Utilization post had hundreds of comments, so I've added an "Update:" section http://www.brendangregg.com/blog/2017-05-09/cpu-utilization-is-wrong.html
+85: [blog] Are we doing memory corruption mitigations wrong? https://scarybeastsecurity.blogspot.com/2017/05/are-we-doing-memory-corruption.html
+86: Alright, from newest to oldest, here's the talks which I've added to the timeline: http://timeglider.com/timeline/5ca2daa6078caaf4 ...
+87: Anders Hejlsberg (<a href="/ahejlsberg" data-mentioned-user-id="851768774"><s>@</s><b>ahejlsberg</b></a>)  - software engineer and author of Turbo Pascal.<a href="https://t.co/k2ww97mXcf" data-pre-embedded="true">pic.twitter.com/k2ww97mXcf</a>
+88: How to Build a CMake-Based Project http://preshing.com/20170511/how-to-build-a-cmake-based-project<a href="https://t.co/oo19Q6u7u1" data-pre-embedded="true">pic.twitter.com/oo19Q6u7u1</a>
+89: Windows 10 HAL’s Heap – Extinction of the "HalpInterruptController" Table Exploitation Technique by https://labs.bluefrostsecurity.de/blog/2017/05/11/windows-10-hals-heap-extinction-of-the-halpinterruptcontroller-table-exploitation-technique/
+90: Edward V. Berard: Essays on object-oriented software engineering, 1993.<a href="https://t.co/TFzm46i4pW" data-pre-embedded="true">pic.twitter.com/TFzm46i4pW</a>
+91: Linux Internals ~ The Art Of Symbol Resolution - Linux / Tutorials - 0x00sec https://0x00sec.org/t/linux-internals-the-art-of-symbol-resolution/1488
+92: OPCDE slides + materials will be continuously uploaded on our GitHub repository.https://github.com/comaeio/OPCDE
+93: Windows 10 build 16179 has a subtle heap randomization improvement that breaks this primitive: https://github.com/saaramar/Deterministic_LFH<a href="https://t.co/LvejR5NoEC" data-pre-embedded="true">pic.twitter.com/LvejR5NoEC</a>
+94: Coding on a Friday. (GIF via <a href="/GIPHY" data-mentioned-user-id="1020383864"><s>@</s><b>giphy</b></a>) <a href="/hashtag/DevLife?src=hash" data-query-source="hashtag_click"><s>#</s><b>DevLife</b></a> <a href="/hashtag/FridayFunny?src=hash" data-query-source="hashtag_click"><s>#</s><b>FridayFunny</b></a><a href="https://t.co/4TiaapVUQx" data-pre-embedded="true">pic.twitter.com/4TiaapVUQx</a>
+95: "Compatibility means deliberately repeating other people’s mistakes." - David Wheeler
+96: Great project from http://www.findresearch.org/
+97: new Linux bcc/eBPF tools have merged, and I updated the diagram http://github.com/iovisor/bcc<a href="https://t.co/yVxONgmpyS" data-pre-embedded="true">pic.twitter.com/yVxONgmpyS</a>
+98: System Architecture for BIOS/System Software Developers https://www.youtube.com/playlist?list=PLBTQvUDSl81dTG_5Uk2mycxZihfeAYTRm via <a href="/YouTube" data-mentioned-user-id="10228272"><s>@</s><b>YouTube</b></a>
+99: Finally my Reverse Engineering Malware 101 workshop content for the https://securedorg.github.io/RE101/<a href="https://t.co/JypQdlGCx4" data-pre-embedded="true">pic.twitter.com/JypQdlGCx4</a>
+100: Let's try that again :-) Big release for OleViewDotNet https://github.com/tyranid/oleviewdotnet with various improvements such as NDR and IPID table parsing.<a href="https://t.co/zvbX7GbkS0" data-pre-embedded="true">pic.twitter.com/zvbX7GbkS0</a>
+101: Selfie - tiny self-compiling C compiler, tiny self-executing MIPS emulator, tiny self-hosting MIPS hypervisor. http://selfie.cs.uni-salzburg.at
+102: "Deleted code is debugged code." - Jeff Sickel
+103: Someone please make this happen<a href="https://t.co/1b3QBHPptn" data-pre-embedded="true">pic.twitter.com/1b3QBHPptn</a>
+104: "There is a huge gap between the way compilers are taught in school &amp; the way compilers are implemented nowadays." https://channel9.msdn.com/Blogs/Seth-Juarez/Anders-Hejlsberg-on-Modern-Compiler-Construction
+105: Nice userland post on C2 phases. Hyperlinked to theory papers and HotSpot source locations http://marcelinorc.com/2016/05/11/phases-of-the-java-hostpot-c2s-compiler/
+106: Crash course on notation in programming language theory http://ow.ly/ZbvTx
+107: Deconstructing functional programming http://ow.ly/ZbvT0 Presentation by <a href="/Gilad_Bracha" data-mentioned-user-id="40545671"><s>@</s><b>Gilad_Bracha</b></a>
+108: Linkers and Loaders http://iecc.com/linker/
+109: A whirlwind tour of computational geometry http://bit.ly/1byBWby
+110: No one had a larger effect on the world of today, yet he's all but unknown. He showed that information is digital.http://www.newyorker.com/tech/elements/claude-shannon-the-father-of-the-information-age-turns-1100100
+111: “Good design is obvious. Great design is transparent.” – Joe Sparano
+112: Latest installment from http://www.catonmat.net/blog/top-100-books-part-five/
+113: New Post: The Top 10 Advanced Java Talks You Should See to Stay Relevant http://bit.ly/1Sniu9K<a href="https://t.co/vYCTCLG9f7" data-pre-embedded="true">pic.twitter.com/vYCTCLG9f7</a>
+114: The next 700 programming languages http://ow.ly/ZbvSL [pdf]
+115: Algorithms from the Bookhttp://ow.ly/4mN7jY
+116: Why functional programming matters http://ow.ly/ZbvSB [pdf]
+117: If you remember spirograph...http://nathanfriend.io/inspirograph/
+118: Visualize some of the most famous sorting http://bit.ly/1SlqHcX<a href="https://t.co/h8IZ2hWiaJ" data-pre-embedded="true">pic.twitter.com/h8IZ2hWiaJ</a>
+119: A new powerful collection library saves us from source.stream().really("?").collect(sink()) pipelines.https://twitter.com/Devoxx/status/714198186265591809
+120: Inside a register allocator | http://artagnon.com/inside-a-register-allocator/
+121: Dijkstra manuscript archive http://ow.ly/Uu1qy<a href="https://t.co/MQm7KGGW7i" data-pre-embedded="true">pic.twitter.com/MQm7KGGW7i</a>
+122: Algorithms from the bookhttp://ow.ly/ZP4xB
+123: Ever wondered how GC works? http://virtualjug.com/#live<a href="https://t.co/J8cfO81P4K" data-pre-embedded="true">pic.twitter.com/J8cfO81P4K</a>
+124: Here is the video of last night's meeting: https://vimeo.com/159238064 &lt;-- watch  <a href="/heathervc" data-mentioned-user-id="23138178"><s>@</s><b>heathervc</b></a> describe the Java Community Process <a href="/hashtag/java?src=hash" data-query-source="hashtag_click"><s>#</s><b>java</b></a> <a href="/hashtag/JCP?src=hash" data-query-source="hashtag_click"><s>#</s><b>JCP</b></a>
+125: MT http://bit.ly/1Uengbi <a href="/hashtag/Java?src=hash" data-query-source="hashtag_click"><s>#</s><b>Java</b></a><a href="https://t.co/hwjforuYqu" data-pre-embedded="true">pic.twitter.com/hwjforuYqu</a>
+126: Slides from http://bit.ly/24U2OA4<a href="https://t.co/FPx1KYcPPc" data-pre-embedded="true">pic.twitter.com/FPx1KYcPPc</a>
+127: The State of the Module System: Automatic Edition: http://j.mp/1LXyI4O <a href="/hashtag/java?src=hash" data-query-source="hashtag_click"><s>#</s><b>java</b></a> <a href="/hashtag/jigsaw?src=hash" data-query-source="hashtag_click"><s>#</s><b>jigsaw</b></a> <a href="/hashtag/jdk9?src=hash" data-query-source="hashtag_click"><s>#</s><b>jdk9</b></a> <a href="/hashtag/openjdk?src=hash" data-query-source="hashtag_click"><s>#</s><b>openjdk</b></a>
+128: One of my dreams as a teenager is now fulfilled: I'm a rockstar. <a href="/hashtag/java?src=hash" data-query-source="hashtag_click"><s>#</s><b>java</b></a> <a href="/hashtag/javaone?src=hash" data-query-source="hashtag_click"><s>#</s><b>javaone</b></a> <a href="/GluonHQ" data-mentioned-user-id="2948825942"><s>@</s><b>gluonhq</b></a><a href="https://t.co/2ICFEQc9Xn" data-pre-embedded="true">pic.twitter.com/2ICFEQc9Xn</a>
+129: new blog post: Linux BPF Superpowers http://www.brendangregg.com/blog/2016-03-05/linux-bpf-superpowers.html<a href="https://t.co/wtTJd3ettk" data-pre-embedded="true">pic.twitter.com/wtTJd3ettk</a>
+130: I recommend avoiding this flowchart. It includes obsolete collections and lacks concurrent collections. cc https://twitter.com/brucesnyder/status/704499999195971584
+131: Java Collections flow chart http://j.mp/21y4u3b
+132: When a programmer says, "I can learn any language in a week", I hear "I only know a week's worth of any language".
+133: Java 8: The Missing Tutorialhttps://github.com/shekhargulati/java8-the-missing-tutorial
+134: Gravitational waves discovered as presented by Prof. L. Krauss during the Devoxx Belgium opening keynote. LIVE @https://www.youtube.com/watch?v=c7293kAiPZw
+135: "strength reduce or eliminate range checks for power-of-two sized arrays" http://hg.openjdk.java.net/jdk9/hs-comp/hotspot/rev/05d844f1a81a
+136: New Advanced Management Console https://blogs.oracle.com/java/entry/new_advanced_management_console
+137: https://blogs.oracle.com/java/entry/java_8_streams_api<a href="https://t.co/my77BfDOi7" data-pre-embedded="true">pic.twitter.com/my77BfDOi7</a>
+138: Books for CS grad students http://bit.ly/bni37x
+139: Project Valhalla: Generic Specialization: Model 3 Classfile Enhancements http://mail.openjdk.java.net/pipermail/valhalla-spec-experts/2016-January/000067.html
+140: "What features are targeted in JDK™ 9 Early Access releases?" LOTS! http://openjdk.java.net/projects/jdk9/ <a href="/java" data-mentioned-user-id="125485258"><s>@</s><b>java</b></a>
+141: Streams: The Real Powerhouse in Java 8 http://bit.ly/1OQQJVh via <a href="/virtualJUG" data-mentioned-user-id="1875988466"><s>@</s><b>virtualJUG</b></a> <a href="/venkat_s" data-mentioned-user-id="14429713"><s>@</s><b>venkat_s</b></a>
+142: Lessons: Concurrency without Pain in Java http://blog.agiledeveloper.com/2016/01/lessons-concurrency-without-pain-in.html
+143: How we used Category Theory to solve a problem in Java http://techblog.realestate.com.au/how-we-used-category-theory-to-solve-a-problem-in-java/
+144: My slides from last night's http://bit.ly/1ZtId5y. Video to follow soon.
+145: Lambda Expressions and Functional Interfaces: Tips &amp; Best Practices http://www.baeldung.com/java-8-lambda-expressions-tips
+146: New post: Building OpenJDK with OpenJFX Jigsaw prototype on Windows http://lhochet.blogspot.fr/2016/01/building-openjdk-with-openjfx-jigsaw.html
+147: Latency Numbers Every Programmer Should Know https://gist.githubusercontent.com/jboner/2841832/raw/d214c5a8e1e2bdd8f275dd2f0b9994193e879cbf/latency.txt
+148: Nearly 1,000 pages of creative-commons licensed content for beginners looking to get into reverse engineering: http://beginners.re
+149: Adopt OpenJDK &amp; Java community: how can you help Java&nbsp;! http://www.javaadvent.com/?p=356<a href="https://t.co/wPebA1DcVP" data-pre-embedded="true">pic.twitter.com/wPebA1DcVP</a>
+150: All the "http://ow.ly/3yCUDN thank you <a href="/java" data-mentioned-user-id="125485258"><s>@</s><b>java</b></a>!
+151: An oldie, but goodie, about when not to optimize: http://www.flounder.com/optimization.htm <a href="/hashtag/getoffmylawn?src=hash" data-query-source="hashtag_click"><s>#</s><b>getoffmylawn</b></a>
+152: Ulix - Literate Unix - http://ulixos.org/ book that compile in a fully working "unix" kernel. https://github.com/hgesser/ulix <a href="/hashtag/LowLevel?src=hash" data-query-source="hashtag_click"><s>#</s><b>LowLevel</b></a> <a href="/hashtag/Osdev?src=hash" data-query-source="hashtag_click"><s>#</s><b>Osdev</b></a>
+153: <a href="/hashtag/Linux?src=hash" data-query-source="hashtag_click"><s>#</s><b>Linux</b></a> Performance Observability Tools - Very useful!<a href="https://t.co/AZZ6EV7IoD" data-pre-embedded="true">pic.twitter.com/AZZ6EV7IoD</a>
+154: First week as a non-MS employee was productive. I finished a book and read+wrote some code. Next week: write stuff with a pen.
+155: Yay! Today is my last day at Microsoft. Time for something different. I will miss my awesome team :/
+156: Dokany - User mode file system library for windows - https://github.com/dokan-dev/dokany <a href="/hashtag/Windows?src=hash" data-query-source="hashtag_click"><s>#</s><b>Windows</b></a> <a href="/hashtag/FileSystem?src=hash" data-query-source="hashtag_click"><s>#</s><b>FileSystem</b></a> <a href="/hashtag/usermode?src=hash" data-query-source="hashtag_click"><s>#</s><b>usermode</b></a> interesting..
+157: A timeline of low-level attack papers (VMM/UEFI/BIOS/SMM/etc), including links to materials: http://timeglider.com/timeline/5ca2daa6078caaf4 by <a href="/XenoKovah" data-mentioned-user-id="2362664118"><s>@</s><b>XenoKovah</b></a>
+158: Linux perf tool: the "git" of profilers (unsurprisingly). Frustratingly idiosyncratic, amazingly powerful. I use them both.
+159: Vintage asm nerding - x86 assembly gemps - http://dflund.se/~john_e/fr_gems.html
+160: x86 XOR is turing complete, so here's the XORfuscator - compiles C into xors, and only xors: https://github.com/xoreaxeaxeax/movfuscator/blob/master/post/xor.py<a href="http://t.co/rAMILouCAU" data-pre-embedded="true">pic.twitter.com/rAMILouCAU</a>
+161: ReactOS gets patched to protect against MS15-085 https://svn.reactos.org/svn/reactos/trunk/reactos/drivers/filters/mountmgr/database.c?view=diff&amp;r1=69294&amp;r2=69295&amp;pathrev=69295
+162: The ISO C++ Core Guidelines https://github.com/isocpp/CppCoreGuidelines https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md (edited by Bjarne Stroustrup and <a href="/herbsutter" data-mentioned-user-id="48935569"><s>@</s><b>herbsutter</b></a>)
+163: Says iTunes for Windows: "Math is hard"<a href="http://t.co/spQ1JvdAZr" data-pre-embedded="true">pic.twitter.com/spQ1JvdAZr</a>
+164: Check out this post on 5 pretty interesting .NET compiler platform (http://spr.ly/6012BGoKa<a href="http://t.co/pFqb8wZiAP" data-pre-embedded="true">pic.twitter.com/pFqb8wZiAP</a>
+165: Apollo 11 lander guidance system was really small: "we landed on the moon with 152 KB of onboard computer memory." http://www.doneyles.com/LM/Tales.html
+166: TREAT! http://spr.ly/6014B1maK - Interesting security discussion - how do we protect ourselves from kernel exploits?<a href="http://t.co/g3TQzgm80c" data-pre-embedded="true">pic.twitter.com/g3TQzgm80c</a>
+167: Dreams are not those which we get in the sleep, Dreams are those which doesn't let you sleep.- <a href="/APJAbdulKalam" data-mentioned-user-id="841580789338845185"><s>@</s><b>APJAbdulKalam</b></a> Salute You Sir.
+168: TypeScript 1.5 released. Lots of new ES6 features. http://blogs.msdn.com/b/typescript/archive/2015/07/20/announcing-typescript-1-5.aspx <a href="/hashtag/typescript?src=hash" data-query-source="hashtag_click"><s>#</s><b>typescript</b></a>
+169: The difference of 4 years at Microsoft.<a href="http://t.co/qmdgbs2isw" data-pre-embedded="true">pic.twitter.com/qmdgbs2isw</a>
+170: Every resource you'll need for http://spr.ly/6013B6bTz<a href="http://t.co/lsyhUZDTqs" data-pre-embedded="true">pic.twitter.com/lsyhUZDTqs</a>
+171: Free 1.5 Hour Video: Writing Roslyn Analyzers and Code Fixeshttp://www.wintellect.com/devcenter/jrobbins/free-1-5-hour-video-writing-roslyn-analyzers-and-code-fixes
+172: 115 http://buff.ly/1BwqMkq<a href="http://t.co/NDi6S5mOoH" data-pre-embedded="true">pic.twitter.com/NDi6S5mOoH</a>
+173: Read my new article about top 20 navigation features in IntelliJ IDEAhttps://medium.com/@andrey_cheptsov/top-20-navigation-features-in-intellij-idea-ed8c17075880
+174: http://www.catb.org/esr/structure-packing/ the lost art of C struct packing.
+175: My list of recommended C++ Books: http://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;MarketPlace=US&amp;ID=V20070822%2FUS%2Fmeetingcpp-20%2F8003%2Fb23ca1ce-f4ed-4abc-a218-b560bf76a25e&amp;Operation=NoScript
+176: What makes Clang so special? http://www.codergears.com/Blog/?p=679 <a href="/hashtag/cpp?src=hash" data-query-source="hashtag_click"><s>#</s><b>cpp</b></a> <a href="/hashtag/cplusplus?src=hash" data-query-source="hashtag_click"><s>#</s><b>cplusplus</b></a>
+177: RT http://bit.ly/12jZxtg
+178: Choosing the best Sandbox for malware analysis http://kromer.pl/malware-analysis/choosing-th-best-sandbox-for-malware-analysis/
+179: Reverse Engineering http://www.scribd.com/doc/132717591/Reverse-Engineering
+180: Understanding Integer Overflow in C/C++. https://www.cs.utah.edu/~regehr/papers/overflow12.pdf <a href="/hashtag/cpp?src=hash" data-query-source="hashtag_click"><s>#</s><b>cpp</b></a>
+181: Introduction to x64 Assembly. http://software.intel.com/en-us/articles/introduction-to-x64-assembly?wapkw=%28video%20encode%20white%20paper%29 <a href="/hashtag/x64?src=hash" data-query-source="hashtag_click"><s>#</s><b>x64</b></a> <a href="/hashtag/asm?src=hash" data-query-source="hashtag_click"><s>#</s><b>asm</b></a>
+182: The Big List of http://blog.reybango.com/the-big-list-of-javascript-css-and-html-development-tools-libraries-projects-and-books/
+183: https://docs.google.com/file/d/0B_YSil_6KDdqWU5XeFZFOU1xVjA/edit?usp=sharing &amp;lt; <a href="/hashtag/mustread?src=hash" data-query-source="hashtag_click"><s>#</s><b>mustread</b></a>
+184: Modifying KVM (qemu-kvm) settings for malware analysis - http://bit.ly/Xllf17
+185: Coding tricks of game developers. http://www.dodgycoder.net/2012/02/coding-tricks-of-game-developers.html <a href="/hashtag/gamedev?src=hash" data-query-source="hashtag_click"><s>#</s><b>gamedev</b></a>
+186: Nice! A complete university course about microcontrollers (https://www.youtube.com/course?list=ECD7F7ED1F3505D8D5) and FPGAs (https://www.youtube.com/course?list=EC2BA78454E71FF0E5)
+187: This website contains some good and useful forensic tools: http://tzworks.net/download_links.php Enjoy them :)
+188: Linux runtime unpacker and binary signature http://shell-storm.org/blog/Linux-runtime-unpacker-and-binary-signature/
+189: Shellcoding for Linux and Windows Tutorial by steve hanna (last update June 2007) http://www.vividmachines.com/shellcode/shellcode.html
+190: many resources on linux - http://www.makelinux.net/resources <a href="/hashtag/linux?src=hash" data-query-source="hashtag_click"><s>#</s><b>linux</b></a> <a href="/hashtag/dev?src=hash" data-query-source="hashtag_click"><s>#</s><b>dev</b></a> <a href="/hashtag/kernel?src=hash" data-query-source="hashtag_click"><s>#</s><b>kernel</b></a>
+191: How Fabrice Bellard's jslinux really workshttps://github.com/levskaya/jslinux-deobfuscated
+192: Coding Cheat Sheets http://overapi.com/
+193: Ken Shirriff's blog: The 8085's register file reverse engineered http://www.righto.com/2013/03/register-file-8085.html
+194: An open letter from bunnie, author of Hacking the Xbox: | No Starch Press http://nostarch.com/xboxfree
+195: Quick introduction to RE for beginnershttps://github.com/dennis714/RE-for-beginners
+196: ESC to feature dozens of embedded Linux, Android sessions http://bit.ly/Wv9ILd
+197: Initial asm.js landing: https://hg.mozilla.org/integration/mozilla-inbound/rev/b3d85b68449d spec is at http://asmjs.org/spec/latest/
+198: The Architecture of Open Source Applications http://www.aosabook.org/en/index.html
+199: Dude, Where’s My Droid?! – RootedCON 2013 Presentation, https://viaforensics.com/mobile-security/dude-droid-sys-call-table-rootedcon-2013.html
+200: ARM Overview: http://wiki.osdev.org/ARM_Overview
+201: Hooking Windows API Calls in Python.http://goo.gl/UG4fE
+202: How to write a useful Twitter bot in five minutes:http://www.labnol.org/internet/write-twitter-bot/27902/
+203: Symbols the Microsoft Way http://randomascii.wordpress.com/2013/03/09/symbols-the-microsoft-way/
+204: Some dark corners of Chttps://docs.google.com/presentation/d/1h49gY3TSiayLMXYmRMaAEMl05FaJ-Z6jDOWOz3EsqqQ/edit?usp=sharing
+205: "Walking on water and developing software from a specification are easy if both are frozen." - Edward V Berard
+206: iOS 6 Exploitation 280 Days Later -http://de.slideshare.net/i0n1c/csw2013-stefan-esserios6exploitation280dayslater
+207: User-mode Callbacks in Windows http://codejury.com/user-mode-callbacks-in-windows/
+208: DKOM (Direct Kernel Object Manipulation) - Process Hider -http://www.rohitab.com/discuss/topic/23880-dkom-process-hider/
+209: A Collection of Windows Autostart Locations -  http://gladiator-antivirus.com/forum/index.php?showtopic=24610
+210: Common clock framework: how to use it, by Gregory Clement - Presentation slides at the Embedded Linux Conference - http://j.mp/12sW8vr
+211: Old blog post, but useful: Collection of interesting resources on C/C++ programming. http://www.viva64.com/en/b/0148/  <a href="/hashtag/cpp?src=hash" data-query-source="hashtag_click"><s>#</s><b>cpp</b></a> <a href="/hashtag/cplusplus?src=hash" data-query-source="hashtag_click"><s>#</s><b>cplusplus</b></a>
+212: http://Linux.conf.au 2013 Videos http://j.mp/WN75pp
+213: Driverless Kernel Mode Rootkit  -http://www.rohitab.com/discuss/topic/28440-driverless-kernel-mode-rootkit/
+214: Suterusu Rootkit: Inline Kernel Function Hooking on x86 and ARM http://www.poppopret.org/?p=251
+215: Peeking into Linux kernel-land using /proc filesystem for quick’n'dirty troubleshooting: http://blog.tanelpoder.com/2013/02/21/peeking-into-linux-kernel-land-using-proc-filesystem-for-quickndirty-troubleshooting/  <a href="/hashtag/sysadmin101?src=hash" data-query-source="hashtag_click"><s>#</s><b>sysadmin101</b></a>
+216: RE framework written in python including x86-&gt;IR &amp; JIT emulation http://code.google.com/p/smiasm/
+217: Linux Performance Analysis and Tools: Brendan Gregg's Talk at SCaLE 11x. http://joyent.com/blog/linux-performance-analysis-and-tools-brendan-gregg-s-talk-at-scale-11x <a href="/hashtag/Linux?src=hash" data-query-source="hashtag_click"><s>#</s><b>Linux</b></a> <a href="/hashtag/Performance?src=hash" data-query-source="hashtag_click"><s>#</s><b>Performance</b></a> <a href="/hashtag/Analysis?src=hash" data-query-source="hashtag_click"><s>#</s><b>Analysis</b></a>
+218: Bypassing ASLR &amp; NX with ROP under x86 linux http://shar33f12.blogspot.com.es/2012/10/rop.html
+219: (old) BIOS Articles: https://sites.google.com/site/pinczakko/bios-articles
+220: Is http://Code.org Too Soulless To Make an Impact? http://bit.ly/Wo8ToF
+221: This is useful http://www.codemachine.com/article_kernelstruct.html Catalog of Windows kernel data structures
+222: Ubuntu Touch Developer Preview To Be Made Available For 20 Other Devices http://www.redmondpie.com/ubuntu-touch-developer-preview-to-be-made-available-for-20-other-devices/ via <a href="/RedmondPie" data-mentioned-user-id="15383958"><s>@</s><b>RedmondPie</b></a>
+223: Malware Dynamic Analysis class - http://opensecuritytraining.info/MalwareDynamicAnalysis.html
+224: Yara Resources http://bit.ly/WbTQ18 &amp;lt;&amp;lt; great stuff”
+225: Developing for non-x86 targets using QEMU, 260 slides: https://speakerdeck.com/mirell/developing-for-non-x86-targets-using-qemu Text: http://landley.net/aboriginal/presentation.html by <a href="/landley" data-mentioned-user-id="14326287"><s>@</s><b>landley</b></a> and Mark Miller
+226: Introduction to SoftICE http://bit.ly/ZzcoWi
+227: On Compilers and Interpreters. http://yawnt.github.com/blog/2013/02/15/on-compilers-and-interpreters/  <a href="/hashtag/programming?src=hash" data-query-source="hashtag_click"><s>#</s><b>programming</b></a> <a href="/hashtag/compilers?src=hash" data-query-source="hashtag_click"><s>#</s><b>compilers</b></a> <a href="/hashtag/llvm?src=hash" data-query-source="hashtag_click"><s>#</s><b>llvm</b></a>
+228: A Short Guide to ARM Exploitation - Paper on Basics of ARM Exploitation by me and @GRVRAJORA  http://www.exploit-db.com/wp-content/themes/exploit/docs/24493.pdf .
+229: Rootkits for Javascript environments (PDF) http://buff.ly/15Jkksr
+230: All the Details of many versions of both MBR and OS Boot Records - http://thestarman.pcministry.com/asm/mbr/index.html
+231: 9 of the Best Free C Books. http://www.linuxlinks.com/article/20130202034416464/9oftheBestFreeC-Part1.html
+232: If you missed the http://goo.gl/36hMp
+233: A Survey on Computer System Memory Management and Optimization Techniques http://is.gd/9CFtqj
+234: Interesting posts about the 8085 &amp; 6502 with a bit of silicon reversing http://www.righto.com/2013/01/a-small-part-of-6502-chip-explained.html http://www.righto.com/2013/01/inside-alu-of-8085-microprocessor.html http://www.righto.com/2013/02/looking-at-silicon-to-understanding.html
+235: [Video] Blackhat 2010 - Deconstructing A Secure Processor http://www.securitytube.net/video/6929
+236: Google it: 5 + (-sqrt(1-x^2-(y-abs(x))^2))*cos(30*((1-x^2-(y-abs(x))^2))), x is from -1 to 1, y is from -1 to 1.5, z is from 1 to 6
+237: A Short Guide on ARM Exploitation http://www.exploit-db.com/download_pdf/24493
+238: FOSDEM slides: ARM support in the Linux kernel, by Thomas Petazzoni. Recent changes in the ARM Linux kernel - http://j.mp/WlSygw
+239: Extracting Objects from a Running Process: http://quequero.org/2013/02/extracting-objects-from-running-process/ by <a href="/PnUic" data-mentioned-user-id="712038559"><s>@</s><b>PnUic</b></a>
+240: Understanding Virtual Memory http://goo.gl/fb/RYLE4
+241: Very good archive of common http://www.mediafire.com/?aicvc9erggdx63g - Only for research purposes <a href="/hashtag/malwaremustdie?src=hash" data-query-source="hashtag_click"><s>#</s><b>malwaremustdie</b></a>
+242: RT http://www.mediafire.com/?aicvc9erggdx63g - Only for research purposes
+243: Introduction to Parallel http://bit.ly/11Yy1n4
+244: Cracking on iPhone Phoenixdev Tutorial -  http://www62.zippyshare.com/v/81700938/file.html
+245: RT http://bit.ly/YEBbrv
+246: Maltrieve: retrieving malware for research http://wp.me/pT37X-l8
+247: Strongly recommended: Reverse Engineering materials Mac OS X and iOS http://bit.ly/YEBbrv
+248: Reversing Windows 8: Interesting Features of Kernel Security [PDF] http://goo.gl/qy87Q
+249: X86 Opcode and Instruction Reference http://ref.x86asm.net/index.html
+250: Introduction to WMI Basics with PowerShell Part 1 (What it is and exploring it with a GUI) http://www.darkoperator.com/blog/2013/2/1/introduction-to-wmi-basics-with-powershell-part-1-what-it-is.html
+251: Debugging ring 3 part of PE/PE+ loader http://www.reddit.com/r/ReverseEngineering/comments/17nc1u/debugging_ring_3_part_of_pepe_loader/
+252: Evasi0n iOS 6 / 6.1 Jailbreak For iPhone 5 And Other Devices Announced, Release Likely This Week http://www.redmondpie.com/evasi0n-ios-6-6.1-jailbreak-for-iphone-5-and-other-devices-announced-release-likely-this-week/ via <a href="/RedmondPie" data-mentioned-user-id="15383958"><s>@</s><b>RedmondPie</b></a>
+253: Linux process execution and the useless ELF header fields. http://blog.shell-storm.org/files/blog-35.php
+254: Ken Shirriff's blog: Inside the ALU of the 8085 microprocessor http://www.arcfn.com/2013/01/inside-alu-of-8085-microprocessor.html
+255: History of memory corruption vulnerabilities and exploits http://rdist.root.org/2013/01/28/history-of-memory-corruption-vulnerabilities-and-exploits/
+256: Detailed writeup on wow64 http://rce.co/knockin-on-heavens-gate-dynamic-processor-mode-switching/ (h/t <a href="/skier_t" data-mentioned-user-id="281654660"><s>@</s><b>skier_t</b></a>)
+257: Reversing on Windows: Entering into Out of Memory Condition http://reversingonwindows.blogspot.com/2013/01/entering-into-out-of-memory-condition.html?spref=tw
+258: GPT/MBR quick reference guide http://dig4n6.blogspot.com/2013/01/gptmbr-quick-reference.html
+259: Kaspersky and Hypponen on the Evolution of Hacking and Cyberwar | Security Bistro http://www.securitybistro.com/blog/?p=5363
+260: [Videos] Exploit Development Series http://goo.gl/0iwxf
+261: Detection of Metamorphic and Virtualization-based Malware  - http://tuts4you.com/request.php?3266
+262: Stack Smashing On A Modern Linux System, interesting things after 4# http://www.exploit-db.com/papers/24085/
+263: Using Processor Features for Binary Analysis  - http://tuts4you.com/request.php?3429
+264: Simple Hook detection Linux module http://blog.shell-storm.org/files/blog-34.php
+265: udis86 - a disassembler library for x86 and x86-64 http://j.mp/WMGUd4
+266: 'Unix is user-friendly; it's just picky about who its friends are.'
+267: ASLR implementation in Linux Kernel 3.7 -  http://blog.shell-storm.org/files/blog-33.php
+268: Top 30 computer science blogs of 2012 http://ow.ly/gYj17
+269: Lessons learned from 50 USB bugs http://bit.ly/RWCBxC &lt; includes new paper.
+270: The Exceptional Beauty of Doom 3's Source Code http://m.kotaku.com/5975610/the-exceptional-beauty-of-doom-3s-source-code
+271: Online Disassembler, just drop the binary ! http://onlinedisassembler.com/
+272: "Your body language shapes who you are" http://www.youtube.com/watch?v=Ks-_Mh1QhMc”
+273: Mixing x86 with x64 code  http://blog.rewolf.pl/blog/?p=102#.UPT_OWKz8O1.twitter
+274: Videos of the Embedded Linux Conference Europe 2012 - http://lnkd.in/tD3gR9
+275: The Exceptional Beauty of Doom 3's Source Code http://bit.ly/13w373F
+276: prowling -  NSM foo: Modifying VirtualBox settings for malware analysis... http://blog.prowling.nu/2012/10/modifying-virtualbox-settings-for.html Great guide by <a href="/nsmfoo" data-mentioned-user-id="343205324"><s>@</s><b>nsmfoo</b></a>!
+277: [pdf[ introduction To ARM Linux Exploiting http://j.mp/XtgLkK
+278: Windows DLL Injection Basics http://bit.ly/UTGAKR
+279: Anatomy of command line arguments in Linux | MyLinuxBook http://mylinuxbook.com/command-line-arguments-in-linux-part2/
+280: A collection of sec mobile tools http://wiki.secmobi.com/
+281: New blog post: "Suterusu Rootkit: Inline Kernel Function Hooking on x86 and ARM"http://www.poppopret.org/?p=251
+282: 10 Skills Needed to be a Successful Pentester http://blogs.securiteam.com/index.php/archives/2025
+283: 29C3 Chaos Communication Congress - Defeating Windows Memory Forensics [mp4] http://ftp.ccc.de/congress/29C3/mp4-h264-HQ/29c3-5301-en-defeating_windows_memory_forensics_h264.mp4
+284: Slides and Video of Analyzing Malware in Memory Webinar http://volatility-labs.blogspot.com/2013/01/slides-and-video-of-analyzing-malware.html
+285: Remember the ELF reloc tables hack? Now, let's do x86 page tables. Running code without ever finishing an x86 op. http://www.youtube.com/watch?v=NGXvJ1GKBKM <a href="/hashtag/29c3?src=hash" data-query-source="hashtag_click"><s>#</s><b>29c3</b></a>
+286: Books that tells the beauty of Computer Science and Mathematics to an undergrad http://bit.ly/VBq54v
+287: GMER 2.0.18327 http://www.gmer.net/
+288: RT https://github.com/hakimel/reveal.js Demo: http://lab.hakim.se/reveal-js/#/
+289: A good explanation of padding oracle attacks (+ tool) ~ http://www.skullsecurity.org/blog/2013/padding-oracle-attacks-in-depth
+290: Analysis of a http://thegoldenmessenger.blogspot.de/2012/12/3-disclosure-of-another-0day-malware.html?m=1 part2: http://thegoldenmessenger.blogspot.de/2012/12/3-disclosure-of-another-0day-malware_15.html?m=1 part3: http://thegoldenmessenger.blogspot.de/2012/12/3-disclosure-of-another-0day-malware_16.html?m=1
+291: Another cool article on how to parse (partially) PDB files: http://www.godevtool.com/Other/pdb.htm, and pdb-parse a python library: http://code.google.com/p/pdbparse/
+292: RT http://www.regexper.com/
+293: Language ⇔ Language Matrix: Compilers to other programming languages http://langlangmatrix.com/
+294: Implementing a dynamically sized array in C http://happybearsoftware.com/implementing-a-dynamic-array.html
+295: A Uniﬁed Theory of Garbage Collection [pdf] http://bit.ly/US2g84
+296: Very cool article: "100 Diagrams that Changed the World" http://www.brainpickings.org/index.php/2012/12/21/100-diagrams-that-changed-the-world/
+297: Great Ideas in Theoretical Computer Science http://bit.ly/XZBR8X
+298: Defrag Tools: #20 - WinDbg - Basic Commands | Defrag Toolshttp://dlvr.it/2hXzXs
+299: VX (Virus eXchange) – The Virus Underground http://feedproxy.google.com/~r/SecurityBloggersNetwork/~3/dNdmGyNZVtw/vx-the-virus-underground.html
+300: Valhalla VX issue #3: http://spth.virii.lu/main.htm
+301: kGuard: Lightweight Kernel Protection http://is.gd/shi2QS
+302: kernel __init calls - Veda SolutionsVeda Solutions http://blog.techveda.org/index.php/kernel__initcalls/
+303: ODA Online Disassembler http://onlinedisassembler.com
+304: Analyzing Unknown Malware - http://thegoldenmessenger.blogspot.de/2012/12/3-disclosure-of-another-0day-malware.html
+305: How to – Tutorial Guide - Reset Your Windows 8 Password in 10 minutes without using any third party software http://tinyurl.com/cncnmgh
+306: Dive Into HTML5 http://diveintohtml5.info/
+307: Qt Developer Days 2012 Videos Released http://developers.slashdot.org/story/12/12/12/1445252/
+308: Extracting ZeroAccess from NTFS Extended Attributes - http://journeyintoir.blogspot.it/2012/12/extracting-zeroaccess-from-ntfs.html &lt; Cool explaination
+309: Windows 8 Forensics resources and guides http://bit.ly/VkBCUr <a href="/hashtag/windows8?src=hash" data-query-source="hashtag_click"><s>#</s><b>windows8</b></a> <a href="/hashtag/forensics?src=hash" data-query-source="hashtag_click"><s>#</s><b>forensics</b></a>
+310: Windows 8 ASLR Internals http://goo.gl/mNIFq
+311: Emulating the Gamecube audio processing in Dolphin http://bit.ly/StmDc7
+312: Presentation about Dalvik Virtual Machine is available:http://www.slideshare.net/jserv/understanding-the-dalvik-virtual-machine
+313: Understanding JVM Internals http://www.cubrid.org/blog/dev-platform/understanding-jvm-internals?utm_medium=referral&amp;utm_source=pulsenews
+314: Introduction to ARM - OpenSecurityTraining course - http://www.opensecuritytraining.info/IntroARM.html
+315: [INFOSEC] API Hooking with Microsoft Detours http://bit.ly/WvbEDa
+316: Useful and complete GDB Reference http://www.acsu.buffalo.edu/~charngda/gdb.html
+317: New 64-bit Linux Rootkit Doing iFrame Injections - https://www.securelist.com/en/blog/208193935/New_64_bit_Linux_Rootkit_Doing_iFrame_Injections
+318: Attacking hardened Linux systems with kernel JIT spraying - http://mainisusuallyafunction.blogspot.it/2012/11/attacking-hardened-linux-systems-with.html
+319: Algorithms book from Berkeley http://ow.ly/fhTwD [336 page pdf]
+320: What every programmer absolutely, positively needs to know about encodings and character sets to work with text. http://kunststube.net/encoding/
+321: ROP tutorial under Linux http://shar33f12.blogspot.com <a href="/Dinosn" data-mentioned-user-id="128484298"><s>@</s><b>Dinosn</b></a>
+322: Windows 8 ARM Security: http://www.alex-ionescu.com/breakpoint2012.pdf
+323: Reverse Engineering Serial Ports http://www.devttys0.com/2012/11/reverse-engineering-serial-ports/
+324: A nice reading on WinRT logic, however a lot of ppl at MSFT marketing dept should be fired! Such a confusion w names http://goo.gl/5fGwf
+325: Ruxcon Slides http://www.ruxcon.org.au/slides/
+326: Stephan T. Lavavej - Core C++, 5 of n | C9 Lectures: Stephan T. Lavavej - Core C++http://dlvr.it/2N2SzV
+327: Android Kernel Rootkit - http://bit.ly/Tb7Xv7 via <a href="/0chuzz" data-mentioned-user-id="455944250"><s>@</s><b>0chuzz</b></a> on irc
+328: [INFOSEC] X86 Assembly Language, Part 3.1 http://bit.ly/WEHcX3
+329: Malware Analysis 101:::: Part 0 - Overview https://c0rrupt.net/forum/malware/1101-malware-analysis-101-part-0-overview-techniques-types-malware-terminology.html | Part 1.1 - Basic Static Analysis Techniques https://c0rrupt.net/forum/malware/1187-malware-analysis-101-part-1-1-basic-static-analysis-techniques.html
+330: Reverse engineering with http://bit.ly/XFHbQF <a href="/hashtag/Malware?src=hash" data-query-source="hashtag_click"><s>#</s><b>Malware</b></a> <a href="/hashtag/OMFW?src=hash" data-query-source="hashtag_click"><s>#</s><b>OMFW</b></a>
+331: Linux Directory Structure explained: /bin folder http://www.linuxnix.com/2012/10/linux-directory-structure-explained-bin-folder.html
+332: X86 Assembly Language, Part 2 http://resources.infosecinstitute.com/x86-assembly-language-part-2/
+333: x86 Assembly Language, Part 1 http://resources.infosecinstitute.com/x86-assembly-language-part-1/
+334: RT http://bit.ly/TaR3D0
+335: Language-Independent Sandboxing of Just-In-Time Compilation and Self-Modifying Code: http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en//pubs/archive/37204.pdf
+336: [INFOSEC] x86 Assembly Language Applicable To Reverse Engineering: The Basics – Part 1 http://bit.ly/S0o5mE
+337: All Web programmers should read the excellent "How web browsers work - from HTML soup to what you see" http://seen.li/1x4y
+338: Reverse Engineering Android: Disassembling Hello World: http://www.davtbaum.com/?p=93
+339: This graphics tutorial looks pretty good for a modern introduction: http://www.arcsynthesis.org/gltut/index.html
+340: Yet another OS Development Tutorials website ~ http://www.osdever.net/tutorials/
+341: [INFOSEC] X86 Assembly Language, Part 2 http://bit.ly/Qjiq8J
+342: 86-minute video of Malware Hunting with the Sysinternals Tools by http://j.mp/T7WtbW &lt; You can save it locally for later
+343: Derbycon 2012 Videos http://goo.gl/bHdkR
+344: Binary Stirring: Self-randomizing Instruction Addresses of Legacy x86 Binary Code http://is.gd/l2fFbL
+345: Usefull bloglinks on how OS and software works - http://duartes.org/gustavo/blog/best-of <a href="/hashtag/OSdev?src=hash" data-query-source="hashtag_click"><s>#</s><b>OSdev</b></a> <a href="/hashtag/kernel?src=hash" data-query-source="hashtag_click"><s>#</s><b>kernel</b></a> <a href="/hashtag/cpu?src=hash" data-query-source="hashtag_click"><s>#</s><b>cpu</b></a> <a href="/hashtag/ring?src=hash" data-query-source="hashtag_click"><s>#</s><b>ring</b></a> <a href="/hashtag/memorymap?src=hash" data-query-source="hashtag_click"><s>#</s><b>memorymap</b></a> <a href="/hashtag/pagecache?src=hash" data-query-source="hashtag_click"><s>#</s><b>pagecache</b></a>
+346: Anatomy of a Program in Memory - http://bit.ly/QnCmKk
+347: Google Native Client -  part1 http://bit.ly/QnEVMp part2 http://bit.ly/QnF2aF part3 http://bit.ly/QnF3LP part4 http://bit.ly/QnF8it
+348: 100 examples of C++ bugs:  http://bit.ly/Kae5RP
+349: Handy ARM CheatSheet http://infocenter.arm.com/help/topic/com.arm.doc.qrc0001l/QRC0001_UAL.pdf [PDF] <a href="/hashtag/ARM?src=hash" data-query-source="hashtag_click"><s>#</s><b>ARM</b></a> <a href="/hashtag/Embedded?src=hash" data-query-source="hashtag_click"><s>#</s><b>Embedded</b></a> <a href="/hashtag/InfoSec?src=hash" data-query-source="hashtag_click"><s>#</s><b>InfoSec</b></a>
+350: Downloads for my x64 workshop tomorrow http://workshop-x64.didierstevens.com
+351: ARM Cores, architectures, pipelines, registers http://web.eecs.umich.edu/~prabal/teaching/eecs373-f10/readings/ARM_Architecture_Overview.pdf [PDF]
+352: Windows 8 Heap Internals - http://bit.ly/P2DqPi
+353: Random number generation book. New link http://ow.ly/dXfVU
+354: Brute-Forcing ASLR on Windows http://www.cyvera.com/brute-forcing-aslr-on-windows
+355: From SQL injection to shell (PDF*) : http://goo.gl/iUGs4 <a href="/hashtag/Security?src=hash" data-query-source="hashtag_click"><s>#</s><b>Security</b></a> <a href="/hashtag/PenTest?src=hash" data-query-source="hashtag_click"><s>#</s><b>PenTest</b></a>
+356: Assembly Programming with Visual Studio 2010/2012 - http://www.codeproject.com/Articles/271627/Assembly-Programming-with-Visual-Studio-2010-2012  <a href="/hashtag/asm?src=hash" data-query-source="hashtag_click"><s>#</s><b>asm</b></a> <a href="/hashtag/masm?src=hash" data-query-source="hashtag_click"><s>#</s><b>masm</b></a> <a href="/hashtag/vs?src=hash" data-query-source="hashtag_click"><s>#</s><b>vs</b></a>
+357: From 0 to crypto: http://techblog.rosedu.org/from-0-to-cryptography.html
+358: distorm : Powerful Disassembler Library For x86/AMD64  http://code.google.com/p/distorm/
+359: Three Very Good http://www.websec.ca/kb/sql_injection)+(http://ha.ckers.org/sqlinjection/)+(http://websec.wordpress.com/tag/sql-filter-evasion/)
+360: The binutils porting guide http://www.linuxforu.com/2010/01/binutils-porting-guide-to-a-new-target-architecture/
+361: A closer look at crankshaft, v8's optimizing compiler: http://wingolog.org/archives/2011/08/02/a-closer-look-at-crankshaft-v8s-optimizing-compiler
+362: Looks useful "C/C++ to ASM visualizer" http://assembly.ynh.io/ (via <a href="/xanda" data-mentioned-user-id="55435366"><s>@</s><b>xanda</b></a> <a href="/pdp" data-mentioned-user-id="13089682"><s>@</s><b>pdp</b></a>)
+363: Defeating PatchGuard: Bypassing Kernel Security Patch Protection in Microsoft Windows [PDF] http://goo.gl/Y7NNW
+364: Bypassing Intel SMEP on Windows 8 x64 Using ROP - http://blog.ptsecurity.com/2012/09/bypassing-intel-smep-on-windows-8-x64.html
+365: Dr. Fu's Security Blog: Malware Analysis Tutorial 33: Evaluation of Automa... http://fumalwareanalysis.blogspot.com/2012/09/malware-analysis-tutorial-33-evaluation.html?spref=tw
+366: Evasion and Detection of Metamorphic Viruses - http://bit.ly/PCcFlq
+367: Locating x86 Paging Structures in Memory Images - pdf http://bit.ly/PCd47e / slides http://bit.ly/PCd9Ij
+368: The Design of LLVM http://twb.io/LCzvGM
+369: A simple a FUSE filesystem on top of ELF objects (via beorn) - https://github.com/pozdnychev/elfs <a href="/hashtag/ouiFUSEmaisquandmeme?src=hash" data-query-source="hashtag_click"><s>#</s><b>ouiFUSEmaisquandmeme</b></a>
+370: x86 oddities http://code.google.com/p/corkami/wiki/x86oddities <a href="/hashtag/FF?src=hash" data-query-source="hashtag_click"><s>#</s><b>FF</b></a> <a href="/ange4771" data-mentioned-user-id="1176250668"><s>@</s><b>ange4771</b></a>   ;)
+371: [Video] JTAG/Serial/FLASH/PCB Embedded Reverse Engineering Tools and Techniques http://securitytube.net/video/5682
+372: Linux Security Summit 2012 slides - http://bit.ly/Sybqdj
+373: Linux ELF binary debugging and anti-debugging (slides + sources) - http://bit.ly/UF8c50
+374: Windows Memory Manager’s special handling of access faults in RtlInterlockedPopEntrySList. http://blogs.microsoft.co.il/blogs/sasha/archive/2012/08/11/windows-memory-manager-s-preferential-treatment-of-access-faults-in-the-interlocked-singly-linked-list-pop-implementation.aspx?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+sashag+%28All+Your+Base+Are+Belong+To+Us%29
+375: Advanced x86: Intel Hardware Assisted Virtualization Slides - http://bit.ly/Tz72Zq cc: <a href="/emd3l" data-mentioned-user-id="86137503"><s>@</s><b>emd3l</b></a>
+376: Exploiting Windows Device Drivers: http://www.reddit.com/r/UIC/comments/zjxq7/exploiting_windows_device_drivers_pdf/
+377: RT http://www.nds.rub.de/media/attachments/files/2012/03/binder.pdf
+378: About Android Dalvik VM design and implementation https://sites.google.com/site/io/dalvik-vm-internals http://imsciences.edu.pk/serg/wp-content/uploads/2009/07/Analysis-of-Dalvik-VM.pdf
+379: Love the new volatility wiki clean and efficient check it out  http://code.google.com/p/volatility/wiki/VolatilityIntroduction?tm=6 <a href="/iMHLv2" data-mentioned-user-id="263010060"><s>@</s><b>iMHLv2</b></a>
+380: Exploiting ARM Linux Systems - An introduction http://goo.gl/75shi
+381: Disks from the Perspective of a File System: Disks lie. And the controllers that run them are partners in crime. http://queue.acm.org/detail.cfm?id=2367378
+382: SecurityTube Megaprimers: http://bit.ly/hBsFm2 Watching the GNU Debugger Expert Introduction  http://securitytube.net/video/5654 via <a href="/SecurityTube" data-mentioned-user-id="20525891"><s>@</s><b>SecurityTube</b></a>
+383: Some notes on how to find out hidden callbacks  - http://bit.ly/oM6fZA
+384: R4ndom’s Tutorial http://bit.ly/NfjzQA
+385: [Video] 28C3 - Reverse Engineering USB Devices http://securitytube.net/video/5445
+386: A Whirlwind Tutorial on Creating Really Teensy ELF Executables for Linux http://www.muppetlabs.com/~breadbox/software/tiny/teensy.html
+387: Understanding the Dalvik Virtual Machine http://0xlab.org/~jserv/tmp/dalvik.pdf
+388: Anatomy of a Stack Smashing Attack and How GCC Prevents It http://j.mp/QC5C0r
+389: Introduction To Software Exploits http://goo.gl/AqyLV / Playlist http://goo.gl/QCg1s
+390: http://bit.ly/PKkBBy
+391: Python arsenal for reverse engineering: http://erpscan.com/wp-content/uploads/2012/06/Python-arsenal-for-RE-1.1.pdf
+392: Blackhat 2012 videos -http://bit.ly/SVF5rt
+393: Writing device drivers in Linux: A brief tutorial http://www.freesoftwaremagazine.com/articles/drivers_linux
+394: Who wants Windows 8 Heap Internals paper/slides? Easy 90 pages to relax and read ;). https://communities.coverity.com/blogs/security/2012/07/31/windows-8-heap-internals-update
+395: 64-bit ARM looks elegant. They took the opportunity to remove a bunch of hard-to-build cruft. http://www.realworldtech.com/arm64/
+396: Complete Reference Guide for Reversing &amp; Malware Analysis Training Program http://bit.ly/wguSlH <a href="/hashtag/malware?src=hash" data-query-source="hashtag_click"><s>#</s><b>malware</b></a> <a href="/hashtag/training?src=hash" data-query-source="hashtag_click"><s>#</s><b>training</b></a>
+397: Elementary ARM for Reversing http://blog.claudxiao.net/2011/07/elementary-arm-for-reversing/
+398: How statically linked programs run on Linux http://eli.thegreenplace.net/2012/08/13/how-statically-linked-programs-run-on-linux/
+399: Chrome IPC Internals – Part I http://bit.ly/NnSAy6  / Part II http://bit.ly/ONX5G3 / Part III http://bit.ly/Pd6QyA
+400: Partial backup @ EOF https://eof-project.net/?p=626
+401: [Dr.Fu] http://bit.ly/QDS9Gn
+402: Windows 8 Heap internals http://illmatics.com/Windows%208%20Heap%20Internals.pdf by <a href="/nudehaberdasher" data-mentioned-user-id="35914934"><s>@</s><b>nudehaberdasher</b></a> , <a href="/kernelpool" data-mentioned-user-id="70097926"><s>@</s><b>kernelpool</b></a>
+403: A new OpenSecurityTraining class on Malware RE: http://opensecuritytraining.info/ChangeBlog/Entries/2012/8/4_New_class_added__Reverse_Engineering_Malware.html <a href="/hashtag/reddit?src=hash" data-query-source="hashtag_click"><s>#</s><b>reddit</b></a>
+404: BlackHat USA 2012 Material http://goo.gl/erqvO
+405: Black Hat USA 2012 Archives https://www.blackhat.com/html/bh-us-12/bh-us-12-archives.html  cc: <a href="/0chuzz" data-mentioned-user-id="455944250"><s>@</s><b>0chuzz</b></a>
+406: R4ndom’s Tutorial http://bit.ly/QMRVHp
+407: UTF-8 processing using SIMD (SSE4) http://0.mk/92ead
+408: Hotpatching and Inline Function Hooking Explained http://lastfrag.com/hotpatching-and-inline-hooking-explained/
+409: Validation of Portable Executable resources: http://cerbero-blog.com/?p=641
+410: Malicious binary abusing Maths sin function http://nagareshwar.securityxploded.com/2012/07/29/malicious-binary-abusing-maths-sin-function/
+411: Hotpatching and Inline Function Hooking Explained (Updated) http://www.reddit.com/r/ReverseEngineering/comments/xazqj/hotpatching_and_inline_function_hooking_explained/
+412: Detecting Uninitialized Memory Read Access Bugs using Pin (a la Valgrind) http://jbremer.org/detecting-uninitialized-memory-read-access-bugs-using-pin-a-la-valgrind/
+413: User Mode Debugging Internals by http://www.alex-ionescu.com/dbgk-1.pdf &amp;  http://www.alex-ionescu.com/dbgk-2.pdf
+414: FREE Security Training series on Reverse Engineering/Malware Analysis/Exploit Development http://bit.ly/OgQxPl
+415: "The Malware Challange" Lectures by Thomas Quinlan - http://bit.ly/LsZlNV
+416: Theoretical Computer Science Cheat Sheet. http://www.tug.org/texshowcase/cheat.pdf
+417: good notes on Linux CPU frequency scaling https://wiki.archlinux.org/index.php/CPU_Frequency_Scaling <a href="/hashtag/linux?src=hash" data-query-source="hashtag_click"><s>#</s><b>linux</b></a>
+418: check out the slides for http://reverse.put.as/2012/07/13/secuinside-2012-review-and-slides/
+419: Windows driver examples http://bit.ly/NoyBlP <a href="/hashtag/tools?src=hash" data-query-source="hashtag_click"><s>#</s><b>tools</b></a> <a href="/hashtag/usefull?src=hash" data-query-source="hashtag_click"><s>#</s><b>usefull</b></a>
+420: Bytecode for the Dalvik VM - http://x90.es/49r (wish i knew this page existed before!)
+421: Shellcoding for Linux and Windows Tutorial http://www.vividmachines.com/shellcode/shellcode.html#linex1
+422: Awesome tutorial about PE code injection you should try out: http://www.codeproject.com/Articles/24417/Portable-Executable-P-E-Code-Injection-Injecting-a
+423: Kernel Debugging with WinDbg - http://bit.ly/MVZWwu
+424: NISLVMP: An improved VM-based software protection [PDF] - http://bit.ly/OUbd0f
+425: Hidding Module from the Virtual Address Descriptor Tree - http://bit.ly/LWeYkQ - via <a href="/iMHLv2" data-mentioned-user-id="263010060"><s>@</s><b>iMHLv2</b></a>
+426: How to hash and salt your passwords: http://crackstation.net/hashing-security.htm
+427: SQL Injection Knowledge Base http://websec.ca/kb/sql_injection
+428: http://j.mp/PiQKob
+429: http://try.github.com Incroyable le boulot de github pour démocratiser git via <a href="/obazoud" data-mentioned-user-id="124223722"><s>@</s><b>obazoud</b></a>
+430: Emulating USB Devices with Python http://travisgoodspeed.blogspot.ie/2012/07/emulating-usb-devices-with-python.html?m=1
+431: Kicking off my new blog series: Protocol Reverse Engineering.  Intro, methodology now posted. Next: the deep fun stuff. http://computer-forensics.sans.org/blog/2012/07/03/an-overview-of-protocol-reverse-engineering
+432: GNU Make in Detail for Beginners. http://www.linuxforu.com/2012/06/gnu-make-in-detail-for-beginners/
+433: x86 API Hooking Demystified http://jbremer.org/x86-api-hooking-demystified/
+434: Recon2012 http://bit.ly/P097ht
+435: x86 API http://jbremer.org/x86-api-hooking-demystified/
+436: x86 API Hooking Demystified http://jbremer.org/x86-api-hooking-demystified/
+437: GDB and Reverse Debugging http://zite.to/MHDEwg
+438: Linux x86 Program Start Up or - How the heck do we get to main()? http://dbp-consulting.com/tutorials/debugging/linuxProgramStartup.html
+439: Just in case you don't have API Monitor in your tool bag http://www.rohitab.com/apimonitor
+440: RT http://www.malware.lu/vxheavens
+441: More unix tools http://eikonal.wordpress.com/2012/06/25/more-unix-tools
+442: Tutorial: Convert PE EXE to DLL http://www.reddit.com/r/ReverseEngineering/comments/vkay2/tutorial_convert_pe_exe_to_dll/
+443: [TheLegendOfRandom] R4ndom’s Tutorial #9: No Strings Attached http://bit.ly/LxmvIy
+444: HTG Explains: The Linux Directory Structure Explained - How-To Geek http://www.howtogeek.com/117435/htg-explains-the-linux-directory-structure-explained/
+445: my http://www.slideshare.net/ange4771/a-bit-more-of-pe-hack-in-paris-2012
+446: https://fgiesen.wordpress.com/2011/07/09/a-trip-through-the-graphics-pipeline-2011-index/ A trip through the Graphics Pipeline 2011
+447: [Video] Day 2 Part 1: Introduction to Software Exploits http://securitytube.net/video/4643 by http://OpenSecurityTraining.Info
+448: How Advanced Malware Bypasses Process Monitoring http://blog.fireeye.com/research/2012/06/bypassing-process-monitoring-.html via <a href="/FireEye" data-mentioned-user-id="40113645"><s>@</s><b>FireEye</b></a>
+449: Preventing Stack Overflow Attacks http://twb.io/LxYxw4
+450: My presentation on http://goo.gl/7bRFK
+451: [Kaspersky] XPAJ: Reversing a Windows x64 Bootkit http://bit.ly/M5daXh
+452: Windows 7 UAC whitelist: Code-injection http://www.pretentiousname.com/misc/win7_uac_whitelist2.html ( most complete documentation possible  )
+453: R4ndom’s Beginning Reverse Engineering Tutorials http://goo.gl/HqOkQ
+454: An anti-reverse engineering guide. This looks pretty interesting. How to tell if you're being debugged. http://www.codeproject.com/Articles/30815/An-Anti-Reverse-Engineering-Guide
+455: Quick Windows Driver Debugging howto http://quequero.org/Windows_Drivers_Debugging
+456: "http://bit.ly/KuiYsY"
+457: Lol ! Real fun to read :) OWASP's how to write insecure code ! https://www.owasp.org/index.php/How_to_write_insecure_code
+458: Designing a minimal OS to emulate 32/64bits x86 code/shellcode/malcode in Bochs : https://0xeb.wordpress.com/2012/06/17/my-presentation-at-recon-2012-montreal/ <a href="/hashtag/REcon2012?src=hash" data-query-source="hashtag_click"><s>#</s><b>REcon2012</b></a>
+459: Ways to get screwed by the "C" programming language http://vipstech.blogspot.com/2012/06/top-10-ways-to-get-screwed-by-c.html
+460: Using SetThreadContext to hijack/infect processes. http://jbremer.org/context-thread-all-the-things/
+461: A Quiz About Integers in C http://blog.regehr.org/archives/721
+462: The Role of Cryptography in Information Security - Tom Olzak http://resources.infosecinstitute.com/role-of-cryptography/
+463: Some Reversing Tuts - http://bit.ly/LkD5pE
+464: Reversing C++ - http://bit.ly/LqDlGH
+465: GCC Explorer http://gcc.godbolt.org/ via <a href="/mattgodbolt" data-mentioned-user-id="18783350"><s>@</s><b>mattgodbolt</b></a>
+466: http://software.intel.com/en-us/articles/intel-guide-for-developing-multithreaded-applications/  <a href="/hashtag/multithread?src=hash" data-query-source="hashtag_click"><s>#</s><b>multithread</b></a> <a href="/hashtag/intel?src=hash" data-query-source="hashtag_click"><s>#</s><b>intel</b></a>
+467: Top 10 Microsoft Developer Links for Friday, June 8th http://blogs.msdn.com/b/robcaron/archive/2012/06/08/top-10-microsoft-developer-links-for-friday-june-8th.aspx
+468: Android on x86 VirtualBox running native ARM code - http://www.buildroid.org/blog/?p=175
+469: Malware Analysis Tutorial 29: Stealthy Library Loading II (Using Self-Modifying APC) http://is.gd/vRIx5S
+470: Escaping Restricted Linux Shells http://goo.gl/khT9g
+471: MBR Malware Analysis - So i've read a few articles lately on the return of MBR malware so I figured I would take a l... http://ow.ly/1kojej
+472: Building Win32 GUI Applications with MinGW http://j.mp/Kmf6H5
+473: x86 Assembly for C Programmers 1 http://myw3b.net/blog/index.php/2009/10/assembly-for-c-programmers-1/ (via <a href="/chr1x" data-mentioned-user-id="66916391"><s>@</s><b>chr1x</b></a>)
+474: Must take a look at "[Guide]Complete Android ROM development" http://forum.xda-developers.com/showthread.php?t=1661770
+475: Quick Guide To Some Important Ollydbg Plugins - http://thelegendofrandom.com/blog/archives/63
+476: How to Write a Metasploit Module: Part 1 http://goo.gl/qcIf2  Part 2 http://goo.gl/jp7y6 &lt;-- nice post
+477: Free computer science lectures http://bit.ly/4RO3JM
+478: Best Coding Practices for Linux System Programming in C Language – Part 1: While developing a program, the progr... http://bit.ly/KJEhTQ
+479: C++11 Concurrency (video, part 1-9) http://www.youtube.com/playlist?list=PL1835A90FC78FF8BE
+480: C++ 2011 by Dietmar Kühl (PDF presentation) http://accu.org/content/conf2012/DietmarC++2011.pdf
+481: excellent presentation on writing http://ugcs.net/~keegan/talks/kernel-exploit/talk.pdf
+482: Smallest x86 ELF Hello World, http://timelessname.com/elfbin/
+483: x86-64 Exploitation 101. A comparative primer. http://blog.carlosgarciaprado.com/?p=1036
+484: ARMv7/Thumb2 Inline Code Hooking:http://blog.crowdstrike.com/2012/05/armv7thumb2-inline-code-hooking.html
+485: MBR rootkit Xpaj sample http://bit.ly/KcStZA <a href="/hashtag/Xpaj?src=hash" data-query-source="hashtag_click"><s>#</s><b>Xpaj</b></a> <a href="/hashtag/Bootkit?src=hash" data-query-source="hashtag_click"><s>#</s><b>Bootkit</b></a> <a href="/hashtag/Security?src=hash" data-query-source="hashtag_click"><s>#</s><b>Security</b></a> <a href="/hashtag/Malware?src=hash" data-query-source="hashtag_click"><s>#</s><b>Malware</b></a>
+486: 32bit &amp; 64bit file infector Sofia/Amfibee, paper by Peter Ferrie [PDF] http://pferrie.host22.com/papers/amfibee.pdf
+487: PE 101 - a windows executable walkthrough http://pe101.corkami.com<a href="http://t.co/vW3zvHQH" data-pre-embedded="true">pic.twitter.com/vW3zvHQH</a>
+488: Memory Forensics Cheat Sheet http://goo.gl/Qx0fd
+489: Calling conventions for different C++ compilers and operating systems http://is.gd/erNgXL
+490: Caltech: The Mechanical Universe Series on Google Video http://www.malcolmgin.com/blog/2008/10/07/caltech-the-mechanical-universe-series-on-google-video/
+491: Writing functional code in C++ (part 1-3): http://lucabolognese.wordpress.com/2012/03/23/writing-functional-code-in-c-records/  http://lucabolognese.wordpress.com/2012/03/30/writing-functional-code-in-c-ii-function-composition/http://lucabolognese.wordpress.com/2012/04/16/writing-functional-code-in-c-iii-performance-of-different-allocation-schemes/
+492: The "Ultimate" Anti-Debugging Reference http://pferrie.host22.com/papers/antidebug.pdf <a href="/hashtag/reversing?src=hash" data-query-source="hashtag_click"><s>#</s><b>reversing</b></a> <a href="/hashtag/rce?src=hash" data-query-source="hashtag_click"><s>#</s><b>rce</b></a> <a href="/hashtag/debugging?src=hash" data-query-source="hashtag_click"><s>#</s><b>debugging</b></a> <a href="/hashtag/malware?src=hash" data-query-source="hashtag_click"><s>#</s><b>malware</b></a> <a href="/hashtag/hacking?src=hash" data-query-source="hashtag_click"><s>#</s><b>hacking</b></a> <a href="/hashtag/infosec?src=hash" data-query-source="hashtag_click"><s>#</s><b>infosec</b></a>
+493: Anti-Unpacker Tricks [PDF] http://pferrie.host22.com/papers/unpackers.pdf
+494: Peter Norvig's free online course "The Design of Computer Programs" begins today http://ow.ly/aiRpQ
+495: http://bit.ly/HLyC0N
+496: Debugging the Linux Kernel with debugfs - LINUX For You http://www.linuxforu.com/2010/10/debugging-linux-kernel-with-debugfs/ <a href="/hashtag/debugfs?src=hash" data-query-source="hashtag_click"><s>#</s><b>debugfs</b></a> <a href="/hashtag/debug?src=hash" data-query-source="hashtag_click"><s>#</s><b>debug</b></a> <a href="/hashtag/linux?src=hash" data-query-source="hashtag_click"><s>#</s><b>linux</b></a> <a href="/hashtag/kernel?src=hash" data-query-source="hashtag_click"><s>#</s><b>kernel</b></a>
+497: http://ardsec.blogspot.in/ interesting articles on reversing and malware analysis by Arvind Doraiswamy
+498: Alex Darby. C/C++ Low Level Curriculum. Part 1-7. http://www.altdevblogaday.com/2012/04/10/cc-low-level-curriculum-part-7-more-conditionals/ <a href="/hashtag/CPlusPlus?src=hash" data-query-source="hashtag_click"><s>#</s><b>CPlusPlus</b></a> <a href="/hashtag/asm?src=hash" data-query-source="hashtag_click"><s>#</s><b>asm</b></a>
+499: Introduction to Linux IP Routing Fundamentals (Part 1) http://www.thegeekstuff.com/2012/04/ip-routing-intro/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+TheGeekStuff+%28The+Geek+Stuff%29 <a href="/0xerror" data-mentioned-user-id="315817464"><s>@</s><b>0xerror</b></a>
+500: (messy) annotated bookmarks http://code.google.com/p/corkami/wiki/notes
+501: MongoDB architecture http://bit.ly/HKx9Tu
+502: anti-unpacker tricks [pdf] http://bit.ly/HvJz64
+503: A very short and dense tutorial for learning Haskell http://ow.ly/a8mP3
+504: Scripting the Vim editor, Part 1: Variables, values, and expressions http://ibm.co/HiJ3ou
+505: Simulating Turing Machines with Wang Tiles http://bit.ly/IgqRiz
+506: What Every Computer Scientist Should Know About Floating-Point Arithmetic http://bit.ly/5yrHtP
+507: "Ultimate collection of Emacs resources" http://bit.ly/tjFAPB
+508: Dissecting the SQL Injection Tools Used By Hackers http://bit.ly/HJcxxY
+509: Guide to git and github. https://gun.io/blog/how-to-github-fork-branch-and-pull-request/
+510: Windows privilege escalation via weak service permissions http://goo.gl/fvGgC
+511: A step-by-step on the buffer overflow vulnerablity tutorials on Intel x86 processor and C standard function call:  http://bit.ly/HYt1F9
+512: 28 Types of Computer Security Threats and Risks http://bit.ly/HaTePP
+513: How to Setup VirtualBox Guest Additions and Network: In the previous article Install &amp; Create Virtual Machine, w... http://bit.ly/Hl4LwD
+514: Executable and Linkable Format (ELF) Guide http://bit.ly/Hnxag4
+515: I decided to post "Lessons on development of 64-bit C/C++ applications" on  http://codeproject.com. Please vote :) http://www.codeproject.com/Articles/359970/Lessons-on-development-of-64-bit-C-Cplusplus-appli
+516: Linux file system structure explained with examples http://ow.ly/9IBSS
+517: Awesome paper about encoding x86 instructions http://www.c-jump.com/CIS77/CPU/x86/lecture.html
+518: Metasploit cheat-sheet http://www.s3cur1ty.de/sites/www.s3cur1ty.de/files/Cheat-Sheet.pdf
+519: Linux on a 8-bit microcontroller: http://dmitry.co/index.php?p=./04.Thoughts/07.%20Linux%20on%208bit
+520: Vx heavens collection(all): http://thepiratebay.se/torrent/7066921/Vx_heavens_collection%28all%29
+521: BackDoor.Flashback geo statistics http://goo.gl/HG3Kx
+522: Anti-Debugging Reference: http://pferrie.host22.com/papers/antidebug.pdf
+523: Shellcode Tutorialshttp://www.projectshellcode.com/?q=node/12
+524: Device Drivers, Part 16: Kernel Window -- Peeping through /proc - LINUX For You http://www.linuxforu.com/2012/03/device-drivers-kernel-window-peeping-through-proc/ <a href="/hashtag/linux?src=hash" data-query-source="hashtag_click"><s>#</s><b>linux</b></a> <a href="/hashtag/kernel?src=hash" data-query-source="hashtag_click"><s>#</s><b>kernel</b></a> <a href="/hashtag/proc?src=hash" data-query-source="hashtag_click"><s>#</s><b>proc</b></a> <a href="/hashtag/devicedrivers?src=hash" data-query-source="hashtag_click"><s>#</s><b>devicedrivers</b></a>
+525: Deep dive into OS internals with Windbg (PDF) http://bit.ly/GOQCZu
+526: Reversing &amp; Malware Analysis Training - Reference Guide http://goo.gl/sgXqY
+527: Sorting algorithm demonstrations (really cool page that lets you step through different sorting methods to see h... http://bit.ly/H1MqEB
+528: BIOS Password Backdoors in Laptops http://lnkd.in/4xZcks
+529: BlackHat slides: http://www.manzotti.eu/back-from-black-hat
+530: Four-minute podcast on Kurt Gödel http://ow.ly/9KVSx
+531: GDI Font Fuzzing in Windows Kernel For Fun http://bit.ly/yJHhHS http://bit.ly/zrCALe http://bit.ly/FVA0rD
+532: Malware Analysis Tutorial 21: Hijack Disk Driver http://bit.ly/zAnYxn <a href="/hashtag/WinDbg?src=hash" data-query-source="hashtag_click"><s>#</s><b>WinDbg</b></a> <a href="/hashtag/malware?src=hash" data-query-source="hashtag_click"><s>#</s><b>malware</b></a> <a href="/hashtag/kernel?src=hash" data-query-source="hashtag_click"><s>#</s><b>kernel</b></a> <a href="/hashtag/debugging?src=hash" data-query-source="hashtag_click"><s>#</s><b>debugging</b></a> <a href="/hashtag/driver?src=hash" data-query-source="hashtag_click"><s>#</s><b>driver</b></a> <a href="/hashtag/analysis?src=hash" data-query-source="hashtag_click"><s>#</s><b>analysis</b></a>
+533: Defining new control structures using C macros http://www.rfc1149.net/blog/2012/03/17/control-structures-with-c-macros/ <a href="/hashtag/dev?src=hash" data-query-source="hashtag_click"><s>#</s><b>dev</b></a> <a href="/hashtag/code?src=hash" data-query-source="hashtag_click"><s>#</s><b>code</b></a>
+534: Porting and Optimizing Applications on 64-bit Windows for AMD64 Architecture. DOC-file. http://www.google.ru/url?sa=t&amp;rct=j&amp;q=porting%20and%20optimizing%20applications%20on%2064-bit%20windows%20for%20amd64%20architecture&amp;source=web&amp;cd=1&amp;ved=0CC0QFjAA&amp;url=http%3A%2F%2Fdownload.microsoft.com%2Fdownload%2F5%2Fb%2F5%2F5b5bec17-ea71-4653-9539-204a672f11cf%2Famd64_portapp.doc&amp;ei=_PReT_WZPOaP4gTNifXIBw&amp;usg=AFQjCNHc_-9Apy-mVVr4uk6oRGe-H7KAwA&amp;sig2=_txoQ805COQLBtCr7_ON4Q&amp;cad=rja <a href="/hashtag/CPlusPlus?src=hash" data-query-source="hashtag_click"><s>#</s><b>CPlusPlus</b></a>  <a href="/hashtag/Programming?src=hash" data-query-source="hashtag_click"><s>#</s><b>Programming</b></a>
+535: old but still awesome: Sotirov's research on making the smallest PE file possible: http://www.phreedom.org/research/tinype/
+536: 50 Links &amp; Resources about Information Security, Pentesting and Cyber News that you should try for a visit http://www.theprojectxblog.net/50-links-resources-about-information-security-pentesting-and-cyber-news-that-you-should-try-for-a-visit/
+537: Malware Analysis Tutorial 20: Kernel Debugging - Intercepting Driver Loading http://fumalwareanalysis.blogspot.com/2012/03/malware-analysis-tutorial-20-kernel.html
+538: [papers] - Deep Dive Into OS Internals with Windbg : http://is.gd/1Iz2rF
+539: Symantec Norton AntiVirus 2006 All Platform Source Code Leak https://thepiratebay.se/torrent/7087027/
+540: Development Testing with Static Analysis (Coverity). http://www.cnx-software.com/2011/11/07/development-testing-with-static-analysis/comment-page-1
