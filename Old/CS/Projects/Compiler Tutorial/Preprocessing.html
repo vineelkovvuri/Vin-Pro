@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Compiler - Preprocessing | Vineel Kumar Reddy</title>
+<link href="CSS/Global.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="syntaxhighlighter/scripts/shCore.js"></script>
+<script type="text/javascript" src="syntaxhighlighter/scripts/shBrushCpp.js"></script>
+<link rel="stylesheet" type="text/css" href="syntaxhighlighter/styles/shCore.css" />
+<link rel="stylesheet" type="text/css" href="syntaxhighlighter/styles/shThemeDefault.css" />
+<script type="text/javascript">
+SyntaxHighlighter.config.clipboardSwf = 'syntaxhighlighter/scripts/clipboard.swf';
+SyntaxHighlighter.all();
+
+</script>
+
+
+</head>
+<body>
+
+<div id="container">
+<div id="header">Preprocessing</div>
+<hr class="linebreak"/>
+
+<div id="navigation">
+<p>
+	<ol>
+        <li><a href="Main.html">Main</a></li>
+        <li class="selected">Preprocessing</li>
+        <li><a href="Compilation.html">Compilation</a></li>
+        <li><a href="Assembling.html">Assembling</a></li>
+        <li><a href="Linking.html">Linking</a></li>
+        <li><a href="Ethical Cracking.html">Ethical Cracking</a></li>        
+    </ol>
+    </p>
+</div>
+
+<div id="content">
+<p>
+<a href="http://en.wikipedia.org/wiki/Preprocessing" target="_blank" class="externallink">Preprocessing</a> is the act of processing the input before it is being parsed(i.e., before splited in to tokens) </p>
+<p>
+Consider the following code
+<pre class="brush: c" name="code" id="code">#define PI  3.14156
+main()
+{
+    float f1;
+    f = PI*2; 
+}</pre>
+</p>
+<p>
+Assuming this code is saved as test.c  issue the following command(remember compiler options are case sensitive)
+<br/>
+<pre class="brush: c" name="code" id="code">
+gcc -E test.c
+</pre> 
+
+<p>
+'<strong>-E</strong>'  switch stops the compilation process after preprocessing.
+Now gcc.exe will produce the following output .
+</p>
+<div class="image" >
+<img src="Pics/2007-07-23_223050.gif" width="553" height="287" /> <br />
+<span class="imagetag">output produced by GCC after preprocessing</span>
+</div>
+<p>
+The preprocessing phase of the compiler replaced all the preprocessor directives like <em><strong>PI</strong></em> e.t.c in the output. To keep the output simple I have not included any header files.
+by observing the output we can conclude few points.
+<ol>
+<li>
+Preprocessor  will not compute the expression values. For example in the above output the preprocessor just replaced PI with its macro definition and the expression <em><strong>3.14156*2</strong></em>  is left as it is.
+</li>
+<li>
+Preprocessor doesn't check for syntax errors because the above output  contains no compiler errors even though we used a variable <em><strong>f</strong></em>  with out declaring it .
+</li>
+</ol>
+ </p>
+ 
+With this knowledge let us try to solve the following titbit.
+<pre class="brush: c" name="code" id="code">
+#define Add(x,y) x+y
+#define Sub(x,y) x-y
+#define AddMulSub(x,y) Add(x,y)*Sub(x,y)
+main()
+{
+    printf("%d",AddMulSub(10,2));
+}</pre>
+ 
+ Many of us will try to solve the above snippet as  
+ <strong>Add(10,2)*Sub(10,2) => 12*8  = 72  </strong>     (because <strong>Add(10,2) = 10 + 2 = 12</strong> and <strong>Sub(10,2) = 10 - 2 = 8</strong>)
+but this is wrong because from our previous observation of preprocessing ( point no: 1 ) we know that preprocessor will not evaluate the expressions.
+so due to this <strong> AddMulSub(10,2)</strong> is expanded as <strong> Add(10,2)*Sub(10,2)</strong> and this again replaced with <strong>Add,Sub</strong> macros  as <strong>10+2*10-2 = 28</strong>
+</div>
+
+<div id="footer"><hr class="linebreak"/><a href="mailto:vineel.kovvuri[at]gmail.com" class="email">vineel.kovvuri[at]gmail.com</a>
+</div>
+</div>
+
+</body>
+</html>

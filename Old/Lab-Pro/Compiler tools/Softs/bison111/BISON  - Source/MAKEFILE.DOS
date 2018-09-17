@@ -1,0 +1,90 @@
+# Makefile for bison 
+#
+# version for GNU make & MS C 5.1 on MS-DOS.  <rreiner@nexus.yorku.ca>.
+#
+#   Copyright (C) 1984, 1989 Bob Corbett and Free Software Foundation, Inc.
+# 
+# This file is part of Bison, the GNU Compiler Compiler.
+# 
+# Bison is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 1, or (at your option)
+# any later version.
+# 
+# Bison is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with Bison; see the file COPYING.  If not, write to
+# the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
+
+MODEL  = L
+CFLAGS = -A$(MODEL) -Za -DUSG -Oait
+# remove the following and add getopt.c to OBJECTS if you don't have getopt
+#  in the gnulib
+LIBS   = $(GNULIB)
+LDFLAGS=/noi /st:4000 /noe
+
+DESTDIR=d:/lng
+# where the installed binary goes
+BINDIR = $(DESTDIR)
+
+# where the parsers go
+PARSERDIR = $(DESTDIR)
+
+# names of parser files
+PFILE = bison.sim
+PFILE1 = bison.hai
+
+PFILES = -DXPFILE=\\"$(PARSERDIR)/$(PFILE)\\" \
+	 -DXPFILE1=\\"$(PARSERDIR)/$(PFILE1)\\"
+
+OBJECTS = lr0.obj allocate.obj closure.obj conflict.obj derives.obj 	\
+	  files.obj getargs.obj gram.obj lalr.obj lex.obj		\
+	  main.obj nullable.obj output.obj print.obj reader.obj 	\
+	  reduce.obj symtab.obj	warshall.obj version.obj
+#	  getopt.obj
+
+start: bison.exe
+
+clean:
+	rm -f *.obj bison.exe
+
+install: bison
+	install bison $(BINDIR)
+	-cd $(PARSERDIR); rm -f $(PFILE) $(PFILE1)
+# Copy bison.simple, inserting directory name into the #line commands.
+	awk -f mergedir.awk dir=$(PARSERDIR) $(PFILE) > $(PARSERDIR)/$(PFILE)
+	cp $(PFILE1) $(PARSERDIR)
+	install -c bison.1 $(MANDIR)/bison.$(MANEXT)
+	chmod a+r $(PARSERDIR)/$(PFILE) $(PARSERDIR)/$(PFILE1) 
+	chmod a+r $(MANDIR)/bison.$(MANEXT)
+
+bison.exe: $(OBJECTS)
+	$(LD) $(LDFLAGS) $^,$@,nul,$(LIBS) ;
+
+TAGS: *.c *.h
+	etags *.c *.h
+
+# This file is handled differently in order to pass the parser file names
+# to the compiler.
+files.obj: files.c files.h new.h gram.h
+	$(CC) -c $(CFLAGS) $(PFILES) files.c
+
+lr0.obj: machine.h new.h gram.h state.h
+closure.obj: machine.h new.h gram.h
+conflict.obj: machine.h new.h files.h gram.h state.h
+derives.obj: new.h types.h gram.h
+getargs.obj: files.h
+lalr.obj: machine.h types.h state.h new.h gram.h
+lex.obj: files.h symtab.h lex.h
+main.obj: machine.h
+nullable.obj: types.h gram.h new.h
+output.obj: machine.h new.h files.h gram.h state.h
+print.obj: machine.h new.h files.h gram.h state.h
+reader.obj: files.h new.h symtab.h lex.h gram.h
+reduce.obj: files.h new.h machine.h gram.h
+symtab.obj: new.h symtab.h gram.h
+warshall.obj: machine.h

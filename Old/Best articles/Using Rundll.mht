@@ -1,0 +1,215 @@
+Content-Type: multipart/related; start=<op.mhtml.1193833340718.2ef5c2146a5e0c07@172.16.29.2>; boundary=----------HjaBqPVDehjx9lJQL1zNcu
+Content-Location: file://localhost/D:/vin-pro/Best%20articles/Using%20Rundll.htm
+Subject: =?utf-8?Q?Using=20Rundll?=
+MIME-Version: 1.0
+
+------------HjaBqPVDehjx9lJQL1zNcu
+Content-Disposition: inline; filename="Using Rundll.htm"
+Content-Type: text/html; name="Using Rundll.htm"
+Content-Id: <op.mhtml.1193833340718.2ef5c2146a5e0c07@172.16.29.2>
+Content-Location: file://localhost/D:/vin-pro/Best%20articles/Using%20Rundll.htm
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0039)http://www.ericphelps.com/batch/rundll/ -->
+<HTML><HEAD><TITLE>Using Rundll</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR>
+<META content="Eric Phelps" name=Author>
+<META 
+content="Use rundll and rundll32 in batch files to do what you thought only Windows programs could do." 
+name=Description></HEAD>
+<BODY text=#000000 vLink=#551a8b aLink=#ff0000 link=#0000ee 
+bgColor=#ffffff>&nbsp; 
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=bottom align=left><A 
+      href="http://www.ericphelps.com/index.htm"><IMG height=70 
+      src="Using Rundll_files/logo1.gif" width=150 border=0></A></TD>
+    <TD>
+      <CENTER>
+      <H1>&nbsp;Using Rundll</H1></CENTER></TD></TR>
+  <TR bgColor=#666699>
+    <TD bgColor=#666699>&nbsp;</TD>
+    <TD width="100%">&nbsp;</TD></TR></TBODY></TABLE>
+<CENTER><I>Use rundll.exe and rundll32.exe in batch files to do what you thought 
+only Windows programs could do.</I> 
+<HR width="100%">
+</CENTER><I></I>
+<P>A "DLL" file is a special program that never gets run. Instead, it has lots 
+of cool utilities inside it that other programs can use. And the rundll and 
+rundll32 programs let us run those buried utilities inside DLL files from a 
+command line. But there is a problem. The DOS command line only passes strings 
+(characters and words). Some DLLs functions expect specially formatted numbers, 
+memory addresses, window handles, or object references. We will never be able to 
+use those functions. There are other DLLs that we could use but will probably 
+never figure out. Too bad. But that still leaves us a few cool functions we can 
+call! </P>
+<P>One way to find functions that can be activated via rundll (and rundll32) is 
+to read through the Windows SDK (Software Development Kit). Ouch! Another way is 
+to just pick exe and dll files at random and right-click them choosing "Quick 
+View". If you scroll down, you might come to a section labeled "Exported 
+Functions". That's what you want, but without further info on the needed 
+arguments, you'll be left guessing as to whether they will work. Another way to 
+find functions is to open any Explorer window and select "View" and "Options". 
+Select the "File Types" tab and for each item hit the "Edit" button to see if 
+rundll is used. Very tedious. Just as bad is searching the system registry. 
+Guaranteed they will all work, but they may not do anything you want. But that's 
+how things are. </P>
+<P>Here's a collection of rundll and rundll32 command lines I've collected: </P>
+<P>To bring up the "Format - 3 1/2&nbsp; Floppy (A:)" window: 
+<BR><B><TT>rundll32.exe shell32.dll,SHFormatDrive</TT></B> </P>
+<P>To bring up the Control Panel "Date/Time Properties" window: 
+<BR><B><TT>rundll32.exe shell32.dll,Control_RunDLL timedate.cpl</TT></B> </P>
+<P>To bring up the Control Panel "Display Properties" window: 
+<BR><B><TT>rundll32.exe shell32.dll,Control_RunDLL desk.cpl</TT></B> </P>
+<P>To bring up the Control Panel "Display Properties" window and open the third 
+tab (the third tab is 2 because the first tab is 0): <BR><B><TT>rundll32.exe 
+shell32.dll,Control_RunDLL timedate.cpl,@0,2</TT></B> </P>
+<P>To bring up the Control Panel "Network" window: <BR><B><TT>rundll32.exe 
+shell32.dll,Control_RunDLL netcpl.cpl</TT></B> </P>
+<P>To bring up the Control Panel "System Properties" window: 
+<BR><B><TT>rundll32.exe shell32.dll,Control_RunDLL sysdm.cpl</TT></B> </P>
+<P>To shut windows down using the Windows 3.1 API: <BR><B><TT>rundll 
+user,exitwindows</TT></B> <BR>or you can use the number that Quick View displays 
+alongside the function name: <BR><B><TT>rundll user,#7</TT></B> </P>
+<P>To try for a reboot using the Windows 3.1 API: <BR><B><TT>rundll 
+user,exitwindowsexec</TT></B> <BR>or <BR><B><TT>rundll user,#246</TT></B> </P>
+<P>To shut Windows down using the Win32 API <BR><B><TT>rundll32 
+user.exe,#7</TT></B> </P>
+<P>Make a beep <BR><B><TT>rundll user,messagebeep</TT></B> <BR><B><TT>rundll32 
+user.exe,messagebeep</TT></B> <BR><B><TT>rundll32 user.exe,#104</TT></B> </P>
+<P>Shuts off COM2 serial port if the port was opened under the Windows 3.1 API 
+<BR><B><TT>rundll user,closecomm</TT></B> <BR><B><TT>rundll32 
+user.exe,closecomm</TT></B> <BR><B><TT>rundll32 user.exe,#207</TT></B> </P>
+<P>Polite windows restart <BR><B><TT>rundll user,exitwindowsexec</TT></B> </P>
+<P>Polite power off <BR><B><TT>rundll user,exitwindows</TT></B> 
+<BR><B><TT>rundll32 user.exe,exitwindows</TT></B> <BR><B><TT>rundll32 
+user.exe,#7</TT></B> </P>
+<P>Forced immediate logoff <BR><B><TT>rundll32 user32.dll,ExitWindowsEx</TT></B> 
+</P>
+<P>Open DUN (dial up networking exported file): <BR>rundll32.exe 
+rnaui.dll,RnaRunImport </P>
+<P>Start a dialup connection by name <BR>rundll32.exe rnaui.dll,RnaDial %1 </P>
+<P>NetMeeting Speeddial CNF: <BR>rundll32.exe msconf.dll,OpenConfLink %l </P>
+<P>H.323 -or- Intel IPhone Internet telephony: <BR>rundll32.exe 
+msconf.dll,NewMediaPhone %l </P>
+<P>URL Callto: <BR>rundll32.exe msconf.dll,CallToProtocolHandler %l </P>
+<P>URL: <BR>rundll32.exe shdocvw.dll,OpenURL %l </P>
+<P>URL Rlogin / Telnet / TN3270: <BR>rundll32.exe url.dll,TelnetProtocolHandler 
+%l </P>
+<P>Email rfc822 EML: <BR>rundll32.exe 
+c:\windows\SYSTEM\mailnews.dll,EMLFileHandler </P>
+<P>News rfc822 NWS: <BR>rundll32.exe c:\windows\SYSTEM\mailnews.dll,News_RunDLL 
+</P>
+<P>URL File: <BR>rundll32.exe url.dll,FileProtocolHandler %l </P>
+<P>URL Mailto: <BR>rundll32.exe c:\windows\SYSTEM\mailnews.dll,Mail_RunDLL </P>
+<P>INF install: <BR>C:\WINDOWS\rundll.exe setupx.dll,InstallHinfSection 
+DefaultInstall 132 </P>
+<P>INF active install <BR>rundll32.exe advpack.dll,LaunchINFSection %1, 
+DefaultInstall </P>
+<P>New briefcase <BR>C:\WINDOWS\rundll32.exe syncui.dll,Briefcase_Create %1!d! 
+%2 </P>
+<P>New LNK <BR>RunDLL32 AppWiz.Cpl,NewLinkHere %1 </P>
+<P>open aif <BR>rundll32 amovie.ocx,RunDll %1 </P>
+<P>play aif <BR>rundll32 amovie.ocx,RunDll /play /close %1 </P>
+<P>open auf <BR>C:\WINDOWS\rundll32.exe C:\WINDOWS\SYSTEM\amovie.ocx,RunDll 
+/open %1 </P>
+<P>play auf <BR>C:\WINDOWS\rundll32.exe C:\WINDOWS\SYSTEM\amovie.ocx,RunDll 
+/play /close %1 </P>
+<P>open avi <BR>C:\WINDOWS\rundll32.exe C:\WINDOWS\SYSTEM\amovie.ocx,RunDll 
+/open %1 </P>
+<P>play avi <BR>C:\WINDOWS\rundll32.exe C:\WINDOWS\SYSTEM\amovie.ocx,RunDll 
+/play /close %1 </P>
+<P>open channel file <BR>rundll32 cdfview.dll,OpenChannel %L </P>
+<P>subscribe to channel <BR>rundll32 cdfview.dll,Subscribe %L </P>
+<P>print HTML <BR>rundll32.exe C:\WINDOWS\SYSTEM\MSHTML.DLL,PrintHTML "%1" </P>
+<P>printto HTML <BR>rundll32.exe C:\WINDOWS\SYSTEM\MSHTML.DLL,PrintHTML "%1" 
+"%2" "%3" "%4" </P>
+<P>open midi <BR>C:\WINDOWS\rundll32.exe C:\WINDOWS\SYSTEM\amovie.ocx,RunDll 
+/open %1 </P>
+<P>play midi <BR>C:\WINDOWS\rundll32.exe C:\WINDOWS\SYSTEM\amovie.ocx,RunDll 
+/play /close %1 </P>
+<P>open MOV <BR>rundll32 amovie.ocx,RunDll %1 </P>
+<P>play MOV <BR>rundll32 amovie.ocx,RunDll /play /close %1 </P>
+<P>open MPEG <BR>C:\WINDOWS\rundll32.exe C:\WINDOWS\SYSTEM\amovie.ocx,RunDll 
+/open %1 </P>
+<P>play MPEG <BR>C:\WINDOWS\rundll32.exe C:\WINDOWS\SYSTEM\amovie.ocx,RunDll 
+/play /close %1 </P>
+<P>open sound <BR>C:\WINDOWS\rundll32.exe C:\WINDOWS\SYSTEM\amovie.ocx,RunDll 
+/open %1 </P>
+<P>play sound <BR>C:\WINDOWS\rundll32.exe C:\WINDOWS\SYSTEM\amovie.ocx,RunDll 
+/play /close %1 </P>
+<P>open unknown file <BR>C:\WINDOWS\rundll32.exe shell32.dll,OpenAs_RunDLL %1 
+</P>
+<P>install screensaver <BR>C:\WINDOWS\rundll32.exe desk.cpl,InstallScreenSaver 
+%l <BR>&nbsp; <BR></P>
+<P>More great RUNDLL tips:<BR><A 
+href="http://www.mvps.org/vb/tips/shellcpl.txt">http://www.mvps.org/vb/tips/shellcpl.txt</A><BR></P>
+<P><A 
+href="http://www.rgagnon.com/pbdetails/pb-0204.html">http://www.rgagnon.com/pbdetails/pb-0204.html</A><BR></P>
+<P><BR></P>
+<P><BR></P>
+<P><BR></P>
+<P><!-- Begin Footer -->
+<CENTER>
+<P>Lost? <A href="http://www.ericphelps.com/sitemap.htm">Look at the site 
+map</A>.</P>
+<P>Bad links? Questions? <A href="http://www.ericphelps.com/mail/mail.htm">Send 
+me mail</A>.</P>
+<P>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <FORM action=http://www.google.com/search method=get>
+      <TABLE cellPadding=0 align=right border=0>
+        <TBODY>
+        <TR>
+          <TD width=125 height=44><A href="http://www.google.com/"><IMG 
+            alt=Google src="Using Rundll_files/google.gif" border=0></A> </TD>
+          <TD><INPUT type=hidden value=www.ericphelps.com name=as_sitesearch> 
+            <INPUT maxLength=255 name=q> </TD>
+          <TD><INPUT type=submit value="Search This Site"> 
+      </TD></TR></TBODY></TABLE></FORM></TD></TR>
+  <TR>
+    <TD>
+      <FORM action=http://search.yahoo.com/search method=get>
+      <TABLE cellPadding=0 align=right border=0>
+        <TBODY>
+        <TR>
+          <TD width=125 height=44><A href="http://www.yahoo.com/"><IMG 
+            alt=Yahoo src="Using Rundll_files/yahoo.gif" border=0></A> </TD>
+          <TD><INPUT type=hidden value=www.ericphelps.com name=vs> <INPUT 
+            maxLength=255 name=va> </TD>
+          <TD><INPUT type=submit value="Search This Site"> 
+      </TD></TR></TBODY></TABLE></FORM></TD></TR>
+  <TR>
+    <TD>
+      <FORM action=http://web.ask.com/web method=get>
+      <TABLE cellPadding=0 align=right border=0>
+        <TBODY>
+        <TR>
+          <TD width=125 height=44><A href="http://www.ask.com/"><IMG 
+            alt="Ask Jeeves" src="Using Rundll_files/askjeeves.gif" 
+            border=0></A> </TD>
+          <TD><INPUT maxLength=255 name=q> <INPUT type=hidden 
+            value=site:www.ericphelps.com name=q> </TD>
+          <TD><INPUT type=submit value="Search This Site"> 
+      </TD></TR></TBODY></TABLE></FORM></TD></TR>
+  <TR>
+    <TD>
+      <FORM action=http://www.picosearch.com/cgi-bin/ts.pl method=post>
+      <TABLE cellPadding=0 align=right border=0>
+        <TBODY>
+        <TR>
+          <TD width=125 height=44><A 
+            href="http://www.picosearch.com/index.html"><IMG alt=PicoSearch 
+            src="Using Rundll_files/picosmall.gif" border=0></A> </TD>
+          <TD><INPUT type=hidden value=159397 name=index> <INPUT name=query> 
+          </TD>
+          <TD><INPUT type=submit value="Search This Site"> 
+      </TD></TR></TBODY></TABLE></FORM></TD></TR></TBODY></TABLE></P></CENTER><!-- End Footer --></BODY></HTML>
+
+------------HjaBqPVDehjx9lJQL1zNcu--

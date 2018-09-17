@@ -1,5 +1,0 @@
-The bison binary included here was compiled with MS C 5.1, and
-then LZEXE'd to save space.  It expects to find bison.sim and
-bison.hai in d:/lng.  If you want them elsewhere but you can't
-recompile bison, you can always patch the binary to expect them
-elsewhere.

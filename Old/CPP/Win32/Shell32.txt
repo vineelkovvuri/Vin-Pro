@@ -1,0 +1,491 @@
+Microsoft (R) COFF/PE Dumper Version 9.00.21022.08
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file c:\windows\system32\shell32.dll
+
+File Type: DLL
+
+  Section contains the following exports for SHELL32.dll
+
+    00000000 characteristics
+    41107F53 time date stamp Wed Aug 04 11:46:51 2004
+        0.00 version
+           2 ordinal base
+         755 number of functions
+         309 number of names
+
+    ordinal hint RVA      name
+
+        104    0 000CBA04 Activate_RunDLL = _Activate_RunDLL@16
+        105    1 000D57C7 AppCompat_RunDLLW = _AppCompat_RunDLLW@16
+        700    2 000D6F25 CDefFolderMenu_Create = _CDefFolderMenu_Create@36
+        701    3 000D6FC4 CDefFolderMenu_Create2 = _CDefFolderMenu_Create2@36
+        166    4 000B9AD2 CallCPLEntry16 = _CallCPLEntry16@24
+        106    5 000B7715 CheckEscapesA = _CheckEscapesA@8
+        107    6 000B766C CheckEscapesW = _CheckEscapesW@8
+        108    7 0004C16B CommandLineToArgvW = _CommandLineToArgvW@8
+        109    8 000ADFE5 Control_FillCache_RunDLL = _Control_FillCache_RunDLL@16
+        110    9 000ADFE5 Control_FillCache_RunDLLA = _Control_FillCache_RunDLL@16
+        111    A 000AE0DA Control_FillCache_RunDLLW = _Control_FillCache_RunDLLW@16
+        112    B 000AECBC Control_RunDLL = _Control_RunDLL@16
+        113    C 000AECBC Control_RunDLLA = _Control_RunDLL@16
+        114    D 000AED6E Control_RunDLLAsUserW = _Control_RunDLLAsUserW@16
+        115    E 000AED15 Control_RunDLLW = _Control_RunDLLW@16
+        129    F 000E22D7 DAD_AutoScroll = _DAD_AutoScroll@12
+        131   10 000EB59C DAD_DragEnterEx = _DAD_DragEnterEx@12
+         22   11 000EB543 DAD_DragEnterEx2 = _DAD_DragEnterEx2@16
+        132   12 000EB6D0 DAD_DragLeave = _DAD_DragLeave@0
+        134   13 000EB5F5 DAD_DragMove = _DAD_DragMove@8
+        136   14 000EB635 DAD_SetDragImage = _DAD_SetDragImage@8
+        137   15 0005B7C4 DAD_ShowDragImage = _DAD_ShowDragImage@4
+        116   16 000415B9 DllCanUnloadNow = ?Validate@CSubDlg@@UAEHXZ (public: virtual int __thiscall CSubDlg::Validate(void))
+        117   17 0002AD68 DllGetClassObject = _DllGetClassObject@12
+        118   18 0003A613 DllGetVersion = _CCDllGetVersion@4
+        120   19 000EE7BC DllInstall = _DllInstall@8
+        124   1A 00079261 DllRegisterServer = ?_NeedToRefresh@CMountPoint@@MAEHXZ (protected: virtual int __thiscall CMountPoint::_NeedToRefresh(void))
+        125   1B 00079261 DllUnregisterServer = ?_NeedToRefresh@CMountPoint@@MAEHXZ (protected: virtual int __thiscall CMountPoint::_NeedToRefresh(void))
+        133   1C 000B002A DoEnvironmentSubstA = _DoEnvironmentSubstA@8
+        135   1D 00077C1B DoEnvironmentSubstW = _DoEnvironmentSubstW@8
+        138   1E 0007A237 DragAcceptFiles = _DragAcceptFiles@8
+        139   1F 000B3FA2 DragFinish = _DragFinish@4
+        140   20 000B3FB3 DragQueryFile = _DragQueryFileA@16
+        141   21 000B3FB3 DragQueryFileA = _DragQueryFileA@16
+        142   22 0005FD11 DragQueryFileAorW = _DragQueryFileAorW@24
+        143   23 0005FCEE DragQueryFileW = _DragQueryFileW@16
+        144   24 000B3F45 DragQueryPoint = _DragQueryPoint@8
+         64   25 00029EB6 DriveType = _DriveType@4
+        150   26 000AF3D3 DuplicateIcon = _DuplicateIcon@8
+        199   27 000AFEE5 ExtractAssociatedIconA = _ExtractAssociatedIconA@12
+        206   28 000AFC2A ExtractAssociatedIconExA = _ExtractAssociatedIconExA@16
+        207   29 000AFA5F ExtractAssociatedIconExW = _ExtractAssociatedIconExW@16
+        208   2A 000AFD19 ExtractAssociatedIconW = _ExtractAssociatedIconW@12
+        216   2B 000AFD77 ExtractIconA = _ExtractIconA@12
+        217   2C 000AF3C2 ExtractIconEx = _ExtractIconExA@20
+        218   2D 000AF3C2 ExtractIconExA = _ExtractIconExA@20
+        219   2E 00079A57 ExtractIconExW = _ExtractIconExW@20
+        220   2F 000AF9F3 ExtractIconResInfoA = _ExtractIconResInfoA@20
+        221   30 000AF4EA ExtractIconResInfoW = _ExtractIconResInfoW@20
+        222   31 000522C8 ExtractIconW = _ExtractIconW@12
+        223   32 00075FD8 ExtractVersionResource16W = _ExtractVersionResource16W@8
+        224   33 0013DE1C FindExeDlgProc = ?ResizeBorder@CSFVSite@@UAGJPBUtagRECT@@PAUIOleInPlaceUIWindow@@H@Z (public: virtual long __stdcall CSFVSite::ResizeBorder(struct tagRECT const *,struct IOleInPlaceUIWindow *,int))
+        225   34 0004D40D FindExecutableA = _FindExecutableA@12
+        226   35 0004D49F FindExecutableW = _FindExecutableW@12
+        227   36 000AF489 FreeIconList = _FreeIconList@8
+         63   37 000F3F42 GetFileNameFromBrowse = _GetFileNameFromBrowse@28
+        154   38 000F4320 ILAppendID = _ILAppendID@12
+         18   39 00023235 ILClone = _ILClone@4
+         19   3A 0002349E ILCloneFirst = _ILCloneFirst@4
+         25   3B 0002354F ILCombine = _ILCombine@8
+        157   3C 00026FBF ILCreateFromPath = _ILCreateFromPathW@4
+        189   3D 000F457F ILCreateFromPathA = _ILCreateFromPathA@4
+        190   3E 00026FBF ILCreateFromPathW = _ILCreateFromPathW@4
+         24   3F 0002B7D7 ILFindChild = _ILFindChild@8
+         16   40 000256AB ILFindLastID = _ILFindLastID@4
+        155   41 00022901 ILFree = _ILFree@4
+        153   42 000545B1 ILGetNext = _ILGetNext@4
+        152   43 000231D0 ILGetSize = _ILGetSize@4
+         21   44 00029A6C ILIsEqual = _ILIsEqual@8
+         23   45 0002B717 ILIsParent = _ILIsParent@12
+         26   46 00049F71 ILLoadFromStream = _ILLoadFromStream@8
+         17   47 00024ED4 ILRemoveLastID = _ILRemoveLastID@4
+         27   48 0003C366 ILSaveToStream = _ILSaveToStream@8
+        228   49 00069549 InternalExtractIconListA = ?Scroll@CSFVSite@@UAGJUtagSIZE@@@Z (public: virtual long __stdcall CSFVSite::Scroll(struct tagSIZE))
+        229   4A 000AFDDB InternalExtractIconListW = _InternalExtractIconListW@12
+        119   4B 0003DE69 IsLFNDrive = _IsLFNDriveW@4
+         41   4C 000B1482 IsLFNDriveA = _IsLFNDriveA@4
+         42   4D 0003DE69 IsLFNDriveW = _IsLFNDriveW@4
+         66   4E 0002A03F IsNetDrive = _IsNetDrive@4
+        680   4F 0005BFA6 IsUserAnAdmin = _IsUserAnAdmin@0
+         44   50 000CA9A0 OpenAs_RunDLL = ?OpenAs_RunDLL@@YGXPAUHWND__@@PAUHINSTANCE__@@PADH@Z (void __stdcall OpenAs_RunDLL(struct HWND__ *,struct HINSTANCE__ *,char *,int))
+         81   51 000CA9A0 OpenAs_RunDLLA = ?OpenAs_RunDLL@@YGXPAUHWND__@@PAUHINSTANCE__@@PADH@Z (void __stdcall OpenAs_RunDLL(struct HWND__ *,struct HINSTANCE__ *,char *,int))
+        101   52 000CAA5A OpenAs_RunDLLW = ?OpenAs_RunDLLW@@YGXPAUHWND__@@PAUHINSTANCE__@@PAGH@Z (void __stdcall OpenAs_RunDLLW(struct HWND__ *,struct HINSTANCE__ *,unsigned short *,int))
+         85   53 000520CE OpenRegStream = _OpenRegStream@16
+        238   54 00198E54 Options_RunDLL = _Options_RunDLLA@16
+        255   55 00198E54 Options_RunDLLA = _Options_RunDLLA@16
+        260   56 00198E80 Options_RunDLLW = _Options_RunDLLW@16
+        171   57 0003F40F PathCleanupSpec = _PathCleanupSpec@8
+         92   58 000B1306 PathGetShortPath = _PathGetShortPath@4
+         43   59 0003DB48 PathIsExe = _PathIsExe@4
+        240   5A 000B0F09 PathIsSlowA = _PathIsSlowA@8
+        239   5B 0002B54D PathIsSlowW = _PathIsSlowW@8
+         47   5C 000B18B4 PathMakeUniqueName = _PathMakeUniqueName@20
+        653   5D 0005C877 PathProcessCommand = _PathProcessCommand@16
+         49   5E 000B14CC PathQualify = _PathQualify@4
+         51   5F 0004D31D PathResolve = _PathResolve@12
+         75   60 0003F22C PathYetAnotherMakeUniqueName = _PathYetAnotherMakeUniqueName@16
+         62   61 000B2750 PickIconDlg = _PickIconDlg@16
+         13   62 000BEF39 PifMgr_CloseProperties = _PifMgr_CloseProperties@8
+         10   63 000BF657 PifMgr_GetProperties = _PifMgr_GetProperties@20
+          9   64 000C03D4 PifMgr_OpenProperties = _PifMgr_OpenProperties@16
+         11   65 000BFED6 PifMgr_SetProperties = _PifMgr_SetProperties@20
+        261   66 000B36FC PrintersGetCommand_RunDLL = _PrintersGetCommand_RunDLL@16
+        262   67 000B36FC PrintersGetCommand_RunDLLA = _PrintersGetCommand_RunDLL@16
+        263   68 000B3781 PrintersGetCommand_RunDLLW = _PrintersGetCommand_RunDLLW@16
+        654   69 00054916 ReadCabinetState = _ReadCabinetState@8
+        524   6A 00029E7E RealDriveType = _RealDriveType@8
+        264   6B 000F2922 RealShellExecuteA = _RealShellExecuteA@40
+        265   6C 000F27D0 RealShellExecuteExA = _RealShellExecuteExA@44
+        266   6D 000F2879 RealShellExecuteExW = _RealShellExecuteExW@44
+        267   6E 000F2955 RealShellExecuteW = _RealShellExecuteW@40
+        268   6F 000B96A6 RegenerateUserEnvironment = _RegenerateUserEnvironment@8
+         59   70 000B5011 RestartDialog = _RestartDialog@12
+        730   71 000B4722 RestartDialogEx = _RestartDialogEx@16
+        167   72 000B3B9F SHAddFromPropSheetExtArray = _SHAddFromPropSheetExtArray@12
+        269   73 0003E729 SHAddToRecentDocs = _SHAddToRecentDocs@8
+        196   74 000231A0 SHAlloc = _SHAlloc@4
+        520   75          SHAllocShared (forwarded to shlwapi.SHAllocShared)
+        270   76 00100C4B SHAppBarMessage = _SHAppBarMessage@8
+        271   77 0002B185 SHBindToParent = _SHBindToParent@16
+        272   78 00103E85 SHBrowseForFolder = _SHBrowseForFolderA@4
+        273   79 00103E85 SHBrowseForFolderA = _SHBrowseForFolderA@4
+        274   7A 00103D8B SHBrowseForFolderW = _SHBrowseForFolderW@4
+        147   7B 000254E0 SHCLSIDFromString = _SHCLSIDFromString@8
+        644   7C 00048B21 SHChangeNotification_Lock = _SHChangeNotification_Lock@16
+        645   7D 0003A72E SHChangeNotification_Unlock = _SHChangeNotification_Unlock@4
+        275   7E 0003AC27 SHChangeNotify = _SHChangeNotify@16
+          4   7F 0003FCBF SHChangeNotifyDeregister = _SHChangeNotifyDeregister@4
+          2   80 0002E8F9 SHChangeNotifyRegister = _SHChangeNotifyRegister@24
+        276   81 000F7FB4 SHChangeNotifySuspendResume = _SHChangeNotifySuspendResume@16
+         89   82 0003D63D SHCloneSpecialIDList = _SHCloneSpecialIDList@12
+        102   83 0002AFF0 SHCoCreateInstance = _SHCoCreateInstance@20
+        165   84 000A7275 SHCreateDirectory = _SHCreateDirectory@8
+        277   85 000A7290 SHCreateDirectoryExA = _SHCreateDirectoryExA@12
+        278   86 00070E5D SHCreateDirectoryExW = _SHCreateDirectoryExW@12
+        743   87 000FFA0E SHCreateFileExtractIconW = _SHCreateFileExtractIconW@16
+        279   88 0019AE6A SHCreateLocalServerRunDll = _SHCreateLocalServerRunDll@16
+        280   89 00105FF5 SHCreateProcessAsUserW = _SHCreateProcessAsUserW@4
+        168   8A 000B3DD0 SHCreatePropSheetExtArray = _SHCreatePropSheetExtArray@12
+        281   8B 00078499 SHCreateQueryCancelAutoPlayMoniker = _SHCreateQueryCancelAutoPlayMoniker@4
+        256   8C 0003066E SHCreateShellFolderView = _SHCreateShellFolderView@8
+        174   8D 00107B73 SHCreateShellFolderViewEx = _SHCreateShellFolderViewEx@8
+        282   8E 000FF8A2 SHCreateShellItem = _SHCreateShellItem@16
+         74   8F 000A37D3 SHCreateStdEnumFmtEtc = _SHCreateStdEnumFmtEtc@12
+          3   90 000F199A SHDefExtractIconA = _SHDefExtractIconA@24
+          6   91 00039978 SHDefExtractIconW = _SHDefExtractIconW@24
+        169   92 000B3B68 SHDestroyPropSheetExtArray = _SHDestroyPropSheetExtArray@4
+         88   93 000EB731 SHDoDragDrop = _SHDoDragDrop@20
+        283   94 000A3674 SHEmptyRecycleBinA = _SHEmptyRecycleBinA@12
+        284   95 000A360A SHEmptyRecycleBinW = _SHEmptyRecycleBinW@12
+        285   96 00100DBB SHEnableServiceObject = _SHEnableServiceObject@8
+        286   97 000CF2B7 SHEnumerateUnreadMailAccountsW = _SHEnumerateUnreadMailAccountsW@16
+        287   98 00039A29 SHExtractIconsW = _SHExtractIconsW@32
+        288   99 000AD4A1 SHFileOperation = _SHFileOperationA@4
+        289   9A 000AD4A1 SHFileOperationA = _SHFileOperationA@4
+        290   9B 000AD1B9 SHFileOperationW = _SHFileOperationW@4
+         90   9C 0010AF1C SHFindFiles = _SHFindFiles@8
+        149   9D 001098BE SHFind_InitMenuPopup = _SHFind_InitMenuPopup@16
+        121   9E 000B081B SHFlushClipboard = _SHFlushClipboard@0
+        526   9F 00073648 SHFlushSFCache = _SHFlushSFCache@0
+        291   A0 000D507D SHFormatDrive = _SHFormatDrive@16
+        195   A1 00027A8A SHFree = _SHFree@4
+        292   A2 000A5A71 SHFreeNameMappings = _SHFreeNameMappings@4
+        523   A3          SHFreeShared (forwarded to shlwapi.SHFreeShared)
+        750   A4 000CF65B SHGetAttributesFromDataObject = _SHGetAttributesFromDataObject@16
+        293   A5 000FF1CC SHGetDataFromIDListA = _SHGetDataFromIDListA@20
+        294   A6 0004A2FF SHGetDataFromIDListW = _SHGetDataFromIDListW@20
+        295   A7 00023B9E SHGetDesktopFolder = _SHGetDesktopFolder@4
+        296   A8 000B0120 SHGetDiskFreeSpaceA = _SHGetDiskFreeSpaceExA@16
+        297   A9 000B0120 SHGetDiskFreeSpaceExA = _SHGetDiskFreeSpaceExA@16
+        298   AA 00079269 SHGetDiskFreeSpaceExW = _SHGetDiskFreeSpaceExW@16
+        299   AB 000436E4 SHGetFileInfo = _SHGetFileInfoA@20
+        300   AC 000436E4 SHGetFileInfoA = _SHGetFileInfoA@20
+        301   AD 000278AD SHGetFileInfoW = _SHGetFileInfoW@20
+        302   AE 00029801 SHGetFolderLocation = _SHGetFolderLocation@20
+        303   AF 000783B0 SHGetFolderPathA = _SHGetFolderPathA@20
+        304   B0 000F66C4 SHGetFolderPathAndSubDirA = _SHGetFolderPathAndSubDirA@24
+        305   B1 00070DDC SHGetFolderPathAndSubDirW = _SHGetFolderPathAndSubDirW@24
+        306   B2 0002868E SHGetFolderPathW = _SHGetFolderPathW@20
+        307   B3 00110592 SHGetIconOverlayIndexA = _SHGetIconOverlayIndexA@8
+        308   B4 001104BA SHGetIconOverlayIndexW = _SHGetIconOverlayIndexW@8
+        727   B5 00043A79 SHGetImageList = _SHGetImageList@12
+        309   B6 00100DF2 SHGetInstanceExplorer = _SHGetInstanceExplorer@4
+        310   B7 00041FE4 SHGetMalloc = _SHGetMalloc@4
+        311   B8 000FF44B SHGetNewLinkInfo = _SHGetNewLinkInfoA@20
+        179   B9 000FF44B SHGetNewLinkInfoA = _SHGetNewLinkInfoA@20
+        180   BA 0003F4AD SHGetNewLinkInfoW = _SHGetNewLinkInfoW@20
+        312   BB 00053AB1 SHGetPathFromIDList = _SHGetPathFromIDListA@8
+        313   BC 00053AB1 SHGetPathFromIDListA = _SHGetPathFromIDListA@8
+        314   BD 00029D7C SHGetPathFromIDListW = _SHGetPathFromIDListW@8
+         98   BE 0004B025 SHGetRealIDL = _SHGetRealIDL@12
+        709   BF 0006BB0E SHGetSetFolderCustomSettingsW = _SHGetSetFolderCustomSettingsW@12
+         68   C0 000250DD SHGetSetSettings = _SHGetSetSettings@12
+        315   C1 0004D5BE SHGetSettings = _SHGetSettings@8
+        749   C2 000D2183 SHGetShellStyleHInstance = _SHGetShellStyleHInstance@0
+        316   C3 00029883 SHGetSpecialFolderLocation = _SHGetSpecialFolderLocation@12
+        317   C4 000F6696 SHGetSpecialFolderPathA = _SHGetSpecialFolderPathA@16
+        318   C5 00027F0E SHGetSpecialFolderPathW = _SHGetSpecialFolderPathW@16
+        319   C6 000D1AE7 SHGetUnreadMailCountW = _SHGetUnreadMailCountW@24
+        193   C7 000F79ED SHHandleUpdateImage = _SHHandleUpdateImage@4
+        320   C8 000B02EF SHHelpShortcuts_RunDLL = _SHHelpShortcuts_RunDLL@16
+        321   C9 000B02EF SHHelpShortcuts_RunDLLA = _SHHelpShortcuts_RunDLL@16
+        322   CA 000B034A SHHelpShortcuts_RunDLLW = _SHHelpShortcuts_RunDLLW@16
+         28   CB 00026E27 SHILCreateFromPath = _SHILCreateFromPath@12
+        323   CC 000B356F SHInvokePrinterCommandA = _SHInvokePrinterCommandA@20
+        324   CD 000B353A SHInvokePrinterCommandW = _SHInvokePrinterCommandW@20
+        325   CE 000CEECD SHIsFileAvailableOffline = _SHIsFileAvailableOffline@8
+        747   CF 00112AAB SHLimitInputEdit = _SHLimitInputEdit@8
+        326   D0 00100DA3 SHLoadInProc = _SHLoadInProc@4
+        327   D1 00113677 SHLoadNonloadedIconOverlayIdentifiers = _SHLoadNonloadedIconOverlayIdentifiers@0
+        151   D2 00022FFD SHLoadOLE = ?DeactivateAndUndo@CSFVSite@@UAGJXZ (public: virtual long __stdcall CSFVSite::DeactivateAndUndo(void))
+        521   D3          SHLockShared (forwarded to shlwapi.SHLockShared)
+        148   D4 000372C6 SHMapIDListToImageListIndexAsync = _SHMapIDListToImageListIndexAsync@36
+         77   D5 00037E79 SHMapPIDLToSystemImageListIndex = _SHMapPIDLToSystemImageListIndex@12
+        716   D6 00112ED0 SHMultiFileProperties = _SHMultiFileProperties@8
+        178   D7 000B035A SHObjectProperties = _SHObjectProperties@16
+        328   D8 000FF80A SHOpenFolderAndSelectItems = _SHOpenFolderAndSelectItems@16
+         80   D9 000B59CD SHOpenPropSheetW = _SHOpenPropSheetW@28
+        329   DA 00026857 SHParseDisplayName = _SHParseDisplayName@20
+        330   DB 000D17AE SHPathPrepareForWriteA = _SHPathPrepareForWriteA@16
+        331   DC 0007785A SHPathPrepareForWriteW = _SHPathPrepareForWriteW@16
+        685   DD 00111102 SHPropStgCreate = _SHPropStgCreate@32
+        688   DE 0005A106 SHPropStgReadMultiple = _SHPropStgReadMultiple@20
+        689   DF 00111DD5 SHPropStgWriteMultiple = _SHPropStgWriteMultiple@24
+        332   E0 000A330B SHQueryRecycleBinA = _SHQueryRecycleBinA@8
+        333   E1 000A3279 SHQueryRecycleBinW = _SHQueryRecycleBinW@8
+        170   E2 000B3BF7 SHReplaceFromPropSheetExtArray = _SHReplaceFromPropSheetExtArray@16
+        100   E3 0002458F SHRestricted = _SHRestricted@4
+        161   E4 000AECA1 SHRunControlPanel = _SHRunControlPanel@8
+        176   E5 00100DDC SHSetInstanceExplorer = _SHSetInstanceExplorer@4
+        334   E6 00073516 SHSetLocalizedName = _SHSetLocalizedName@12
+        335   E7 000D1CFB SHSetUnreadMailCountW = _SHSetUnreadMailCountW@12
+         73   E8 001076CB SHShellFolderView_Message = _SHShellFolderView_Message@12
+        162   E9 0002B4F4 SHSimpleIDListFromPath = _SHSimpleIDListFromPath@4
+         14   EA 0010E6DA SHStartNetConnectionDialogW = _SHStartNetConnectionDialogW@12
+        245   EB 00051B7D SHTestTokenMembership = _SHTestTokenMembership@8
+        522   EC          SHUnlockShared (forwarded to shlwapi.SHUnlockShared)
+        191   ED 000F81D4 SHUpdateImageA = _SHUpdateImageA@16
+        192   EE 000F8095 SHUpdateImageW = _SHUpdateImageW@16
+        336   EF 000718EF SHUpdateRecycleBinIcon = _SHUpdateRecycleBinIcon@0
+        173   F0 000F1F39 SHValidateUNC = _SHValidateUNC@12
+        337   F1 000B7F99 SheChangeDirA = _SheChangeDirA@4
+        338   F2 000B8553 SheChangeDirExA = _SheChangeDirExA@4
+        339   F3 000B82D0 SheChangeDirExW = _SheChangeDirExW@4
+        340   F4 000B7DB6 SheChangeDirW = _SheChangeDirW@4
+        341   F5 000C8EEF SheConvertPathW = _SheConvertPathW@12
+        342   F6 000B8069 SheFullPathA = _SheFullPathA@12
+        343   F7 000B811B SheFullPathW = _SheFullPathW@12
+        344   F8 000B7FF2 SheGetCurDrive = _SheGetCurDrive@0
+        345   F9 000B7D4C SheGetDirA = _SheGetDirA@8
+        346   FA 000B81D3 SheGetDirExW = _SheGetDirExW@12
+        347   FB 000B7CAA SheGetDirW = _SheGetDirW@8
+        348   FC 000B7C30 SheGetPathOffsetW = _SheGetPathOffsetW@4
+        349   FD 000C88D1 SheRemoveQuotesA = _SheRemoveQuotesA@4
+        350   FE 000C8895 SheRemoveQuotesW = _SheRemoveQuotesW@4
+        351   FF 000B8018 SheSetCurDrive = _SheSetCurDrive@4
+        352  100 000C8B3B SheShortenPathA = _SheShortenPathA@8
+        353  101 000C8988 SheShortenPathW = _SheShortenPathW@8
+        354  102 0009F93A ShellAboutA = _ShellAboutA@16
+        355  103 0009F8EB ShellAboutW = _ShellAboutW@16
+        356  104 001053CF ShellExec_RunDLL = _ShellExec_RunDLLA@16
+        357  105 001053CF ShellExec_RunDLLA = _ShellExec_RunDLLA@16
+        358  106 00105435 ShellExec_RunDLLW = _ShellExec_RunDLLW@16
+        359  107 0004FE44 ShellExecuteA = _ShellExecuteA@24
+        360  108 0004FB1C ShellExecuteEx = _ShellExecuteExA@4
+        361  109 0004FB1C ShellExecuteExA = _ShellExecuteExA@4
+        362  10A 0004D5FE ShellExecuteExW = _ShellExecuteExW@4
+        363  10B 000F2988 ShellExecuteW = _ShellExecuteW@24
+        364  10C 00069549 ShellHookProc = ?Scroll@CSFVSite@@UAGJUtagSIZE@@@Z (public: virtual long __stdcall CSFVSite::Scroll(struct tagSIZE))
+        183  10D 000B074D ShellMessageBoxA = _ShellMessageBoxA
+        182  10E 001D9310 ShellMessageBoxW = _ShellMessageBoxWrapW
+         72  10F 00036AD7 Shell_GetCachedImageIndex = _Shell_GetCachedImageIndex@12
+         71  110 0002B0FA Shell_GetImageLists = _Shell_GetImageLists@8
+         67  111 0002F777 Shell_MergeMenus = _Shell_MergeMenus@24
+        365  112 000789E7 Shell_NotifyIcon = _Shell_NotifyIconA@8
+        366  113 000789E7 Shell_NotifyIconA = _Shell_NotifyIconA@8
+        367  114 00077CE1 Shell_NotifyIconW = _Shell_NotifyIconW@8
+        103  115 000F26E9 SignalFileOpen = _SignalFileOpen@4
+        368  116 001D931B StrChrA = _StrChrA@8
+        369  117 001D9326 StrChrIA = _StrChrIA@8
+        370  118 001D9331 StrChrIW = _StrChrIW@8
+        371  119 001D933C StrChrW = _StrChrW@8
+        372  11A 001D9347 StrCmpNA = _StrCmpNA@12
+        373  11B 001D9352 StrCmpNIA = _StrCmpNIA@12
+        374  11C 001D935D StrCmpNIW = _StrCmpNIW@12
+        375  11D 001D9368 StrCmpNW = _StrCmpNW@12
+        376  11E 000B7847 StrCpyNA = _Shell32_StrCpyNA@12
+        377  11F 000B7806 StrCpyNW = _Shell32_StrCpyNW@12
+        378  120 000B7909 StrNCmpA = _StrNCmpA@12
+        379  121 000B79EE StrNCmpIA = _StrNCmpIA@12
+        380  122 000B7981 StrNCmpIW = _StrNCmpIW@12
+        381  123 000B7883 StrNCmpW = _StrNCmpW@12
+        382  124 000B7AB1 StrNCpyA = _StrNCpyA@12
+        383  125 000B7A66 StrNCpyW = _StrNCpyW@12
+        384  126 001D9373 StrRChrA = _StrRChrA@12
+        385  127 001D937E StrRChrIA = _StrRChrIA@12
+        386  128 001D9389 StrRChrIW = _StrRChrIW@12
+        387  129 001D9394 StrRChrW = _StrRChrW@12
+        388  12A 000B7B6E StrRStrA = _StrRStrA@12
+        389  12B 001D939F StrRStrIA = _StrRStrIA@12
+        390  12C 001D93AA StrRStrIW = _StrRStrIW@12
+        391  12D 000B7B01 StrRStrW = _StrRStrW@12
+        392  12E 001D93B5 StrStrA = _StrStrA@8
+        393  12F 001D93C0 StrStrIA = _StrStrIA@8
+        394  130 0003FB0B StrStrIW = _StrStrIW@8
+        395  131 001D93CB StrStrW = _StrStrW@8
+        396  132 00105239 WOWShellExecute = _WOWShellExecute@28
+        164  133 0003EE68 Win32DeleteFile = _Win32DeleteFile@4
+        652  134 000A3AB8 WriteCabinetState = _WriteCabinetState@4
+          5      0013DE1C [NONAME] ?ResizeBorder@CSFVSite@@UAGJPBUtagRECT@@PAUIOleInPlaceUIWindow@@H@Z (public: virtual long __stdcall CSFVSite::ResizeBorder(struct tagRECT const *,struct IOleInPlaceUIWindow *,int))
+          7      00115ACB [NONAME] _SHLookupIconIndexA@12
+          8      00115ABB [NONAME] _SHLookupIconIndexW@12
+         12      0010E740 [NONAME] _SHStartNetConnectionDialogA@12
+         15      000F4493 [NONAME] _ILGetDisplayName@8
+         20      000F43C5 [NONAME] _ILGlobalClone@4
+         29      000B1208 [NONAME] _PathIsRoot@4
+         30               [NONAME] (forwarded to shlwapi.PathBuildRootW)
+         31      000B1167 [NONAME] _PathFindExtension@4
+         32      000B11D5 [NONAME] _PathAddBackslash@4
+         33      000B1189 [NONAME] _PathRemoveBlanks@4
+         34      000B11E6 [NONAME] _PathFindFileName@4
+         35      000B11AB [NONAME] _PathRemoveFileSpec@4
+         36      000B12DC [NONAME] _PathAppend@8
+         37               [NONAME] (forwarded to shlwapi.PathCombineW)
+         38      000B11F7 [NONAME] _PathStripPath@4
+         39               [NONAME] (forwarded to shlwapi.PathIsUNCW)
+         40               [NONAME] (forwarded to shlwapi.PathIsRelativeW)
+         45      000B12A9 [NONAME] _PathFileExists@4
+         46      000B1265 [NONAME] _PathMatchSpec@8
+         48      000B1232 [NONAME] _PathSetDlgItemPath@12
+         50      000B119A [NONAME] _PathStripToRoot@4
+         52      000B1134 [NONAME] _PathGetArgs@4
+         53      000B47A1 [NONAME] _IsSuspendAllowed@0
+         54      000B4FE1 [NONAME] _LogoffWindowsDialog@4
+         55      000B1254 [NONAME] _PathQuoteSpaces@4
+         56      000B1243 [NONAME] _PathUnquoteSpaces@4
+         57               [NONAME] (forwarded to shlwapi.PathGetDriveNumberW)
+         58      000CD7B4 [NONAME] _ParseField@16
+         60      000B502F [NONAME] _ExitWindowsDialog@4
+         61      00077077 [NONAME] _RunFileDlg@24
+         65      00053D8D [NONAME] _InvalidateDriveType@4
+         69      0010E49F [NONAME] _SHGetNetResource@16
+         70      000AEEE3 [NONAME] _SHCreateDefClassObject@20
+         76      000B3E3B [NONAME] _DragQueryInfo@8
+         78      00026FE3 [NONAME] _OleStrToStrN@16
+         79      000B09DA [NONAME] _StrToOleStrN@16
+         82      00197270 [NONAME] _DDECreatePostNotify@4
+         83      0005ACB1 [NONAME] _CIDLData_CreateFromIDArray@16
+         84      000B08CE [NONAME] _SHIsBadInterfacePtr@8
+         86      000B0826 [NONAME] _SHRegisterDragDrop@8
+         87      000B0837 [NONAME] _SHRevokeDragDrop@4
+         91      0010AE3D [NONAME] _SHFindComputer@8
+         93      00070EDD [NONAME] _Win32CreateDirectory@8
+         94      000B0B62 [NONAME] _Win32RemoveDirectory@4
+         95      000545D5 [NONAME] _SHLogILFromFSIL@4
+         96      000B09B1 [NONAME] _StrRetToStrN@16
+         97      000F25CC [NONAME] _SHWaitForFileToOpen@12
+         99      0004D7E5 [NONAME] _SetAppStartingCursor@8
+        122      000B9ADC [NONAME] _RunDll_CallEntry16@20
+        123      000B0848 [NONAME] _SHFreeUnusedLibraries@0
+        126      00119F0E [NONAME] ?Notify@CViewHostBrowser@@UAGJPAUIShellView@@K@Z (public: virtual long __stdcall CViewHostBrowser::Notify(struct IShellView *,unsigned long))
+        127      000CDAD9 [NONAME] _SHWinHelp@16
+        128      0002AD68 [NONAME] _DllGetClassObject@12
+        130      000EB5BA [NONAME] _DAD_DragEnter@4
+        145      000B1156 [NONAME] _PathFindOnPath@8
+        146      000B4427 [NONAME] _RLBuildListOfPaths@0
+        156      000F43D5 [NONAME] _ILGlobalFree@4
+        158      000B0E5D [NONAME] _PathGetExtension@12
+        159      0004DA17 [NONAME] _PathIsDirectory@4
+        160      0010E579 [NONAME] _SHNetConnectionDialog@12
+        163      000B0A1D [NONAME] _StrToOleStr@8
+        172      000FF5DF [NONAME] _SHCreateLinks@20
+        175      00027F0E [NONAME] _SHGetSpecialFolderPathW@16
+        177      000EB724 [NONAME] _DAD_SetDragImageFromListView@12
+        181      000703FE [NONAME] _RegisterShellHook@8
+        184      000CDFC4 [NONAME] _ArrangeWindows@20
+        185      000D731F [NONAME] ?OnRename@CAxHostWindow@ATL@@UAGXPAUIMoniker@@@Z (public: virtual void __stdcall ATL::CAxHostWindow::OnRename(struct IMoniker *))
+        186      000F43E5 [NONAME] _ILGetDisplayNameEx@16
+        187      000F44B0 [NONAME] _ILGetPseudoNameW@16
+        188      00072F35 [NONAME] _ShellDDEInit@4
+        194      000B3C5F [NONAME] _SHCreatePropSheetExtArrayEx@16
+        197      00053D8D [NONAME] _InvalidateDriveType@4
+        198      0010002E [NONAME] _SHAbortInvokeCommand@0
+        200      0007002E [NONAME] _SHCreateDesktop@4
+        201      00072C2F [NONAME] _SHDesktopMessageLoop@4
+        202      001971D8 [NONAME] _DDEHandleViewFolderNotify@12
+        203      000D08E4 [NONAME] _AddCommasExportW@8
+        204      000CD793 [NONAME] _ShortSizeFormatExportW@8
+        205      000F994C [NONAME] _Printer_LoadIconsW@12
+        209      000D0902 [NONAME] _Int64ToString@28
+        210      000D0AB9 [NONAME] _LargeIntegerToString@24
+        211      0016620E [NONAME] ?v_GetSubMenu@CToolbarMenu@@UAEJHPBU_GUID@@ABU2@PAPAX@Z (public: virtual long __thiscall CToolbarMenu::v_GetSubMenu(int,struct _GUID const *,struct _GUID const &,void * *))
+        212      000B3A1D [NONAME] _Printer_AddPrinterPropPages@8
+        213      000F84F4 [NONAME] _Printers_RegisterWindowW@16
+        214      000F8598 [NONAME] _Printers_UnregisterWindow@8
+        215      0010E6DA [NONAME] _SHStartNetConnectionDialogW@12
+        230      000EE0E4 [NONAME] _FirstUserLogon@8
+        231      000F6B90 [NONAME] _SHSetFolderPathA@16
+        232      000F6747 [NONAME] _SHSetFolderPathW@16
+        233      00070CC8 [NONAME] _SHGetUserPicturePathW@12
+        234      00110B1C [NONAME] _SHSetUserPicturePathW@12
+        235      000610AE [NONAME] _SHOpenEffectiveToken@4
+        236      00060FDD [NONAME] _SHTestTokenPrivilegeW@8
+        237      00038CD9 [NONAME] _SHShouldShowWizards@4
+        241      00070F05 [NONAME] _SHGetUserDisplayName@8
+        242      0002C7CD [NONAME] ?Deactivate@CRecycleBinCleaner@@UAGJPAK@Z (public: virtual long __stdcall CRecycleBinCleaner::Deactivate(unsigned long *))
+        243      00072CD2 [NONAME] _SHSetShellWindowEx@8
+        244      000D0389 [NONAME] _SHSettingsChanged@8
+        246      000F4843 [NONAME] _SHInvokePrivilegedFunctionW@12
+        247      000F4886 [NONAME] _SHGetActiveConsoleSessionId@0
+        248      000F4891 [NONAME] _SHGetUserSessionId@4
+        249      000B1287 [NONAME] _PathParseIconLocation@4
+        250      000B1178 [NONAME] _PathRemoveExtension@4
+        251      000B1145 [NONAME] _PathRemoveArgs@4
+        252      000B1298 [NONAME] _PathIsURL@4
+        253      000F48E5 [NONAME] _SHIsCurrentProcessConsoleSession@0
+        254      000B4FF9 [NONAME] _DisconnectWindowsDialog@4
+        257      00022FFD [NONAME] ?DeactivateAndUndo@CSFVSite@@UAGJXZ (public: virtual long __stdcall CSFVSite::DeactivateAndUndo(void))
+        258      000738C8 [NONAME] _LinkWindow_RegisterClass@0
+        259      0002AD5D [NONAME] ?IsDirty@CFileSearchBand@@UAGJXZ (public: virtual long __stdcall CFileSearchBand::IsDirty(void))
+        525      000EED13 [NONAME] _RealDriveTypeFlags@8
+        640      000F805A [NONAME] _NTSHChangeNotifyRegister@24
+        641      000F8085 [NONAME] _NTSHChangeNotifyDeregister@4
+        643      000F7A5D [NONAME] _SHChangeNotifyReceive@16
+        646      0002C7CD [NONAME] ?Deactivate@CRecycleBinCleaner@@UAGJPAK@Z (public: virtual long __stdcall CRecycleBinCleaner::Deactivate(unsigned long *))
+        648      000F2500 [NONAME] _SHWaitOp_Operate@8
+        650      000B1276 [NONAME] _PathIsSameRoot@8
+        651      000A3AA0 [NONAME] _OldReadCabinetState@8
+        660      0005046F [NONAME] _FileIconInit@4
+        681      001D9305 [NONAME] _SHGetAppCompatFlags@4
+        683      001110B4 [NONAME] _SHStgOpenStorageA@24
+        684      001110B4 [NONAME] _SHStgOpenStorageA@24
+        690      001112B6 [NONAME] _SHIsLegacyAnsiProperty@12
+        691      0005990B [NONAME] _SHFileSysBindToStorage@24
+        702      0005FA72 [NONAME] _CDefFolderMenu_MergeMenu@16
+        703      001D92FA [NONAME] _GUIDFromStringA@8
+        704      000388D9 [NONAME] _GUIDFromStringW@8
+        707      000B5B91 [NONAME] _SHOpenPropSheetA@28
+        708      000B1A8B [NONAME] _SHGetSetFolderCustomSettingsA@12
+        711      000D2557 [NONAME] _CheckWinIniForAssocs@0
+        712      00120D5B [NONAME] ?GetDisplayNameOf@CHttpUrlStub@@UAGJPBU_ITEMIDLIST@@KPAU_STRRET@@@Z (public: virtual long __stdcall CHttpUrlStub::GetDisplayNameOf(struct _ITEMIDLIST const *,unsigned long,struct _STRRET *))
+        713      000B0E17 [NONAME] _PathIsTemporaryA@4
+        714      0003E332 [NONAME] _PathIsTemporaryW@4
+        715      0019B51C [NONAME] _SHCreatePropertyBag@8
+        719      0005B254 [NONAME] _SHParseDarwinIDFromCacheW@8
+        720      000F7149 [NONAME] _MakeShellURLFromPathA@12
+        721      000F7072 [NONAME] _MakeShellURLFromPathW@12
+        722      000B090F [NONAME] _SHCreateInstance@12
+        723      00038996 [NONAME] _SHCreateSessionKey@8
+        724      0005B2DE [NONAME] _SHIsTempDisplayMode@0
+        725      000F2A03 [NONAME] _GetFileDescriptor@16
+        726      000CE5D0 [NONAME] _CopyStreamUI@20
+        731      0006116C [NONAME] _SHRegisterDarwinLink@12
+        732      0005B0E2 [NONAME] _SHReValidateDarwinCache@0
+        733      00079351 [NONAME] _CheckDiskSpace@0
+        740      00060579 [NONAME] _SHCreateFileDataObject@20
+        744      000DF17A [NONAME] _Create_IEnumUICommand@16
+        745      000DEF1C [NONAME] _Create_IUIElement@8
+        748      00112B46 [NONAME] _SHLimitInputCombo@8
+        751      000CF833 [NONAME] _SHSimulateDropOnClsid@12
+        752      00051A8E [NONAME] _SHGetComputerDisplayNameW@16
+        753      0007101B [NONAME] _CheckStagingArea@0
+        754      0011294F [NONAME] _SHLimitInputEditWithFlags@8
+        755      0002527E [NONAME] _PathIsEqualOrSubFolder@8
+        756      000EC286 [NONAME] _DeleteFileThumbnail@4
+
+  Summary
+
+       1D000 .data
+       1B000 .reloc
+      5E0000 .rsrc
+      1FB000 .text

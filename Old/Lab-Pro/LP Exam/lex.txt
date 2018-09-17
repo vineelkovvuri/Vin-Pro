@@ -1,0 +1,117 @@
+
+--------------------------------------------------------------------------------------------------
+1.What is Lex and what for it is used?
+Ans: Lex is short for Lexical Analyser. Its used to write Lexical Analyser 
+--------------------------------------------------------------------------------------------------
+2.What is Lexical Analyser?
+Ans: It is the first phase of the compiler which will break ur program in to tokens.
+--------------------------------------------------------------------------------------------------
+3.Why should I use Lex?
+Ans: In the absence of Lex we used to manually write a C program(lexer.c) to recognise the identifier,keywords,delimters(basically tokens) of lanugage. But we soon understood that write a lexical analyser manually is not a cake walk.. so to get rid of it a tool named lex is created.
+--------------------------------------------------------------------------------------------------
+4.What does lex do?
+Ans: Simply lex creates lexcial analyser program(lexer.c) for us, without u thinking about the logic of how to parse a given c file.
+--------------------------------------------------------------------------------------------------
+5.How to use Lex?
+Ans: 
+   a) Create an input specification file
+         (say test.l, i will explain what this file should contain) 
+   b) Now give this file to lex command 
+         (in linux we use "lex test.l" at the $ prompt)
+   c) After completion of step b the lex command creates lex.yy.c
+         (this is the program we actually wrote(our lexer.c) manually in the absence of lex)
+   d) Now compile this lex.yy.c using the following command (cc lex.yy.c -ll)
+   e) As usual we get a.out file. Now run it using the command( ./a.out < sample.c)
+         (here sample.c is the file containing a sample c program whose tokens are to be recognised)
+--------------------------------------------------------------------------------------------------
+6.What does specification file contains?
+Ans:
+Brefly specification file contains rules for identifying the tokens of a language.
+for example in C
+    1) A numeric constant can be represented by the rule [0-9]+
+    2) An identifier can be represented by the rule [a-zA-Z][a-zA-Z0-9]*
+
+digging little deeper, a specification file contains following sections(some of them r optional)
+
+declarations   
+%%
+rules       action
+%%
+usercode
+ 
+simple specification file may look like
+
+%%
+[0-9]+    {printf("%s",yytext);}
+%%
+
+the above specificaion file informs lex tool to identify numeric constants(by the rule [0-9]+).
+As and when lex tool identifies a numeric constant it stores the value(in string format) in a predefined variable "yytext".
+So now we r performing the 'action' of printing the numeric constant (using printf("%s",yytext);)
+
+EVERY RULE ASSOCIATES AN ACTION
+
+--------------------------------------------------------------------------------------------------
+7.What is 'declarations section' in specification file?
+Ans: 
+declaration help us in giving names to rules 
+
+---------sample spec file with [0-9]+ rule given a name 'num'------------
+num  [0-9]+
+%%
+{num}            {printf("%s integer number ",yytext);}
+{num}\.{num}     {printf("%s floating point number",yytext);}
+%%
+--------------------------------------------------------------------------------------------------
+8.What does 'usercode section' conatins?
+Ans:
+user code contain the code that should be copied to lex.yy.c
+
+---------sample spec file for counting the total number of lines present in a given c file------------
+%%
+[\n]      {lines++;}    
+%%
+int lines=0;
+main()
+{
+  yylex(); //initializes lexer
+  printf("\nTotal lines in the given sample c program are %d",lines);
+}
+
+now the code present in usercode section is copied to lex.yy.c (u can check it by looking in lex.yy.c)
+
+NOTE:
+    Remember any code written in between  %{      %}  will also be copied to lex.yy.c 
+--------------------------------------------------------------------------------------------------
+9.What is yylex() in the previous specification file? 
+Ans:
+   yylex() is a predefined function which actually starts the process of identifying the tokens in the given file.
+   So obviously when 'a.out' is executed main() is called first and then our lexical analyser cooks up.
+--------------------------------------------------------------------------------------------------
+10.Can I write any type of statements in actions section?
+Ans:
+  Yes, All C statements can be written(provided they r valid)
+
+for example:
+---------sample spec file for counting the total lines,tabs,spaces present in a given c file------------
+%%
+[\n\t ]    {
+              if(yytext[0] == '\n')lines++;
+	      else if(	 yytext[0] == '\t')tabs++;
+              else spaces++;
+           }
+%%
+int lines=0,tabs=0,spaces=0;
+
+main()
+{ 
+    yylex();
+    printf("Lines = %d\nTabs = %s\nSpaces = %d",lines.tabs,spaces);
+} 
+--------------------------------------------------------------------------------------------------
+ 
+-----------------------HOPE THIS FILE GAVE U AN OVERVIEW OF WHAT LEX IS---------------------------
+
+
+
+

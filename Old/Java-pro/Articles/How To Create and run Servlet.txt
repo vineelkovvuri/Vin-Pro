@@ -1,0 +1,85 @@
+
+
+RUNNING A SAMPLE SERVLET(Please entirly read this file before u start doing)
+----------------------------------------------------------------------------
+
+1)Assume the servlet program u wrote is
+  HelloServlet.java
+--------------------------HelloServlet.java---------------------------------
+import java.io.*;
+import javax.servlet.*;
+
+public class HelloServlet extends GenericServlet {
+	public void service(ServletRequest req,ServletResponse res)
+		throws ServletException,IOException{
+		res.setContentType("text/html");
+		PrintWriter pw = res.getWriter();
+		pw.println("<B>Hello");
+		pw.close();
+	}
+}
+--------------------------Sample Servlet Code---------------------------------
+
+2)Compile the above prog using
+
+  javac HelloServlet.java -classpath  "<path to servlet-api.jar or in some tomcat versions servlet.jar >"
+
+ for example in my sys it is 
+ javac HelloServlet.java -classpath  "c:\Tomcat\lib\servlet-api.jar"
+
+ NOTE: do a search in tomcat directory for servlet*.jar
+
+
+3)now create the directory structure as shown below. 
+  In webapps  of tomcat dir
+
+  vineel\WEB-INF\classes    
+
+  (so the complete dir structure look as c:\tomcat\webapps\vineel\WEB-INF\classes)
+  
+  ->copy the compiled .class file created in step 2 to classes direcotory 
+
+  ->copy sample web.xml file which is present some in other dirs of 
+    webapps(plz to do a search ) in to WEB-INF folder
+
+  ->Now open web.xml in notepad and paste the following code just before    
+    </web-app> tag
+ 
+   ---------------------------COPY-------------------------------
+
+  <servlet>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>HelloServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/HelloServlet</url-pattern>
+  </servlet-mapping>
+
+   ----------------------------COPY-------------------------------
+
+NOTE: 
+      ->u no need to remember the above code. You can find the above tags e.t.c some where 
+        in the web.xml file(plz check it in web.xml ...) do copy paste . 
+
+      ->HelloServlet present in above snippet should be replaced with your servlet class name
+        (if your Servlet class is not HelloServlet) 	
+
+
+4)once the above is done 
+  make sure tomcat is running
+  
+  in IE 	
+
+      http://localhost:8080/vineel/HelloServlet 
+                              ^   |___________|<--- pattern u specified in <url-pattern>
+			      |    		    tag. It can be any thing ..... 
+			      |
+                              |
+              Directory name that u created in webapps	
+
+  
+   
+Ref: Complete refernce to JAVA 5.0(1.4 does not contain this stuff ;) )
+

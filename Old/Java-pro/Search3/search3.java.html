@@ -1,0 +1,1003 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>d:\Vin-Pro\Java-pro\Search3\search3.java.html</title>
+<meta name="Generator" content="Vim/7.3">
+<meta name="plugin-version" content="vim7.3_v6">
+<meta name="syntax" content="java">
+<meta name="settings" content="use_css,number_lines">
+<style type="text/css">
+<!--
+pre { font-family: monospace; color: #ffffff; background-color: #000000; }
+body { font-family: monospace; color: #ffffff; background-color: #000000; }
+.lnr { color: #804000; }
+.Error { color: #c0c0c0; background-color: #c00000; font-weight: bold; }
+.Special { color: #c000c0; }
+.Constant { color: #008080; }
+.Statement { color: #804000; }
+.Type { color: #008000; }
+.PreProc { color: #c000c0; }
+.Comment { color: #804000; }
+-->
+</style>
+</head>
+<body>
+<pre>
+<span class="lnr">  1 </span><span class="Comment">/*</span>
+<span class="lnr">  2 </span><span class="Comment"> *  This is a file searching program written in JAVA for</span>
+<span class="lnr">  3 </span><span class="Comment"> *  searching a file in the requested drive or directory.</span>
+<span class="lnr">  4 </span><span class="Comment"> *</span>
+<span class="lnr">  5 </span><span class="Comment"> *         Concepts used</span>
+<span class="lnr">  6 </span><span class="Comment"> *         1.Generics</span>
+<span class="lnr">  7 </span><span class="Comment"> *         2.Enchanced for loop</span>
+<span class="lnr">  8 </span><span class="Comment"> *         3.Swings</span>
+<span class="lnr">  9 </span><span class="Comment"> *         4.MultiThreading</span>
+<span class="lnr"> 10 </span><span class="Comment"> *         5.Collections</span>
+<span class="lnr"> 11 </span><span class="Comment"> *         6.Regular Expressions</span>
+<span class="lnr"> 12 </span><span class="Comment"> *         7.Files</span>
+<span class="lnr"> 13 </span><span class="Comment"> *         8.Java's Printing Functionality</span>
+<span class="lnr"> 14 </span><span class="Comment"> *         9.Makes native calls(Not using JNI) to windows shell32.dll from Runtime class.</span>
+<span class="lnr"> 15 </span><span class="Comment"> *</span>
+<span class="lnr"> 16 </span><span class="Comment"> *         Packages Used</span>
+<span class="lnr"> 17 </span><span class="Comment"> *         1.java.awt;</span>
+<span class="lnr"> 18 </span><span class="Comment"> *         2.java.io;</span>
+<span class="lnr"> 19 </span><span class="Comment"> *         3.java.nio;</span>
+<span class="lnr"> 20 </span><span class="Comment"> *         4.java.util;</span>
+<span class="lnr"> 21 </span><span class="Comment"> *         5.java.util.regex;</span>
+<span class="lnr"> 22 </span><span class="Comment"> *         6.javax.print</span>
+<span class="lnr"> 23 </span><span class="Comment"> *         7.javax.print.attribute</span>
+<span class="lnr"> 24 </span><span class="Comment"> *         8.javax.swing</span>
+<span class="lnr"> 25 </span><span class="Comment"> *</span>
+<span class="lnr"> 26 </span><span class="Comment"> *  </span>
+<span class="lnr"> 27 </span><span class="Comment"> *                                              This Program is Written By</span>
+<span class="lnr"> 28 </span><span class="Comment"> *                                          K.Vineel Kumar Reddy  B.Tech II/IV IT</span>
+<span class="lnr"> 29 </span><span class="Comment"> *                                          Gayatri Vidya Parishad College of Engg.</span>
+<span class="lnr"> 30 </span><span class="Comment"> *                                          Vishakapatnam,Andhra Pradesh.</span>
+<span class="lnr"> 31 </span><span class="Comment"> *                                          INDIA.</span>
+<span class="lnr"> 32 </span><span class="Comment"> *  NOTE : This program works only for</span>
+<span class="lnr"> 33 </span><span class="Comment"> *         JRE &gt;=1.5 and Windows NT(make use of Rundll32.exe and shell32.dll)</span>
+<span class="lnr"> 34 </span><span class="Comment"> *</span>
+<span class="lnr"> 35 </span><span class="Comment"> */</span>
+<span class="lnr"> 36 </span><span class="Comment">//Last Modified: Mon Oct 22 2007 12:26:39 AM </span>
+<span class="lnr"> 37 </span>
+<span class="lnr"> 38 </span><span class="Comment">//~--- JDK imports ------------------------------------------------------------</span>
+<span class="lnr"> 39 </span>
+<span class="lnr"> 40 </span><span class="PreProc">import</span> java.awt.Color;
+<span class="lnr"> 41 </span><span class="PreProc">import</span> java.awt.Container;
+<span class="lnr"> 42 </span><span class="PreProc">import</span> java.awt.Cursor;
+<span class="lnr"> 43 </span><span class="PreProc">import</span> java.awt.Dimension;
+<span class="lnr"> 44 </span><span class="PreProc">import</span> java.awt.Font;
+<span class="lnr"> 45 </span><span class="PreProc">import</span> java.awt.Graphics;
+<span class="lnr"> 46 </span><span class="PreProc">import</span> java.awt.Graphics2D;
+<span class="lnr"> 47 </span><span class="PreProc">import</span> java.awt.Toolkit;
+<span class="lnr"> 48 </span><span class="PreProc">import</span> java.awt.event.ActionEvent;
+<span class="lnr"> 49 </span><span class="PreProc">import</span> java.awt.event.ActionListener;
+<span class="lnr"> 50 </span><span class="PreProc">import</span> java.awt.event.MouseAdapter;
+<span class="lnr"> 51 </span><span class="PreProc">import</span> java.awt.event.MouseEvent;
+<span class="lnr"> 52 </span><span class="PreProc">import</span> java.awt.event.MouseListener;
+<span class="lnr"> 53 </span><span class="PreProc">import</span> java.awt.print.PageFormat;
+<span class="lnr"> 54 </span><span class="PreProc">import</span> java.awt.print.Printable;
+<span class="lnr"> 55 </span><span class="PreProc">import</span> java.awt.print.PrinterJob;
+<span class="lnr"> 56 </span>
+<span class="lnr"> 57 </span><span class="PreProc">import</span> java.io.File;
+<span class="lnr"> 58 </span><span class="PreProc">import</span> java.io.FileInputStream;
+<span class="lnr"> 59 </span><span class="PreProc">import</span> java.io.FileOutputStream;
+<span class="lnr"> 60 </span>
+<span class="lnr"> 61 </span><span class="PreProc">import</span> java.nio.channels.FileChannel;
+<span class="lnr"> 62 </span>
+<span class="lnr"> 63 </span><span class="PreProc">import</span> java.util.Date;
+<span class="lnr"> 64 </span><span class="PreProc">import</span> java.util.Hashtable;
+<span class="lnr"> 65 </span><span class="PreProc">import</span> java.util.Iterator;
+<span class="lnr"> 66 </span><span class="PreProc">import</span> java.util.Vector;
+<span class="lnr"> 67 </span><span class="PreProc">import</span> java.util.regex.Matcher;
+<span class="lnr"> 68 </span><span class="PreProc">import</span> java.util.regex.Pattern;
+<span class="lnr"> 69 </span>
+<span class="lnr"> 70 </span><span class="PreProc">import</span> javax.print.attribute.HashPrintRequestAttributeSet;
+<span class="lnr"> 71 </span>
+<span class="lnr"> 72 </span><span class="PreProc">import</span> javax.swing.BorderFactory;
+<span class="lnr"> 73 </span><span class="PreProc">import</span> javax.swing.DefaultListModel;
+<span class="lnr"> 74 </span><span class="PreProc">import</span> javax.swing.ImageIcon;
+<span class="lnr"> 75 </span><span class="PreProc">import</span> javax.swing.JButton;
+<span class="lnr"> 76 </span><span class="PreProc">import</span> javax.swing.JCheckBox;
+<span class="lnr"> 77 </span><span class="PreProc">import</span> javax.swing.JFileChooser;
+<span class="lnr"> 78 </span><span class="PreProc">import</span> javax.swing.JFrame;
+<span class="lnr"> 79 </span><span class="PreProc">import</span> javax.swing.JLabel;
+<span class="lnr"> 80 </span><span class="PreProc">import</span> javax.swing.JList;
+<span class="lnr"> 81 </span><span class="PreProc">import</span> javax.swing.JMenu;
+<span class="lnr"> 82 </span><span class="PreProc">import</span> javax.swing.JMenuItem;
+<span class="lnr"> 83 </span><span class="PreProc">import</span> javax.swing.JOptionPane;
+<span class="lnr"> 84 </span><span class="PreProc">import</span> javax.swing.JPopupMenu;
+<span class="lnr"> 85 </span><span class="PreProc">import</span> javax.swing.JScrollPane;
+<span class="lnr"> 86 </span><span class="PreProc">import</span> javax.swing.JSeparator;
+<span class="lnr"> 87 </span><span class="PreProc">import</span> javax.swing.JTextArea;
+<span class="lnr"> 88 </span><span class="PreProc">import</span> javax.swing.JTextField;
+<span class="lnr"> 89 </span><span class="PreProc">import</span> javax.swing.JWindow;
+<span class="lnr"> 90 </span><span class="PreProc">import</span> javax.swing.SwingUtilities;
+<span class="lnr"> 91 </span><span class="PreProc">import</span> javax.swing.UIManager;
+<span class="lnr"> 92 </span>
+<span class="lnr"> 93 </span><span class="Type">class</span> copyTo <span class="Type">implements</span> MouseListener {
+<span class="lnr"> 94 </span>    <span class="Type">private</span> JMenu                        jm[] = <span class="Statement">new</span> JMenu[<span class="Constant">30</span>];
+<span class="lnr"> 95 </span>    <span class="Type">private</span> JMenu                        copyTo;
+<span class="lnr"> 96 </span>    <span class="Type">private</span> Hashtable&lt;JMenuItem, String&gt; h;
+<span class="lnr"> 97 </span>    <span class="Type">private</span> JList                        jli;
+<span class="lnr"> 98 </span>    <span class="Type">private</span> JPopupMenu                   jp;
+<span class="lnr"> 99 </span>
+<span class="lnr">100 </span><span class="Comment">//  ==========================================================      </span>
+<span class="lnr">101 </span>    <span class="Type">public</span> <span class="Type">void</span> copyTo(JPopupMenu jp, JList jli) {
+<span class="lnr">102 </span>        <span class="Type">this</span>.jp  = jp;
+<span class="lnr">103 </span>        <span class="Type">this</span>.jli = jli;
+<span class="lnr">104 </span>        h        = <span class="Statement">new</span> Hashtable&lt;JMenuItem, String&gt;();
+<span class="lnr">105 </span>        copyTo   = <span class="Statement">new</span> JMenu(<span class="Constant">&quot;Copy To&quot;</span>);
+<span class="lnr">106 </span>        jp.add(copyTo);
+<span class="lnr">107 </span>
+<span class="lnr">108 </span>        <span class="Type">int</span> i = <span class="Constant">0</span>;
+<span class="lnr">109 </span>        <span class="Statement">for</span> (File f : File.listRoots()) {
+<span class="lnr">110 </span>            copyTo.add(jm[i] = <span class="Statement">new</span> JMenu(<span class="Constant">&quot;&quot;</span> + f.getPath()));
+<span class="lnr">111 </span>            jm[i].addMouseListener(<span class="Type">this</span>);
+<span class="lnr">112 </span>            search(f, jm[i++]);    <span class="Comment">// only directories in c:\ d:\ e:\ are added(not recursively)</span>
+<span class="lnr">113 </span>        }
+<span class="lnr">114 </span>        jp.add(<span class="Statement">new</span> JScrollPane());
+<span class="lnr">115 </span>    }
+<span class="lnr">116 </span>
+<span class="lnr">117 </span><span class="Comment">//  ==========================================================</span>
+<span class="lnr">118 </span>    <span class="Type">private</span> <span class="Type">int</span> countDir(File f) {
+<span class="lnr">119 </span>        <span class="Type">int</span> count = <span class="Constant">0</span>;
+<span class="lnr">120 </span>        <span class="Statement">for</span> (File f1 : f.listFiles())
+<span class="lnr">121 </span>            <span class="Statement">if</span> (f1.isDirectory())count++;
+<span class="lnr">122 </span>        <span class="Statement">return</span> count;
+<span class="lnr">123 </span>    }
+<span class="lnr">124 </span>
+<span class="lnr">125 </span><span class="Comment">//  ==========================================================</span>
+<span class="lnr">126 </span>    <span class="Type">private</span> <span class="Type">void</span> search(File f, JMenu jm) {    <span class="Comment">// For adding the dirs in to the menu for the given path</span>
+<span class="lnr">127 </span>        JMenu     test;
+<span class="lnr">128 </span>        <span class="Type">int</span>       i = <span class="Constant">0</span>;
+<span class="lnr">129 </span>        JMenuItem testm;
+<span class="lnr">130 </span>
+<span class="lnr">131 </span>        <span class="Statement">if</span> ((f.listFiles() == <span class="Constant">null</span>) || (countDir(f) == <span class="Constant">0</span>)) {    <span class="Comment">// creates &quot;copy here&quot; menuitem if f is empty</span>
+<span class="lnr">132 </span>            <span class="Comment">// or it contain's only files not dir</span>
+<span class="lnr">133 </span>            testm = <span class="Statement">new</span> JMenuItem(<span class="Constant">&quot;Copy Here&quot;</span>);
+<span class="lnr">134 </span>            h.put(testm, f.getPath());       <span class="Comment">// add &quot;copy&quot; menu to hashtable</span>
+<span class="lnr">135 </span>            testm.addMouseListener(<span class="Type">this</span>);    <span class="Comment">// add listener to &quot;copy here&quot; item</span>
+<span class="lnr">136 </span>            jm.add(testm);                   <span class="Comment">// add &quot;copy here&quot; menu to jm menu</span>
+<span class="lnr">137 </span>        } <span class="Statement">else</span> {                             <span class="Comment">// if it contains directories</span>
+<span class="lnr">138 </span>            <span class="Statement">for</span> (File f1 : f.listFiles())
+<span class="lnr">139 </span>                <span class="Statement">if</span> (f1.isDirectory()) {
+<span class="lnr">140 </span>                    <span class="Statement">if</span> (i == <span class="Constant">0</span>) {            <span class="Comment">// first of all we need to add &quot;copy here&quot;</span>
+<span class="lnr">141 </span>                        <span class="Comment">// in the menu</span>
+<span class="lnr">142 </span>                        testm = <span class="Statement">new</span> JMenuItem(<span class="Constant">&quot;Copy Here&quot;</span>);
+<span class="lnr">143 </span>                        h.put(testm, f.getPath());
+<span class="lnr">144 </span>                        testm.addMouseListener(<span class="Type">this</span>);
+<span class="lnr">145 </span>                        jm.add(testm);
+<span class="lnr">146 </span>                        i++;
+<span class="lnr">147 </span>                        jm.add(<span class="Statement">new</span> JSeparator());
+<span class="lnr">148 </span>                    }                                          <span class="Comment">// this will be executed only once</span>
+<span class="lnr">149 </span>                    jm.add(test = <span class="Statement">new</span> JMenu(f1.getName()));    <span class="Comment">// as f1 is a dir this creates a JMenu</span>
+<span class="lnr">150 </span>                    h.put(test, f1.getPath());
+<span class="lnr">151 </span>                    test.addMouseListener(<span class="Type">this</span>);
+<span class="lnr">152 </span>                }
+<span class="lnr">153 </span>        }
+<span class="lnr">154 </span>    }
+<span class="lnr">155 </span>
+<span class="lnr">156 </span><span class="Comment">//  ==========================================================</span>
+<span class="lnr">157 </span>    <span class="Type">public</span> <span class="Type">void</span> mouseClicked(MouseEvent e) {}
+<span class="lnr">158 </span>
+<span class="lnr">159 </span><span class="Comment">//  ==========================================================</span>
+<span class="lnr">160 </span>    <span class="Type">public</span> <span class="Type">void</span> mousePressed(MouseEvent e) {    <span class="Comment">// File Copying starts Here</span>
+<span class="lnr">161 </span>        <span class="Statement">try</span> {
+<span class="lnr">162 </span>            FileChannel in  = <span class="Statement">new</span> FileInputStream((String) jli.getSelectedValue()).getChannel();
+<span class="lnr">163 </span>            FileChannel out = <span class="Statement">new</span> FileOutputStream(h.get(e.getSource()) + <span class="Constant">&quot;</span><span class="Special">\\</span><span class="Constant">&quot;</span>
+<span class="lnr">164 </span>                                  + <span class="Statement">new</span> File((String) jli.getSelectedValue()).getName()).getChannel();
+<span class="lnr">165 </span>
+<span class="lnr">166 </span>            search3.s.setTitle(<span class="Constant">&quot;File Copying is in Progress Please Wait...&quot;</span>);
+<span class="lnr">167 </span>            out.transferFrom(in, <span class="Constant">0</span>, in.size());    <span class="Comment">// file copying process</span>
+<span class="lnr">168 </span>            out.close();
+<span class="lnr">169 </span>            in.close();
+<span class="lnr">170 </span>            search3.s.setTitle(<span class="Constant">&quot;File copying sucessfully completed&quot;</span>);
+<span class="lnr">171 </span>            JOptionPane.showMessageDialog(<span class="Constant">null</span>, <span class="Constant">&quot;Sucessfully Copied&quot;</span>);
+<span class="lnr">172 </span>        } <span class="Statement">catch</span> (Exception ee) {
+<span class="lnr">173 </span>            JOptionPane.showMessageDialog(
+<span class="lnr">174 </span>                <span class="Constant">null</span>,
+<span class="lnr">175 </span>                h.get(e.getSource())
+<span class="lnr">176 </span>                + <span class="Constant">&quot; ERROR : possible reasons</span><span class="Special">\n</span><span class="Constant">1.You no sufficent rights to copy here </span><span class="Special">\n</span><span class="Constant">2.you have not selected an Entry</span><span class="Special">\n</span><span class="Constant">3.Destination Device is not ready&quot;</span>);
+<span class="lnr">177 </span>        }
+<span class="lnr">178 </span>    }
+<span class="lnr">179 </span>
+<span class="lnr">180 </span><span class="Comment">//  ==========================================================</span>
+<span class="lnr">181 </span>    <span class="Type">public</span> <span class="Type">void</span> mouseReleased(MouseEvent e) {}
+<span class="lnr">182 </span><span class="Comment">//  ==========================================================</span>
+<span class="lnr">183 </span>    <span class="Type">public</span> <span class="Type">void</span> mouseEntered(MouseEvent e) {
+<span class="lnr">184 </span>        <span class="Statement">if</span> (e.getSource() <span class="Statement">instanceof</span> JMenu) {
+<span class="lnr">185 </span>            search3.s.setTitle(h.get(e.getSource()));    <span class="Comment">// just for showing the path seleting by the user in the title bar</span>
+<span class="lnr">186 </span>            <span class="Statement">if</span> (((JMenu) e.getSource()).getItemCount() == <span class="Constant">0</span>)
+<span class="lnr">187 </span>                search(<span class="Statement">new</span> File(h.get(e.getSource())), (JMenu) e.getSource());
+<span class="lnr">188 </span>        }
+<span class="lnr">189 </span>    }
+<span class="lnr">190 </span>
+<span class="lnr">191 </span><span class="Comment">//  ==========================================================</span>
+<span class="lnr">192 </span>    <span class="Type">public</span> <span class="Type">void</span> mouseExited(MouseEvent e) {}
+<span class="lnr">193 </span>}
+<span class="lnr">194 </span>
+<span class="lnr">195 </span><span class="Comment">//==========================================================</span>
+<span class="lnr">196 </span><span class="Type">public</span> <span class="Type">class</span> search3 <span class="Type">extends</span> JFrame <span class="Type">implements</span> ActionListener, Runnable, Printable, MouseListener {
+<span class="lnr">197 </span>    <span class="Comment">// ==========================================================</span>
+<span class="lnr">198 </span>    <span class="Type">static</span> <span class="Type">int</span>                flag             = <span class="Constant">0</span>;
+<span class="lnr">199 </span>    <span class="Type">private</span> <span class="Type">static</span> <span class="Type">final</span> <span class="Type">long</span> serialVersionUID = -<span class="Constant">2223554793047033860L</span>;
+<span class="lnr">200 </span>    <span class="Type">private</span> <span class="Type">static</span> <span class="Type">final</span> <span class="Type">int</span>
+<span class="lnr">201 </span>        R                                      = <span class="Constant">198</span>,
+<span class="lnr">202 </span>        G                                      = <span class="Constant">178</span>,
+<span class="lnr">203 </span>        B                                      = <span class="Constant">141</span>;
+<span class="lnr">204 </span>
+<span class="lnr">205 </span>    <span class="Comment">// ==========================================================</span>
+<span class="lnr">206 </span>    <span class="Type">static</span> search3           s;
+<span class="lnr">207 </span>    <span class="Type">int</span>                      flag1     = <span class="Constant">1</span>;
+<span class="lnr">208 </span>    <span class="Type">private</span> JWindow          jw        = <span class="Constant">null</span>;
+<span class="lnr">209 </span>    <span class="Type">private</span> Matcher          m         = <span class="Constant">null</span>;
+<span class="lnr">210 </span>    <span class="Type">private</span> Pattern          p         = <span class="Constant">null</span>;
+<span class="lnr">211 </span>    <span class="Type">private</span> JCheckBox        jcb[]     = <span class="Statement">new</span> JCheckBox[<span class="Constant">2</span>];
+<span class="lnr">212 </span>    <span class="Type">private</span> JFileChooser     j         = <span class="Statement">new</span> JFileChooser();
+<span class="lnr">213 </span>    <span class="Type">private</span> File[]           drives    = <span class="Statement">new</span> File[<span class="Constant">20</span>];
+<span class="lnr">214 </span>    <span class="Type">private</span> <span class="Type">boolean</span>          continue_ = <span class="Constant">true</span>,
+<span class="lnr">215 </span>                             Windows   = <span class="Constant">false</span>;
+<span class="lnr">216 </span>    <span class="Type">private</span> JCheckBox        cb[]      = <span class="Statement">new</span> JCheckBox[<span class="Constant">20</span>];
+<span class="lnr">217 </span>    <span class="Type">public</span> String            SearchFileName, path;
+<span class="lnr">218 </span>    <span class="Type">private</span> Container        c;
+<span class="lnr">219 </span>    <span class="Type">int</span>                      count, countf, depth, high;
+<span class="lnr">220 </span>    <span class="Type">private</span> DefaultListModel dlm;
+<span class="lnr">221 </span>    <span class="Type">private</span> JButton          jb1, jb2, jb3, jb4, jb5, jb6, print;
+<span class="lnr">222 </span>    <span class="Type">private</span> JLabel           jl1, jl2, jl3, jl5, jl6;
+<span class="lnr">223 </span>    <span class="Type">private</span> JList            jli;
+<span class="lnr">224 </span>    <span class="Type">private</span> JMenuItem        jm1, jm2, jm3, jm4, jm5, jm6, jm7;
+<span class="lnr">225 </span>    <span class="Type">private</span> JPopupMenu       jp1, jp2;
+<span class="lnr">226 </span>    <span class="Type">private</span> JScrollPane      jsp;
+<span class="lnr">227 </span>    <span class="Type">private</span> JTextArea        jta2, jta1;
+<span class="lnr">228 </span>    <span class="Type">private</span> JTextField       jtf1, jtf2, jtf3;
+<span class="lnr">229 </span>    <span class="Type">private</span> StringBuffer     sb;
+<span class="lnr">230 </span>    <span class="Type">private</span> Thread           t;
+<span class="lnr">231 </span>    <span class="Type">private</span> Toolkit          tk;
+<span class="lnr">232 </span>
+<span class="lnr">233 </span>    <span class="Comment">// =======================================================================</span>
+<span class="lnr">234 </span>    <span class="Type">private</span> <span class="Type">void</span> initiate() {
+<span class="lnr">235 </span>        c = getContentPane();
+<span class="lnr">236 </span>        c.setLayout(<span class="Constant">null</span>);
+<span class="lnr">237 </span>        setTitle(<span class="Constant">&quot;File Searching  Program By Vineel Kumar Reddy&quot;</span>);
+<span class="lnr">238 </span>        tk = getToolkit();
+<span class="lnr">239 </span>        c.addMouseListener(<span class="Type">this</span>);
+<span class="lnr">240 </span>        setIconImage(tk.createImage(<span class="Constant">&quot;sun.png&quot;</span>));
+<span class="lnr">241 </span>
+<span class="lnr">242 </span>        Dimension d = tk.getScreenSize();
+<span class="lnr">243 </span>
+<span class="lnr">244 </span>        setBounds((d.width - <span class="Constant">780</span>) / <span class="Constant">2</span>, (d.height - <span class="Constant">500</span>) / <span class="Constant">2</span>, <span class="Constant">780</span>, <span class="Constant">500</span>);
+<span class="lnr">245 </span>        setResizable(<span class="Constant">false</span>);
+<span class="lnr">246 </span>        c.setBackground(<span class="Statement">new</span> Color(R, G, B));
+<span class="lnr">247 </span>
+<span class="lnr">248 </span>        <span class="Statement">if</span> (System.getProperty(<span class="Constant">&quot;java.version&quot;</span>).compareTo(<span class="Constant">&quot;1.5&quot;</span>) &lt; <span class="Constant">0</span>) {
+<span class="lnr">249 </span>            JOptionPane.showMessageDialog(
+<span class="lnr">250 </span>                    <span class="Constant">null</span>, <span class="Constant">&quot;ERROR:</span><span class="Special">\n</span><span class="Constant">Java Version is : &quot;</span> + System.getProperty(<span class="Constant">&quot;java.version&quot;</span>)
+<span class="lnr">251 </span>                    + <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">Java version should be &gt;=1.5</span><span class="Special">\n</span><span class="Constant">Because this program make use of Enhanced For loop and Generics.&quot;</span>, <span class="Constant">&quot;Java version should be &gt;=1.5&quot;</span>, JOptionPane
+<span class="lnr">252 </span>                        .INFORMATION_MESSAGE);
+<span class="lnr">253 </span>            System.exit(-<span class="Constant">1</span>);
+<span class="lnr">254 </span>        }
+<span class="lnr">255 </span>
+<span class="lnr">256 </span>        <span class="Comment">// Enable Theme</span>
+<span class="lnr">257 </span>        <span class="Statement">if</span> (System.getProperty(<span class="Constant">&quot;os.name&quot;</span>).equalsIgnoreCase(<span class="Constant">&quot;Windows XP&quot;</span>)) {
+<span class="lnr">258 </span>            Windows = <span class="Constant">true</span>;
+<span class="lnr">259 </span>            <span class="Statement">try</span> {
+<span class="lnr">260 </span>                UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+<span class="lnr">261 </span>                SwingUtilities.updateComponentTreeUI(<span class="Type">this</span>);
+<span class="lnr">262 </span>            } <span class="Statement">catch</span> (Exception e) {
+<span class="lnr">263 </span>                System.out.println(<span class="Constant">&quot;Error initializing native theme&quot;</span>);
+<span class="lnr">264 </span>            }
+<span class="lnr">265 </span>        }
+<span class="lnr">266 </span>
+<span class="lnr">267 </span>        <span class="Comment">// Check whether the OS is Windows are not</span>
+<span class="lnr">268 </span>        <span class="Comment">/*</span>
+<span class="lnr">269 </span><span class="Comment">         * if(System.getProperty(&quot;os.name&quot;).toLowerCase().indexOf(&quot;windows&quot;)==-1){</span>
+<span class="lnr">270 </span><span class="Comment">         *       JOptionPane.showMessageDialog(null, &quot;Sorry I am not designed for this Lovely  &quot;+System.getProperty(&quot;os.name&quot;) +&quot; Operating System&quot;</span>
+<span class="lnr">271 </span><span class="Comment">         *                       ,&quot;Contact my BOSE......!!!!!&quot;,JOptionPane.INFORMATION_MESSAGE);</span>
+<span class="lnr">272 </span><span class="Comment">         *       System.exit(-1);</span>
+<span class="lnr">273 </span><span class="Comment">         * }</span>
+<span class="lnr">274 </span><span class="Comment">         */</span>
+<span class="lnr">275 </span>        jb1 = <span class="Statement">new</span> JButton(<span class="Statement">new</span> ImageIcon(<span class="Constant">&quot;go.gif&quot;</span>));
+<span class="lnr">276 </span>        c.add(jb1);
+<span class="lnr">277 </span>        jb1.setMnemonic(<span class="Constant">'O'</span>);
+<span class="lnr">278 </span>        jb1.setDefaultCapable(<span class="Constant">true</span>);
+<span class="lnr">279 </span>        jb1.setBounds(<span class="Constant">250</span>, <span class="Constant">20</span>, <span class="Constant">70</span>, <span class="Constant">20</span>);
+<span class="lnr">280 </span>        jb1.addActionListener(<span class="Type">this</span>);
+<span class="lnr">281 </span>        jb1.addMouseListener(<span class="Type">this</span>);
+<span class="lnr">282 </span>        jb4 = <span class="Statement">new</span> JButton(<span class="Constant">&quot;Browse&quot;</span>, <span class="Statement">new</span> ImageIcon(<span class="Constant">&quot;browse.png&quot;</span>));
+<span class="lnr">283 </span>        c.add(jb4);
+<span class="lnr">284 </span>        jb4.setMnemonic(<span class="Constant">'B'</span>);
+<span class="lnr">285 </span>        jb4.setBounds(<span class="Constant">330</span>, <span class="Constant">20</span>, <span class="Constant">100</span>, <span class="Constant">20</span>);
+<span class="lnr">286 </span>        jb4.addActionListener(<span class="Type">this</span>);
+<span class="lnr">287 </span>        jb4.addMouseListener(<span class="Type">this</span>);
+<span class="lnr">288 </span>        jb2 = <span class="Statement">new</span> JButton(<span class="Constant">&quot;Clear&quot;</span>, <span class="Statement">new</span> ImageIcon(<span class="Constant">&quot;clear.png&quot;</span>));
+<span class="lnr">289 </span>        c.add(jb2);
+<span class="lnr">290 </span>        jb2.setMnemonic(<span class="Constant">'L'</span>);
+<span class="lnr">291 </span>        jb2.setBounds(<span class="Constant">440</span>, <span class="Constant">20</span>, <span class="Constant">100</span>, <span class="Constant">20</span>);
+<span class="lnr">292 </span>        jb2.addActionListener(<span class="Type">this</span>);
+<span class="lnr">293 </span>        jb2.addMouseListener(<span class="Type">this</span>);
+<span class="lnr">294 </span>        jb5 = <span class="Statement">new</span> JButton(<span class="Constant">&quot;Stop&quot;</span>, <span class="Statement">new</span> ImageIcon(<span class="Constant">&quot;stop.gif&quot;</span>));
+<span class="lnr">295 </span>        c.add(jb5);
+<span class="lnr">296 </span>        jb5.setMnemonic(<span class="Constant">'S'</span>);
+<span class="lnr">297 </span>        jb5.setBounds(<span class="Constant">550</span>, <span class="Constant">20</span>, <span class="Constant">85</span>, <span class="Constant">20</span>);
+<span class="lnr">298 </span>        jb5.addActionListener(<span class="Type">this</span>);
+<span class="lnr">299 </span>        jb5.addMouseListener(<span class="Type">this</span>);
+<span class="lnr">300 </span>        jb3 = <span class="Statement">new</span> JButton(<span class="Constant">&quot;Exit&quot;</span>, <span class="Statement">new</span> ImageIcon(<span class="Constant">&quot;exit.png&quot;</span>));
+<span class="lnr">301 </span>        c.add(jb3);
+<span class="lnr">302 </span>        jb3.setMnemonic(<span class="Constant">'X'</span>);
+<span class="lnr">303 </span>        jb3.setBounds(<span class="Constant">645</span>, <span class="Constant">20</span>, <span class="Constant">80</span>, <span class="Constant">20</span>);
+<span class="lnr">304 </span>        jb3.addActionListener(<span class="Type">this</span>);
+<span class="lnr">305 </span>        jb3.addMouseListener(<span class="Type">this</span>);
+<span class="lnr">306 </span>        drives = File.listRoots();
+<span class="lnr">307 </span>
+<span class="lnr">308 </span>        <span class="Statement">for</span> (<span class="Type">int</span> i = <span class="Constant">0</span>; i &lt; drives.length; i++) {
+<span class="lnr">309 </span>            cb[i] = <span class="Statement">new</span> JCheckBox(drives[i].getPath());
+<span class="lnr">310 </span>            cb[i].setMnemonic(drives[i].getPath().charAt(<span class="Constant">0</span>));
+<span class="lnr">311 </span>            cb[i].setBackground(<span class="Statement">new</span> Color(R, G, B));
+<span class="lnr">312 </span>            cb[i].setBounds(<span class="Constant">20</span> + <span class="Constant">40</span> * i, <span class="Constant">50</span>, <span class="Constant">40</span>, <span class="Constant">20</span>);
+<span class="lnr">313 </span>            cb[i].addMouseListener(<span class="Type">this</span>);
+<span class="lnr">314 </span>            c.add(cb[i]);
+<span class="lnr">315 </span>        }
+<span class="lnr">316 </span>
+<span class="lnr">317 </span>        jcb[<span class="Constant">0</span>] = <span class="Statement">new</span> JCheckBox(<span class="Constant">&quot;Hidden&quot;</span>);
+<span class="lnr">318 </span>        jcb[<span class="Constant">0</span>].setMnemonic(<span class="Constant">'I'</span>);
+<span class="lnr">319 </span>        c.add(jcb[<span class="Constant">0</span>]);
+<span class="lnr">320 </span>        jcb[<span class="Constant">0</span>].setBackground(<span class="Statement">new</span> Color(R, G, B));
+<span class="lnr">321 </span>        jcb[<span class="Constant">0</span>].setBounds(<span class="Constant">20</span>, <span class="Constant">350</span>, <span class="Constant">100</span>, <span class="Constant">20</span>);
+<span class="lnr">322 </span>        jcb[<span class="Constant">0</span>].addMouseListener(<span class="Type">this</span>);
+<span class="lnr">323 </span>        jcb[<span class="Constant">1</span>] = <span class="Statement">new</span> JCheckBox(<span class="Constant">&quot;Case sensitive&quot;</span>);
+<span class="lnr">324 </span>        jcb[<span class="Constant">1</span>].setMnemonic(<span class="Constant">'T'</span>);
+<span class="lnr">325 </span>        c.add(jcb[<span class="Constant">1</span>]);
+<span class="lnr">326 </span>        jcb[<span class="Constant">1</span>].setBackground(<span class="Statement">new</span> Color(R, G, B));
+<span class="lnr">327 </span>        jcb[<span class="Constant">1</span>].setBounds(<span class="Constant">150</span>, <span class="Constant">350</span>, <span class="Constant">150</span>, <span class="Constant">20</span>);
+<span class="lnr">328 </span>        jcb[<span class="Constant">1</span>].addMouseListener(<span class="Type">this</span>);
+<span class="lnr">329 </span>        jp2 = <span class="Statement">new</span> JPopupMenu();
+<span class="lnr">330 </span>        jp2.add(jm4 = <span class="Statement">new</span> JMenuItem(<span class="Constant">&quot;Copy&quot;</span>, <span class="Statement">new</span> ImageIcon(<span class="Constant">&quot;copy.png&quot;</span>)));
+<span class="lnr">331 </span>        jm4.addActionListener(<span class="Type">this</span>);
+<span class="lnr">332 </span>        jp2.add(jm4);
+<span class="lnr">333 </span>        jp2.add(jm5 = <span class="Statement">new</span> JMenuItem(<span class="Constant">&quot;Paste&quot;</span>, <span class="Statement">new</span> ImageIcon(<span class="Constant">&quot;paste.png&quot;</span>)));
+<span class="lnr">334 </span>        jm5.addActionListener(<span class="Type">this</span>);
+<span class="lnr">335 </span>        jp2.add(jm5);
+<span class="lnr">336 </span>        jtf1 = <span class="Statement">new</span> JTextField(<span class="Constant">10</span>);
+<span class="lnr">337 </span>        jtf1.add(jp2);
+<span class="lnr">338 </span>        jtf1.addActionListener(<span class="Type">this</span>);
+<span class="lnr">339 </span>        c.add(jtf1);
+<span class="lnr">340 </span>        jtf1.setBounds(<span class="Constant">105</span>, <span class="Constant">20</span>, <span class="Constant">140</span>, <span class="Constant">20</span>);
+<span class="lnr">341 </span>        jtf1.setComponentPopupMenu(jp2);
+<span class="lnr">342 </span>        jtf1.addMouseListener(<span class="Type">this</span>);
+<span class="lnr">343 </span>        jtf2 = <span class="Statement">new</span> JTextField(<span class="Constant">10</span>);
+<span class="lnr">344 </span>        c.add(jtf2);
+<span class="lnr">345 </span>        jtf2.setEditable(<span class="Constant">false</span>);
+<span class="lnr">346 </span>        jtf2.addMouseListener(<span class="Type">this</span>);
+<span class="lnr">347 </span>        jtf2.setBounds(<span class="Constant">530</span>, <span class="Constant">100</span>, <span class="Constant">150</span>, <span class="Constant">20</span>);
+<span class="lnr">348 </span>        jtf3 = <span class="Statement">new</span> JTextField(<span class="Constant">10</span>);
+<span class="lnr">349 </span>        c.add(jtf3);
+<span class="lnr">350 </span>        jtf3.setEditable(<span class="Constant">false</span>);
+<span class="lnr">351 </span>        jtf3.addMouseListener(<span class="Type">this</span>);
+<span class="lnr">352 </span>        jtf3.setBounds(<span class="Constant">530</span>, <span class="Constant">130</span>, <span class="Constant">150</span>, <span class="Constant">20</span>);
+<span class="lnr">353 </span>        jta2 = <span class="Statement">new</span> JTextArea();    <span class="Comment">// help content</span>
+<span class="lnr">354 </span>        jsp  = <span class="Statement">new</span> JScrollPane(jta2);
+<span class="lnr">355 </span>        jsp.setBounds(<span class="Constant">360</span>, <span class="Constant">160</span>, <span class="Constant">350</span>, <span class="Constant">130</span>);
+<span class="lnr">356 </span>        jta2.setLineWrap(<span class="Constant">true</span>);
+<span class="lnr">357 </span>        jta2.addMouseListener(<span class="Type">this</span>);
+<span class="lnr">358 </span>        jta2.setText(<span class="Constant">&quot;This is a search program which searches for a file &quot;</span> + <span class="Constant">&quot;directories &quot;</span>);
+<span class="lnr">359 </span>        jta2.setCursor(Cursor.getDefaultCursor());
+<span class="lnr">360 </span>        jta2.setFocusable(<span class="Constant">false</span>);
+<span class="lnr">361 </span>        jta2.setForeground(<span class="Statement">new</span> Color(<span class="Constant">57</span>, <span class="Constant">118</span>, <span class="Constant">177</span>));
+<span class="lnr">362 </span>        jta2.setFont(<span class="Statement">new</span> Font(<span class="Constant">&quot;Helvetica&quot;</span>, Font.BOLD, <span class="Constant">15</span>));
+<span class="lnr">363 </span>        jta2.setBackground(<span class="Statement">new</span> Color(R, G, B));
+<span class="lnr">364 </span>        jsp.setBackground(<span class="Statement">new</span> Color(R, G, B));
+<span class="lnr">365 </span>        jsp.setBorder(BorderFactory.createTitledBorder(BorderFactory.createBevelBorder(<span class="Constant">5</span>), <span class="Constant">&quot;Help:&quot;</span>));
+<span class="lnr">366 </span>        c.add(jsp);
+<span class="lnr">367 </span>        jl1 = <span class="Statement">new</span> JLabel(<span class="Constant">&quot;Name of the File:&quot;</span>);
+<span class="lnr">368 </span>        jl1.setDisplayedMnemonic(<span class="Constant">'N'</span>);
+<span class="lnr">369 </span>        jl1.setLabelFor(jtf1);
+<span class="lnr">370 </span>        c.add(jl1);
+<span class="lnr">371 </span>        jl1.setBounds(<span class="Constant">20</span>, <span class="Constant">20</span>, <span class="Constant">120</span>, <span class="Constant">20</span>);
+<span class="lnr">372 </span>        jl2 = <span class="Statement">new</span> JLabel(<span class="Constant">&quot;Files Searched so far:&quot;</span>);
+<span class="lnr">373 </span>        c.add(jl2);
+<span class="lnr">374 </span>        jl2.setBounds(<span class="Constant">360</span>, <span class="Constant">100</span>, <span class="Constant">130</span>, <span class="Constant">20</span>);
+<span class="lnr">375 </span>        jl3 = <span class="Statement">new</span> JLabel(<span class="Constant">&quot;Files found so far:&quot;</span>);
+<span class="lnr">376 </span>        c.add(jl3);
+<span class="lnr">377 </span>        jl3.setBounds(<span class="Constant">360</span>, <span class="Constant">130</span>, <span class="Constant">120</span>, <span class="Constant">20</span>);
+<span class="lnr">378 </span>        jta1 = <span class="Statement">new</span> JTextArea();    <span class="Comment">// path of the searching files</span>
+<span class="lnr">379 </span>        jta1.setLineWrap(<span class="Constant">true</span>);
+<span class="lnr">380 </span>        jta1.setFont(<span class="Statement">new</span> Font(<span class="Constant">&quot;Helvetica&quot;</span>, Font.PLAIN, <span class="Constant">12</span>));
+<span class="lnr">381 </span>        jta1.setCursor(Cursor.getDefaultCursor());
+<span class="lnr">382 </span>        jta1.setFocusable(<span class="Constant">false</span>);
+<span class="lnr">383 </span>        jta1.setBackground(<span class="Statement">new</span> Color(R, G, B));
+<span class="lnr">384 </span>        jta1.setBounds(<span class="Constant">20</span>, <span class="Constant">300</span>, <span class="Constant">730</span>, <span class="Constant">40</span>);
+<span class="lnr">385 </span>        c.add(jta1);
+<span class="lnr">386 </span>        jl5 = <span class="Statement">new</span> JLabel(<span class="Constant">&quot;&quot;</span>);    <span class="Comment">// depth of dir</span>
+<span class="lnr">387 </span>        c.add(jl5);
+<span class="lnr">388 </span>        jl5.setToolTipText(<span class="Constant">&quot;Gives the relative depth of the </span><span class="Special">\n</span><span class="Constant">directories from the parent directory&quot;</span>);
+<span class="lnr">389 </span>        jl5.setBounds(<span class="Constant">360</span>, <span class="Constant">350</span>, <span class="Constant">350</span>, <span class="Constant">20</span>);
+<span class="lnr">390 </span>        jl6 = <span class="Statement">new</span> JLabel(<span class="Statement">new</span> ImageIcon(<span class="Constant">&quot;javalogo.gif&quot;</span>));
+<span class="lnr">391 </span>        c.add(jl6);
+<span class="lnr">392 </span>        jl6.addMouseListener(<span class="Type">this</span>);
+<span class="lnr">393 </span>        jl6.setBounds(<span class="Constant">690</span>, <span class="Constant">360</span>, <span class="Constant">50</span>, <span class="Constant">90</span>);
+<span class="lnr">394 </span>        print = <span class="Statement">new</span> JButton(<span class="Constant">&quot;Print&quot;</span>, <span class="Statement">new</span> ImageIcon(<span class="Constant">&quot;print.png&quot;</span>));
+<span class="lnr">395 </span>        print.setBounds(<span class="Constant">570</span>, <span class="Constant">390</span>, <span class="Constant">90</span>, <span class="Constant">30</span>);
+<span class="lnr">396 </span>        print.setMnemonic(<span class="Constant">'P'</span>);
+<span class="lnr">397 </span>        print.setEnabled(<span class="Constant">false</span>);
+<span class="lnr">398 </span>        print.addActionListener(<span class="Type">this</span>);
+<span class="lnr">399 </span>        print.addMouseListener(<span class="Type">this</span>);
+<span class="lnr">400 </span>        c.add(print);
+<span class="lnr">401 </span>        dlm = <span class="Statement">new</span> DefaultListModel();
+<span class="lnr">402 </span>        dlm.ensureCapacity(<span class="Constant">100000</span>);
+<span class="lnr">403 </span>        jli = <span class="Statement">new</span> JList(dlm);
+<span class="lnr">404 </span>
+<span class="lnr">405 </span>        MouseListener mouseListener = <span class="Statement">new</span> MouseAdapter() {
+<span class="lnr">406 </span>            <span class="Type">public</span> <span class="Type">void</span> mouseClicked(MouseEvent e) {
+<span class="lnr">407 </span>                <span class="Statement">try</span> {
+<span class="lnr">408 </span>                    <span class="Statement">if</span> ((e.getClickCount() == <span class="Constant">2</span>) &amp;&amp; Windows)
+<span class="lnr">409 </span>                        Runtime.getRuntime().exec(<span class="Constant">&quot;rundll32 SHELL32.DLL,ShellExec_RunDLL  &quot;</span> + jli.getSelectedValue());
+<span class="lnr">410 </span>                } <span class="Statement">catch</span> (Exception ee) {
+<span class="lnr">411 </span>                    JOptionPane.showMessageDialog(search3.<span class="Type">this</span>, <span class="Constant">&quot;ERROR AT MOUSE CLICK&quot;</span>);
+<span class="lnr">412 </span>                }
+<span class="lnr">413 </span>            }
+<span class="lnr">414 </span>        };
+<span class="lnr">415 </span>
+<span class="lnr">416 </span>        jli.addMouseListener(mouseListener);
+<span class="lnr">417 </span>        jli.addMouseListener(<span class="Type">this</span>);
+<span class="lnr">418 </span>        jb6 = <span class="Statement">new</span> JButton(<span class="Constant">&quot;Path of the files&quot;</span>);
+<span class="lnr">419 </span>        jp1 = <span class="Statement">new</span> JPopupMenu();
+<span class="lnr">420 </span>        jli.setComponentPopupMenu(jp1);
+<span class="lnr">421 </span>        c.add(jb6);
+<span class="lnr">422 </span>        jb6.addMouseListener(<span class="Type">this</span>);
+<span class="lnr">423 </span>        jb6.setEnabled(<span class="Constant">true</span>);
+<span class="lnr">424 </span>        jb6.setBounds(<span class="Constant">20</span>, <span class="Constant">100</span>, <span class="Constant">301</span>, <span class="Constant">20</span>);
+<span class="lnr">425 </span>        jsp = <span class="Statement">new</span> JScrollPane(jli);
+<span class="lnr">426 </span>        c.add(jsp);
+<span class="lnr">427 </span>        jsp.setBounds(<span class="Constant">20</span>, <span class="Constant">121</span>, <span class="Constant">300</span>, <span class="Constant">170</span>);
+<span class="lnr">428 </span>        initializepopup();
+<span class="lnr">429 </span>        SwingUtilities.updateComponentTreeUI(<span class="Type">this</span>);
+<span class="lnr">430 </span>        setVisible(<span class="Constant">true</span>);
+<span class="lnr">431 </span>    }
+<span class="lnr">432 </span>
+<span class="lnr">433 </span>    <span class="Comment">// ====================================================================</span>
+<span class="lnr">434 </span>    <span class="Type">private</span> <span class="Type">void</span> initializepopup() {
+<span class="lnr">435 </span>        jm1 = <span class="Statement">new</span> JMenuItem(<span class="Constant">&quot;Open Containing Folder &quot;</span>, <span class="Statement">new</span> ImageIcon(<span class="Constant">&quot;home.gif&quot;</span>));
+<span class="lnr">436 </span>        jp1.add(jm1);
+<span class="lnr">437 </span>        jm1.addActionListener(<span class="Type">this</span>);
+<span class="lnr">438 </span>        jm2 = <span class="Statement">new</span> JMenuItem(<span class="Constant">&quot;Open it&quot;</span>, <span class="Statement">new</span> ImageIcon(<span class="Constant">&quot;stop.gif&quot;</span>));
+<span class="lnr">439 </span>        jp1.add(jm2);
+<span class="lnr">440 </span>        jm2.addActionListener(<span class="Type">this</span>);
+<span class="lnr">441 </span>        jm3 = <span class="Statement">new</span> JMenuItem(<span class="Constant">&quot;Properties&quot;</span>, <span class="Statement">new</span> ImageIcon(<span class="Constant">&quot;bulb.gif&quot;</span>));
+<span class="lnr">442 </span>        jp1.add(jm3);
+<span class="lnr">443 </span>        jm3.addActionListener(<span class="Type">this</span>);
+<span class="lnr">444 </span>        jm6 = <span class="Statement">new</span> JMenuItem(<span class="Constant">&quot;Delete&quot;</span>, <span class="Statement">new</span> ImageIcon(<span class="Constant">&quot;delete.png&quot;</span>));
+<span class="lnr">445 </span>        jp1.add(jm6);
+<span class="lnr">446 </span>        jm6.addActionListener(<span class="Type">this</span>);
+<span class="lnr">447 </span>        jm7 = <span class="Statement">new</span> JMenuItem(<span class="Constant">&quot;Rename &quot;</span>, <span class="Statement">new</span> ImageIcon(<span class="Constant">&quot;rename.png&quot;</span>));
+<span class="lnr">448 </span>        jp1.add(jm7);
+<span class="lnr">449 </span>        jm7.addActionListener(<span class="Type">this</span>);
+<span class="lnr">450 </span>
+<span class="lnr">451 </span>        copyTo ct = <span class="Statement">new</span> copyTo();    <span class="Comment">// CopyTo Object</span>
+<span class="lnr">452 </span>
+<span class="lnr">453 </span>        ct.copyTo(jp1, jli);    <span class="Comment">// Call for CopyTo Function</span>
+<span class="lnr">454 </span>        c.add(jp1);
+<span class="lnr">455 </span>        c.addMouseListener(<span class="Statement">new</span> MouseAdapter() {
+<span class="lnr">456 </span>            <span class="Type">public</span> <span class="Type">void</span> mouseClicked(MouseEvent e) {
+<span class="lnr">457 </span>                <span class="Statement">if</span> (e.isPopupTrigger())
+<span class="lnr">458 </span>                    jp1.show(search3.<span class="Type">this</span>, e.getX(), e.getY());
+<span class="lnr">459 </span>            }
+<span class="lnr">460 </span>        });
+<span class="lnr">461 </span>    }
+<span class="lnr">462 </span>
+<span class="lnr">463 </span>    <span class="Comment">// ===========================================================</span>
+<span class="lnr">464 </span>    <span class="Comment">// This search method is based on Breadthwise Tree Traversal</span>
+<span class="lnr">465 </span>    <span class="Comment">// ==========================================================</span>
+<span class="lnr">466 </span>    <span class="Type">private</span> <span class="Type">void</span> search(File f) {    <span class="Comment">// search takes a file object</span>
+<span class="lnr">467 </span>        <span class="Statement">try</span> {
+<span class="lnr">468 </span>            File[] temp = <span class="Constant">null</span>;
+<span class="lnr">469 </span>            <span class="Statement">try</span> {
+<span class="lnr">470 </span>                temp = f.listFiles();
+<span class="lnr">471 </span>            } <span class="Statement">catch</span> (SecurityException se) {
+<span class="lnr">472 </span>                System.out.println(<span class="Constant">&quot;Security Exception at: &quot;</span> + f.getPath());
+<span class="lnr">473 </span>                <span class="Statement">return</span>;
+<span class="lnr">474 </span>            }
+<span class="lnr">475 </span>
+<span class="lnr">476 </span>            <span class="Statement">if</span> (temp != <span class="Constant">null</span>) {
+<span class="lnr">477 </span>                Vector&lt;File&gt; v = <span class="Statement">new</span> Vector&lt;File&gt;();    <span class="Comment">// this is for holding the directories</span>
+<span class="lnr">478 </span>                <span class="Statement">for</span> (File f1 : temp)
+<span class="lnr">479 </span>                    <span class="Statement">if</span> (continue_) {                    <span class="Comment">// if the user click the stop button stop here</span>
+<span class="lnr">480 </span>                        <span class="Statement">if</span> (!jcb[<span class="Constant">0</span>].isSelected())
+<span class="lnr">481 </span>                            <span class="Statement">if</span> (f1.isHidden())          <span class="Comment">// if the user didn't selected the hidden check box</span>
+<span class="lnr">482 </span>                                <span class="Statement">continue</span>;               <span class="Comment">// avoid searching hidden files. </span>
+<span class="lnr">483 </span>                                                        <span class="Comment">// so I skipped them using continue statement                           </span>
+<span class="lnr">484 </span>
+<span class="lnr">485 </span>                        m = p.matcher(f1.getName());                   <span class="Comment">// returns Matchers class of java.util.regex</span>
+<span class="lnr">486 </span>                        <span class="Statement">if</span> (m.find()) {                                <span class="Comment">// returns true if the given file name is found inside the searching file name</span>
+<span class="lnr">487 </span>                            jtf3.setText(<span class="Constant">&quot;&quot;</span> + (++countf));             <span class="Comment">// =&gt; number of files found </span>
+<span class="lnr">488 </span>                            dlm.add(dlm.getSize(), f1.getPath());      <span class="Comment">// =&gt; adding path of files found to JList</span>
+<span class="lnr">489 </span>                            jli.validate();
+<span class="lnr">490 </span>                        }
+<span class="lnr">491 </span>
+<span class="lnr">492 </span>                        jta1.setText(<span class="Constant">&quot;Searching: &quot;</span> + f1.getPath());    <span class="Comment">// =&gt; displays the currently searching file path</span>
+<span class="lnr">493 </span>                        jtf2.setText(<span class="Constant">&quot;&quot;</span> + (++count));                  <span class="Comment">// =&gt; files searched so far</span>
+<span class="lnr">494 </span>
+<span class="lnr">495 </span>                        <span class="Statement">if</span> (f1.isDirectory() &amp;&amp; f1.getPath().equals(f1.getCanonicalPath())) <span class="Comment">// Check whether f1 is a link or not</span>
+<span class="lnr">496 </span>                            v.add(f1);                                 <span class="Comment">// if f1 is a dir --&gt; keep it in vector</span>
+<span class="lnr">497 </span>                    }
+<span class="lnr">498 </span>
+<span class="lnr">499 </span>               <span class="Statement">for</span>(File dir :v){                                        <span class="Comment">// iterating through the vector as we are going to enter into a dir</span>
+<span class="lnr">500 </span>                    depth++;                                            <span class="Comment">// high is a variable which keep track the highest depth.</span>
+<span class="lnr">501 </span>                    <span class="Statement">if</span> (high &lt; depth)high = depth;                      <span class="Comment">// It should be varied only if it's value is less than</span>
+<span class="lnr">502 </span>                                                                        <span class="Comment">// that of it's previous value</span>
+<span class="lnr">503 </span>                    jl5.setText(<span class="Constant">&quot;Depth of the directory: &quot;</span> + depth);
+<span class="lnr">504 </span>                    search(dir);                                        <span class="Comment">// recursively call the search</span>
+<span class="lnr">505 </span>                    jl5.setText(<span class="Constant">&quot;Depth of the directory: &quot;</span> + (--depth));    <span class="Comment">// after comming out of the directory decrement depth.</span>
+<span class="lnr">506 </span>                }
+<span class="lnr">507 </span>            }
+<span class="lnr">508 </span>        } <span class="Statement">catch</span> (Exception e) {
+<span class="lnr">509 </span>            JOptionPane.showMessageDialog(<span class="Type">this</span>,
+<span class="lnr">510 </span>                                          e.getMessage() + <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">ERROR : This is in search Method:</span><span class="Special">\n</span><span class="Constant">&quot;</span>
+<span class="lnr">511 </span>                                          + <span class="Constant">&quot;possible resons</span><span class="Special">\n</span><span class="Constant">&quot;</span> + <span class="Constant">&quot;1.The drive is not ready...!</span><span class="Special">\n</span><span class="Constant">&quot;</span>
+<span class="lnr">512 </span>                                          + <span class="Constant">&quot;2.The file pointer is null&quot;</span>);
+<span class="lnr">513 </span>        }
+<span class="lnr">514 </span>    }
+<span class="lnr">515 </span>
+<span class="lnr">516 </span>    <span class="Comment">// ==========================================================</span>
+<span class="lnr">517 </span>    <span class="Type">private</span> <span class="Type">void</span> pattern(String s) {
+<span class="lnr">518 </span>        <span class="Comment">// Replaces . with \\.</span>
+<span class="lnr">519 </span>        sb = <span class="Statement">new</span> StringBuffer(<span class="Constant">&quot;^&quot;</span>);
+<span class="lnr">520 </span>
+<span class="lnr">521 </span>        <span class="Statement">for</span> (<span class="Type">int</span> k = <span class="Constant">0</span>; k &lt; s.length(); k++)
+<span class="lnr">522 </span>            <span class="Statement">if</span> (s.charAt(k) != <span class="Constant">'.'</span>) sb.append(<span class="Constant">&quot;&quot;</span> + s.charAt(k));
+<span class="lnr">523 </span>             <span class="Statement">else</span> sb.append(<span class="Constant">&quot;</span><span class="Special">\\</span><span class="Constant">.&quot;</span>);
+<span class="lnr">524 </span>
+<span class="lnr">525 </span>        s = sb.toString();
+<span class="lnr">526 </span>
+<span class="lnr">527 </span>        <span class="Comment">// Replaces * with .*</span>
+<span class="lnr">528 </span>        sb = <span class="Statement">new</span> StringBuffer();
+<span class="lnr">529 </span>
+<span class="lnr">530 </span>        <span class="Statement">for</span> (<span class="Type">int</span> k = <span class="Constant">0</span>; k &lt; s.length(); k++)
+<span class="lnr">531 </span>            <span class="Statement">if</span> (s.charAt(k) != <span class="Constant">'*'</span>) sb.append(<span class="Constant">&quot;&quot;</span> + s.charAt(k));
+<span class="lnr">532 </span>            <span class="Statement">else</span> sb.append(<span class="Constant">&quot;.*&quot;</span>);
+<span class="lnr">533 </span>
+<span class="lnr">534 </span>        s = sb.toString();
+<span class="lnr">535 </span>
+<span class="lnr">536 </span>        <span class="Comment">// Replaces ? with .</span>
+<span class="lnr">537 </span>        sb = <span class="Statement">new</span> StringBuffer();
+<span class="lnr">538 </span>
+<span class="lnr">539 </span>        <span class="Statement">for</span> (<span class="Type">int</span> k = <span class="Constant">0</span>; k &lt; s.length(); k++)
+<span class="lnr">540 </span>            <span class="Statement">if</span> (s.charAt(k) != <span class="Constant">'?'</span>)sb.append(<span class="Constant">&quot;&quot;</span> + s.charAt(k));
+<span class="lnr">541 </span>            <span class="Statement">else</span> sb.append(<span class="Constant">&quot;.&quot;</span>);
+<span class="lnr">542 </span>
+<span class="lnr">543 </span>        sb.append(<span class="Constant">&quot;$&quot;</span>);
+<span class="lnr">544 </span>        SearchFileName = sb.toString();
+<span class="lnr">545 </span>        setTitle(jtf1.getText());
+<span class="lnr">546 </span>    }
+<span class="lnr">547 </span>
+<span class="lnr">548 </span>    <span class="Comment">// ==========================================================</span>
+<span class="lnr">549 </span>    <span class="Type">public</span> <span class="Type">void</span> actionPerformed(ActionEvent e) {
+<span class="lnr">550 </span>        <span class="Statement">try</span> {
+<span class="lnr">551 </span>
+<span class="lnr">552 </span>            <span class="Comment">/* /&lt;--- */</span>
+<span class="lnr">553 </span>            t = <span class="Statement">new</span> Thread(<span class="Type">this</span>);    <span class="Comment">// this statement is here instead of inside the below</span>
+<span class="lnr">554 </span>
+<span class="lnr">555 </span>            <span class="Comment">/* | */</span>
+<span class="lnr">556 </span>
+<span class="lnr">557 </span>            <span class="Comment">// if statement because browse button can also use it</span>
+<span class="lnr">558 </span>
+<span class="lnr">559 </span>            <span class="Comment">/* | */</span>
+<span class="lnr">560 </span>
+<span class="lnr">561 </span>            <span class="Comment">// see below</span>
+<span class="lnr">562 </span>
+<span class="lnr">563 </span>            <span class="Comment">/* | */</span>
+<span class="lnr">564 </span>            <span class="Statement">if</span> ((e.getSource() == jb1) || (e.getSource() == jtf1)) {    <span class="Comment">// go</span>
+<span class="lnr">565 </span>
+<span class="lnr">566 </span>                <span class="Comment">/* | */</span>
+<span class="lnr">567 </span>                <span class="Statement">if</span> (!jtf1.getText().trim().equals(<span class="Constant">&quot;&quot;</span>)) {                <span class="Comment">// verify whether file text field is empty</span>
+<span class="lnr">568 </span>
+<span class="lnr">569 </span>                    <span class="Comment">/* | */</span>
+<span class="lnr">570 </span>                    clear();    <span class="Comment">// clean all the text fields and table except file</span>
+<span class="lnr">571 </span>
+<span class="lnr">572 </span>                    <span class="Comment">/* | */</span>
+<span class="lnr">573 </span>
+<span class="lnr">574 </span>                    <span class="Comment">// text field so clean method doesn't have jtf1.setText(&quot;&quot;);</span>
+<span class="lnr">575 </span>
+<span class="lnr">576 </span>                    <span class="Comment">/* | */</span>
+<span class="lnr">577 </span>                    t.start();    <span class="Comment">// if jtf1 is not empty swan a new thead and run it</span>
+<span class="lnr">578 </span>
+<span class="lnr">579 </span>                    <span class="Comment">/* | */</span>
+<span class="lnr">580 </span>                } <span class="Statement">else</span>
+<span class="lnr">581 </span>
+<span class="lnr">582 </span>                <span class="Comment">/* | */</span>
+<span class="lnr">583 </span>                {
+<span class="lnr">584 </span>                    JOptionPane.showMessageDialog(<span class="Type">this</span>,
+<span class="lnr">585 </span>
+<span class="lnr">586 </span>                    <span class="Comment">/* | */</span>
+<span class="lnr">587 </span>                    <span class="Constant">&quot;Enter a File name &quot;</span>, <span class="Constant">&quot;&quot;</span>,
+<span class="lnr">588 </span>
+<span class="lnr">589 </span>                    <span class="Comment">/* | */</span>
+<span class="lnr">590 </span>                    JOptionPane.ERROR_MESSAGE);
+<span class="lnr">591 </span>
+<span class="lnr">592 </span>                    <span class="Comment">/* | */</span>
+<span class="lnr">593 </span>                    jtf1.setText(<span class="Constant">&quot;&quot;</span>);
+<span class="lnr">594 </span>
+<span class="lnr">595 </span>                    <span class="Comment">/* | */</span>
+<span class="lnr">596 </span>                }
+<span class="lnr">597 </span>
+<span class="lnr">598 </span>                <span class="Comment">/* | */</span>
+<span class="lnr">599 </span>            }                              <span class="Comment">// end go</span>
+<span class="lnr">600 </span>
+<span class="lnr">601 </span>            <span class="Comment">/* | */</span>
+<span class="lnr">602 </span>            <span class="Statement">if</span> (e.getSource() == jb2) {    <span class="Comment">// clear</span>
+<span class="lnr">603 </span>
+<span class="lnr">604 </span>                <span class="Comment">/* | */</span>
+<span class="lnr">605 </span>                jtf1.setText(<span class="Constant">&quot;&quot;</span>);
+<span class="lnr">606 </span>
+<span class="lnr">607 </span>                <span class="Comment">/* | */</span>
+<span class="lnr">608 </span>                clear();
+<span class="lnr">609 </span>
+<span class="lnr">610 </span>                <span class="Comment">/* | */</span>
+<span class="lnr">611 </span>            }
+<span class="lnr">612 </span>
+<span class="lnr">613 </span>            <span class="Comment">/* | */</span>
+<span class="lnr">614 </span>            <span class="Statement">if</span> (e.getSource() == jb3)     <span class="Comment">// exit</span>
+<span class="lnr">615 </span>                <span class="Comment">/* | */</span>  System.exit(<span class="Constant">0</span>);
+<span class="lnr">616 </span>
+<span class="lnr">617 </span>            <span class="Comment">/* | */</span>
+<span class="lnr">618 </span>            <span class="Statement">if</span> (e.getSource() == jb4) {    <span class="Comment">// browse</span>
+<span class="lnr">619 </span>
+<span class="lnr">620 </span>                <span class="Comment">/* | */</span>
+<span class="lnr">621 </span>                <span class="Type">int</span> ref = <span class="Constant">0</span>;
+<span class="lnr">622 </span>
+<span class="lnr">623 </span>                <span class="Comment">/* | */</span>
+<span class="lnr">624 </span>                j.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+<span class="lnr">625 </span>
+<span class="lnr">626 </span>                <span class="Comment">/* | */</span>
+<span class="lnr">627 </span>                clear();
+<span class="lnr">628 </span>
+<span class="lnr">629 </span>                <span class="Comment">/* | */</span>
+<span class="lnr">630 </span>                ref = j.showOpenDialog(<span class="Type">this</span>);
+<span class="lnr">631 </span>
+<span class="lnr">632 </span>                <span class="Comment">/* | */</span>
+<span class="lnr">633 </span>                <span class="Statement">if</span> (ref == JFileChooser.CANCEL_OPTION) <span class="Statement">return</span>;
+<span class="lnr">634 </span>                <span class="Statement">else</span> path = j.getSelectedFile().getPath();
+<span class="lnr">635 </span>
+<span class="lnr">636 </span>                <span class="Statement">if</span> (jtf1.getText().trim().equals(<span class="Constant">&quot;&quot;</span>)) {
+<span class="lnr">637 </span>                    JOptionPane.showMessageDialog(<span class="Type">this</span>,<span class="Constant">&quot;Enter the name of the File&quot;</span>, <span class="Constant">&quot;&quot;</span>,
+<span class="lnr">638 </span>                    JOptionPane.ERROR_MESSAGE);
+<span class="lnr">639 </span>                    jtf1.setText(<span class="Constant">&quot;&quot;</span>);
+<span class="lnr">640 </span>                }
+<span class="lnr">641 </span>
+<span class="lnr">642 </span>                <span class="Comment">/* \ */</span>
+<span class="lnr">643 </span>                <span class="Statement">else</span>
+<span class="lnr">644 </span>                    <span class="Comment">/* \---&gt; */</span>
+<span class="lnr">645 </span>                    t.start();
+<span class="lnr">646 </span>            }                              <span class="Comment">// end browse</span>
+<span class="lnr">647 </span>
+<span class="lnr">648 </span>            <span class="Statement">if</span> (e.getSource() == jb5) {    <span class="Comment">// stop</span>
+<span class="lnr">649 </span>                continue_ = <span class="Constant">false</span>;
+<span class="lnr">650 </span>                print.setEnabled(<span class="Constant">true</span>);
+<span class="lnr">651 </span>                System.gc();
+<span class="lnr">652 </span>            }                              <span class="Comment">// end stop</span>
+<span class="lnr">653 </span>
+<span class="lnr">654 </span>            <span class="Statement">if</span> (e.getSource() == print) {
+<span class="lnr">655 </span>                PrinterJob job = PrinterJob.getPrinterJob();
+<span class="lnr">656 </span>
+<span class="lnr">657 </span>                job.setPrintable(<span class="Type">this</span>);
+<span class="lnr">658 </span>
+<span class="lnr">659 </span>                HashPrintRequestAttributeSet att = <span class="Statement">new</span> HashPrintRequestAttributeSet();
+<span class="lnr">660 </span>
+<span class="lnr">661 </span>                <span class="Statement">if</span> (job.printDialog(att)) {
+<span class="lnr">662 </span>                    <span class="Statement">try</span> {
+<span class="lnr">663 </span>                        job.print();
+<span class="lnr">664 </span>                    } <span class="Statement">catch</span> (Exception p) {
+<span class="lnr">665 </span>                        JOptionPane.showMessageDialog(<span class="Type">this</span>, <span class="Constant">&quot;ERROR PRINTING&quot;</span>);
+<span class="lnr">666 </span>                    }
+<span class="lnr">667 </span>                }
+<span class="lnr">668 </span>            }
+<span class="lnr">669 </span>
+<span class="lnr">670 </span>            <span class="Statement">if</span> (e.getSource() == jm1) {    <span class="Comment">// parent</span>
+<span class="lnr">671 </span>                <span class="Statement">try</span> {
+<span class="lnr">672 </span>                    <span class="Statement">if</span> (Windows)
+<span class="lnr">673 </span>                        Runtime.getRuntime().exec(<span class="Constant">&quot;rundll32 SHELL32.DLL,ShellExec_RunDLL   &quot;</span>
+<span class="lnr">674 </span>                                                  + <span class="Statement">new</span> File((String) jli.getSelectedValue()).getParent());
+<span class="lnr">675 </span>                     <span class="Statement">else</span>
+<span class="lnr">676 </span>                        JOptionPane.showMessageDialog(search3.<span class="Type">this</span>, <span class="Constant">&quot;Not Implemented For this OS&quot;</span>);
+<span class="lnr">677 </span>                } <span class="Statement">catch</span> (Exception ee) {
+<span class="lnr">678 </span>                    JOptionPane.showMessageDialog(search3.<span class="Type">this</span>, <span class="Constant">&quot;First Select an Entry and Then Right Click the Mouse&quot;</span>);
+<span class="lnr">679 </span>                }
+<span class="lnr">680 </span>            }                              <span class="Comment">// end parent</span>
+<span class="lnr">681 </span>            <span class="Statement">if</span> (e.getSource() == jm2) {    <span class="Comment">// child</span>
+<span class="lnr">682 </span>                <span class="Statement">try</span> {
+<span class="lnr">683 </span>                    Runtime.getRuntime().exec(<span class="Constant">&quot;rundll32 SHELL32.DLL,ShellExec_RunDLL   &quot;</span> + jli.getSelectedValue());
+<span class="lnr">684 </span>                } <span class="Statement">catch</span> (Exception ee) {
+<span class="lnr">685 </span>                    JOptionPane.showMessageDialog(search3.<span class="Type">this</span>, <span class="Constant">&quot;First Select an Entry and Then Right Click the Mouse&quot;</span>);
+<span class="lnr">686 </span>                }
+<span class="lnr">687 </span>            }                              <span class="Comment">// end child</span>
+<span class="lnr">688 </span>
+<span class="lnr">689 </span>            <span class="Statement">if</span> (e.getSource() == jm3) {    <span class="Comment">// properties</span>
+<span class="lnr">690 </span>                <span class="Statement">try</span> {
+<span class="lnr">691 </span>                    File f = <span class="Statement">new</span> File((String) jli.getSelectedValue());
+<span class="lnr">692 </span>
+<span class="lnr">693 </span>                    <span class="Statement">if</span> (jw != <span class="Constant">null</span>) jw.dispose();
+<span class="lnr">694 </span>                     <span class="Statement">else</span> jw = <span class="Statement">new</span> JWindow();
+<span class="lnr">695 </span>
+<span class="lnr">696 </span>                    jw.setLayout(<span class="Constant">null</span>);
+<span class="lnr">697 </span>                    jw.getContentPane().setBackground(<span class="Statement">new</span> Color(R, G, B));
+<span class="lnr">698 </span>                    jw.setBounds(<span class="Constant">360</span> + getX(), getY() + <span class="Constant">125</span>, <span class="Constant">380</span>, <span class="Constant">200</span>);
+<span class="lnr">699 </span>
+<span class="lnr">700 </span>                    JButton jb = <span class="Statement">new</span> JButton(<span class="Constant">&quot;Close&quot;</span>);
+<span class="lnr">701 </span>
+<span class="lnr">702 </span>                    jb.setBounds(<span class="Constant">50</span>, <span class="Constant">160</span>, <span class="Constant">100</span>, <span class="Constant">20</span>);
+<span class="lnr">703 </span>                    jw.add(jb);
+<span class="lnr">704 </span>                    jb.addActionListener(<span class="Statement">new</span> ActionListener() {
+<span class="lnr">705 </span>                        <span class="Type">public</span> <span class="Type">void</span> actionPerformed(ActionEvent ae) {
+<span class="lnr">706 </span>                            search3.<span class="Type">this</span>.jw.dispose();
+<span class="lnr">707 </span>                        }
+<span class="lnr">708 </span>                    });
+<span class="lnr">709 </span>
+<span class="lnr">710 </span>                    JTextArea jta = <span class="Statement">new</span> JTextArea();
+<span class="lnr">711 </span>
+<span class="lnr">712 </span>                    jta.setFocusable(<span class="Constant">false</span>);
+<span class="lnr">713 </span>                    jta.setFont(<span class="Statement">new</span> Font(<span class="Constant">&quot;Helvetica&quot;</span>, Font.PLAIN, <span class="Constant">13</span>));
+<span class="lnr">714 </span>                    jta.setCursor(Cursor.getDefaultCursor());
+<span class="lnr">715 </span>                    jta.setBackground(<span class="Statement">new</span> Color(R, G, B));
+<span class="lnr">716 </span>                    jta.setLineWrap(<span class="Constant">true</span>);
+<span class="lnr">717 </span>                    jta.setText(<span class="Constant">&quot;Name: &quot;</span> + f.getName() + <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">Path: &quot;</span> + f.getPath() + <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">Size: &quot;</span> + f.length() + <span class="Constant">&quot; Bytes&quot;</span>
+<span class="lnr">718 </span>                                + <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">LastModified: &quot;</span> + <span class="Statement">new</span> Date(f.lastModified()) + <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">File: &quot;</span> + f.isFile()
+<span class="lnr">719 </span>                                + <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">Directory: &quot;</span> + !f.isFile());
+<span class="lnr">720 </span>                    jta.setBounds(<span class="Constant">50</span>, <span class="Constant">20</span>, <span class="Constant">270</span>, <span class="Constant">130</span>);
+<span class="lnr">721 </span>                    jw.add(jta);
+<span class="lnr">722 </span>                    jw.setVisible(<span class="Constant">true</span>);
+<span class="lnr">723 </span>                } <span class="Statement">catch</span> (Exception ee) {
+<span class="lnr">724 </span>                    JOptionPane.showMessageDialog(search3.<span class="Type">this</span>, <span class="Constant">&quot;First Select an Entry and Then Right Click the Mouse&quot;</span>);
+<span class="lnr">725 </span>                }
+<span class="lnr">726 </span>            }    <span class="Comment">// end properties</span>
+<span class="lnr">727 </span>
+<span class="lnr">728 </span>            <span class="Statement">if</span> (e.getSource() == jm4) {
+<span class="lnr">729 </span>                jtf1.selectAll();
+<span class="lnr">730 </span>                jtf1.copy();
+<span class="lnr">731 </span>            }
+<span class="lnr">732 </span>
+<span class="lnr">733 </span>            <span class="Statement">if</span> (e.getSource() == jm5) {
+<span class="lnr">734 </span>                jtf1.setText(<span class="Constant">&quot;&quot;</span>);
+<span class="lnr">735 </span>                jtf1.paste();
+<span class="lnr">736 </span>            }
+<span class="lnr">737 </span>
+<span class="lnr">738 </span>            <span class="Statement">if</span> (e.getSource() == jm6) {      <span class="Comment">// delete</span>
+<span class="lnr">739 </span>                <span class="Statement">if</span> (JOptionPane.YES_OPTION == JOptionPane.showConfirmDialog(<span class="Type">this</span>, <span class="Constant">&quot;Are You Sure To Delete It...&quot;</span>)) {
+<span class="lnr">740 </span>                    <span class="Statement">try</span> {
+<span class="lnr">741 </span>                        File f = <span class="Statement">new</span> File((String) jli.getSelectedValue());
+<span class="lnr">742 </span>
+<span class="lnr">743 </span>                        <span class="Statement">if</span> (f.isFile()) {    <span class="Comment">// is the file to be deleted is dir or file</span>
+<span class="lnr">744 </span>                            <span class="Type">boolean</span> b = f.<span class="Error">delete</span>();
+<span class="lnr">745 </span>
+<span class="lnr">746 </span>                            <span class="Statement">if</span> (b) {
+<span class="lnr">747 </span>                                dlm.remove(jli.getSelectedIndex());
+<span class="lnr">748 </span>                                JOptionPane.showMessageDialog(<span class="Type">this</span>, <span class="Constant">&quot;The File is sucessfully deleted&quot;</span>);
+<span class="lnr">749 </span>                            } <span class="Statement">else</span> JOptionPane.showMessageDialog(<span class="Type">this</span>, <span class="Constant">&quot;You do not have right permission to deleted&quot;</span>);
+<span class="lnr">750 </span>
+<span class="lnr">751 </span>                        } <span class="Statement">else</span> {
+<span class="lnr">752 </span>                            <span class="Type">int</span> i =
+<span class="lnr">753 </span>                                JOptionPane.showConfirmDialog(<span class="Type">this</span>,
+<span class="lnr">754 </span>                                    <span class="Constant">&quot;Your are trying to delete a directory would you like to delete its contents Recursively&quot;</span>);
+<span class="lnr">755 </span>                            <span class="Statement">if</span> (i == JOptionPane.YES_OPTION) {
+<span class="lnr">756 </span>                                <span class="Error">delete</span>(f);
+<span class="lnr">757 </span>                                dlm.remove(jli.getSelectedIndex());
+<span class="lnr">758 </span>                                f.<span class="Error">delete</span>();
+<span class="lnr">759 </span>                            }
+<span class="lnr">760 </span>                        }
+<span class="lnr">761 </span>                    } <span class="Statement">catch</span> (Exception e1) {
+<span class="lnr">762 </span>                        JOptionPane.showMessageDialog(
+<span class="lnr">763 </span>                            <span class="Constant">null</span>,
+<span class="lnr">764 </span>                            <span class="Constant">&quot; ERROR : possible reasons</span><span class="Special">\n</span><span class="Constant">1.you have not selected an Entry</span><span class="Special">\n</span><span class="Constant">2.File is being used by other process&quot;</span>);
+<span class="lnr">765 </span>                    }
+<span class="lnr">766 </span>                }
+<span class="lnr">767 </span>            }
+<span class="lnr">768 </span>
+<span class="lnr">769 </span>            <span class="Statement">if</span> (e.getSource() == jm7) {    <span class="Comment">// rename</span>
+<span class="lnr">770 </span>                <span class="Statement">try</span> {
+<span class="lnr">771 </span>                    File   f = <span class="Statement">new</span> File((String) jli.getSelectedValue());
+<span class="lnr">772 </span>                    String s = JOptionPane.showInputDialog(<span class="Type">this</span>, <span class="Constant">&quot;Enter the new File name:&quot;</span>);
+<span class="lnr">773 </span>
+<span class="lnr">774 </span>                    <span class="Statement">if</span> ((s != <span class="Constant">null</span>) &amp;&amp;!s.trim().equals(<span class="Constant">&quot;&quot;</span>)) {
+<span class="lnr">775 </span>                        <span class="Type">boolean</span> b = f.renameTo(<span class="Statement">new</span> File(f.getParent() + <span class="Constant">&quot;/&quot;</span> + s));
+<span class="lnr">776 </span>
+<span class="lnr">777 </span>                        <span class="Statement">if</span> (b) {
+<span class="lnr">778 </span>                            <span class="Type">int</span> x = <span class="Constant">0</span>;
+<span class="lnr">779 </span>
+<span class="lnr">780 </span>                            dlm.remove(x = jli.getSelectedIndex());
+<span class="lnr">781 </span>                            dlm.add(x, f.getParent() + <span class="Constant">&quot;</span><span class="Special">\\</span><span class="Constant">&quot;</span> + s);
+<span class="lnr">782 </span>                            jli.validate();
+<span class="lnr">783 </span>                            JOptionPane.showMessageDialog(<span class="Type">this</span>, <span class="Constant">&quot;The File is sucessfully Renamed&quot;</span>);
+<span class="lnr">784 </span>                        } <span class="Statement">else</span> JOptionPane.showMessageDialog(<span class="Type">this</span>, <span class="Constant">&quot;The operation failed&quot;</span>);
+<span class="lnr">785 </span>                    }
+<span class="lnr">786 </span>                } <span class="Statement">catch</span> (Exception e2) {
+<span class="lnr">787 </span>                    JOptionPane.showMessageDialog(
+<span class="lnr">788 </span>                        <span class="Constant">null</span>,
+<span class="lnr">789 </span>                        <span class="Constant">&quot; ERROR : possible reasons</span><span class="Special">\n</span><span class="Constant">1.you have not selected an Entry</span><span class="Special">\n</span><span class="Constant">2.File is being used by other process&quot;</span>);
+<span class="lnr">790 </span>                }
+<span class="lnr">791 </span>            }
+<span class="lnr">792 </span>        } <span class="Statement">catch</span> (Exception ex) {
+<span class="lnr">793 </span>            ex.printStackTrace();
+<span class="lnr">794 </span>        }    <span class="Comment">// end of first try catch</span>
+<span class="lnr">795 </span>    }
+<span class="lnr">796 </span>
+<span class="lnr">797 </span>    <span class="Comment">// ==========================================================</span>
+<span class="lnr">798 </span>    <span class="Type">private</span> <span class="Type">void</span> <span class="Error">delete</span>(File f) {
+<span class="lnr">799 </span>        <span class="Statement">for</span> (File f1 : f.listFiles()) {
+<span class="lnr">800 </span>            <span class="Statement">if</span> (f1.isDirectory())<span class="Error">delete</span>(f1);    <span class="Comment">// delete (f1) is my own function where as f1.delete() is in predefined  File class</span>
+<span class="lnr">801 </span>            f1.<span class="Error">delete</span>();
+<span class="lnr">802 </span>        }
+<span class="lnr">803 </span>    }
+<span class="lnr">804 </span>
+<span class="lnr">805 </span>    <span class="Comment">// ==========================================================</span>
+<span class="lnr">806 </span>    <span class="Type">private</span> <span class="Type">void</span> clear() {
+<span class="lnr">807 </span>        setTitle(<span class="Constant">&quot;File Searching  Program By Vineel Kumar Reddy&quot;</span>);
+<span class="lnr">808 </span>        jb6.setText(<span class="Constant">&quot;Path of the files&quot;</span>);
+<span class="lnr">809 </span>        jtf2.setText(<span class="Constant">&quot;&quot;</span>);
+<span class="lnr">810 </span>        jtf3.setText(<span class="Constant">&quot;&quot;</span>);
+<span class="lnr">811 </span>        print.setEnabled(<span class="Constant">false</span>);
+<span class="lnr">812 </span>        dlm.removeAllElements();
+<span class="lnr">813 </span>        path      = <span class="Constant">&quot;&quot;</span>;
+<span class="lnr">814 </span>        count     = <span class="Constant">0</span>;
+<span class="lnr">815 </span>        countf    = <span class="Constant">0</span>;
+<span class="lnr">816 </span>        depth     = <span class="Constant">0</span>;
+<span class="lnr">817 </span>        high      = <span class="Constant">0</span>;
+<span class="lnr">818 </span>        continue_ = <span class="Constant">true</span>;
+<span class="lnr">819 </span>    }
+<span class="lnr">820 </span>
+<span class="lnr">821 </span>    <span class="Type">public</span> <span class="Type">void</span> mouseEntered(MouseEvent c) {
+<span class="lnr">822 </span>        <span class="Statement">if</span> (c.getSource() <span class="Statement">instanceof</span> JCheckBox) {
+<span class="lnr">823 </span>            <span class="Statement">for</span> (<span class="Type">int</span> i = <span class="Constant">0</span>; i &lt; drives.length; i++)
+<span class="lnr">824 </span>                <span class="Statement">if</span> (c.getSource() == cb[i])
+<span class="lnr">825 </span>                    jta2.setText(<span class="Constant">&quot;  Select this to search in &quot;</span> + drives[i].getPath() + <span class="Constant">&quot;  Drive </span><span class="Special">\n</span><span class="Constant">&quot;</span>
+<span class="lnr">826 </span>                                 + <span class="Constant">&quot;  or else press ALT+&quot;</span> + drives[i].getPath().charAt(<span class="Constant">0</span>));
+<span class="lnr">827 </span>
+<span class="lnr">828 </span>            <span class="Statement">if</span> (c.getSource() == jcb[<span class="Constant">0</span>])jta2.setText(<span class="Constant">&quot;  Select this to search in  hidden folders</span><span class="Special">\n</span><span class="Constant"> &quot;</span> + <span class="Constant">&quot;  or else press ALT+I &quot;</span>);
+<span class="lnr">829 </span>            <span class="Statement">if</span> (c.getSource() == jcb[<span class="Constant">1</span>]) jta2.setText(<span class="Constant">&quot; Select this to make  search  case sensitive</span><span class="Special">\n</span><span class="Constant">&quot;</span> + <span class="Constant">&quot;  or else press ALT+T&quot;</span>);
+<span class="lnr">830 </span>
+<span class="lnr">831 </span>        }
+<span class="lnr">832 </span>
+<span class="lnr">833 </span>        <span class="Comment">// =================================</span>
+<span class="lnr">834 </span>        <span class="Statement">if</span> (c.getSource() == jb1)jta2.setText(<span class="Constant">&quot;  Click this to start the search or </span><span class="Special">\n</span><span class="Constant">&quot;</span> + <span class="Constant">&quot;  else press ALT+O&quot;</span>);
+<span class="lnr">835 </span>
+<span class="lnr">836 </span>        <span class="Statement">if</span> (c.getSource() == jb2)jta2.setText(<span class="Constant">&quot;  Click this to clear the table and </span><span class="Special">\n</span><span class="Constant">&quot;</span> + <span class="Constant">&quot;  text field contents or else press</span><span class="Special">\n</span><span class="Constant"> &quot;</span>
+<span class="lnr">837 </span>                         + <span class="Constant">&quot;  ALT+L &quot;</span>);
+<span class="lnr">838 </span>
+<span class="lnr">839 </span>        <span class="Statement">if</span> (c.getSource() == jb3) jta2.setText(<span class="Constant">&quot;  Click this to stop the search and </span><span class="Special">\n</span><span class="Constant">&quot;</span> + <span class="Constant">&quot;  close this program or else press </span><span class="Special">\n</span><span class="Constant">&quot;</span>
+<span class="lnr">840 </span>                         + <span class="Constant">&quot;  ALT+X&quot;</span>);
+<span class="lnr">841 </span>
+<span class="lnr">842 </span>        <span class="Statement">if</span> (c.getSource() == jb4)jta2.setText(<span class="Constant">&quot;  Click this to search inside a </span><span class="Special">\n</span><span class="Constant">&quot;</span> + <span class="Constant">&quot;  particular directory or else </span><span class="Special">\n</span><span class="Constant">&quot;</span> + <span class="Constant">&quot;  press ALT+B&quot;</span>);
+<span class="lnr">843 </span>
+<span class="lnr">844 </span>        <span class="Statement">if</span> (c.getSource() == jb5)jta2.setText(<span class="Constant">&quot;  Click this to stop the search or </span><span class="Special">\n</span><span class="Constant">&quot;</span> + <span class="Constant">&quot;  else press ALT+S&quot;</span>);
+<span class="lnr">845 </span>
+<span class="lnr">846 </span>        <span class="Statement">if</span> (c.getSource() == jb6) jta2.setText(<span class="Constant">&quot;&quot;</span>);
+<span class="lnr">847 </span>
+<span class="lnr">848 </span>        <span class="Statement">if</span> (c.getSource() == print)jta2.setText(<span class="Constant">&quot;  Click this to have a print out of </span><span class="Special">\n</span><span class="Constant">&quot;</span> + <span class="Constant">&quot;  the file paths  found or else </span><span class="Special">\n</span><span class="Constant">&quot;</span>
+<span class="lnr">849 </span>                         + <span class="Constant">&quot;  press ALT+P&quot;</span>);
+<span class="lnr">850 </span>        <span class="Statement">if</span> (c.getSource() == jtf1) jta2.setText(<span class="Constant">&quot;Enter the name of the file it can also search</span><span class="Special">\n</span><span class="Constant"> regular patterns&quot;</span>);
+<span class="lnr">851 </span>
+<span class="lnr">852 </span>        <span class="Statement">if</span> (c.getSource() == jtf2) jta2.setText(<span class="Constant">&quot;Number of files searched&quot;</span>);
+<span class="lnr">853 </span>
+<span class="lnr">854 </span>        <span class="Statement">if</span> (c.getSource() == jtf3)jta2.setText(<span class="Constant">&quot;Number of files Found&quot;</span>);
+<span class="lnr">855 </span>
+<span class="lnr">856 </span>        <span class="Statement">if</span> (c.getSource() == jta2)jta2.setText(
+<span class="lnr">857 </span>                <span class="Constant">&quot;This program is coded by K.Vineel Kumar</span><span class="Special">\n</span><span class="Constant">&quot;</span> + <span class="Constant">&quot; Reddy II/IV IT . &quot;</span> + <span class="Constant">&quot;Thank you for using my </span><span class="Special">\n</span><span class="Constant">&quot;</span>
+<span class="lnr">858 </span>                + <span class="Constant">&quot; program if you find any bugs or suggestions please post them to vineel567@yahoo.co.in &quot;</span>);
+<span class="lnr">859 </span>
+<span class="lnr">860 </span>        <span class="Statement">if</span> (c.getSource() == <span class="Type">this</span>.c) jta2.setText(<span class="Constant">&quot;&quot;</span>);
+<span class="lnr">861 </span>
+<span class="lnr">862 </span>        <span class="Statement">if</span> (c.getSource() == jli)jta2.setText(<span class="Constant">&quot;This will list out the file paths whose file</span><span class="Special">\n</span><span class="Constant">&quot;</span> + <span class="Constant">&quot; names matches the given file name</span><span class="Special">\n</span><span class="Constant">&quot;</span>
+<span class="lnr">863 </span>                         + <span class="Constant">&quot; (regular expression)&quot;</span>);
+<span class="lnr">864 </span>
+<span class="lnr">865 </span>        <span class="Statement">if</span> (c.getSource() == jl6)jta2.setText(<span class="Constant">&quot;This is not just what JAVA can do&quot;</span>);
+<span class="lnr">866 </span>
+<span class="lnr">867 </span>    }
+<span class="lnr">868 </span>
+<span class="lnr">869 </span>    <span class="Type">public</span> <span class="Type">int</span> print(Graphics g, PageFormat pg, <span class="Type">int</span> page) {
+<span class="lnr">870 </span>        Graphics2D g2 = (Graphics2D) g;
+<span class="lnr">871 </span>
+<span class="lnr">872 </span>        g2.translate(pg.getImageableX(), pg.getImageableY());
+<span class="lnr">873 </span>        <span class="Statement">if</span> (page &gt;= <span class="Constant">2</span>)<span class="Statement">return</span> Printable.NO_SUCH_PAGE;
+<span class="lnr">874 </span>        <span class="Statement">for</span> (<span class="Type">int</span> i = <span class="Constant">0</span>; i &lt; dlm.getSize(); i++)g2.drawString(dlm.getElementAt(i).toString(), <span class="Constant">10</span>, <span class="Constant">10</span> * (i + <span class="Constant">1</span>));
+<span class="lnr">875 </span>        <span class="Statement">return</span> Printable.PAGE_EXISTS;
+<span class="lnr">876 </span>    }
+<span class="lnr">877 </span>
+<span class="lnr">878 </span>    <span class="Type">public</span> <span class="Type">static</span> <span class="Type">void</span> main(String args[]) {
+<span class="lnr">879 </span>        s = <span class="Statement">new</span> search3();
+<span class="lnr">880 </span>        s.initiate();
+<span class="lnr">881 </span>        s.setDefaultCloseOperation(<span class="Constant">3</span>);
+<span class="lnr">882 </span>    }
+<span class="lnr">883 </span>
+<span class="lnr">884 </span>    <span class="Comment">// ==========================================================</span>
+<span class="lnr">885 </span>    <span class="Type">private</span> <span class="Type">boolean</span> selected() {
+<span class="lnr">886 </span>        <span class="Type">int</span> k = <span class="Constant">0</span>;
+<span class="lnr">887 </span>        <span class="Statement">for</span> (<span class="Type">int</span> i = <span class="Constant">0</span>; i &lt; drives.length; i++)
+<span class="lnr">888 </span>            <span class="Statement">if</span> (!cb[i].isSelected()) k++;
+<span class="lnr">889 </span>        <span class="Statement">if</span> ((k != drives.length) ||!path.equals(<span class="Constant">&quot;&quot;</span>))
+<span class="lnr">890 </span>            <span class="Statement">return</span> <span class="Constant">true</span>;
+<span class="lnr">891 </span>        <span class="Statement">return</span> <span class="Constant">false</span>;
+<span class="lnr">892 </span>    }
+<span class="lnr">893 </span>
+<span class="lnr">894 </span>    <span class="Comment">// ==========================================================</span>
+<span class="lnr">895 </span>    <span class="Type">private</span> <span class="Type">void</span> setTrueOrFalse(<span class="Type">boolean</span> b) {
+<span class="lnr">896 </span>        jtf1.setEnabled(b);
+<span class="lnr">897 </span>        jb2.setEnabled(b);
+<span class="lnr">898 </span>        jb4.setEnabled(b);
+<span class="lnr">899 </span>
+<span class="lnr">900 </span>        <span class="Statement">for</span> (<span class="Type">int</span> i = <span class="Constant">0</span>; i &lt; drives.length; i++)
+<span class="lnr">901 </span>            cb[i].setEnabled(b);
+<span class="lnr">902 </span>
+<span class="lnr">903 </span>        jcb[<span class="Constant">0</span>].setEnabled(b);
+<span class="lnr">904 </span>        jcb[<span class="Constant">1</span>].setEnabled(b);
+<span class="lnr">905 </span>        jb1.setEnabled(b);
+<span class="lnr">906 </span>        print.setEnabled(b);
+<span class="lnr">907 </span>
+<span class="lnr">908 </span>        <span class="Statement">if</span> (b == <span class="Constant">true</span>) jb6.setText(<span class="Constant">&quot;Select an entry and right click the mouse&quot;</span>);
+<span class="lnr">909 </span>         <span class="Statement">else</span> jb6.setText(<span class="Constant">&quot;Path of the Files found&quot;</span>);
+<span class="lnr">910 </span>
+<span class="lnr">911 </span>        jl5.setText(<span class="Constant">&quot;Highest depth of the Directory is: &quot;</span> + high);
+<span class="lnr">912 </span>    }
+<span class="lnr">913 </span>
+<span class="lnr">914 </span>    <span class="Comment">// ==========================================================</span>
+<span class="lnr">915 </span>    <span class="Type">public</span> <span class="Type">void</span> run() {
+<span class="lnr">916 </span>        pattern(jtf1.getText().trim());
+<span class="lnr">917 </span>        <span class="Statement">if</span> (jcb[<span class="Constant">1</span>].isSelected()) p = Pattern.compile(SearchFileName);
+<span class="lnr">918 </span>        <span class="Statement">else</span> p = Pattern.compile(SearchFileName, Pattern.CASE_INSENSITIVE);
+<span class="lnr">919 </span>        jli.removeAll();
+<span class="lnr">920 </span>        <span class="Statement">if</span> (selected()) {
+<span class="lnr">921 </span>            <span class="Statement">try</span> {
+<span class="lnr">922 </span>                setTrueOrFalse(<span class="Constant">false</span>);
+<span class="lnr">923 </span>                <span class="Statement">if</span> (path.equals(<span class="Constant">&quot;&quot;</span>)) {
+<span class="lnr">924 </span>                    continue_ = <span class="Constant">true</span>;
+<span class="lnr">925 </span>                    <span class="Statement">for</span> (<span class="Type">int</span> i = <span class="Constant">0</span>; i &lt; drives.length; i++)
+<span class="lnr">926 </span>                        <span class="Statement">if</span> (cb[i].isSelected() &amp;&amp; isDriveReady(drives[i]))
+<span class="lnr">927 </span>                            search(drives[i]);
+<span class="lnr">928 </span>                } <span class="Statement">else</span> {
+<span class="lnr">929 </span>                    continue_ = <span class="Constant">true</span>;
+<span class="lnr">930 </span>                    search(<span class="Statement">new</span> File(path));
+<span class="lnr">931 </span>                }
+<span class="lnr">932 </span>                setTrueOrFalse(<span class="Constant">true</span>);
+<span class="lnr">933 </span>                <span class="Statement">if</span> (continue_) jta1.setText(<span class="Constant">&quot;Search completed sucessfully&quot;</span>);
+<span class="lnr">934 </span>                 <span class="Statement">else</span> jta1.setText(<span class="Constant">&quot;Search stopped sucessfully&quot;</span>);
+<span class="lnr">935 </span>            } <span class="Statement">catch</span> (Exception e) {
+<span class="lnr">936 </span>                JOptionPane.showMessageDialog(<span class="Type">this</span>, <span class="Constant">&quot;Your CD drive(s) is(are) not ready&quot;</span>, <span class="Constant">&quot;&quot;</span>,
+<span class="lnr">937 </span>                                              JOptionPane.ERROR_MESSAGE);
+<span class="lnr">938 </span>            }
+<span class="lnr">939 </span>        } <span class="Statement">else</span> JOptionPane.showMessageDialog(<span class="Type">this</span>, <span class="Constant">&quot;Select any Drive&quot;</span>, <span class="Constant">&quot;&quot;</span>, JOptionPane.ERROR_MESSAGE);
+<span class="lnr">940 </span>    }
+<span class="lnr">941 </span>
+<span class="lnr">942 </span>    <span class="Type">private</span> <span class="Type">boolean</span> isDriveReady(File f) {
+<span class="lnr">943 </span>        <span class="Statement">try</span> {
+<span class="lnr">944 </span>            <span class="Type">int</span> i = f.listFiles().length;
+<span class="lnr">945 </span>            <span class="Statement">return</span> <span class="Constant">true</span>;
+<span class="lnr">946 </span>        } <span class="Statement">catch</span> (Exception e) {
+<span class="lnr">947 </span>            <span class="Statement">return</span> <span class="Constant">false</span>;
+<span class="lnr">948 </span>        }
+<span class="lnr">949 </span>    }
+<span class="lnr">950 </span>
+<span class="lnr">951 </span>    <span class="Comment">// ==========================================================</span>
+<span class="lnr">952 </span>    <span class="Type">public</span> <span class="Type">void</span> mouseClicked(MouseEvent e) {}
+<span class="lnr">953 </span>
+<span class="lnr">954 </span>    <span class="Type">public</span> <span class="Type">void</span> mousePressed(MouseEvent e) {}
+<span class="lnr">955 </span>
+<span class="lnr">956 </span>    <span class="Type">public</span> <span class="Type">void</span> mouseReleased(MouseEvent e) {}
+<span class="lnr">957 </span>
+<span class="lnr">958 </span>    <span class="Type">public</span> <span class="Type">void</span> mouseExited(MouseEvent e) {}
+<span class="lnr">959 </span>}
+<span class="lnr">960 </span>
+<span class="lnr">961 </span><span class="Comment">//==========================================================</span>
+<span class="lnr">962 </span>
+<span class="lnr">963 </span><span class="Comment">/*</span>
+<span class="lnr">964 </span><span class="Comment">Finally a big thanks to the creators of Eclipse 3.1</span>
+<span class="lnr">965 </span><span class="Comment">Which Helped me a lot in Coding this Program.</span>
+<span class="lnr">966 </span><span class="Comment">REQUEST: If you Know how to create custom GUI components</span>
+<span class="lnr">967 </span><span class="Comment">in C# (like the GUI of windows media player 10).Please tell me</span>
+<span class="lnr">968 </span><span class="Comment">how to do that  because as the fashion saying goes,</span>
+<span class="lnr">969 </span><span class="Comment">if a person is poorly dressed you notice the clothes,</span>
+<span class="lnr">970 </span><span class="Comment">but if a person is well dressed you notice the person.</span>
+<span class="lnr">971 </span><span class="Comment">sugesstions are always welcome at  vineel567@yahoo.co.in</span>
+<span class="lnr">972 </span><span class="Comment">                                    By</span>
+<span class="lnr">973 </span><span class="Comment">                        K.Vineel Kumar Reddy.</span>
+<span class="lnr">974 </span><span class="Comment">*/</span>
+</pre>
+</body>
+</html>

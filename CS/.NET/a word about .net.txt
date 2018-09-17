@@ -1,7 +1,0 @@
-The Microsoft .NET Framework 2.0 includes
-18,619 types; 
-12,909 classes; 
-401,759 public methods; 
-93,105 public properties; 
-30,546 public events.
-

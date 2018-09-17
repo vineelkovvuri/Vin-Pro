@@ -1,0 +1,77 @@
+%{
+/*Add more keywords if needed */	
+char *keywords[]={"int","if","char",};
+
+void printIdenType(char *str)
+{
+	int i=0,n;
+	if(str[0]>='0'&&str[0]<='9'){printf("Number");return;}
+	n = sizeof(keywords)/sizeof(int);
+	for(;i<n;i++)
+		if(strcmp(str,keywords[i]) == 0){printf("Keyword");return;}
+	printf("Identifier");
+}
+void printDelimType(int c)
+{
+	switch(c)
+	{
+		case ',':printf("Comma");break;
+		case '+':printf("Plus");break;
+		case '-':printf("Minus");break;
+		case '*':printf("Multiply");break;
+		case '/':printf("Divide");break;
+		case '{':printf("LBrace");break;
+		case '}':printf("RBrace");break;
+		case '(':printf("LParen");break;
+		case ')':printf("RParen");break;
+		case '=':printf("Equal");break;
+		case ';':printf("Semicolon");break;
+	}
+}
+%}
+
+ident  [a-zA-Z][a-zA-Z0-9]*
+number [0-9]+
+delims [*/+-=,{}();]
+
+%%
+{ident} { printf("\n%s : ",yytext);printIdenType(yytext);}
+{number} { printf("\n%s : Numeric constant",yytext); }	
+{delims} {printf("\n%s : ",yytext);printDelimType(yytext[0]);}
+[\n\t ] ;
+%%
+
+main()
+{
+	yylex();
+	return 0;
+}
+
+/*
+OUTPUT:
+
+main : Identifier
+( : LParen
+) : RParen
+{ : LBrace
+int : Keyword
+a : Identifier
+, : Comma
+b : Identifier
+, : Comma
+c : Identifier
+; : Semicolon
+c : Identifier
+= : Equal
+10 : Numeric constant
+; : Semicolon
+a : Identifier
+= : Equal
+b : Identifier
++ : Plus
+c : Identifier
+; : Semicolon
+} : RBrace
+
+*/
+

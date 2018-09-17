@@ -1,0 +1,31 @@
+		OVERVIEW OF MENUS AND TOOLBARS
+=======================================================
+MainMenu = Menubar = MenuStrip
+	     Menu   =   ToolStripMenu
+
+------------------------------------------------\
+File <----------ToolStripMenuItem             |-------->MenuStrip
+__________________________________ /
+|Open         |<--------ToolStripMenuItem
+|	    |    ______/
+|	    |  /  
+|	    |/_____________	
+|options	   >| option1 	|
+|_________| | option2 	| 
+	      |                     | 
+                    |____________| 					
+ToolStripMenuItem = this is one wich can be selectable .so every thing what we see under menus are ToolStripMenuItem only
+since file Menu is selctable by the user it is also a ToolStripMenuItem
+since Open Menu is selctable by the user it is also a ToolStripMenuItem
+since Options Menu is selctable by the user it is also a ToolStripMenuItem
+Q1 : But how does it know to create a sub menu for options menu and simple menu for Open menu ?
+Ans: the only majar difference here is the addtion one ToolStripMenuItem to other ToolStripMenuItem
+        if a ToolStripMenuItem is added to another ToolStripMenuItem then the later on becomes a submenu
+        i.e.., since option1 ToolStripMenuItem is added to options ToolStripMenuItem options became a submenu
+	
+----------------------------------------------------\
+__				           \	
+|  |				            |----->ToolStrip
+---\				           /	
+----\-----------------------------------------------/
+      \--------->ToolStripButton

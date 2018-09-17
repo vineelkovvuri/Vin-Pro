@@ -1,0 +1,863 @@
+Retrieving the details of 04131a1201
+ANUSHA DOMMETI            04131A1201     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          17        32        49     PASS  
+DATA COMMUNICATIONS (D9909)                   17        52        69     PASS  
+COMPUTER GRAPHICS (D9917)                     11        60        71     PASS  
+OBJECT ORI. ANA.                              18        41        59     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     22        32        54     PASS  
+SOFTWARE ENGINEERING (D1201)                  14        51        65     PASS  
+UML (LAB) (D1204)                             24        46        70     PASS  
+COMMUNICATION THEORY (D1202)                  15        45        60     PASS  
+                                                                 ==== =========
+                                                                 497  66.27%
+Retrieving the details of 04131a1202
+ARUN SHOWRI PAMULA        04131A1202     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          13        41        54     PASS  
+DATA COMMUNICATIONS (D9909)                   16        49        65     PASS  
+COMPUTER GRAPHICS (D9917)                     6         35        41     PASS  
+OBJECT ORI. ANA.                              14        38        52     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     18        30        48     PASS  
+SOFTWARE ENGINEERING (D1201)                  14        17        31     FAIL  
+UML (LAB) (D1204)                             22        40        62     PASS  
+COMMUNICATION THEORY (D1202)                  12        28        40     PASS  
+                                                                 ==== =========
+                                                                 393  52.40%
+Retrieving the details of 04131a1203
+ARUNCHAND KASUKURTHI      04131A1203     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          14        38        52     PASS  
+DATA COMMUNICATIONS (D9909)                   15        30        45     PASS  
+COMPUTER GRAPHICS (D9917)                     7         47        54     PASS  
+OBJECT ORI. ANA.                              17        31        48     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     22        43        65     PASS  
+SOFTWARE ENGINEERING (D1201)                  13        34        47     PASS  
+UML (LAB) (D1204)                             22        41        63     PASS  
+COMMUNICATION THEORY (D1202)                  13        28        41     PASS  
+                                                                 ==== =========
+                                                                 415  55.33%
+Retrieving the details of 04131a1204
+GUNA SRIKANTH             04131A1204     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          19        32        51     PASS  
+DATA COMMUNICATIONS (D9909)                   18        46        64     PASS  
+COMPUTER GRAPHICS (D9917)                     12        45        57     PASS  
+OBJECT ORI. ANA.                              20        62        82     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     24        49        73     PASS  
+SOFTWARE ENGINEERING (D1201)                  16        31        47     PASS  
+UML (LAB) (D1204)                             25        50        75     PASS  
+COMMUNICATION THEORY (D1202)                  17        55        72     PASS  
+                                                                 ==== =========
+                                                                 521  69.47%
+Retrieving the details of 04131a1205
+HECHINA V R S PRABHAKAR   04131A1205     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          13        28        41     PASS  
+DATA COMMUNICATIONS (D9909)                   15        36        51     PASS  
+COMPUTER GRAPHICS (D9917)                     1         39        40     PASS  
+OBJECT ORI. ANA.                              13        35        48     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     19        25        44     PASS  
+SOFTWARE ENGINEERING (D1201)                  14        28        42     PASS  
+UML (LAB) (D1204)                             19        39        58     PASS  
+COMMUNICATION THEORY (D1202)                  14        36        50     PASS  
+                                                                 ==== =========
+                                                                 374  49.87%
+Retrieving the details of 04131a1206
+HEMA SANDEEP N            04131A1206     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          11        36        47     PASS  
+DATA COMMUNICATIONS (D9909)                   13        39        52     PASS  
+COMPUTER GRAPHICS (D9917)                     2         38        40     PASS  
+OBJECT ORI. ANA.                              15        28        43     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     20        29        49     PASS  
+SOFTWARE ENGINEERING (D1201)                  12        15        27     FAIL  
+UML (LAB) (D1204)                             23        38        61     PASS  
+COMMUNICATION THEORY (D1202)                  10        19        29     FAIL  
+                                                                 ==== =========
+                                                                 348  46.40%
+Retrieving the details of 04131a1207
+J SAIKIRAN REDDY VELAGALA 04131A1207     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          10        30        40     PASS  
+DATA COMMUNICATIONS (D9909)                   13        43        56     PASS  
+COMPUTER GRAPHICS (D9917)                     2         38        40     PASS  
+OBJECT ORI. ANA.                              13        40        53     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     22        23        45     PASS  
+SOFTWARE ENGINEERING (D1201)                  13        38        51     PASS  
+UML (LAB) (D1204)                             21        39        60     PASS  
+COMMUNICATION THEORY (D1202)                  11        19        30     FAIL  
+                                                                 ==== =========
+                                                                 375  50.00%
+Retrieving the details of 04131a1208
+JAGADEESH KAKARLA         04131A1208     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          13        34        47     PASS  
+DATA COMMUNICATIONS (D9909)                   17        46        63     PASS  
+COMPUTER GRAPHICS (D9917)                     2         49        51     PASS  
+OBJECT ORI. ANA.                              13        50        63     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     23        40        63     PASS  
+SOFTWARE ENGINEERING (D1201)                  12        29        41     PASS  
+UML (LAB) (D1204)                             16        33        49     PASS  
+COMMUNICATION THEORY (D1202)                  12        37        49     PASS  
+                                                                 ==== =========
+                                                                 426  56.80%
+Retrieving the details of 04131a1209
+JAYASVI BATTU             04131A1209     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          8         32        40     PASS  
+DATA COMMUNICATIONS (D9909)                   8         40        48     PASS  
+COMPUTER GRAPHICS (D9917)                     0         29        29     FAIL  
+OBJECT ORI. ANA.                              12        36        48     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     20        18        38     FAIL  
+SOFTWARE ENGINEERING (D1201)                  11        38        49     PASS  
+UML (LAB) (D1204)                             17        32        49     PASS  
+COMMUNICATION THEORY (D1202)                  10        18        28     FAIL  
+                                                                 ==== =========
+                                                                 329  43.87%
+Retrieving the details of 04131a1210
+KADIMISETTY POOJITHA      04131A1210     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          17        47        64     PASS  
+DATA COMMUNICATIONS (D9909)                   16        57        73     PASS  
+COMPUTER GRAPHICS (D9917)                     10        53        63     PASS  
+OBJECT ORI. ANA.                              20        29        49     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     23        32        55     PASS  
+SOFTWARE ENGINEERING (D1201)                  18        31        49     PASS  
+UML (LAB) (D1204)                             24        47        71     PASS  
+COMMUNICATION THEORY (D1202)                  18        43        61     PASS  
+                                                                 ==== =========
+                                                                 485  64.67%
+Retrieving the details of 04131a1211
+KARTHIK PENMETSA          04131A1211     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          13        58        71     PASS  
+DATA COMMUNICATIONS (D9909)                   17        41        58     PASS  
+COMPUTER GRAPHICS (D9917)                     8         60        68     PASS  
+OBJECT ORI. ANA.                              15        55        70     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     22        36        58     PASS  
+SOFTWARE ENGINEERING (D1201)                  12        56        68     PASS  
+UML (LAB) (D1204)                             21        42        63     PASS  
+COMMUNICATION THEORY (D1202)                  15        36        51     PASS  
+                                                                 ==== =========
+                                                                 507  67.60%
+Retrieving the details of 04131a1212
+KEERTHIKA VADAPALLI       04131A1212     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          17        42        59     PASS  
+DATA COMMUNICATIONS (D9909)                   19        57        76     PASS  
+COMPUTER GRAPHICS (D9917)                     8         60        68     PASS  
+OBJECT ORI. ANA.                              20        69        89     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     23        40        63     PASS  
+SOFTWARE ENGINEERING (D1201)                  16        35        51     PASS  
+UML (LAB) (D1204)                             25        48        73     PASS  
+COMMUNICATION THEORY (D1202)                  19        68        87     PASS  
+                                                                 ==== =========
+                                                                 566  75.47%
+Retrieving the details of 04131a1213
+KRISHNA TEJ VAKKALANKA    04131A1213     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          13        28        41     PASS  
+DATA COMMUNICATIONS (D9909)                   15        37        52     PASS  
+COMPUTER GRAPHICS (D9917)                     3         37        40     PASS  
+OBJECT ORI. ANA.                              20        37        57     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     22        36        58     PASS  
+SOFTWARE ENGINEERING (D1201)                  14        43        57     PASS  
+UML (LAB) (D1204)                             24        43        67     PASS  
+COMMUNICATION THEORY (D1202)                  16        35        51     PASS  
+                                                                 ==== =========
+                                                                 423  56.40%
+Retrieving the details of 04131a1214
+LEELA MANASA SABBINENI    04131A1214     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          9         32        41     PASS  
+DATA COMMUNICATIONS (D9909)                   15        44        59     PASS  
+COMPUTER GRAPHICS (D9917)                     1         55        56     PASS  
+OBJECT ORI. ANA.                              15        29        44     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     21        24        45     PASS  
+SOFTWARE ENGINEERING (D1201)                  13        28        41     PASS  
+UML (LAB) (D1204)                             20        37        57     PASS  
+COMMUNICATION THEORY (D1202)                  8         20        28     FAIL  
+                                                                 ==== =========
+                                                                 371  49.47%
+Retrieving the details of 04131a1215
+MOKA PRANEETH             04131A1215     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          17        56        73     PASS  
+DATA COMMUNICATIONS (D9909)                   17        60        77     PASS  
+COMPUTER GRAPHICS (D9917)                     10        50        60     PASS  
+OBJECT ORI. ANA.                              20        37        57     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     23        41        64     PASS  
+SOFTWARE ENGINEERING (D1201)                  16        59        75     PASS  
+UML (LAB) (D1204)                             25        50        75     PASS  
+COMMUNICATION THEORY (D1202)                  18        36        54     PASS  
+                                                                 ==== =========
+                                                                 535  71.33%
+Retrieving the details of 04131a1216
+N V V LAXMIDEVI VUDUMU    04131A1216     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          8         32        40     PASS  
+DATA COMMUNICATIONS (D9909)                   13        28        41     PASS  
+COMPUTER GRAPHICS (D9917)                     2         19        21     FAIL  
+OBJECT ORI. ANA.                              13        32        45     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     20        33        53     PASS  
+SOFTWARE ENGINEERING (D1201)                  13        19        32     FAIL  
+UML (LAB) (D1204)                             20        35        55     PASS  
+COMMUNICATION THEORY (D1202)                  12        18        30     FAIL  
+                                                                 ==== =========
+                                                                 317  42.27%
+Retrieving the details of 04131a1217
+NAGA SAVITHA PERI         04131A1217     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          15        40        55     PASS  
+DATA COMMUNICATIONS (D9909)                   15        47        62     PASS  
+COMPUTER GRAPHICS (D9917)                     7         48        55     PASS  
+OBJECT ORI. ANA.                              19        43        62     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     22        35        57     PASS  
+SOFTWARE ENGINEERING (D1201)                  12        48        60     PASS  
+UML (LAB) (D1204)                             24        48        72     PASS  
+COMMUNICATION THEORY (D1202)                  15        45        60     PASS  
+                                                                 ==== =========
+                                                                 483  64.40%
+Retrieving the details of 04131a1218
+NANDIRAJU MANJARI         04131A1218     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          17        44        61     PASS  
+DATA COMMUNICATIONS (D9909)                   17        63        80     PASS  
+COMPUTER GRAPHICS (D9917)                     4         49        53     PASS  
+OBJECT ORI. ANA.                              20        36        56     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     23        41        64     PASS  
+SOFTWARE ENGINEERING (D1201)                  18        28        46     PASS  
+UML (LAB) (D1204)                             25        49        74     PASS  
+COMMUNICATION THEORY (D1202)                  19        38        57     PASS  
+                                                                 ==== =========
+                                                                 491  65.47%
+Retrieving the details of 04131a1219
+NAVEENA POLUMAHANTI       04131A1219     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          18        58        76     PASS  
+DATA COMMUNICATIONS (D9909)                   18        57        75     PASS  
+COMPUTER GRAPHICS (D9917)                     11        66        77     PASS  
+OBJECT ORI. ANA.                              20        54        74     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     23        50        73     PASS  
+SOFTWARE ENGINEERING (D1201)                  17        66        83     PASS  
+UML (LAB) (D1204)                             25        49        74     PASS  
+COMMUNICATION THEORY (D1202)                  18        59        77     PASS  
+                                                                 ==== =========
+                                                                 609  81.20%
+Retrieving the details of 04131a1220
+NIKITHA                   04131A1220     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          11        32        43     PASS  
+DATA COMMUNICATIONS (D9909)                   16        28        44     PASS  
+COMPUTER GRAPHICS (D9917)                     4         18        22     FAIL  
+OBJECT ORI. ANA.                              17        33        50     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     21        39        60     PASS  
+SOFTWARE ENGINEERING (D1201)                  14        20        34     FAIL  
+UML (LAB) (D1204)                             23        41        64     PASS  
+COMMUNICATION THEORY (D1202)                  14        36        50     PASS  
+                                                                 ==== =========
+                                                                 367  48.93%
+Retrieving the details of 04131a1221
+NISCHALA NAMBALA          04131A1221     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          10        33        43     PASS  
+DATA COMMUNICATIONS (D9909)                   14        47        61     PASS  
+COMPUTER GRAPHICS (D9917)                     2         12        14     FAIL  
+OBJECT ORI. ANA.                              18        44        62     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     20        34        54     PASS  
+SOFTWARE ENGINEERING (D1201)                  12        33        45     PASS  
+UML (LAB) (D1204)                             23        41        64     PASS  
+COMMUNICATION THEORY (D1202)                  8         40        48     PASS  
+                                                                 ==== =========
+                                                                 391  52.13%
+Retrieving the details of 04131a1222
+PALEPU NISHANTH           04131A1222     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          11        11        22     FAIL  
+DATA COMMUNICATIONS (D9909)                   7         18        25     FAIL  
+COMPUTER GRAPHICS (D9917)                     1         19        20     FAIL  
+OBJECT ORI. ANA.                              9         20        29     FAIL  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     14        18        32     FAIL  
+SOFTWARE ENGINEERING (D1201)                  11        8         19     FAIL  
+UML (LAB) (D1204)                             17        30        47     PASS  
+COMMUNICATION THEORY (D1202)                  12        15        27     FAIL  
+                                                                 ==== =========
+                                                                 221  29.47%
+Retrieving the details of 04131a1223
+PAVAN KUMAR SANKA         04131A1223     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          14        43        57     PASS  
+DATA COMMUNICATIONS (D9909)                   15        59        74     PASS  
+COMPUTER GRAPHICS (D9917)                     6         58        64     PASS  
+OBJECT ORI. ANA.                              17        40        57     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     21        36        57     PASS  
+SOFTWARE ENGINEERING (D1201)                  14        40        54     PASS  
+UML (LAB) (D1204)                             23        45        68     PASS  
+COMMUNICATION THEORY (D1202)                  16        38        54     PASS  
+                                                                 ==== =========
+                                                                 485  64.67%
+Retrieving the details of 04131a1224
+PEDASINGU NITIN           04131A1224     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          18        33        51     PASS  
+DATA COMMUNICATIONS (D9909)                   15        46        61     PASS  
+COMPUTER GRAPHICS (D9917)                     7         50        57     PASS  
+OBJECT ORI. ANA.                              19        50        69     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     21        43        64     PASS  
+SOFTWARE ENGINEERING (D1201)                  14        28        42     PASS  
+UML (LAB) (D1204)                             25        44        69     PASS  
+COMMUNICATION THEORY (D1202)                  17        38        55     PASS  
+                                                                 ==== =========
+                                                                 468  62.40%
+Retrieving the details of 04131a1225
+PRAVEENKUMAR KURAPATI     04131A1225     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          16        32        48     PASS  
+DATA COMMUNICATIONS (D9909)                   17        57        74     PASS  
+COMPUTER GRAPHICS (D9917)                     8         44        52     PASS  
+OBJECT ORI. ANA.                              18        37        55     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     20        43        63     PASS  
+SOFTWARE ENGINEERING (D1201)                  13        45        58     PASS  
+UML (LAB) (D1204)                             25        48        73     PASS  
+COMMUNICATION THEORY (D1202)                  16        28        44     PASS  
+                                                                 ==== =========
+                                                                 467  62.27%
+Retrieving the details of 04131a1226
+RADHIKA MALLAREDDY        04131A1226     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          17        42        59     PASS  
+DATA COMMUNICATIONS (D9909)                   17        57        74     PASS  
+COMPUTER GRAPHICS (D9917)                     7         57        64     PASS  
+OBJECT ORI. ANA.                              20        40        60     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     24        48        72     PASS  
+SOFTWARE ENGINEERING (D1201)                  15        34        49     PASS  
+UML (LAB) (D1204)                             25        48        73     PASS  
+COMMUNICATION THEORY (D1202)                  17        44        61     PASS  
+                                                                 ==== =========
+                                                                 512  68.27%
+Retrieving the details of 04131a1227
+RAHUL KUMAR               04131A1227     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          2         ABS       2      FAIL  
+DATA COMMUNICATIONS (D9909)                   2         ABS       2      FAIL  
+COMPUTER GRAPHICS (D9917)                     1         ABS       1      FAIL  
+OBJECT ORI. ANA.                              1         ABS       1      FAIL  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     0         ABS       0      FAIL  
+SOFTWARE ENGINEERING (D1201)                  2         ABS       2      FAIL  
+UML (LAB) (D1204)                             11        ABS       11     FAIL  
+COMMUNICATION THEORY (D1202)                  4         ABS       4      FAIL  
+                                                                 ==== =========
+                                                                 23  3.07%
+Retrieving the details of 04131a1228
+Roll no 04131a1228 is not present
+Retrieving the details of 04131a1229
+RAMYADEEPTHI DUVAKULA     04131A1229     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          14        56        70     PASS  
+DATA COMMUNICATIONS (D9909)                   12        47        59     PASS  
+COMPUTER GRAPHICS (D9917)                     5         45        50     PASS  
+OBJECT ORI. ANA.                              17        46        63     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     19        45        64     PASS  
+SOFTWARE ENGINEERING (D1201)                  15        50        65     PASS  
+UML (LAB) (D1204)                             23        44        67     PASS  
+COMMUNICATION THEORY (D1202)                  16        43        59     PASS  
+                                                                 ==== =========
+                                                                 497  66.27%
+Retrieving the details of 04131a1230
+ROHITH PANABAKAM          04131A1230     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          14        17        31     FAIL  
+DATA COMMUNICATIONS (D9909)                   16        30        46     PASS  
+COMPUTER GRAPHICS (D9917)                     2         42        44     PASS  
+OBJECT ORI. ANA.                              15        50        65     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     20        31        51     PASS  
+SOFTWARE ENGINEERING (D1201)                  13        19        32     FAIL  
+UML (LAB) (D1204)                             22        42        64     PASS  
+COMMUNICATION THEORY (D1202)                  13        34        47     PASS  
+                                                                 ==== =========
+                                                                 380  50.67%
+Retrieving the details of 04131a1231
+S G NARASIMHA NAIDU P     04131A1231     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          12        32        44     PASS  
+DATA COMMUNICATIONS (D9909)                   14        45        59     PASS  
+COMPUTER GRAPHICS (D9917)                     4         53        57     PASS  
+OBJECT ORI. ANA.                              16        38        54     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     21        26        47     PASS  
+SOFTWARE ENGINEERING (D1201)                  14        39        53     PASS  
+UML (LAB) (D1204)                             21        38        59     PASS  
+COMMUNICATION THEORY (D1202)                  12        28        40     PASS  
+                                                                 ==== =========
+                                                                 413  55.07%
+Retrieving the details of 04131a1232
+S RAJENDRAN BHARAT        04131A1232     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          15        28        43     PASS  
+DATA COMMUNICATIONS (D9909)                   16        28        44     PASS  
+COMPUTER GRAPHICS (D9917)                     8         59        67     PASS  
+OBJECT ORI. ANA.                              17        33        50     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     19        27        46     PASS  
+SOFTWARE ENGINEERING (D1201)                  14        28        42     PASS  
+UML (LAB) (D1204)                             22        43        65     PASS  
+COMMUNICATION THEORY (D1202)                  16        33        49     PASS  
+                                                                 ==== =========
+                                                                 406  54.13%
+Retrieving the details of 04131a1233
+SANAT KUMAR KORADA        04131A1233     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          14        44        58     PASS  
+DATA COMMUNICATIONS (D9909)                   15        48        63     PASS  
+COMPUTER GRAPHICS (D9917)                     4         53        57     PASS  
+OBJECT ORI. ANA.                              17        37        54     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     18        42        60     PASS  
+SOFTWARE ENGINEERING (D1201)                  14        45        59     PASS  
+UML (LAB) (D1204)                             23        45        68     PASS  
+COMMUNICATION THEORY (D1202)                  16        29        45     PASS  
+                                                                 ==== =========
+                                                                 464  61.87%
+Retrieving the details of 04131a1234
+Roll no 04131a1234 is not present
+Retrieving the details of 04131a1235
+SIDDI RAMA SURENDRA       04131A1235     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          11        29        40     PASS  
+DATA COMMUNICATIONS (D9909)                   15        34        49     PASS  
+COMPUTER GRAPHICS (D9917)                     2         38        40     PASS  
+OBJECT ORI. ANA.                              17        33        50     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     14        34        48     PASS  
+SOFTWARE ENGINEERING (D1201)                  12        14        26     FAIL  
+UML (LAB) (D1204)                             21        37        58     PASS  
+COMMUNICATION THEORY (D1202)                  13        35        48     PASS  
+                                                                 ==== =========
+                                                                 359  47.87%
+Retrieving the details of 04131a1236
+SOUJANYA VAKKALANKA       04131A1236     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          20        34        54     PASS  
+DATA COMMUNICATIONS (D9909)                   17        51        68     PASS  
+COMPUTER GRAPHICS (D9917)                     9         60        69     PASS  
+OBJECT ORI. ANA.                              20        45        65     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     24        49        73     PASS  
+SOFTWARE ENGINEERING (D1201)                  17        60        77     PASS  
+UML (LAB) (D1204)                             25        48        73     PASS  
+COMMUNICATION THEORY (D1202)                  19        61        80     PASS  
+                                                                 ==== =========
+                                                                 559  74.53%
+Retrieving the details of 04131a1237
+SRAVANKUMAR SANAPALA      04131A1237     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          14        44        58     PASS  
+DATA COMMUNICATIONS (D9909)                   14        28        42     PASS  
+COMPUTER GRAPHICS (D9917)                     4         44        48     PASS  
+OBJECT ORI. ANA.                              18        33        51     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     23        38        61     PASS  
+SOFTWARE ENGINEERING (D1201)                  16        28        44     PASS  
+UML (LAB) (D1204)                             24        46        70     PASS  
+COMMUNICATION THEORY (D1202)                  14        54        68     PASS  
+                                                                 ==== =========
+                                                                 442  58.93%
+Retrieving the details of 04131a1238
+SRI HARSHA M P S S        04131A1238     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          15        48        63     PASS  
+DATA COMMUNICATIONS (D9909)                   15        40        55     PASS  
+COMPUTER GRAPHICS (D9917)                     7         62        69     PASS  
+OBJECT ORI. ANA.                              17        45        62     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     21        40        61     PASS  
+SOFTWARE ENGINEERING (D1201)                  13        59        72     PASS  
+UML (LAB) (D1204)                             23        47        70     PASS  
+COMMUNICATION THEORY (D1202)                  15        35        50     PASS  
+                                                                 ==== =========
+                                                                 502  66.93%
+Retrieving the details of 04131a1239
+Roll no 04131a1239 is not present
+Retrieving the details of 04131a1240
+SRIKANTH VAINDAM          04131A1240     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          14        28        42     PASS  
+DATA COMMUNICATIONS (D9909)                   14        31        45     PASS  
+COMPUTER GRAPHICS (D9917)                     7         48        55     PASS  
+OBJECT ORI. ANA.                              14        37        51     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     23        40        63     PASS  
+SOFTWARE ENGINEERING (D1201)                  13        34        47     PASS  
+UML (LAB) (D1204)                             22        41        63     PASS  
+COMMUNICATION THEORY (D1202)                  14        28        42     PASS  
+                                                                 ==== =========
+                                                                 408  54.40%
+Retrieving the details of 04131a1241
+SRIVATSA GORTY            04131A1241     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          16        53        69     PASS  
+DATA COMMUNICATIONS (D9909)                   17        52        69     PASS  
+COMPUTER GRAPHICS (D9917)                     13        66        79     PASS  
+OBJECT ORI. ANA.                              20        41        61     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     23        46        69     PASS  
+SOFTWARE ENGINEERING (D1201)                  16        63        79     PASS  
+UML (LAB) (D1204)                             25        50        75     PASS  
+COMMUNICATION THEORY (D1202)                  17        43        60     PASS  
+                                                                 ==== =========
+                                                                 561  74.80%
+Retrieving the details of 04131a1242
+SRUJANA MOSA              04131A1242     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          11        29        40     PASS  
+DATA COMMUNICATIONS (D9909)                   13        57        70     PASS  
+COMPUTER GRAPHICS (D9917)                     6         40        46     PASS  
+OBJECT ORI. ANA.                              15        28        43     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     20        34        54     PASS  
+SOFTWARE ENGINEERING (D1201)                  13        18        31     FAIL  
+UML (LAB) (D1204)                             22        40        62     PASS  
+COMMUNICATION THEORY (D1202)                  13        28        41     PASS  
+                                                                 ==== =========
+                                                                 387  51.60%
+Retrieving the details of 04131a1243
+SUCHITRA REYYA            04131A1243     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          12        40        52     PASS  
+DATA COMMUNICATIONS (D9909)                   15        54        69     PASS  
+COMPUTER GRAPHICS (D9917)                     5         56        61     PASS  
+OBJECT ORI. ANA.                              17        39        56     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     20        35        55     PASS  
+SOFTWARE ENGINEERING (D1201)                  12        38        50     PASS  
+UML (LAB) (D1204)                             21        45        66     PASS  
+COMMUNICATION THEORY (D1202)                  13        28        41     PASS  
+                                                                 ==== =========
+                                                                 450  60.00%
+Retrieving the details of 04131a1244
+SUNIL BABU CHINTA         04131A1244     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          11        29        40     PASS  
+DATA COMMUNICATIONS (D9909)                   14        43        57     PASS  
+COMPUTER GRAPHICS (D9917)                     2         44        46     PASS  
+OBJECT ORI. ANA.                              14        33        47     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     17        32        49     PASS  
+SOFTWARE ENGINEERING (D1201)                  13        36        49     PASS  
+UML (LAB) (D1204)                             20        38        58     PASS  
+COMMUNICATION THEORY (D1202)                  13        34        47     PASS  
+                                                                 ==== =========
+                                                                 393  52.40%
+Retrieving the details of 04131a1245
+SWATHI KADAMBALA          04131A1245     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          17        43        60     PASS  
+DATA COMMUNICATIONS (D9909)                   16        48        64     PASS  
+COMPUTER GRAPHICS (D9917)                     5         64        69     PASS  
+OBJECT ORI. ANA.                              20        39        59     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     23        43        66     PASS  
+SOFTWARE ENGINEERING (D1201)                  15        52        67     PASS  
+UML (LAB) (D1204)                             24        47        71     PASS  
+COMMUNICATION THEORY (D1202)                  18        43        61     PASS  
+                                                                 ==== =========
+                                                                 517  68.93%
+Retrieving the details of 04131a1246
+SWETHA GANAPATHIRAJU      04131A1246     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          16        50        66     PASS  
+DATA COMMUNICATIONS (D9909)                   16        60        76     PASS  
+COMPUTER GRAPHICS (D9917)                     11        49        60     PASS  
+OBJECT ORI. ANA.                              19        41        60     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     22        47        69     PASS  
+SOFTWARE ENGINEERING (D1201)                  17        32        49     PASS  
+UML (LAB) (D1204)                             24        47        71     PASS  
+COMMUNICATION THEORY (D1202)                  17        52        69     PASS  
+                                                                 ==== =========
+                                                                 520  69.33%
+Retrieving the details of 04131a1247
+T LAKSHMI SOUJANYA        04131A1247     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          15        56        71     PASS  
+DATA COMMUNICATIONS (D9909)                   17        55        72     PASS  
+COMPUTER GRAPHICS (D9917)                     7         56        63     PASS  
+OBJECT ORI. ANA.                              19        53        72     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     20        44        64     PASS  
+SOFTWARE ENGINEERING (D1201)                  16        69        85     PASS  
+UML (LAB) (D1204)                             23        46        69     PASS  
+COMMUNICATION THEORY (D1202)                  16        48        64     PASS  
+                                                                 ==== =========
+                                                                 560  74.67%
+Retrieving the details of 04131a1248
+UJVALA BYPA               04131A1248     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          11        29        40     PASS  
+DATA COMMUNICATIONS (D9909)                   13        20        33     FAIL  
+COMPUTER GRAPHICS (D9917)                     2         21        23     FAIL  
+OBJECT ORI. ANA.                              14        35        49     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     18        27        45     PASS  
+SOFTWARE ENGINEERING (D1201)                  12        28        40     PASS  
+UML (LAB) (D1204)                             22        38        60     PASS  
+COMMUNICATION THEORY (D1202)                  11        24        35     FAIL  
+                                                                 ==== =========
+                                                                 325  43.33%
+Retrieving the details of 04131a1249
+V R V VAMSI KRISHNA N     04131A1249     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          13        20        33     FAIL  
+DATA COMMUNICATIONS (D9909)                   13        45        58     PASS  
+COMPUTER GRAPHICS (D9917)                     3         40        43     PASS  
+OBJECT ORI. ANA.                              14        33        47     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     16        36        52     PASS  
+SOFTWARE ENGINEERING (D1201)                  12        36        48     PASS  
+UML (LAB) (D1204)                             22        42        64     PASS  
+COMMUNICATION THEORY (D1202)                  11        17        28     FAIL  
+                                                                 ==== =========
+                                                                 373  49.73%
+Retrieving the details of 04131a1250
+V S GIRIDHAR NAGAVARAPU   04131A1250     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          14        38        52     PASS  
+DATA COMMUNICATIONS (D9909)                   11        38        49     PASS  
+COMPUTER GRAPHICS (D9917)                     5         46        51     PASS  
+OBJECT ORI. ANA.                              14        38        52     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     18        25        43     PASS  
+SOFTWARE ENGINEERING (D1201)                  11        29        40     PASS  
+UML (LAB) (D1204)                             21        38        59     PASS  
+COMMUNICATION THEORY (D1202)                  13        28        41     PASS  
+                                                                 ==== =========
+                                                                 387  51.60%
+Retrieving the details of 04131a1251
+V S S GOUTHAM             04131A1251     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          19        50        69     PASS  
+DATA COMMUNICATIONS (D9909)                   17        45        62     PASS  
+COMPUTER GRAPHICS (D9917)                     7         54        61     PASS  
+OBJECT ORI. ANA.                              19        48        67     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     22        40        62     PASS  
+SOFTWARE ENGINEERING (D1201)                  15        63        78     PASS  
+UML (LAB) (D1204)                             25        49        74     PASS  
+COMMUNICATION THEORY (D1202)                  17        46        63     PASS  
+                                                                 ==== =========
+                                                                 536  71.47%
+Retrieving the details of 04131a1252
+VEDULA VISHAL             04131A1252     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          15        35        50     PASS  
+DATA COMMUNICATIONS (D9909)                   17        45        62     PASS  
+COMPUTER GRAPHICS (D9917)                     7         53        60     PASS  
+OBJECT ORI. ANA.                              20        47        67     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     22        36        58     PASS  
+SOFTWARE ENGINEERING (D1201)                  17        31        48     PASS  
+UML (LAB) (D1204)                             25        47        72     PASS  
+COMMUNICATION THEORY (D1202)                  14        41        55     PASS  
+                                                                 ==== =========
+                                                                 472  62.93%
+Retrieving the details of 04131a1253
+VEERENDRA SIVARAM CH      04131A1253     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          10        30        40     PASS  
+DATA COMMUNICATIONS (D9909)                   15        44        59     PASS  
+COMPUTER GRAPHICS (D9917)                     2         53        55     PASS  
+OBJECT ORI. ANA.                              18        36        54     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     20        34        54     PASS  
+SOFTWARE ENGINEERING (D1201)                  13        37        50     PASS  
+UML (LAB) (D1204)                             23        45        68     PASS  
+COMMUNICATION THEORY (D1202)                  12        14        26     FAIL  
+                                                                 ==== =========
+                                                                 406  54.13%
+Retrieving the details of 04131a1254
+Roll no 04131a1254 is not present
+Retrieving the details of 04131a1255
+VIDYA SAGAR PEDDADA       04131A1255     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          9         20        29     FAIL  
+DATA COMMUNICATIONS (D9909)                   11        29        40     PASS  
+COMPUTER GRAPHICS (D9917)                     3         37        40     PASS  
+OBJECT ORI. ANA.                              14        19        33     FAIL  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     13        20        33     FAIL  
+SOFTWARE ENGINEERING (D1201)                  12        15        27     FAIL  
+UML (LAB) (D1204)                             20        34        54     PASS  
+COMMUNICATION THEORY (D1202)                  12        14        26     FAIL  
+                                                                 ==== =========
+                                                                 282  37.60%
+Retrieving the details of 04131a1256
+VINEEL KUMAR REDDY K      04131A1256     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          16        55        71     PASS  
+DATA COMMUNICATIONS (D9909)                   15        31        46     PASS  
+COMPUTER GRAPHICS (D9917)                     13        50        63     PASS  
+OBJECT ORI. ANA.                              14        43        57     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     23        45        68     PASS  
+SOFTWARE ENGINEERING (D1201)                  14        58        72     PASS  
+UML (LAB) (D1204)                             22        47        69     PASS  
+COMMUNICATION THEORY (D1202)                  15        36        51     PASS  
+                                                                 ==== =========
+                                                                 497  66.27%
+Retrieving the details of 04131a1257
+VISWANATH GANGAVARAM      04131A1257     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          15        31        46     PASS  
+DATA COMMUNICATIONS (D9909)                   13        37        50     PASS  
+COMPUTER GRAPHICS (D9917)                     10        49        59     PASS  
+OBJECT ORI. ANA.                              15        53        68     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     19        35        54     PASS  
+SOFTWARE ENGINEERING (D1201)                  12        29        41     PASS  
+UML (LAB) (D1204)                             20        40        60     PASS  
+COMMUNICATION THEORY (D1202)                  15        43        58     PASS  
+                                                                 ==== =========
+                                                                 436  58.13%
+Retrieving the details of 04131a1258
+YELURI SRIRAMA SANTHIKIRAN 04131A1258     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          18        43        61     PASS  
+DATA COMMUNICATIONS (D9909)                   18        46        64     PASS  
+COMPUTER GRAPHICS (D9917)                     13        68        81     PASS  
+OBJECT ORI. ANA.                              19        46        65     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     23        45        68     PASS  
+SOFTWARE ENGINEERING (D1201)                  17        63        80     PASS  
+UML (LAB) (D1204)                             25        49        74     PASS  
+COMMUNICATION THEORY (D1202)                  17        34        51     PASS  
+                                                                 ==== =========
+                                                                 544  72.53%
+Retrieving the details of 04131a1259
+VIVEK GORLE               04131A1259     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          16        53        69     PASS  
+DATA COMMUNICATIONS (D9909)                   16        39        55     PASS  
+COMPUTER GRAPHICS (D9917)                     8         54        62     PASS  
+OBJECT ORI. ANA.                              20        44        64     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     18        44        62     PASS  
+SOFTWARE ENGINEERING (D1201)                  16        28        44     PASS  
+UML (LAB) (D1204)                             25        46        71     PASS  
+COMMUNICATION THEORY (D1202)                  16        67        83     PASS  
+                                                                 ==== =========
+                                                                 510  68.00%
+Retrieving the details of 04131a1260
+KAKI NAVEEN TEJA          04131A1260     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          15        45        60     PASS  
+DATA COMMUNICATIONS (D9909)                   14        31        45     PASS  
+COMPUTER GRAPHICS (D9917)                     4         55        59     PASS  
+OBJECT ORI. ANA.                              15        29        44     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     21        42        63     PASS  
+SOFTWARE ENGINEERING (D1201)                  14        45        59     PASS  
+UML (LAB) (D1204)                             20        36        56     PASS  
+COMMUNICATION THEORY (D1202)                  14        38        52     PASS  
+                                                                 ==== =========
+                                                                 438  58.40%
+Retrieving the details of 04131a1261
+KARRI VASUDHA             04131A1261     
+-------------------------------------------------------------------------------
+Subject                                       Internal  External  Total  Result
+-------------------------------------------------------------------------------
+INTERFACING TH. MICRO.PROCS. (D9908)          11        32        43     PASS  
+DATA COMMUNICATIONS (D9909)                   12        39        51     PASS  
+COMPUTER GRAPHICS (D9917)                     1         39        40     PASS  
+OBJECT ORI. ANA.                              18        40        58     PASS  
+INTERFACING TH. MICRO.PROCS.(LAB) (D1203)     21        40        61     PASS  
+SOFTWARE ENGINEERING (D1201)                  14        20        34     FAIL  
+UML (LAB) (D1204)                             24        44        68     PASS  
+COMMUNICATION THEORY (D1202)                  17        42        59     PASS  
+                                                                 ==== =========
+                                                                 414  55.20%

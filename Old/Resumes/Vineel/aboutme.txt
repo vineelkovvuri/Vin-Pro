@@ -1,0 +1,59 @@
+I am Vineel, From Hyderabad. Currently working in Nvidia as a System software developer.
+I maintain android's Surfaceflinger which is a lower level component in the android stack
+reponsible for composing UI elements. I have also worked on an android application called dabbler 
+which was showcased on Nvidia's Tegra Tablet. I am also proud to be the author of display
+driver for Google's Nexus 9 tablet
+
+So I am pretty much confortable with the complete android stack ranging from low-level
+System's progamming to high level app development.
+
+Comming to education background.
+I completed my post graduation(M.Tech) in Computer Science from IIIT hyderabad. 
+one of the top 3 universities in INDIA.
+
+I am also certified in JAVA and .NET technologies. Also I can rate myself as an expert in git. 
+I hosted some of my hobby project in github. Also I am good at debugging skills.
+
+I personally have high coding standards. Most of the code that we write in nvidia will
+end up being in Android framework(AOSP).
+
+My hobbies include blogging, Listening to music.
+I am an avid blogger and I contribute a lot through my website.
+
+Also I am very good at algorithms and data structures. 
+I know how to use chrome dev-tools for client side web debugging
+I know how to use debuggers like setting data break points etc
+----------------------------------------
+Android    - Mashable app, SurfaceFlinger, Dabbler, Codecontributions to AOSP - https://android.googlesource.com/kernel/tegra/+blame/android-tegra-3.10/drivers/video/tegra/dc/dsi.c
+Debuggers  - data break points
+Linux      - Display driver for Nexus 9 tablet
+Git        - Github, git(nvidia), gerrit
+Compilers  - Tutorial on compiler - http://vineelkumarreddy.com/old/compiler/Main.html
+Certifications - .NET, Java, Oracle
+.NET, Java - Search applications(my projects)
+Javascript - articles
+Bootstrap  - website
+Windows    - codeproject article - http://www.codeproject.com/Articles/129874/The-Birth-of-Windows-Desktop 
+Algorithms - SPOJ
+----------------------------------------
+My Hobby Past Projects
+https://github.com/vineel567/ExtendableDesktopSearch
+https://github.com/vineel567/MashableApp
+https://github.com/vineel567/Detective-007
+----------------------------------------
+My Spoj Rank
+http://www.spoj.com/users/vineel567/
+----------------------------------------
+Articles I wrote on Javascript
+http://vineelkumarreddy.com/javascript-oop---basics.html
+http://vineelkumarreddy.com/javascript-oop---advanced.html
+----------------------------------------
+Articles I wrote on Compilers
+http://vineelkumarreddy.com/old/compiler/Main.html
+----------------------------------------
+Articles I wrote on Git
+http://vineelkumarreddy.com/how-to-do-interactive-rebase-in-git.html
+----------------------------------------
+Articles I wrote on Makefiles
+http://vineelkumarreddy.com/how-do-make-and-makefiles-work.html
+----------------------------------------

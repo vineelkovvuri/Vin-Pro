@@ -1,0 +1,74 @@
+
+replacing task manager with our custom program
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\taskmgr.exe
+
+create Debugger and set value to  requried exe
+======================
+Enable or disable win key
+
+diable
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+create NoWinKeys dword and set it to 1
+
+enable
+delete NoWinKeys
+
+<head>
+//adds your webiste logo to address bar 
+ <LINK REL="SHORTCUT ICON"
+       HREF="favicon.ico">
+// shows rss feed icon in the address bar
+       <link rel="alternate" type="application/rss+xml" title="Vineel rss feed" href="http://vineel.google.com">
+</head>
+
+
+
+
+
+Syntax
+EXPLORER.EXE [/n][/e][,/root,<object>][[,/select],<sub object>] 
+
+Back to the top
+Switches
+/n:  Opens a new window in single-paned (My Computer) view for each item
+     selected, even if the new window duplicates a window that is
+     already open.
+
+/e:  Uses Windows Explorer view. Windows Explorer view is most similar
+     to File Manager in Windows version 3.x. Note that the default view
+     is Open view.
+
+/root,<object>:  Specifies the root level of the specified view. The
+                 default is to use the normal namespace root (the
+                 desktop). Whatever is specified is the root for the
+                 display.
+
+/select,<sub object>:  Specifies the folder to receive the initial
+                       focus. If "/select" is used, the parent folder
+                       is opened and the specified object is selected.
+				
+
+Back to the top
+Examples•	To open a Windows Explorer view to explore only objects on \\<server name>, use the following syntax: 
+explorer /e,/root,\\<server name> 
+•	To view the C:\WINDOWS folder and select CALC.EXE, use the following syntax: 
+explorer /select,c:\windows\calc.exe
+
+
+Open MyComputer 
+explorer /e ,/root,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}
+
+nwtwork connections	{7007ACC7-3202-11D1-AAD2-00805FC1270E}
+My Network Places 	{208D2C60-3AEA-1069-A2D7-08002B30309D}
+Control Panel		::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\::{21EC2020-3AEA-1069-A2DD-08002B30309D}
+
+Internet Explorer	{871C5380-42A0-1069-A2EA-08002B30309D}
+Recycle Bin		{645FF040-5081-101B-9F08-00AA002F954E}
+
+-----------------------------------------------
+TO open Control Panel
+"C:\WINDOWS\system32\rundll32.exe" C:\WINDOWS\system32\shell32.dll,Control_RunDLL
+
+
+rundll32 SHELL32.DLL,ShellExec_RunDLL 

@@ -1,0 +1,139 @@
+
+SYSTEM INFORMATION 
+-------------------
+
+
+Computer Name : SATYA 
+Logged user name : Vineel Kumar Reddy
+System Up Time(D:H:M:S) = 4:12:55:58
+
+Hard Disk Info:
+---------------
+C:\ Free :  12.43GB Total :  40.61GB  NTFS
+D:\ Free :  30.36GB Total :  81.19GB  NTFS
+E:\ Free :  10.35GB Total :  81.05GB  NTFS
+F:\ Free :   9.37GB Total :  30.04GB  NTFS
+===========================================
+    Free :  62.51GB Total : 232.88GB
+===========================================
+
+Devices With Removable Storage
+------------------------------
+G:\ => DVD-ROM Read-Write 
+
+Monitor Info:
+-------------
+NVIDIA GeForce 8600M GT --> Primary
+NVIDIA GeForce 8600M GT 
+
+Monitor Resolution : 1280x800
+
+OS Info: 
+--------
+Version :  Windows XP Service Pack 3 Build 2600
+Windows Directory : C:\WINDOWS 
+System Directory  : C:\WINDOWS\system32 
+
+Processor Info:
+---------------
+Number of logical processors(cores) : 2
+Processor  0 : Intel(R) Core(TM)2 Duo CPU     T5850  @ 2.16GHz x86 Family 6 Model 15 Stepping 13
+Processor  1 : Intel(R) Core(TM)2 Duo CPU     T5850  @ 2.16GHz x86 Family 6 Model 15 Stepping 13
+
+Memory Info:
+------------
+Total Physical Memory     :  3069.99MB 
+Available Physical Memory :  2445.45MB 
+Used Physical Memory      :   624.54MB 
+
+
+
+Processes Info:
+---------------
+Process ID     Mem Usage      Image Path     
+---------------------------------------------------------------------
+252             7692K        C:\Program Files\Vim\vim72\gvim.exe                                                                 
+568             5460K        C:\Program Files\DellTPad\Apoint.exe                                                                
+592            22540K        D:\Tools\System Tools\Everything-1.2.1.451a\Everything-1.2.1.451a.exe                               
+600            19064K        D:\Tools\System Tools\processhacker-2.0-bin\ProcessHacker.exe                                       
+728             5000K        D:\USB Softs\taskbar_shuffle_2.5\taskbarshuffle.exe                                                 
+780             3392K        C:\WINDOWS\system32\svchost.exe                                                                     
+840            31476K        C:\WINDOWS\system32\svchost.exe                                                                     
+868             4168K        C:\WINDOWS\system32\ctfmon.exe                                                                      
+872             9448K        C:\Program Files\Listary\Listary.exe                                                                
+880             1772K        C:\Program Files\DellTPad\ApMsgFwd.exe                                                              
+984             2792K        C:\Program Files\DellTPad\HidFind.exe                                                               
+1004            3084K        C:\Program Files\DellTPad\Apntex.exe                                                                
+1120           19236K        C:\WINDOWS\explorer.exe                                                                             
+1328             420K        \SystemRoot\System32\smss.exe                                                                       
+1460            7456K        \??\C:\WINDOWS\system32\winlogon.exe                                                                
+1512            6680K        C:\WINDOWS\system32\services.exe                                                                    
+1524            1304K        C:\WINDOWS\system32\lsass.exe                                                                       
+1528            4464K        D:\Tools\System Tools\nirsoft_package_beta_100\volumouse.exe                                        
+1732            3928K        C:\WINDOWS\system32\svchost.exe                                                                     
+1768            7312K        C:\Program Files\Vim\vim72\gvim.exe                                                                 
+1948            2008K        C:\Program Files\FlashFolder\FlashFolder.exe                                                        
+2320           51072K        C:\Documents and Settings\Vineel\Local Settings\Application Data\Google\Chrome\Application\chrome.exe
+2468           25884K        C:\Documents and Settings\Vineel\Local Settings\Application Data\Google\Chrome\Application\chrome.exe
+2692            6452K        C:\WINDOWS\System32\svchost.exe                                                                     
+2728             416K        D:\USB Softs\Screen Captures\FSCapture66\FSCapture.exe                                              
+2800           21808K        C:\Documents and Settings\Vineel\Local Settings\Application Data\Google\Chrome\Application\chrome.exe
+2868           27792K        C:\Program Files\Kaspersky Lab\Kaspersky Internet Security 2010\avp.exe                             
+3092            7176K        C:\Program Files\Vim\vim72\gvim.exe                                                                 
+3232            5048K        C:\WINDOWS\System32\svchost.exe                                                                     
+3376           14336K        C:\Documents and Settings\Vineel\Local Settings\Application Data\Google\Chrome\Application\chrome.exe
+3460             136K        C:\WINDOWS\system32\cmd.exe                                                                         
+3872           43768K        C:\Documents and Settings\Vineel\Local Settings\Application Data\Google\Chrome\Application\chrome.exe
+4012            4280K        C:\Program Files\Kaspersky Lab\Kaspersky Internet Security 2010\avp.exe                             
+4064            1968K        D:\Vin-pro\CS\Projects\sysinfo.exe                                                                  
+
+
+
+Environment Variables
+----------------------
+ALLUSERSPROFILE=C:\Documents and Settings\All Users
+APPDATA=C:\Documents and Settings\Vineel\Application Data
+CLIENTNAME=Console
+CommonProgramFiles=C:\Program Files\Common Files
+COMPUTERNAME=SATYA
+ComSpec=C:\WINDOWS\system32\cmd.exe
+DEVMGR_SHOW_DETAILS=
+DEVMGR_SHOW_NONPRESENT_DEVICES=1
+FP_NO_HOST_CHECK=NO
+HOMEDRIVE=C:
+HOMEPATH=\Documents and Settings\Vineel
+LOGONSERVER=\\SATYA
+MOZ_PLUGIN_PATH=C:\Program Files\Tracker Software\PDF Viewer\
+NUMBER_OF_PROCESSORS=2
+OS=Windows_NT
+Path=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Java\jdk1.6.0_10\bin;c:\minGW\bin;
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;
+PROCESSOR_ARCHITECTURE=x86
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 15 Stepping 13, GenuineIntel
+PROCESSOR_LEVEL=6
+PROCESSOR_REVISION=0f0d
+ProgramFiles=C:\Program Files
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\WINDOWS
+TEMP=C:\DOCUME~1\Vineel\LOCALS~1\Temp
+TMP=C:\DOCUME~1\Vineel\LOCALS~1\Temp
+USERDOMAIN=SATYA
+USERNAME=Vineel Kumar Reddy
+USERPROFILE=C:\Documents and Settings\Vineel
+VBOX_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\
+windir=C:\WINDOWS
+
+---------------------------------------------------------------------------
+
+				Program By
+    __        __   __   ____        __   _________   _________    __
+   /_/|      /_/| /_/| /___/\      /_/| /________/| /________/|  /_/|
+   | ||      | || | || |  _\ \     | || | _______|/ | _______|/  | ||
+   | ||      | || | || | ||\\ \    | || | ||____    | ||____     | ||
+   \ \\      / // | || | || \\ \   | || | |/___/|   | |/___/|    | ||
+    \ \\    / //  | || | ||  \\ \  | || | |____|/   | |____|/    | ||
+     \ \\_ / //   | || | ||   \\ \_| || | ||______  | ||______   | ||_____
+      \ \_/ /     | || | ||    \\__| || | |/_____/| | |/_____/|  | |/____/|
+       \___/      |_|/ |_|/     \____|/ |_|______|/ |_|______|/  |_______|/
+		
