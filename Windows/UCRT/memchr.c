@@ -38,6 +38,9 @@ MemChr(
     return NULL;
 }
 
+//Must read about Typedef and CONST http://vineelkovvuri.com/txts/TypedefAndConstInC-21-Sep-2018.txt
+
+
 INT
 main()
 {
