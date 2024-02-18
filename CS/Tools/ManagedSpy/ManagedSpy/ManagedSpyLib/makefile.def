@@ -1,3 +1,0 @@
-LIBRARY	"ManagedSpyLib"
-EXPORTS
-   MessageHookProc   @1

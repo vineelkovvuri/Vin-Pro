@@ -1,9 +1,0 @@
-windows UI
-http://blogs.msdn.com/cjacks/default.aspx
-
-performance team
-http://blogs.technet.com/askperf/
-
-
-Rico Mariani's Performance Tidbits
-http://blogs.msdn.com/ricom/

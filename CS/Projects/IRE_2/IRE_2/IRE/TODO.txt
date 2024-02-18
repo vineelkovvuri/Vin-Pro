@@ -1,4 +1,0 @@
-
-
-write a initialize routine to take care of destination path and priliminary setup
-

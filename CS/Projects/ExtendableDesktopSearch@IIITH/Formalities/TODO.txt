@@ -1,8 +1,0 @@
-1. How can I rewrite the Lucene implementation. How indexing and related stuff can be done - please suggest some ebooks
-2. Its does not have intelligence. It cannot search based on content very intelligently.
-
-
-3. Since it is a desktop application. What is the right approch to create it.
-4. Some suggestions to improve it.
-5. As output presentation sources vary the output interface also changes
-6. I have got 3000 ebooks now i want to find them more intelligently 
