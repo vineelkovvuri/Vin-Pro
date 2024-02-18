@@ -16,4 +16,3 @@ s+=a[i][j];}
 printf("%d",s);
 getch();
 }
-

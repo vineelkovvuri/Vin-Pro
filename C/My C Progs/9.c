@@ -13,4 +13,4 @@ s=1;t=1;/* since for first term the sum is 1 here t=1,s=1 */
   }
  printf("the value of cosh%f is %f",x,s);
 getch();
-}
+}

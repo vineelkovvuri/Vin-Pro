@@ -12,4 +12,4 @@ if(x[i]!=x[j-i])++n;
 if(n==0)printf("\nThe string is a palendrome");
 else printf("\nThe string is not a palendrome");
 getch();
-}
+}

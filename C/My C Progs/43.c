@@ -24,4 +24,4 @@ printf("%3d",c[i][j]);
 printf("\n");
 }
 getch();
-}
+}

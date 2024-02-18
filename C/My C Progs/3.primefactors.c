@@ -13,4 +13,4 @@ scanf("%d",&n);
 				                               number up to n/2 then it is a prime number */
   else printf("%d is not prime",n);
 getch();
-}
+}

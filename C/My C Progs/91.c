@@ -19,4 +19,4 @@ for(h=0;h<=24;h++)
    if(h<=9)printf("\b\b\b\b\b");else printf("\b\b\b\b\b\b");
 }
 getch();
-}
+}

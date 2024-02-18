@@ -19,4 +19,3 @@ s=sqrt(s);
 printf("The standard deviation is %f",s);
 getch();
 }
-

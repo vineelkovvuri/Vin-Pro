@@ -17,4 +17,4 @@ for(i=.1;i<5;i+=.1)
 }
 printf("\n%f,%d",y,i);
 getch();
-}
+}

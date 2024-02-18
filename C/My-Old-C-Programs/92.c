@@ -15,4 +15,3 @@ scanf("%s%d%f",book2.name,&book2.page,&book2.price);
 printf("\nbook1:\n%s\n%d\n%f\nbook2:\n%s\n%d\n%f",book1.name,book1.page,book1.price,book2.name,book2.page,book2.price);
 getch();
 }
-

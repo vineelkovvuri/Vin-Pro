@@ -14,4 +14,4 @@ b[i]='\0';
 if(strcmp(a,b)==0)printf("%s is palendrome",b);
 else printf("%s is not palendrome",b);
 getch();
-}
+}

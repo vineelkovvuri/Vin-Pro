@@ -32,4 +32,4 @@ printf("\nTHE REQURIED MATRIX IS:\n");
   printf("\n");
  }
 getch();
-}
+}

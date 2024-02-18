@@ -28,4 +28,4 @@ scanf("%f%f%f",&a,&b,&c);
 		   j=-1*j;printf("%f+%fi",r,j);}
 }
 getch();
-}
+}

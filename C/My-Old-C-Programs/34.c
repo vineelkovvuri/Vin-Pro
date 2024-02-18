@@ -10,4 +10,3 @@ printf("%d",i);
 getch();
 }
 
-

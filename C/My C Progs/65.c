@@ -25,4 +25,4 @@ switch(c)
 	break;
 	}
 getch();
-}
+}

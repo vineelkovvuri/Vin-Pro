@@ -19,4 +19,4 @@ s+=a[i][j];
 printf("\n%d sum is %d",++c,s);
 }
 getch();
-}
+}

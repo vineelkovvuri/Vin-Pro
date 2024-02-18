@@ -17,4 +17,4 @@ getch();
 int add(int a[],int n)
 {if(n==0) return a[0];
 else return a[n-1]+add(a,--n);
-}
+}

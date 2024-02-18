@@ -8,4 +8,4 @@ int i,n;
  for(i=1;i<=20;i++)  /* this for loop is for generation*/
  printf("%d*%d=%d\n",n,i,n*i);
 getch();
-}
+}

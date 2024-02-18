@@ -13,4 +13,4 @@ int len(char a[],int i)
 {
 if(a[i]=='\0') return i;
 else return len(a,++i);
-}
+}

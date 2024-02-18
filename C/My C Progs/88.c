@@ -37,4 +37,4 @@ for(i=10;i<20;i++)
 	    if(a[0]%10==i)printf("%s",x[i]);
 	  }
 getch();
-}
+}

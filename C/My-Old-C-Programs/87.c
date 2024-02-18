@@ -15,4 +15,3 @@ else {printf("%d\t",y+z);
        y=z;z=y+z;
       return fibb(--n);}
 }
-

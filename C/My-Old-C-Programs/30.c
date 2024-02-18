@@ -18,4 +18,3 @@ if(s==x)printf("%lu\n",x);
 getch();
 }
 
-

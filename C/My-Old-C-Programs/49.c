@@ -14,4 +14,3 @@ main()
    printf("THE AREA IS %f",s);
 getch();
 }
-

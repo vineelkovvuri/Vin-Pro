@@ -18,4 +18,3 @@ printf("The greatest element is %d\n",x);
 printf("The least element is %d",y);
 getch();
 }
-

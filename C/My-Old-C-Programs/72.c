@@ -10,4 +10,3 @@ for(j=0;j<15;j++)
 printf("\nthe square root of %f is %f",n,i);
 getch();
 }
-

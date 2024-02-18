@@ -13,4 +13,4 @@ for(i=0;i<m;i++)
 if(f==0) printf("THE MATRIX IS UNIT MATRIX");
 else printf("THE MATRIX IS NOT UNIT MATRIX");
 getch();
-}
+}

@@ -11,4 +11,4 @@ y=-(c1*a2-a1*c2)/d;
 x=-(b1*c2-b2*c1)/d;
 printf("x=%f\ny=%f",x,y);
 getch();
-}
+}

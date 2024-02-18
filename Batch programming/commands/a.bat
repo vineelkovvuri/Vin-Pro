@@ -47,4 +47,3 @@ echo %x%
 rem there is no exponentiation
 set /a y=10*10*10
 echo %y%
-

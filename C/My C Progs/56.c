@@ -19,4 +19,3 @@ if(f==0&&g==0)printf("THE MATRIX IS IDENTITY");
 else printf("THE MATRIX IS NOT IDENTITY");
 getch();
 }
-

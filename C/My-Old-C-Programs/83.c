@@ -14,4 +14,3 @@ if(k==0)printf("\nThe matrix is upper triangle matrix");
 else printf("\nThe matrix is not upper triangle matrix");
 getch();
 }
-

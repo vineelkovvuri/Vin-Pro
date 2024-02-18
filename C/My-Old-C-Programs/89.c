@@ -7,4 +7,4 @@ printf("\nEnter b,c");
 scanf("%f%f",&b,&c);
 printf("\n%f",form(b,c));
 getch();
-}
+}

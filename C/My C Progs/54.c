@@ -18,4 +18,4 @@ for(i=0;i<m;i++)
   printf("\n");
 }
 getch();
-}
+}

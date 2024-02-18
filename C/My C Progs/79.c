@@ -22,4 +22,4 @@ printf("%d\t",a[i][j]);
 printf("\n");
 }
 getch();
-}
+}

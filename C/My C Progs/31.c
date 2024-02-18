@@ -14,4 +14,4 @@ printf("%4d",i);
 printf("\n");
 }
 getch();
-}
+}

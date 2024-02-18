@@ -12,4 +12,4 @@ main()
 	b[i]='\0';
 	printf("%s",b);
 	getch();
-}
+}

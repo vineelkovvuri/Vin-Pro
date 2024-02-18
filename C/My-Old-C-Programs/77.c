@@ -32,4 +32,3 @@ for(j=1;k!=0;j++)
     ten:if(n>0){j=s%10;s/=10;n/=10;printf("%s ",x[j-1]);}
      getch();
 }
-

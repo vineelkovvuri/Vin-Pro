@@ -12,4 +12,4 @@ if(i%j==0)s++;
 if(s==1)c++,printf("%d\t",i);}
 printf("number of primes %d",c);
 getch();
-}
+}

@@ -20,4 +20,4 @@ if(i==s)printf("%d\n",i); /*ifthe updated sum equals the
 number print the number*/
 }
 getch();
-}
+}

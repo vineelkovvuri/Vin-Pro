@@ -9,4 +9,4 @@ for(x=0;a[x]!='\0';x++)
 if(a[x]=='a'||a[x]=='e'||a[x]=='i'||a[x]=='o'||a[x]=='u')k++;
 printf("%d",k);
 getch();
-}
+}
