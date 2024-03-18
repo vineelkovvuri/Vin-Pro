@@ -1,4 +1,5 @@
 
+#[allow(dead_code)]
 fn reverse(mut num: i32) -> i32 {
     let mut rev = 0;
 
@@ -10,20 +11,12 @@ fn reverse(mut num: i32) -> i32 {
     rev
 }
 
-
-fn main() {
-
-}
-
-
-
-
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn postive_test_reverse() {
+    fn positive_test_reverse() {
         let rev = reverse(123);
 
         assert_eq!(rev, 321);
