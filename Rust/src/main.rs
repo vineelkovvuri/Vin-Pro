@@ -1,5 +1,5 @@
-fn main() {
-    let mut num = 12333;
+
+fn reverse(mut num: i32) -> i32 {
     let mut rev = 0;
 
     while num != 0 {
@@ -7,5 +7,26 @@ fn main() {
         num /= 10;
     }
 
-    println!("{rev}");
+    rev
 }
+
+
+fn main() {
+
+}
+
+
+
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn postive_test_reverse() {
+        let rev = reverse(123);
+
+        assert_eq!(rev, 321);
+    }
+}
+
