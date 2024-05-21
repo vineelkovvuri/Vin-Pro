@@ -95,4 +95,8 @@ fn main() {
         let y = *ptr_y;
         println!("{}", y); // this will print true
     }
+
+    // creating a null pointer
+    let x: *const i32 = core::ptr::null();
+    println!("{:?}", x); // prints 0x0
 }
