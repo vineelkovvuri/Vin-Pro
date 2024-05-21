@@ -67,4 +67,32 @@ fn main() {
         println!("x = {}", x);
     }
 
+    // Update value of an array via write_bytes()
+    let mut arr1 = [1, 2, 3, 4, 5];
+    let ptr_arr1: *mut i32 = &mut arr1[0];
+    unsafe {
+        ptr_arr1.write_bytes(0xff, arr1.len());
+        println!("{:?}", arr1);
+    }
+
+    // alignment offset for the pointer
+    let x = 10;
+    let ptr_x: *const i32 = &x;
+
+    println!("ptr_x={:p} {}", ptr_x, ptr_x.align_offset(16));
+    // for ptr_x=0x88d83ff544 3 <-- this is the alignment because. 0x88d83ff544
+    // means 9233232516516. When  9233232516516 is divided by 16 we get
+    // 9233232516516 = 577077032282 × 16 + 4. Since the remainder is 4 we need
+    // another 12 bytes to make it align to next 16 byte boundary. 12 bytes is
+    // nothing but 3 i32s. Hence align_offset return 3
+    // The offset is expressed in number of T elements, and not bytes
+
+    // C type casting from int to bool conversion
+    let x = 4; // <-- rust don't normal treat integers as booleans like C
+    let ptr_x: *const i32 = &x;
+    unsafe {
+        let ptr_y: *const bool = ptr_x.cast();
+        let y = *ptr_y;
+        println!("{}", y); // this will print true
+    }
 }
