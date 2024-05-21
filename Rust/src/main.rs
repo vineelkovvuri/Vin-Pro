@@ -1,56 +1,18 @@
-use std::{ops::Deref, process::Command};
+// use std::alloc::Layout;
 
-#[allow(dead_code)]
-fn reverse(mut num: i32) -> i32 {
-    let mut rev: i32 = 0;
+// fn main() {
+//     let x = Layout::from_size_align(11, 2);
+//     match x {
+//         Ok(layout) => {println!("{:#?}", layout);}
+//         Err(e) => {println!("{:#?}", e);}
+//     }
+// }
 
-    while num != 0 {
-        rev = rev * 10 + num % 10;
-        num /= 10;
-    }
-
-    rev
-}
-
-#[allow(dead_code)]
-fn command_exec() {
-    let mut cmd = Command::new("git");
-    cmd.args(["log", "-10"]);
-    let res = cmd.output().unwrap();
-
-    println!("{}", String::from_utf8(res.stdout).unwrap());
-}
-
-struct Author {
-    name: String,
-}
-
-struct Book {
-    // author: Author,
-    author: String,
-}
 
 fn main() {
-    // let mut b = Book {
-    //     author: "Rust".to_string(),
-    // };
+    let x: f64 = 10f64;
 
-    // b = Book {
-    //     author: "Rust++".to_string(),
-    // };
-
-    // let mut f = || println!("Rust");
-    // f = || println!("Rust++");  // <-- This do not work
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn positive_test_reverse() {
-        let rev = reverse(123);
-
-        assert_eq!(rev, 321);
-    }
+    println!("to_le_bytes: {:?}", x.to_le_bytes());
+    println!("to_be_bytes: {:?}", x.to_be_bytes());
+    println!("to_ne_bytes: {:?}", x.to_ne_bytes());
 }
