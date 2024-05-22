@@ -1,24 +1,11 @@
 fn main() {
-    let mut arr1 = [1u8, 2, 3, 4, 5];
-    println!("{:?}", arr1);
+    let s = "asdfasdf";
 
-    let ref_arr1 = &mut arr1[1..3];
-    ref_arr1.reverse();
-    println!("{:?}", ref_arr1);
-    println!("{:?}", arr1);
+    let ptr_str: *const &str = &s;
+    // let ptr_str: *mut &str = &mut s;
 
-    println!("-----------------");
-    let arr1 = [1, 2, 3, 4, 5, 6, 7];
-    let ref_arr1 = &arr1;
-    let chunks = ref_arr1.chunks(2);
-    println!("{:?}", arr1);
-
-    for chunk in chunks {
-        println!("{:?}", chunk);
-    }
-
-    println!("-----------------");
-    let mut arr1 = [11, 21, 13, 4, 15];
-    arr1.sort_unstable();
-    println!("{:?}", arr1);
+     unsafe {
+        // println!("{}", *ptr_str);
+        println!("{:?}", *ptr_str.offset(0 as isize));
+     }
 }
