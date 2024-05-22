@@ -8,8 +8,7 @@ fn main() {
     println!("{:?}", arr1);
 
     println!("-----------------");
-
-    let arr1 = [1, 2,3,4,5,6,7];
+    let arr1 = [1, 2, 3, 4, 5, 6, 7];
     let ref_arr1 = &arr1;
     let chunks = ref_arr1.chunks(2);
     println!("{:?}", arr1);
@@ -17,4 +16,9 @@ fn main() {
     for chunk in chunks {
         println!("{:?}", chunk);
     }
+
+    println!("-----------------");
+    let mut arr1 = [11, 21, 13, 4, 15];
+    arr1.sort_unstable();
+    println!("{:?}", arr1);
 }
