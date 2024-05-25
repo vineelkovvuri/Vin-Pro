@@ -24,6 +24,7 @@ fn main() {
     let x1_ref = x.borrow().deref();
 
     let x1_mut_ref = x.borrow_mut().deref();
+    // cannot borrow two mutable references and this will panic at runtime
     let x2_mut_ref = x.borrow_mut().deref();
 
 }
