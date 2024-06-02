@@ -1,6 +1,8 @@
 use std::fs;
 use std::path::Path;
 
+use clap::{Arg, Command};
+
 // struct ExactFileNameMatcher<'a> {
 //     file_name: &'a str,
 // }
@@ -15,10 +17,44 @@ use std::path::Path;
 //     }
 // }
 
+struct SearchOptions {
+    name: String,
+    path: String,
+}
+
+fn parse_command_line() -> SearchOptions {
+    let args = Command::new("search")
+        .version("1.0")
+        .about("File search program")
+        .arg(
+            Arg::new("name")
+                .short('n')
+                .long("name")
+                .help("File name to search"),
+        )
+        .arg(
+            Arg::new("path")
+                .short('p')
+                .long("path")
+                .help("Path to search")
+                .default_value("C:\\"),
+        )
+        .get_matches();
+    let name = args.get_one::<String>("name").expect("name is expected");
+    let path = args.get_one::<String>("path").expect("path is expected");
+
+    SearchOptions {
+        name: name.to_string(),
+        path: path.to_string(),
+    }
+}
+
 fn main() {
+    let options = parse_command_line();
+
     let mut results: Vec<String> = Vec::new();
-    let path = Path::new("C:\\");
-    search2(&path, "kernel32.dll", &mut results);
+    let path = Path::new(&options.path);
+    search2(&path, &options.name, &mut results);
     for result in results {
         println!("{:?}", result);
     }
