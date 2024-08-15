@@ -1,7 +1,7 @@
 use std::cell::RefCell;
 
 struct Book {
-    pages: u32, // immutable
+    pages: u32,                     // immutable
     cost: core::cell::RefCell<u32>, // can be mutated
 }
 
@@ -39,5 +39,4 @@ fn main() {
     // content all at once. Where as refcell provides reference(shared and
     // mutable) to the object which can be modified in place. RefCell do incur
     // performance penalty as it should do runtime borrow rules
-
 }
