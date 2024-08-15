@@ -1,33 +1,33 @@
-pub trait Book {
-    fn read(&self);
-}
-
-struct PaperBook {
-    pages: u16,
-}
-
-impl Book for PaperBook {
-    fn read(&self) {}
-}
-
-struct BindingBook {
-    pages: u16,
-}
-
-impl Book for BindingBook {
-    fn read(&self) {}
-}
-
-struct Library<T>
-where
-    T: Book,
-{
-    books: Vec<T>,
-}
-
 fn main() {
+    let mut x = 10;
+    let mut FnExample = || {
+        // Since we are only referring to environment and x is copyable this
+        // closure is of type Fn()
+        x
+    };
 
-    let books = Vec::<BindingBook>::new();
-    let mut books2 = Vec::<&dyn Book>::new();
-    books2.push(&PaperBook {pages:10});
+    let mut FnMutExample = || {
+        // Since we are referring to environment and modifying x this closure is
+        // of type FnMut()
+        x = 20;
+        x
+    };
+
+    let mut s = "Vineel".to_owned();
+    let mut FnMutExample2 = || {
+        // Since we are referring to environment and modifying x
+        // this closure is of type FnMut()
+        s = "Vineel Kovvuri".to_owned();
+
+        // No matter how many times this closure is called. The value of s can
+        // be safely modified and this function do not need to take ownership of
+        // the s.
+    };
+
+    let mut s = "Vineel".to_owned();
+    let mut FnOnceExample = || {
+        // Here we are taking ownership of the s. Hence this function cannot be
+        // called more than once
+        drop(s)
+    };
 }
