@@ -1,0 +1,6 @@
+[package]
+name = "rust_std_lib_cookbook"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
