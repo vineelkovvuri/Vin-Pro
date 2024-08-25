@@ -40,6 +40,7 @@ impl<T> DerefMut for Shaper<T> {
     fn deref_mut(&mut self) -> &mut Self::Target {
         &mut self.shape
     }
+}
 
 fn main() {
     let shaper = Shaper {
