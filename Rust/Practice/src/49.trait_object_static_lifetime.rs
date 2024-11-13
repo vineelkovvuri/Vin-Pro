@@ -25,6 +25,3 @@ pub trait PageAllocator {
 pub fn new_paging<T: PageAllocator>(page_allocator: T) -> Box<dyn PageAllocator> {
     Box::new(page_allocator)
 }
-
-fn main() {
-}
