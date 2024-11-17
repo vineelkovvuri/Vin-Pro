@@ -1,16 +1,11 @@
-use std::fmt::Display;
-
 fn main() {
-    // With the help of trait bounds(for example Display trait here), we can old
-    // different type of object in to an vector and print them
-    let array: Vec<Box<dyn Display>> = vec![Box::new(10), Box::new("asfasdf")];
-    for arr in array {
-        println!("{}", arr);
-    }
+    let strs = [
+        "feat(font): allow using A1,2,4 bitmaps + handle byte aligned fonts",
+        "feat(observer): add subject snprintf",
+        "feat(observer)",
+    ];
 
-    // More static way
-    let array: [Box<dyn Display>; 2] = [Box::new(10), Box::new("asfasdf")];
-    for arr in array {
-        println!("{}", arr);
+    for s in strs {
+        println!("|{:25.25}|", s);
     }
 }

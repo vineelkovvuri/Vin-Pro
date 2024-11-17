@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 chrono = "0.4"
 time = "0.3"
+unicode-width = "0.2.0"
