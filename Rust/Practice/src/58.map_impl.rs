@@ -17,8 +17,8 @@ fn main() {
     dbg!(my_map(x, |x| 10.2)); // panic
 }
 
-// This function is similar to unwrap jus that it has custom error message
-// on panic
+// This function takes an option and return an option of different type. If the
+// option is none it is expected to panic
 fn my_map<T, F, U>(opt: Option<T>, f: F) -> Option<U>
 where
     F: FnOnce(T) -> U,

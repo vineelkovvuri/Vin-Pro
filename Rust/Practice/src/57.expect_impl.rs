@@ -17,8 +17,6 @@ fn main() {
 // This function is similar to unwrap jus that it has custom error message
 // on panic
 fn my_expect<T>(opt: Option<T>, string: &str) -> T
-where
-    T: Default,
 {
     match opt {
         Some(value) => value,
