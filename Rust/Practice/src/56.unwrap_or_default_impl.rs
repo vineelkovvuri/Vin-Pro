@@ -14,7 +14,8 @@ fn main() {
     dbg!(my_unwrap_or_default(x)); // return 10
 }
 
-// This helps in lazy evaluation of the function's code
+// This helps in returning the default value of the type. Hence T is
+// constrainned on the T: Default trait
 fn my_unwrap_or_default<T>(opt: Option<T>) -> T
 where
     T: Default,
