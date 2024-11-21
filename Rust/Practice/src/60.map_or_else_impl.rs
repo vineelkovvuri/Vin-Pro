@@ -1,4 +1,4 @@
-// map_or
+// map_or_else
 // map_or_else (() -> U, (T) -> U) -> U
 //    Some(T) => (T) -> U
 //    None    => () -> U
