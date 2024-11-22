@@ -25,7 +25,7 @@ fn my_and<T, U>(opt: Option<T>, optu: Option<U>) -> Option<U> {
     }
 }
 
-// - Option<T> => unwrap_or() => Option<T>
+// - Option<T> => unwrap_or() => T
 //   - The final type is still T because we are filling in the missing value. So
 // this works when Option<T> is None
 // - Option<T> => and() => Option<U>

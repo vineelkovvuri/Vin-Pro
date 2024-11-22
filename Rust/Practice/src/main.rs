@@ -1,39 +1,62 @@
-// and_then - Returns None if the option is None, otherwise calls f with the
-// wrapped value and returns the result.
+// or_else - Returns the option if it contains a value, otherwise calls f and returns the result.
 //
 // functions
-// and_then ((T) -> Option<U>) -> Option<U>
+// or_else (() -> Option<T>) -> Option<T>
 //  match T
-//    Some(value) => f(value),
-//    None    => None
+// Some(value) => Some(value),
+// None => f(),
+
+pub type PtResult<T> = Result<T, PtError>;
+
+#[derive(Debug, PartialEq)]
+pub enum PtError {
+    // Invalid parameter
+    InvalidParameter,
+
+    // Out of resources
+    OutOfResources,
+
+    // No Mapping
+    NoMapping,
+
+    // Incompatible Memory Attributes
+    IncompatibleMemoryAttributes,
+
+    // Unaligned Page Base
+    UnalignedPageBase,
+
+    // Unaligned Address
+    UnalignedAddress,
+
+    // Unaligned Memory Range
+    UnalignedMemoryRange,
+
+    // Invalid Memory Range
+    InvalidMemoryRange,
+}
+
 fn main() {
-    let x = Some(20);
-    dbg!(x.and_then(|v| Some(v * 2))); // Some(40)
 
-    let x = Option::<u32>::None;
-    dbg!(x.and_then(|v| Some(v * 2))); // None
+    let x = Some(60);
+    let y = x.and(Some(())).ok_or(PtError::InvalidMemoryRange);
+    assert_eq!(y, Ok(()));
 
-    let x = Some(20);
-    dbg!(my_and_then(x, |v| Some(v * 2))); // Some(40)
+    let x = Option::<i32>::None;
+    let y = x.and(Some(())).ok_or(PtError::InvalidMemoryRange);
+    assert_eq!(y, Err(PtError::InvalidMemoryRange));
 
-    let x = Option::<u32>::None;
-    dbg!(my_and_then(x, |v| Some(v * 2))); // None
+
+    let x = Some(60);
+    let y = x.map(|_| ()).ok_or(PtError::InvalidMemoryRange);
+    assert_eq!(y, Ok(()));
+
+    let x = Option::<i32>::None;
+    let y = x.map(|_| ()).ok_or(PtError::InvalidMemoryRange);
+    assert_eq!(y, Err(PtError::InvalidMemoryRange));
+    
+
+    let v = vec![1,2,2,3,4];
+    let i1 = v.into_iter();
+    let v = vec![1,2,2,3,4];
+    let i2 = v.iter();
 }
-
-fn my_and_then<T, F, U>(opt: Option<T>, f: F) -> Option<U>
-where
-    F: FnOnce(T) -> Option<U>,
-{
-    match opt {
-        Some(value) => f(value),
-        None => None,
-    }
-}
-
-// - Option<T> => unwrap_or() => Option<T>
-//   - The final type is still T because we are filling in the missing value. So
-// this works when Option<T> is None
-// - Option<T> => and_then() => Option<U>
-//   - The final type is U because we are replacing success case. So this works
-//     when Option<T> is Some In a sense, and_then() will convert one Option to
-// other Option and also uses the previous T to produce U
