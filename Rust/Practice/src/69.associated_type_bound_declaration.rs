@@ -2,7 +2,7 @@
 trait FormatTrait{}
 
 // Bounds on associated types can be declared after the trait name using Self::
-// or can also be declared inside the trait after the associated type.
+// or can be declared inside the trait after the associated type.
 trait Book1
 where
     Self::Format: FormatTrait,
@@ -16,8 +16,4 @@ trait Book2 {
     where
         Self::Format: FormatTrait;
     fn read(&self);
-}
-
-fn main() {
-
 }
