@@ -1,32 +1,3 @@
-// Below is an example of how Iterators work, CountUp do not produce new
-// iterator objects but instead acts itself as a single iterator object whose
-// state gets modified as we use it. Hence in the examples we are recreating the
-// CountUp object multiple times
-struct CountUp {
-    current: u32,
-    max: u32,
-}
-
-impl CountUp {
-    pub fn new(current: u32, max: u32) -> Self {
-        Self { current, max }
-    }
-}
-
-impl Iterator for CountUp {
-    type Item = u32;
-
-    fn next(&mut self) -> Option<Self::Item> {
-        if self.current == self.max {
-            None
-        } else {
-            let curr = self.current;
-            self.current = self.current + 1;
-            Some(curr)
-        }
-    }
-}
-
 fn main() {
     let x = Some(19);
     let _y = x.map(|v| v * 2);
