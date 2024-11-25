@@ -178,4 +178,15 @@ fn main() {
     );
     assert_eq!(merge_and_transform(Some("Hello"), None), None);
     assert_eq!(merge_and_transform(None, None), None);
+
+    // Difference b/w map() and and_then() and when to you each of them They
+    // both have return Option<U> but closure returns U in case of map() and
+    // Option<U> incase of and_then(). Because and_then() have the flexibility
+    // to return Option by itself, it has more freedom to perform filtering on T
+    // (the argument passed to the closure). Here, if x <= 5 we have the choice
+    // to send None. Where as the same cannot be done via map() because in map
+    // we cannot filter but cannot return the None for x <= 5
+    let x = Some(10);
+    let result = x.and_then(|x| if x > 5 { Some(x * 2) } else { None });
+    // let result = x.map(|x| if x > 5 { x * 2 } else { ??? });
 }
