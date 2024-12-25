@@ -1,24 +1,5 @@
 #![allow(unused)]
 
-// use std::{
-//     alloc::{GlobalAlloc, System},
-//     ptr,
-// };
-
-// struct MyAllocator;
-// #[global_allocator]
-// static GLOBAL: MyAllocator = MyAllocator;
-
-// unsafe impl GlobalAlloc for MyAllocator {
-//     unsafe fn alloc(&self, layout: std::alloc::Layout) -> *mut u8 {
-//         System.alloc(layout)
-//     }
-
-//     unsafe fn dealloc(&self, ptr: *mut u8, layout: std::alloc::Layout) {
-//         System.dealloc(ptr, layout);
-//     }
-// }
-
 // https://discord.com/channels/442252698964721669/448238009733742612/1321260894658756628
 // In terms of usage, `struct Book {}`  is “just” a struct with no fields at the
 // moment, and when you switch to `struct Book;` you're saying this will _never_
