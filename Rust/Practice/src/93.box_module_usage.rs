@@ -2,6 +2,7 @@
 
 use std::array::from_fn;
 
+
 fn main() {
     let mut box1 = Box::new(10);
     *box1 = 30;
