@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Reset>
+ <Run Phase="BasicReset_BeforeImageApply">
+   <Path></Path>
+   <Duration></Duration>
+ </Run>
+ <Run Phase="BasicReset_AfterImageApply">
+   <Path></Path>
+   <Param></Param>
+   <Duration></Duration>
+ </Run>
+ <Run Phase="FactoryReset_AfterDiskFormat">
+   <Path></Path>
+   <Duration></Duration>
+ </Run>
+ <Run Phase="FactoryReset_AfterImageApply">
+   <Path></Path>
+   <Param></Param>
+   <Duration></Duration>
+ </Run>
+ <SystemDisk>
+   <MinSize>10240</MinSize>
+   <DiskpartScriptPath>diskpart.txt</DiskpartScriptPath>
+   <OSPartition>3</OSPartition>
+   <WindowsREPartition>4</WindowsREPartition>
+   <WindowsREPath>Recovery\WindowsRE</WindowsREPath>
+   <Compact>false</Compact>
+ </SystemDisk>
+</Reset>

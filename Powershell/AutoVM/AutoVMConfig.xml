@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<autovm>
+  <generalized>
+    <vm path="\\redmond\osg\Threshold\ImageStore\VHD\Common\Windows XP\amd64fre\3790.1830.amd64fre.srv03_sp1_rtm.050324-1447_Client_Professional_en-US.vhd" platform="xp_rtm" />
+    <vm path="\\redmond\osg\Threshold\ImageStore\VHD\Common\Windows XP\amd64fre\3790.5138.amd64fre.srv03_sp2_gdr.130306-1435_Client_Professional_en-US.vhd" platform="xp" />
+    <vm path="\\effigy\images\x64\en.2k3.dtc.sp2.fpp.Patched.vhd" platform="2003" />
+    <vm path="\\redmond\osg\Threshold\ImageStore\VHD\Common\Windows Vista\amd64fre\6000.16386.amd64fre.vista_rtm.061101-2205_Client_Enterprise_en-US.vhd" platform="vista_rtm" />
+    <vm path="\\redmond\osg\Threshold\ImageStore\VHD\Common\Windows Vista\amd64fre\6002.19514.amd64fre.vistasp2_gdr.151014-0604_Client_Ultimate_en-US.vhd" platform="vista" />
+    <vm path="\\effigy\images\x64\en.2k8.serverdatacenter.sp2.fpp.Patched.vhd" platform="2008" />
+    <vm path="\\winbuilds\release\WIN8_RTM\9200.16384.120725-1247\amd64fre\vhd\vhd_client_enterprise_en-us_vl\9200.16384.amd64fre.win8_rtm.120725-1247_client_enterprise_en-us_vl.vhd" platform="win8_rtm" />
+    <vm path="\\effigy\images\x64\en.Win8.Enterprise.rtm.vl.Patched.vhd" platform="win8" />
+    <vm path="\\effigy\images\x64\en.Win7.Ultimate.sp1.fpp.Patched.vhd" platform="win7" />
+    <vm path="\\effigy\images\x64\en.2k8R2.serverdatacenter.sp1.fpp.Patched.vhd" platform="2008r2" />
+    <vm path="\\winbuilds\release\WIN8_RTM\9200.16384.120725-1247\amd64fre\vhd\vhd_server_serverdatacenter_en-us_vl\9200.16384.amd64fre.win8_rtm.120725-1247_server_ServerDataCenter_en-us_vl.vhd" platform="2012_rtm" />
+    <vm path="\\effigy\images\x64\en.2k12.serverdatacenter.rtm.fpp.Patched.vhd" platform="2012" />
+    <vm path="\\winbuilds\release\WINBLUE_RTM\9600.16384.130821-1623\amd64fre\vhd\vhd_client_enterprise_en-us_vl\9600.16384.amd64fre.winblue_rtm.130821-1623_client_enterprise_en-us_vl.vhd" platform="win8.1_rtm" />
+    <vm path="\\effigy\images\x64\en.winblue.Enterprise.rtm.vl.Patched.vhd" platform="win8.1" />
+    <vm path="\\winbuilds\release\WINBLUE_RTM\9600.16384.130821-1623\amd64fre\vhd\vhd_server_serverdatacenter_en-us\9600.16384.amd64fre.winblue_rtm.130821-1623_server_serverdatacenter_en-us.vhd" platform="2012r2_rtm" />
+    <vm path="\\effigy\Images\x64\en.2k12r2.serverdatacenter.rtm.fpp.Patched.vhd" platform="2012r2" />
+    <vm path="\\winbuilds\release\TH1\10240.16384.150709-1700\amd64fre\vhd\vhd_client_enterprise_en-us_vl\10240.16384.amd64fre.th1.150709-1700_client_enterprise_en-us_vl.vhd" platform="th1_rtm" />
+    <vm path="\\effigy\Images\x64\en.win10.Enterprise.TH1.MANUALBUILT.PATCHED.vhd" platform="th1" />
+    <vm path="\\winbuilds\release\TH2_Release\10586.0.151029-1700\amd64fre\vhd\vhd_client_enterprise_en-us_vl\10586.0.amd64fre.th2_release.151029-1700_client_enterprise_en-us_vl.vhd" platform="th2_rtm" />
+    <vm path="\\effigy\Images\x64\en.win10.Enterprise.th2.manualbuilt.patched.vhd" platform="th2" />
+    <vm path="\\winbuilds\release\RS1_RELEASE\14393.0.160715-1616\amd64fre\vhd\vhd_client_enterprise_en-us_vl\14393.0.amd64fre.rs1_release.160715-1616_client_enterprise_en-us_vl.vhd" platform="rs1_rtm" />
+    <vm path="\\effigy\Images\x64\en.win10.Enterprise.RS1.MANUALBUILT.PATCHED.vhd" platform="rs1" />
+    <vm path="\\winbuilds\release\RS1_REFRESH\14393.0.160911-2111\amd64fre\vhd\vhd_server_serverdatacenter_en-us_vl\14393.0.amd64fre.rs1_refresh.160911-2111_server_ServerDataCenter_en-us_vl.vhd" platform="2016_rtm" />
+    <vm path="\\effigy\Images\x64\en.2k16.ServerDatacenter.RS1.manualbuilt.Patched.vhd" platform="2016" />
+    <vm path="\\winbuilds\release\RS2_RELEASE\15063.0.170317-1834\amd64fre\vhd\vhd_client_enterprise_en-us_vl\15063.0.AMD64FRE.RS2_RELEASE.170317-1834_CLIENT_ENTERPRISE_EN-US_VL.VHD" platform="rs2_rtm" />
+    <vm path="\\winbuilds\release\RS3_RELEASE\16299.15.170928-1534\amd64fre\vhd\vhd_client_enterprise_en-us_vl\16299.15.amd64fre.rs3_release.170928-1534_client_enterprise_en-us_vl.vhd" platform="rs3_rtm" />
+    <vm path="{}" platform="rs3" />
+    <vm path="\\winbuilds\release\rs4_release\17134.1.180410-1804\amd64fre\vhd\vhd_client_enterprise_en-us_vl\17134.1.amd64fre.rs4_release.180410-1804_client_enterprise_en-us_vl.vhd" platform="rs4_rtm" />
+    <vm path="{}" platform="rs4" />
+    <vm path="\\winbuilds\release\rs5_release_svc_refresh\17763.107.101029-1455\amd64fre\vhd\vhd_client_enterprise_en-us_vl\17763.107.amd64fre.rs5_release_svc_refresh.101029-1455_client_enterprise_en-us_vl.vhd" platform="rs5_rtm" />
+    <vm path="{}" platform="rs5" />
+    <vm path="\\winbuilds\release\rs5_release_svc_refresh\17763.107.101029-1455\x86fre\vhd\vhd_client_enterprise_en-us_vl\17763.107.x86fre.rs5_release_svc_refresh.101029-1455_client_enterprise_en-us_vl.vhd" platform="rs5_rtm_x86" />
+    <vm path="\\winbuilds\release\rs2_release_svc_1_2_3\15063.10000.191001-1900\amd64fre\vhd\vhd_client_enterprise_en-us_vl\15063.10000.amd64fre.rs2_release_svc_1_2_3.191001-1900_client_enterprise_en-us_vl.vhd" platform="custom" />
+
+
+    <!-- <vm path="\\effigy\images\x64\en.2k3.dtc.sp2.fpp.Patched.vhd" platform="2003_rtm" /> -->
+  </generalized>
+  <enlightenedvhdstore>D:\Hyper-V\Enlightened</enlightenedvhdstore>
+  <toolspath>D:\Hyper-V\tools</toolspath>
+  <vhdstore>D:\Hyper-V\VirtualHardDisks</vhdstore> <!-- This will store the VM vhd files. Path to a folder inside SSD drive is recommended -->
+  <vmconfigpath>D:\Hyper-V\VirtualMachines</vmconfigpath>
+  <scratchvhdpath>D:\nt\</scratchvhdpath>
+  <ram>1GB</ram>
+  <cores>2</cores>
+</autovm>

@@ -1,0 +1,32 @@
+TARGETTYPE=PROGRAM
+TARGETNAME=change2bin
+
+_NT_TARGET_VERSION=$(_NT_TARGET_VERSION_WIN7)
+
+MSC_WARNING_LEVEL=/W4 /WX
+
+# This defines the unicode
+C_DEFINES=$(C_DEFINES) -DUNICODE -D_UNICODE
+
+# This will make sure we use the correct main function
+UMENTRY=wmain
+UMTYPE=console
+
+USE_MSVCRT=1
+USE_UNICRT=1
+
+SOURCES=main.c\
+		utils.c\
+		builds.c\
+		binplace.c\
+		config.c\
+
+TARGETLIBS=\
+		   $(SDK_LIB_PATH)\kernel32.lib
+
+# Lets disable inlining and optimizations for testing purpose
+MSC_OPTIMIZATION=$(MSC_OPTIMIZATION) /Od
+
+TARGET_DESTINATION=change2bin
+
+PASS2_BINPLACE= -:DEST change2bin config.txt func.txt   \

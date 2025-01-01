@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cbmr>
+  <enabled>true</enabled>
+
+  <!-- Build and Branch info -->
+   <!--<build>25163.1000.220715-1711</build> --> <!-- 22518.1000.211203-1458 If this is empty, A DCAT published build is picked -->
+  <branch>rs_prerelease</branch>
+  <endpointtype>prod</endpointtype>
+
+  <!-- Standard endpoints -->
+  <ppeendpoint>https://glb.cws-int.dcat.com/UpdateMetadataService/updates/search/v1/bydeviceinfo/</ppeendpoint>
+  <prodendpoint>https://fe3.com:443/UpdateMetadataService/updates/search/v1/bydeviceinfo/</prodendpoint>
+
+  <!-- Parameters to spawn a new VM -->
+  <vmconfigpath>C:\Hyper-V\VirtualMachines</vmconfigpath>
+  <memory>8GB</memory>
+  <cores>4</cores>
+
+  <!-- Other miscellaneous parameters -->
+  <emailto>abc@microsoft.com</emailto> <!-- change this to your email id -->
+  <logpath>\\ffucore\public\vineelko\cbmr\Logs\DailyRuns</logpath>
+</cbmr>

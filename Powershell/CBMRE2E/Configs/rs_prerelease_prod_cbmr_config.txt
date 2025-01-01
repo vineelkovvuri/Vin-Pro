@@ -1,0 +1,21 @@
+[debug]
+mask=0x7
+spew=debugger,file
+early_break=false
+
+[app]
+#show_wifi_ux=false
+#wifi_sid=ABCDEFG
+#wifi_password=5qZOBMj6PJhkWxxr
+
+[driver]
+# Uncomment below if testing against local HTTP endpoint. Swap in your own IP address or URL to an arbitrary HTTP/HTTPS endpoint.
+#url=http://10.137.200.72:50000/
+
+# force_https=false
+# skip_hash_validation=false
+dcat_endpoint_type=prod
+endpoint_type=dcat
+write_si_uefi_variable=false
+driver_download_endpoint_type=none
+enable_test_signing_on_stubos=true
