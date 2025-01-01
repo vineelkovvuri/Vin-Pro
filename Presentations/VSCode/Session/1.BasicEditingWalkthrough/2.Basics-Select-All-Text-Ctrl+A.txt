@@ -1,0 +1,10 @@
+In November 2011, Google began rolling out a redesign of its interface that
+"simplified" the look of Gmail into a more minimalist design to provide a more
+consistent look throughout its products and services as part of an overall
+Google design change. Majorly redesigned elements included a streamlined
+conversation view, configurable density of information, new higher-quality
+themes, a resizable navigation bar with always-visible labels and contacts, and
+better search.[19][20] Users were able to preview the new interface design for
+months prior to the official release, as well as revert to the old interface,
+until March 2012, when Google discontinued the ability to revert and completed
+the transition to the new design for all users.[21]

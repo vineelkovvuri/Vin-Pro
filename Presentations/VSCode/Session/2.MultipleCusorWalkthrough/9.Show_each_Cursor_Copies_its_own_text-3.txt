@@ -1,0 +1,12 @@
+// Copy the text before the - using Multiple cursors
+// 1. Searching Method(Ctrl+D)
+// 2. Dragging Method(Ctrl+Alt+Up/Down)
+// 3. Selecting Lines Method(Shift+Alt+I)
+// 4. Find All Method(Ctrl+F > Alt+Enter)
+
+Blob Storage - 1
+Static website (Blob Storage) + 2
+Data Lake Storage Gen2 - 3
+Azure Files # 4
+Queue Storage | 5
+Table Storage - 6

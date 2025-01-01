@@ -1,0 +1,13 @@
+// Change 'the' to 'THE'
+
+At its launch in 2004, Gmail provided a storage capacity of one gigabyte per
+user, which was significantly higher than its competitors offered at the time.
+Today, the service comes with 15 gigabytes of storage for free for individual
+users, which is divided among other Google services, such as Google Drive, and
+Google Photos.[3] Users in need of more storage can purchase Google One to
+increase this 15 GB limit.[4] Users can receive emails up to 50 megabytes in
+size, including attachments, and can send emails up to 25 megabytes. In order to
+send larger files, users can insert files from Google Drive into the message.
+Gmail has a search-oriented interface and supports a "conversation view" similar
+to an Internet forum.[5] The service is notable among website developers for its
+early adoption of Ajax

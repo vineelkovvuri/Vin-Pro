@@ -1,0 +1,237 @@
+// Clean up the line number. And also explain how to uniformly move the
+// cursors for both one word country names and two word country names
+
+1	India
+2	China
+3	United States
+4	Indonesia
+5	Pakistan
+6	Nigeria
+7	Brazil
+8	Bangladesh
+9	Russia
+10	Mexico
+11	Ethiopia
+12	Japan
+13	Philippines
+14	Egypt
+15	DR Congo
+16	Vietnam
+17	Iran
+18	Turkey
+19	Germany
+20	Thailand
+21	United Kingdom
+22	Tanzania
+23	France
+24	South Africa
+25	Italy
+26	Kenya
+27	Myanmar
+28	Colombia
+29	South Korea
+30	Uganda
+31	Sudan
+32	Spain
+33	Argentina
+34	Algeria
+35	Iraq
+36	Afghanistan
+37	Poland
+38	Canada
+39	Morocco
+40	Saudi Arabia
+41	Ukraine
+42	Angola
+43	Uzbekistan
+44	Yemen
+45	Peru
+46	Malaysia
+47	Ghana
+48	Mozambique
+49	Nepal
+50	Madagascar
+51	Côte d'Ivoire
+52	Venezuela
+53	Cameroon
+54	Niger
+55	Australia
+56	North Korea
+57	Taiwan
+58	Mali
+59	Burkina Faso
+60	Syria
+61	Sri Lanka
+62	Malawi
+63	Zambia
+64	Romania
+65	Chile
+66	Kazakhstan
+67	Chad
+68	Ecuador
+69	Somalia
+70	Guatemala
+71	Senegal
+72	Netherlands
+73	Cambodia
+74	Zimbabwe
+75	Guinea
+76	Rwanda
+77	Benin
+78	Burundi
+79	Tunisia
+80	Bolivia
+81	Haiti
+82	Belgium
+83	Jordan
+84	Dominican Republic
+85	Cuba
+86	South Sudan
+87	Sweden
+88	Honduras
+89	Czech Republic (Czechia)
+90	Azerbaijan
+91	Greece
+92	Papua New Guinea
+93	Portugal
+94	Hungary
+95	Tajikistan
+96	United Arab Emirates
+97	Belarus
+98	Israel
+99	Togo
+100	Austria
+101	Switzerland
+102	Sierra Leone
+103	Laos
+104	Hong Kong
+105	Serbia
+106	Nicaragua
+107	Libya
+108	Paraguay
+109	Kyrgyzstan
+110	Bulgaria
+111	Turkmenistan
+112	El Salvador
+113	Congo
+114	Singapore
+115	Denmark
+116	Slovakia
+117	Central African Republic
+118	Finland
+119	Norway
+120	Liberia
+121	State of Palestine
+122	Lebanon
+123	New Zealand
+124	Costa Rica
+125	Ireland
+126	Mauritania
+127	Oman
+128	Panama
+129	Kuwait
+130	Croatia
+131	Eritrea
+132	Georgia
+133	Mongolia
+134	Moldova
+135	Uruguay
+136	Puerto Rico
+137	Bosnia and Herzegovina
+138	Albania
+139	Jamaica
+140	Armenia
+141	Gambia
+142	Lithuania
+143	Qatar
+144	Botswana
+145	Namibia
+146	Gabon
+147	Lesotho
+148	Guinea-Bissau
+149	Slovenia
+150	North Macedonia
+151	Latvia
+152	Equatorial Guinea
+153	Trinidad and Tobago
+154	Bahrain
+155	Timor-Leste
+156	Estonia
+157	Mauritius
+158	Cyprus
+159	Eswatini
+160	Djibouti
+161	Réunion
+162	Fiji
+163	Comoros
+164	Guyana
+165	Bhutan
+166	Solomon Islands
+167	Macao
+168	Luxembourg
+169	Montenegro
+170	Suriname
+171	Cabo Verde
+172	Western Sahara
+173	Micronesia
+174	Malta
+175	Maldives
+176	Brunei
+177	Bahamas
+178	Belize
+179	Guadeloupe
+180	Iceland
+181	Martinique
+182	Mayotte
+183	Vanuatu
+184	French Guiana
+185	French Polynesia
+186	New Caledonia
+187	Barbados
+188	Sao Tome & Principe
+189	Samoa
+190	Curaçao
+191	Saint Lucia
+192	Guam
+193	Kiribati
+194	Grenada
+195	Tonga
+196	Seychelles
+197	Aruba
+198	St. Vincent & Grenadines
+199	U.S. Virgin Islands
+200	Antigua and Barbuda
+201	Isle of Man
+202	Andorra
+203	Dominica
+204	Cayman Islands
+205	Bermuda
+206	Greenland
+207	Faeroe Islands
+208	Northern Mariana Islands
+209	Saint Kitts & Nevis
+210	Turks and Caicos
+211	Sint Maarten
+212	American Samoa
+213	Marshall Islands
+214	Liechtenstein
+215	Monaco
+216	San Marino
+217	Gibraltar
+218	Saint Martin
+219	British Virgin Islands
+220	Caribbean Netherlands
+221	Palau
+222	Cook Islands
+223	Anguilla
+224	Nauru
+225	Wallis & Futuna
+226	Tuvalu
+227	Saint Barthelemy
+228	Saint Pierre & Miquelon
+229	Saint Helena
+230	Montserrat
+231	Falkland Islands
+232	Niue
+233	Tokelau
+234	Holy See

@@ -1,0 +1,16 @@
+// Indent from line 4 to the end using multiple cursors
+
+1. On May 13, 2013, Google announced the overall merge of storage across Gmail,
+Google Drive, and Google+ Photos, allowing users 15 gigabytes of included
+storage among three services.[11][12] On August 15, 2018, Google launched Google
+One, a service where users can pay for additional storage, shared among Gmail,
+Google Drive and Google Photos, through a monthly subscription plan. As of 2021,
+storage of up to 15 gigabytes is included, and paid plans are available for up
+to 2 terabytes for personal use.Google Drive, and Google+ Photos, allowing users
+15 gigabytes of included storage among three services.[11][12]. The Gmail user
+interface initially differed from other web-mail systems with its focus on
+search and conversation threading of emails, grouping several messages between
+two or more people onto a single page, an approach that was later copied by its
+competitors. Gmail's user interface designer, Kevin Fox, intended users to feel
+as if they were always on one page and just changing things on that page, rather
+than having to navigate to other places

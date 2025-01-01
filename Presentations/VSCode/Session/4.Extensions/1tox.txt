@@ -1,0 +1,29 @@
+// Make it in to a number list
+
+East Asia
+Southeast Asia
+Australia East
+Brazil South
+Canada Central
+China East
+China North
+North Europe
+West Europe
+France Central
+Germany West Central
+Central India
+Japan East
+Jio India West
+Korea Central
+Norway East
+South Africa North
+Sweden Central
+UAE North
+UK South
+Central US
+East US
+USGov Virginia
+USGov Arizona
+North Central US
+South Central US
+West US
