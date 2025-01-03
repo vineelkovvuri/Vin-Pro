@@ -10,6 +10,8 @@
     cp = cherry-pick
 [diff]
 	tool = meld
+    colormoved = "default"
+    colormovedws = "allow-indentation-change"
 [difftool]
     prompt = false
 [merge]
