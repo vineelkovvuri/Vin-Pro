@@ -54,11 +54,13 @@ winget install -h --id "WiresharkFoundation.Wireshark"             --accept-sour
 winget install -h --id "Zoom.Zoom"                                 --accept-source-agreements   --accept-package-agreements
 winget install -h --id "BurntSushi.ripgrep.MSVC"                   --accept-source-agreements   --accept-package-agreements
 winget install -h --id "zyedidia.micro"                            --accept-source-agreements   --accept-package-agreements
-winget install -h --id "yt-dlp.yt-dlp"                            --accept-source-agreements   --accept-package-agreements
+winget install -h --id "yt-dlp.yt-dlp"                             --accept-source-agreements   --accept-package-agreements
 winget install -h --id "jqlang.jq"             				       --accept-source-agreements   --accept-package-agreements
 winget install -h --id "Github.cli"                                --accept-source-agreements   --accept-package-agreements
 winget install -h --id "Hex-Rays.IDA.Free"                         --accept-source-agreements   --accept-package-agreements
 rem winget install -h --id "MITMediaLab.Scratch.3"                     --accept-source-agreements   --accept-package-agreements
+
+winget install -h --id "eSpeak-NG.eSpeak-NG"                       --accept-source-agreements   --accept-package-agreements
 
 :: Entertainment
 winget install -h --id "VideoLAN.VLC"                              --accept-source-agreements   --accept-package-agreements
@@ -71,9 +73,8 @@ winget install -h --id "HandBrake.HandBrake"                       --accept-sour
 winget install -h --id "REALiX.HWiNFO"                             --accept-source-agreements   --accept-package-agreements
 winget install -h --id "Rufus.Rufus"                               --accept-source-agreements   --accept-package-agreements
 winget install -h --id "ventoy.Ventoy"                             --accept-source-agreements   --accept-package-agreements
-winget install -h --id "LSoftTechnologies.ActiveDiskEditor"        --accept-source-agreements   --accept-package-agreements
 winget install -h --id "LSoftTechnologies.ActivePartitionManager"  --accept-source-agreements   --accept-package-agreements
-winget install -h --id "Hugo.Hugo"  --accept-source-agreements   --accept-package-agreements
+winget install -h --id "Hugo.Hugo"                                 --accept-source-agreements   --accept-package-agreements
 
 
 :: Restricted
@@ -82,6 +83,7 @@ winget install -h --id "Hugo.Hugo"  --accept-source-agreements   --accept-packag
 :: winget install -h --id "TorProject.TorBrowser"                    --accept-source-agreements   --accept-package-agreements
 
 :: Optional
+winget install -h --id "LSoftTechnologies.ActiveDiskEditor"        --accept-source-agreements   --accept-package-agreements
 winget install -h --id "Alacritty.Alacritty"                       --accept-source-agreements   --accept-package-agreements
 winget install -h --id "CrystalDewWorld.CrystalDiskMark"           --accept-source-agreements   --accept-package-agreements
 winget install -h --id "cURL.cURL"                                 --accept-source-agreements   --accept-package-agreements
@@ -114,8 +116,5 @@ winget install -h --id "Mp3tag.Mp3tag"                             --accept-sour
 
 
 winget install -h --id "Oracle.VirtualBox"                         --accept-source-agreements   --accept-package-agreements
-winget install -h --id "Mp3tag.Mp3tag"                             --accept-source-agreements   --accept-package-agreements
-winget install -h --id "Mp3tag.Mp3tag"                             --accept-source-agreements   --accept-package-agreements
-winget install -h --id "Mp3tag.Mp3tag"                             --accept-source-agreements   --accept-package-agreements
 
 ::winget upgrade --all
