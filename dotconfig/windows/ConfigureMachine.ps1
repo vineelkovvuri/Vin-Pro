@@ -25,4 +25,5 @@ AppendPathVariable -Path "C:\Program Files\Notepad4"
 AppendPathVariable -Path "C:\Program Files\Sublime Text"
 AppendPathVariable -Path "C:\Program Files\eSpeak NG"
 AppendPathVariable -Path "C:\Program Files (x86)\Meld\meld"
+AppendPathVariable -Path "C:\msys64\ucrt64\bin"
 
