@@ -24,6 +24,7 @@ winget install -h --id "Cockos.LICEcap"                            --accept-sour
 winget install -h --id "Microsoft.Sysinternals.RDCMan"             --accept-source-agreements   --accept-package-agreements
 winget install -h --id "PuTTY.PuTTY"                               --accept-source-agreements   --accept-package-agreements
 winget install -h --id "TTYPlus.MTPutty"                           --accept-source-agreements   --accept-package-agreements
+winget install -h --id "tailscale.tailscale"                       --accept-source-agreements   --accept-package-agreements
 
 :: Development
 winget install -h --id "Git.Git"                                   --accept-source-agreements   --accept-package-agreements
