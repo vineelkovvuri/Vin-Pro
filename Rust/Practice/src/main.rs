@@ -1,76 +1,57 @@
 #![allow(unused)]
 
-use std::ops::Deref;
-
-struct OuterType<T>(T);
-
-impl<T> Deref for OuterType<T> {
-    type Target = T;
-
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-
-impl<T> OuterType<T> {
-    fn print1() {
-        println!("Function on OuterType");
-    }
-
-    fn print2(&self) {
-        println!("Method on OuterType");
-    }
-
-    fn print3() {
-        println!("Function on OuterType");
-    }
-
-    fn print4(&self) {
-        println!("Method on OuterType");
-    }
-}
-
-struct InnerType;
-
-impl InnerType {
-    fn print1() {
-        println!("Function on underlying Type");
-    }
-
-    fn print2(&self) {
-        println!("Method on underlying Type");
-    }
-
-    fn print3(&self) {
-        println!("Method on underlying Type");
-    }
-
-    fn print4() {
-        println!("Function on underlying Type");
-    }
-}
-
 fn main() {
-    let smart_box = OuterType(InnerType);
-    smart_box.print1();
-    smart_box.print2();
-    smart_box.print3();
-    smart_box.print4();
-    OuterType::<InnerType>::print1();
-    // OuterType::<InnerType>::print2();
-    OuterType::<InnerType>::print3();
-    // OuterType::<InnerType>::print4();
+    let data: [u8; 10] = [0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88, 0x99, 0xAA];
+
+    // Alignment Tidbit: Alignment depends on the data type we are using. u8 has
+    // an alignment of 1, so u8 values can be accessed at any address. In
+    // contrast, u16 has an alignment of 2, so they can only be accessed at
+    // addresses aligned by 2.
+
+    // Case 1: unaligned u16 access from raw pointer. This will panic
+    let data_ptr = data.as_ptr();
+    unsafe {
+        let ptr = data_ptr.add(1) as *const u16; // interpretting the underlying address as u16
+        let x = *ptr; // This dereference will panic: misaligned pointer dereference: address must be a multiple of 0x2 but is 0x7ffdec94efcd
+        println!("x: {x}");
+    }
+
+    // Slices: Accessing elements through a slice will have the same alignment
+    // as its underlying data. So this prevent unaligned access. Also we cannot
+    // interpret a u8 array as a u16 slice unlike raw pointer access
+    // Case 2: aligned u8 access from slice
+    let slice = &data[1..2];
+    let value = slice[0]; // This works
+    println!("slice: {value}");
+
+    // Case 3: unaligned u16 access from a slice using unsafe. This will panic
+    unsafe {
+        let data_ptr: *const u8 = data.as_ptr();
+        let unaligned_data_ptr: *const u8 = data_ptr.add(1);
+         // slice::from_raw_parts will panic as unaligned *const u8 is being
+         // interpreted as *const u16 .
+        let unaligned_slice =
+            unsafe { core::slice::from_raw_parts(data_ptr as *const u16, 2 as usize) };
+        let value = slice[0];
+        println!("unaligned_slice: {value}");
+    }
+
+    // Takeaway 1: The takeaway here is that when interpreting *const u8 as u16
+    // or u32, we cannot simply cast *const u8 as *const u16 and dereference
+    // that location and except u16. Instead, we can only access the *const u8
+    // as two u8 values and then use bit math to combine those bytes to form a
+    // u16.
+
+    // Takeaway 2: When creating an array of u8(with odd number of elements),
+    // the address at which the array starts in memory need not be a power of 2.
+    // Because u8's have an alignment of 1. If that is the case, and trying to
+    // interpret data + 1 address location as u16 will not trigger a panic. Be
+    // aware of that!
+    let data: [u8; 5] = [0x11, 0x22, 0x33, 0x44, 0x55];
+    let data_ptr = data.as_ptr();
+    unsafe {
+        let ptr = data_ptr.add(1) as *const u16; // interpretting the underlying address as u16
+        let x = *ptr; // This dereference will NOT trigger a panic!
+        println!("{x}");
+    }
 }
-
-
-// | OuterType | InnerType | smart_box.func()          |
-// |-----------|-----------|---------------------------|
-// | function  | function  | Do not compile            |
-// | method    | method    | Method on OuterType       |
-// | function  | method    | Method on underlying Type |
-// | method    | function  | Method on OuterType       |
-
-// When Deref trait is implement on OuterType to return InnerType, Rust prefers
-// method calls over function calls when using obj_ref.func() syntax. If both
-// outer and inner type has method with the same name then outer struct is
-// preferred.
