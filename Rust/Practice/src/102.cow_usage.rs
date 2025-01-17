@@ -76,4 +76,6 @@ fn main() {
     // `#[derive(Clone)]`, `Cow` can decide when to clone the borrowed object
     // and when to return the underlying owned object directly, depending on the
     // need when `into_owned()` is called.
+
+    // Reference: https://hermanradtke.com/2015/05/29/creating-a-rust-function-that-returns-string-or-str.html/
 }
