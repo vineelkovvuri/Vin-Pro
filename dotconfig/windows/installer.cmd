@@ -16,15 +16,13 @@ winget install -h --id "SumatraPDF.SumatraPDF"                     --accept-sour
 winget install -h --id "M2Team.NanaZip"                            --accept-source-agreements   --accept-package-agreements
 winget install -h --id "Microsoft.PowerToys"                       --accept-source-agreements   --accept-package-agreements
 winget install -h --id "SublimeHQ.SublimeText.4"                   --accept-source-agreements   --accept-package-agreements --override  "/VERYSILENT /SP- /MERGETASKS=contextentry"
-winget install -h --id "Adobe.Acrobat.Reader.64-bit"               --accept-source-agreements   --accept-package-agreements
 winget install -h --id "9NKSQGP7F2NH"                              --accept-source-agreements   --accept-package-agreements & REM Whatsapp
 winget install -h --id "9MSPC6MP8FM4"                              --accept-source-agreements   --accept-package-agreements & REM Microsoft Whiteboard
 winget install -h --id "9P7KNL5RWT25"                              --accept-source-agreements   --accept-package-agreements & REM Sysinternals Suite
 winget install -h --id "Cockos.LICEcap"                            --accept-source-agreements   --accept-package-agreements
-winget install -h --id "Microsoft.Sysinternals.RDCMan"             --accept-source-agreements   --accept-package-agreements
-winget install -h --id "PuTTY.PuTTY"                               --accept-source-agreements   --accept-package-agreements
-winget install -h --id "TTYPlus.MTPutty"                           --accept-source-agreements   --accept-package-agreements
 winget install -h --id "tailscale.tailscale"                       --accept-source-agreements   --accept-package-agreements
+winget install -h --id "mRemoteNG.mRemoteNG"                       --accept-source-agreements   --accept-package-agreements
+
 
 :: Development
 winget install -h --id "Git.Git"                                   --accept-source-agreements   --accept-package-agreements
@@ -119,3 +117,8 @@ winget install -h --id "Mp3tag.Mp3tag"                             --accept-sour
 winget install -h --id "Oracle.VirtualBox"                         --accept-source-agreements   --accept-package-agreements
 
 ::winget upgrade --all
+
+:: Not needed anymore
+winget install -h --id "Adobe.Acrobat.Reader.64-bit"               --accept-source-agreements   --accept-package-agreements
+winget install -h --id "PuTTY.PuTTY"                               --accept-source-agreements   --accept-package-agreements
+winget install -h --id "TTYPlus.MTPutty"                           --accept-source-agreements   --accept-package-agreements
