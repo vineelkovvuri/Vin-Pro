@@ -26,16 +26,17 @@ winget install -h --id "Discord.Discord"                           --accept-sour
 :: Development
 winget install -h --id "Git.Git"                                   --accept-source-agreements   --accept-package-agreements
 winget install -h --id "Github.cli"                                --accept-source-agreements   --accept-package-agreements
+winget install -h --id "Microsoft.VisualStudio.2022.Community"     --accept-source-agreements   --accept-package-agreements
+winget install -h --id "Rustlang.Rustup"                           --accept-source-agreements   --accept-package-agreements
 winget install -h --id "Embarcadero.Dev-C++"                       --accept-source-agreements   --accept-package-agreements
+winget install -h --id "JetBrains.IntelliJIDEA.Community"          --accept-source-agreements   --accept-package-agreements
 winget install -h --id "Insomnia.Insomnia"                         --accept-source-agreements   --accept-package-agreements
 winget install -h --id "Meld.Meld"                                 --accept-source-agreements   --accept-package-agreements
 winget install -h "python3"                                        --accept-source-agreements   --accept-package-agreements
-winget install -h --id "JetBrains.IntelliJIDEA.Community"          --accept-source-agreements   --accept-package-agreements
 winget install -h --id "LLVM.LLVM"                                 --accept-source-agreements   --accept-package-agreements
 winget install -h --id "Kitware.CMake"                             --accept-source-agreements   --accept-package-agreements
 winget install -h --id "Microsoft.Azure.StorageExplorer"           --accept-source-agreements   --accept-package-agreements
 winget install -h --id "Microsoft.PerfView"                        --accept-source-agreements   --accept-package-agreements
-winget install -h --id "Microsoft.VisualStudio.2022.Community"     --accept-source-agreements   --accept-package-agreements
 winget install -h --id "Microsoft.WinDbg"                          --accept-source-agreements   --accept-package-agreements
 winget install -h --id "Microsoft.TimeTravelDebugging"             --accept-source-agreements   --accept-package-agreements
 winget install -h --id "MSYS2.MSYS2"                               --accept-source-agreements   --accept-package-agreements
