@@ -1,0 +1,9 @@
+[package]
+# This specifies the name of the package. This is what is passed to --package
+# parameter
+name = "tools"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+

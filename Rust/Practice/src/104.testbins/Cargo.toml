@@ -1,0 +1,9 @@
+[package]
+name = "testbins"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[workspace]
+members = ["tools"]  # "tools" is the path to the directory
