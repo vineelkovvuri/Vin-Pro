@@ -32,3 +32,9 @@ AppendPathVariable -Path "C:\msys64\ucrt64\bin"
 AppendPathVariable -Path "C:\Program Files\GitHub CLI\"
 AppendPathVariable -Path "C:\Program Files\LLVM\bin"
 
+# Manually restart after installing below optional packages
+dism /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism /online /enable-feature /featurename:Containers-DisposableClientVM /all /norestart
+dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /all /norestart
+dism /online /enable-feature /featurename:HypervisorPlatform /all /norestart
+
